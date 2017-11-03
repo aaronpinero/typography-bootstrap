@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather:400,400i,700,700i,900,900i|Montserrat:400,400i,500,500i,600,600i,700,700i|Overpass+Mono:400,700');
+
+// fonts
+$font-family-serif:"Merriweather","Georgia","Times New Roman","Times",serif;
+$font-family-sans-serif:"Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+$font-family-monospace:"Overpass Mono", "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+$font-family-base:$font-family-sans-serif;
+
+$font-size-base:1rem;
+$font-size-scalar:1.2;
+
+$font-size-lg:$font-size-base * $font-size-scalar;
+$font-size-sm:$font-size-base * $font-size-scalar;
+
+$h6-font-size:$font-size-base;
+$h5-font-size:$font-size-base * $font-size-scalar;
+$h4-font-size:$h5-font-size * $font-size-scalar;
+$h3-font-size:$h4-font-size * $font-size-scalar;
+$h2-font-size:$h3-font-size * $font-size-scalar;
+$h1-font-size:$h2-font-size * $font-size-scalar * $font-size-scalar;
+
+$headings-font-weight:700;
+
+$display4-size:$h1-font-size * $font-size-scalar;
+$display3-size:$display4-size * $font-size-scalar;
+$display2-size:$display3-size * $font-size-scalar;
+$display1-size:$display2-size * $font-size-scalar;
+
+$display1-weight:700;
+$display2-weight:700;
+$display3-weight:700;
+$display4-weight:700;
+
+$lead-font-size:$font-size-lg;
+$small-font-size:100%/$font-size-scalar;
+
+$blockquote-font-size:$font-size-lg;
