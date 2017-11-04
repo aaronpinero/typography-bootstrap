@@ -2,7 +2,7 @@
   "name": "typography-bootstrap.git",
   "version": "1.0.0",
   "description": "A Tyfy-based theme for Bootstrap 4",
-  "main": "index.html",
+  "main": "docs/index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build-css-dev": "./bin/build-css-dev"
