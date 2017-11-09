@@ -1,3 +1,6 @@
 [submodule "source/vendor/tyfy"]
 	path = source/vendor/tyfy
 	url = git@github.com:aaronpinero/typography.git
+[submodule "source/vendor/bootstrap"]
+	path = source/vendor/bootstrap
+	url = git@github.com:twbs/bootstrap.git
