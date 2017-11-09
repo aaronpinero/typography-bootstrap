@@ -1,0 +1,3 @@
+[submodule "source/vendor/tyfy"]
+	path = source/vendor/tyfy
+	url = git@github.com:aaronpinero/typography.git
