@@ -1,4 +1,5 @@
-$grid-unit:0.875rem;
+// from boostrap/_variables line 111
+$spacer:grid(1);
 
-$spacer:$grid-unit;
-$grid-gutter-width:4*$grid-unit;
+// from bootstrap/_variables line 188
+$grid-gutter-width:grid(4);

@@ -1,67 +1,18 @@
-body {
-	@include calc-line-height($font-size-base,$grid-unit);
-}
-h1, h2, h3, h4, h5, h6 {
-  margin-top:0;
-  margin-bottom:0;
-  * + & {
-	  margin-top:2*$grid-unit;
-  }
-  p + &,
-  ol + &,
-  ul + &,
-  dl + &,
-  address + &,
-  blockquote + &,
-  figure + & {
-	  margin-top:3*$grid-unit;
-  }
-}
-p {
-  margin-top:0;
-  margin-bottom:0;
-  * + & {
-	  margin-top:2*$grid-unit;
-  }
-}
-address {
-  margin-top:0;
-  margin-bottom:0;
-  * + & {
-	  margin-top:2*$grid-unit;
-  }
-}
-ol,
-ul,
-dl {
-  margin-top:0;
-  margin-bottom:0;
-  * + & {
-	  margin-top:2*$grid-unit;
-  }
-}
 ol ol,
 ul ul,
 ol ul,
 ul ol {
-  margin-top:0;
+  margin-top:grid(1);
   margin-bottom:0;
 }
 dd {
   margin-bottom:0;
   margin-left:0;
 }
-blockquote {
-  margin-top:0;
-  margin-bottom:0;
-  * + & {
-	  margin-top:2*$grid-unit;
-  }
-}
 figure {
   margin-top:0;
   margin-bottom:0;
   * + & {
-	  margin-top:2*$grid-unit;
+	  margin-top:$tyfy-spacing-standard;
   }
 }

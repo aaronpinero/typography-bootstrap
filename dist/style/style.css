@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Merriweather:400,400i,700,700i,900,900i|Montserrat:400,400i,500,500i,600,600i,700,700i|Overpass+Mono:400,700");
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,400i,500,500i,600,600i,700,700i|Zilla+Slab:400,400i,500,500i,600,600i,700,700i|Overpass+Mono");
 /* line 21, source/vendor/bootstrap/scss/_reboot.scss */
 *,
 *::before,
@@ -21,7 +21,7 @@ article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, s
 /* line 57, source/vendor/bootstrap/scss/_reboot.scss */
 body {
   margin: 0;
-  font-family: "Merriweather", "Georgia", "Times New Roman", "Times", serif;
+  font-family: "Zilla Slab", "Georgia", serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -42,7 +42,7 @@ hr {
 /* line 99, source/vendor/bootstrap/scss/_reboot.scss */
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
-  margin-bottom: 0.4375rem; }
+  margin-bottom: 0.40625rem; }
 
 /* line 109, source/vendor/bootstrap/scss/_reboot.scss */
 p {
@@ -329,8 +329,8 @@ template {
 /* line 7, source/vendor/bootstrap/scss/_type.scss */
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
-  margin-bottom: 0.4375rem;
-  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  margin-bottom: 0.40625rem;
+  font-family: "Zilla Slab", "Georgia", serif;
   font-weight: 700;
   line-height: 1.2;
   color: inherit; }
@@ -431,7 +431,7 @@ mark,
 
 /* line 112, source/vendor/bootstrap/scss/_type.scss */
 .blockquote {
-  margin-bottom: 0.875rem;
+  margin-bottom: 0.8125rem;
   font-size: 1.2rem; }
 
 /* line 117, source/vendor/bootstrap/scss/_type.scss */
@@ -464,7 +464,7 @@ mark,
 
 /* line 35, source/vendor/bootstrap/scss/_images.scss */
 .figure-img {
-  margin-bottom: 0.4375rem;
+  margin-bottom: 0.40625rem;
   line-height: 1; }
 
 /* line 40, source/vendor/bootstrap/scss/_images.scss */
@@ -477,7 +477,7 @@ code,
 kbd,
 pre,
 samp {
-  font-family: "Overpass Mono", "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+  font-family: "Overpass Mono", monospace; }
 
 /* line 10, source/vendor/bootstrap/scss/_code.scss */
 code {
@@ -528,10 +528,8 @@ pre {
 /* line 6, source/vendor/bootstrap/scss/_grid.scss */
 .container {
   width: 100%;
-  padding-right: 1.75rem;
-  padding-left: 1.75rem;
-  padding-top: 0.875rem;
-  padding-bottom: 0.875rem;
+  padding-right: 1.625rem;
+  padding-left: 1.625rem;
   margin-right: auto;
   margin-left: auto; }
   @media (min-width: 576px) {
@@ -554,10 +552,8 @@ pre {
 /* line 18, source/vendor/bootstrap/scss/_grid.scss */
 .container-fluid {
   width: 100%;
-  padding-right: 1.75rem;
-  padding-left: 1.75rem;
-  padding-top: 0.875rem;
-  padding-bottom: 0.875rem;
+  padding-right: 1.625rem;
+  padding-left: 1.625rem;
   margin-right: auto;
   margin-left: auto; }
 
@@ -566,8 +562,8 @@ pre {
   display: -webkit-box;
   display: flex;
   flex-wrap: wrap;
-  margin-right: -1.75rem;
-  margin-left: -1.75rem; }
+  margin-right: -1.625rem;
+  margin-left: -1.625rem; }
 
 /* line 34, source/vendor/bootstrap/scss/_grid.scss */
 .no-gutters {
@@ -589,8 +585,8 @@ pre {
   position: relative;
   width: 100%;
   min-height: 1px;
-  padding-right: 1.75rem;
-  padding-left: 1.75rem; }
+  padding-right: 1.625rem;
+  padding-left: 1.625rem; }
 
 /* line 32, source/vendor/bootstrap/scss/mixins/_grid-framework.scss */
 .col {
@@ -1439,7 +1435,7 @@ pre {
 .table {
   width: 100%;
   max-width: 100%;
-  margin-bottom: 0.875rem;
+  margin-bottom: 0.8125rem;
   background-color: transparent; }
   /* line 11, source/vendor/bootstrap/scss/_tables.scss */
   .table th,
@@ -1699,118 +1695,152 @@ pre {
   .table-responsive.table-bordered {
     border: 0; }
 
-/* line 1, source/scss/_reboot.scss */
+/* line 2, source/vendor/tyfy/source/scss/_base.scss */
+html {
+  font-size: 100%; }
+
+/* line 5, source/vendor/tyfy/source/scss/_base.scss */
 body {
-  line-height: 1.75rem; }
+  background: white;
+  color: #111;
+  font-family: "Raleway", "Helvetica", "Arial", sans-serif;
+  font-size: 1rem;
+  line-height: 1.625rem;
+  margin: 0;
+  padding: 0; }
 
-/* line 4, source/scss/_reboot.scss */
-h1, h2, h3, h4, h5, h6 {
-  margin-top: 0;
-  margin-bottom: 0; }
-  /* line 7, source/scss/_reboot.scss */
-  * + h1, * + h2, * + h3, * + h4, * + h5, * + h6 {
-    margin-top: 1.75rem; }
-  /* line 10, source/scss/_reboot.scss */
-  p + h1,
-  ol + h1,
-  ul + h1,
-  dl + h1,
-  address + h1,
-  blockquote + h1,
-  figure + h1, p + h2,
-  ol + h2,
-  ul + h2,
-  dl + h2,
-  address + h2,
-  blockquote + h2,
-  figure + h2, p + h3,
-  ol + h3,
-  ul + h3,
-  dl + h3,
-  address + h3,
-  blockquote + h3,
-  figure + h3, p + h4,
-  ol + h4,
-  ul + h4,
-  dl + h4,
-  address + h4,
-  blockquote + h4,
-  figure + h4, p + h5,
-  ol + h5,
-  ul + h5,
-  dl + h5,
-  address + h5,
-  blockquote + h5,
-  figure + h5, p + h6,
-  ol + h6,
-  ul + h6,
-  dl + h6,
-  address + h6,
-  blockquote + h6,
-  figure + h6 {
-    margin-top: 2.625rem; }
-
-/* line 20, source/scss/_reboot.scss */
-p {
-  margin-top: 0;
-  margin-bottom: 0; }
-  /* line 23, source/scss/_reboot.scss */
-  * + p {
-    margin-top: 1.75rem; }
-
-/* line 27, source/scss/_reboot.scss */
-address {
-  margin-top: 0;
-  margin-bottom: 0; }
-  /* line 30, source/scss/_reboot.scss */
-  * + address {
-    margin-top: 1.75rem; }
-
-/* line 34, source/scss/_reboot.scss */
+/* line 16, source/vendor/tyfy/source/scss/_base.scss */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+dl,
 ol,
 ul,
-dl {
-  margin-top: 0;
-  margin-bottom: 0; }
-  /* line 39, source/scss/_reboot.scss */
-  * + ol, * +
+blockquote,
+address,
+table {
+  margin-bottom: 0;
+  margin-top: 0; }
+  /* line 31, source/vendor/tyfy/source/scss/_base.scss */
+  * + h1, * +
+  h2, * +
+  h3, * +
+  h4, * +
+  h5, * +
+  h6, * +
+  p, * +
+  dl, * +
+  ol, * +
   ul, * +
-  dl {
-    margin-top: 1.75rem; }
+  blockquote, * +
+  address, * +
+  table {
+    margin-top: 1.625rem; }
 
-/* line 43, source/scss/_reboot.scss */
+/* line 41, source/vendor/tyfy/source/scss/_base.scss */
+p + h1,
+dl + h1,
+ol + h1,
+ul + h1,
+blockquote + h1,
+address + h1,
+table + h1, p +
+h2,
+dl +
+h2,
+ol +
+h2,
+ul +
+h2,
+blockquote +
+h2,
+address +
+h2,
+table +
+h2, p +
+h3,
+dl +
+h3,
+ol +
+h3,
+ul +
+h3,
+blockquote +
+h3,
+address +
+h3,
+table +
+h3, p +
+h4,
+dl +
+h4,
+ol +
+h4,
+ul +
+h4,
+blockquote +
+h4,
+address +
+h4,
+table +
+h4, p +
+h5,
+dl +
+h5,
+ol +
+h5,
+ul +
+h5,
+blockquote +
+h5,
+address +
+h5,
+table +
+h5, p +
+h6,
+dl +
+h6,
+ol +
+h6,
+ul +
+h6,
+blockquote +
+h6,
+address +
+h6,
+table +
+h6 {
+  margin-top: 2.4375rem; }
+
+/* line 1, source/scss/_reboot.scss */
 ol ol,
 ul ul,
 ol ul,
 ul ol {
-  margin-top: 0;
+  margin-top: 0.8125rem;
   margin-bottom: 0; }
 
-/* line 50, source/scss/_reboot.scss */
+/* line 8, source/scss/_reboot.scss */
 dd {
   margin-bottom: 0;
   margin-left: 0; }
 
-/* line 54, source/scss/_reboot.scss */
-blockquote {
-  margin-top: 0;
-  margin-bottom: 0; }
-  /* line 57, source/scss/_reboot.scss */
-  * + blockquote {
-    margin-top: 1.75rem; }
-
-/* line 61, source/scss/_reboot.scss */
+/* line 12, source/scss/_reboot.scss */
 figure {
   margin-top: 0;
   margin-bottom: 0; }
-  /* line 64, source/scss/_reboot.scss */
+  /* line 15, source/scss/_reboot.scss */
   * + figure {
-    margin-top: 1.75rem; }
+    margin-top: 1.625rem; }
 
 /* line 13, source/scss/_grid.scss */
 .container {
-  padding-bottom: 0.875rem;
-  padding-top: 0.875rem; }
+  padding-bottom: 0.8125rem;
+  padding-top: 0.8125rem; }
 
 /* line 7, source/scss/_grid.scss */
 .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col,
@@ -1819,55 +1849,55 @@ figure {
 .col-md-auto, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg,
 .col-lg-auto, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl,
 .col-xl-auto {
-  padding-top: 0.875rem;
-  padding-bottom: 0.875rem; }
+  padding-top: 0.8125rem;
+  padding-bottom: 0.8125rem; }
 
-/* line 3, source/scss/_type.scss */
+/* line 2, source/scss/_type.scss */
 h1, .h1 {
   color: inherit;
-  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Zilla Slab", "Georgia", serif;
   font-size: 2.98598rem;
   font-weight: 700;
-  line-height: 3.5rem; }
+  line-height: 3.25rem; }
 
-/* line 10, source/scss/_type.scss */
+/* line 9, source/scss/_type.scss */
 h2, .h2 {
   color: inherit;
-  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Zilla Slab", "Georgia", serif;
   font-size: 2.0736rem;
   font-style: normal;
   font-weight: 700;
-  line-height: 2.625rem; }
+  line-height: 2.4375rem; }
 
-/* line 18, source/scss/_type.scss */
+/* line 17, source/scss/_type.scss */
 h3, .h3 {
   color: inherit;
-  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Zilla Slab", "Georgia", serif;
   font-size: 1.728rem;
   font-style: normal;
   font-weight: 700;
-  line-height: 2.625rem; }
+  line-height: 2.4375rem; }
 
-/* line 26, source/scss/_type.scss */
+/* line 25, source/scss/_type.scss */
 h4, .h4 {
   color: inherit;
-  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Zilla Slab", "Georgia", serif;
   font-size: 1.44rem;
   font-weight: 700;
-  line-height: 1.75rem; }
+  line-height: 1.625rem; }
 
-/* line 33, source/scss/_type.scss */
+/* line 32, source/scss/_type.scss */
 h5, .h5 {
   color: inherit;
-  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Zilla Slab", "Georgia", serif;
   font-size: 1.2rem;
   font-weight: 700;
-  line-height: 1.75rem; }
+  line-height: 1.625rem; }
 
-/* line 40, source/scss/_type.scss */
+/* line 39, source/scss/_type.scss */
 h6, .h6 {
   color: inherit;
-  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Zilla Slab", "Georgia", serif;
   font-size: 1rem;
   font-weight: 700;
-  line-height: 1.75rem; }
+  line-height: 1.625rem; }
