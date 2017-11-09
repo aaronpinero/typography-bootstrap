@@ -1,0 +1,16 @@
+/* line 24, source/scss/docs.scss */
+.tybs-code,
+.tybs-example {
+  border: 2px #e9ecef solid;
+  padding: 1.625rem; }
+  /* line 28, source/scss/docs.scss */
+  * + .tybs-code, * +
+  .tybs-example {
+    margin-top: 1.625rem; }
+
+/* line 32, source/scss/docs.scss */
+.tybs-code {
+  background-color: #e9ecef; }
+  /* line 34, source/scss/docs.scss */
+  .tybs-example + .tybs-code {
+    margin-top: 0; }

@@ -188,8 +188,8 @@ table {
 
 /* line 313, source/vendor/bootstrap/scss/_reboot.scss */
 caption {
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
+  padding-top: 0.8125rem;
+  padding-bottom: 0.8125rem;
   color: #868e96;
   text-align: left;
   caption-side: bottom; }
@@ -1439,7 +1439,7 @@ pre {
   /* line 11, source/vendor/bootstrap/scss/_tables.scss */
   .table th,
   .table td {
-    padding: 0.75rem;
+    padding: 0.8125rem;
     vertical-align: top;
     border-top: 1px solid #e9ecef; }
   /* line 18, source/vendor/bootstrap/scss/_tables.scss */
@@ -1456,7 +1456,7 @@ pre {
 /* line 38, source/vendor/bootstrap/scss/_tables.scss */
 .table-sm th,
 .table-sm td {
-  padding: 0.3rem; }
+  padding: 0.40625rem; }
 
 /* line 49, source/vendor/bootstrap/scss/_tables.scss */
 .table-bordered {
@@ -1829,11 +1829,13 @@ dd {
   margin-left: 0; }
 
 /* line 12, source/scss/_reboot.scss */
-figure {
+figure,
+pre {
   margin-top: 0;
   margin-bottom: 0; }
-  /* line 15, source/scss/_reboot.scss */
-  * + figure {
+  /* line 16, source/scss/_reboot.scss */
+  * + figure, * +
+  pre {
     margin-top: 1.625rem; }
 
 /* line 13, source/scss/_grid.scss */
@@ -1900,3 +1902,7 @@ h6, .h6 {
   font-size: 1rem;
   font-weight: 700;
   line-height: 1.625rem; }
+
+/* line 1, source/scss/_tables.scss */
+.table {
+  margin-bottom: 0; }
