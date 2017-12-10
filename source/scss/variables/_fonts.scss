@@ -6,23 +6,23 @@ $font-family-base:$tyfy-font-base;
 
 $font-size-base:$tyfy-font-size-base;
 
-$font-size-lg:$font-size-base * $tyfy-font-size-scalar;
-$font-size-sm:$font-size-base * $tyfy-font-size-scalar;
+$font-size-lg:scale(1);
+$font-size-sm:scale(-1);
 
-$h6-font-size:$font-size-base;
-$h5-font-size:$font-size-base * $tyfy-font-size-scalar;
-$h4-font-size:$h5-font-size * $tyfy-font-size-scalar;
-$h3-font-size:$h4-font-size * $tyfy-font-size-scalar;
-$h2-font-size:$h3-font-size * $tyfy-font-size-scalar;
-$h1-font-size:$h2-font-size * $tyfy-font-size-scalar * $tyfy-font-size-scalar;
+$h6-font-size:scale(0);
+$h5-font-size:scale(1);
+$h4-font-size:scale(2);
+$h3-font-size:scale(3);
+$h2-font-size:scale(4);
+$h1-font-size:scale(6);
 
 $headings-font-family:$font-family-serif;
 $headings-font-weight:700;
 
-$display4-size:$h1-font-size * $tyfy-font-size-scalar;
-$display3-size:$display4-size * $tyfy-font-size-scalar;
-$display2-size:$display3-size * $tyfy-font-size-scalar;
-$display1-size:$display2-size * $tyfy-font-size-scalar;
+$display4-size:scale(7);
+$display3-size:scale(8);
+$display2-size:scale(9);
+$display1-size:scale(10);
 
 $display1-weight:700;
 $display2-weight:700;

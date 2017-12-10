@@ -1,3 +1,116 @@
+@font-face {
+  font-family: tyfyicons;
+  src: url("../fonts/tyfyicons/tyfyicons.eot");
+  src: url("../fonts/tyfyicons/tyfyicons.eot?#iefix") format("embedded-opentype"), url("../fonts/tyfyicons/tyfyicons.woff2") format("woff2"), url("../fonts/tyfyicons/tyfyicons.woff") format("woff"), url("../fonts/tyfyicons/tyfyicons.ttf") format("truetype"), url("../fonts/tyfyicons/tyfyicons.svg#tyfyicons") format("svg");
+  font-style: normal;
+  font-weight: 400; }
+
+/* line 27, source/vendor/tyfy/dist/fonts/tyfyicons/tyfyicons.scss */
+.tyfyicons {
+  display: inline-block;
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+  text-rendering: auto;
+  font: normal normal 400 14px/1 tyfyicons;
+  font-size: inherit;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased; }
+
+/* line 41, source/vendor/tyfy/dist/fonts/tyfyicons/tyfyicons.scss */
+.tyfyicons-lg {
+  vertical-align: -15%;
+  line-height: 0.75em;
+  font-size: 1.33333333em; }
+
+/* line 47, source/vendor/tyfy/dist/fonts/tyfyicons/tyfyicons.scss */
+.tyfyicons-2x {
+  font-size: 2em; }
+
+/* line 51, source/vendor/tyfy/dist/fonts/tyfyicons/tyfyicons.scss */
+.tyfyicons-3x {
+  font-size: 3em; }
+
+/* line 55, source/vendor/tyfy/dist/fonts/tyfyicons/tyfyicons.scss */
+.tyfyicons-4x {
+  font-size: 4em; }
+
+/* line 59, source/vendor/tyfy/dist/fonts/tyfyicons/tyfyicons.scss */
+.tyfyicons-5x {
+  font-size: 5em; }
+
+/* line 63, source/vendor/tyfy/dist/fonts/tyfyicons/tyfyicons.scss */
+.tyfyicons-fw {
+  width: 1.28571429em;
+  text-align: center; }
+
+/* line 68, source/vendor/tyfy/dist/fonts/tyfyicons/tyfyicons.scss */
+.tyfyicons-angle-down::before {
+  content: "\ea01"; }
+
+/* line 72, source/vendor/tyfy/dist/fonts/tyfyicons/tyfyicons.scss */
+.tyfyicons-angle-left::before {
+  content: "\ea02"; }
+
+/* line 76, source/vendor/tyfy/dist/fonts/tyfyicons/tyfyicons.scss */
+.tyfyicons-angle-right-small::before {
+  content: "\ea03"; }
+
+/* line 80, source/vendor/tyfy/dist/fonts/tyfyicons/tyfyicons.scss */
+.tyfyicons-angle-right::before {
+  content: "\ea04"; }
+
+/* line 84, source/vendor/tyfy/dist/fonts/tyfyicons/tyfyicons.scss */
+.tyfyicons-angle-up::before {
+  content: "\ea05"; }
+
+/* line 88, source/vendor/tyfy/dist/fonts/tyfyicons/tyfyicons.scss */
+.tyfyicons-bars::before {
+  content: "\ea06"; }
+
+/* line 92, source/vendor/tyfy/dist/fonts/tyfyicons/tyfyicons.scss */
+.tyfyicons-dash::before {
+  content: "\ea07"; }
+
+/* line 96, source/vendor/tyfy/dist/fonts/tyfyicons/tyfyicons.scss */
+.tyfyicons-facebook::before {
+  content: "\ea08"; }
+
+/* line 100, source/vendor/tyfy/dist/fonts/tyfyicons/tyfyicons.scss */
+.tyfyicons-instagram::before {
+  content: "\ea09"; }
+
+/* line 104, source/vendor/tyfy/dist/fonts/tyfyicons/tyfyicons.scss */
+.tyfyicons-linkedin::before {
+  content: "\ea0a"; }
+
+/* line 108, source/vendor/tyfy/dist/fonts/tyfyicons/tyfyicons.scss */
+.tyfyicons-quote-left::before {
+  content: "\ea0b"; }
+
+/* line 112, source/vendor/tyfy/dist/fonts/tyfyicons/tyfyicons.scss */
+.tyfyicons-quote-right::before {
+  content: "\ea0c"; }
+
+/* line 116, source/vendor/tyfy/dist/fonts/tyfyicons/tyfyicons.scss */
+.tyfyicons-search::before {
+  content: "\ea0d"; }
+
+/* line 120, source/vendor/tyfy/dist/fonts/tyfyicons/tyfyicons.scss */
+.tyfyicons-soundcloud::before {
+  content: "\ea0e"; }
+
+/* line 124, source/vendor/tyfy/dist/fonts/tyfyicons/tyfyicons.scss */
+.tyfyicons-twitter::before {
+  content: "\ea0f"; }
+
+/* line 128, source/vendor/tyfy/dist/fonts/tyfyicons/tyfyicons.scss */
+.tyfyicons-x::before {
+  content: "\ea10"; }
+
+/* line 132, source/vendor/tyfy/dist/fonts/tyfyicons/tyfyicons.scss */
+.tyfyicons-youtube::before {
+  content: "\ea11"; }
+
 /* line 21, source/vendor/bootstrap/scss/_reboot.scss */
 *,
 *::before,
@@ -4336,21 +4449,19 @@ a.text-dark:focus, a.text-dark:hover {
 .invisible {
   visibility: hidden !important; }
 
-/* line 2, source/vendor/tyfy/source/scss/_base.scss */
+/* line 1, source/vendor/tyfy/source/scss/_base.scss */
 html {
   font-size: 100%; }
 
-/* line 5, source/vendor/tyfy/source/scss/_base.scss */
+/* line 4, source/vendor/tyfy/source/scss/_base.scss */
 body {
   background: white;
   color: #111;
   font-family: "Overpass", "Helvetica", "Arial", sans-serif;
   font-size: 1rem;
-  line-height: 1.625rem;
-  margin: 0;
-  padding: 0; }
+  line-height: 1.625rem; }
 
-/* line 16, source/vendor/tyfy/source/scss/_base.scss */
+/* line 1, source/vendor/tyfy/source/scss/_spacing.scss */
 h1,
 h2,
 h3,
@@ -4363,10 +4474,12 @@ ol,
 ul,
 blockquote,
 address,
-table {
+table,
+figure,
+pre {
   margin-bottom: 0;
   margin-top: 0; }
-  /* line 31, source/vendor/tyfy/source/scss/_base.scss */
+  /* line 18, source/vendor/tyfy/source/scss/_spacing.scss */
   * + h1, * +
   h2, * +
   h3, * +
@@ -4379,17 +4492,20 @@ table {
   ul, * +
   blockquote, * +
   address, * +
-  table {
+  table, * +
+  figure, * +
+  pre {
     margin-top: 1.625rem; }
 
-/* line 41, source/vendor/tyfy/source/scss/_base.scss */
+/* line 28, source/vendor/tyfy/source/scss/_spacing.scss */
 p + h1,
 dl + h1,
 ol + h1,
 ul + h1,
 blockquote + h1,
 address + h1,
-table + h1, p +
+table + h1,
+figure + h1 pre + h1, p +
 h2,
 dl +
 h2,
@@ -4402,7 +4518,9 @@ h2,
 address +
 h2,
 table +
-h2, p +
+h2,
+figure +
+h2 pre + h1, p +
 h3,
 dl +
 h3,
@@ -4415,7 +4533,9 @@ h3,
 address +
 h3,
 table +
-h3, p +
+h3,
+figure +
+h3 pre + h1, p +
 h4,
 dl +
 h4,
@@ -4428,7 +4548,9 @@ h4,
 address +
 h4,
 table +
-h4, p +
+h4,
+figure +
+h4 pre + h1, p +
 h5,
 dl +
 h5,
@@ -4441,7 +4563,9 @@ h5,
 address +
 h5,
 table +
-h5, p +
+h5,
+figure +
+h5 pre + h1, p +
 h6,
 dl +
 h6,
@@ -4454,7 +4578,99 @@ h6,
 address +
 h6,
 table +
+h6,
+figure +
+h6 pre + h1,
+figure + h1 pre +
+h2,
+figure +
+h2 pre +
+h2,
+figure +
+h3 pre +
+h2,
+figure +
+h4 pre +
+h2,
+figure +
+h5 pre +
+h2,
+figure +
+h6 pre +
+h2,
+figure + h1 pre +
+h3,
+figure +
+h2 pre +
+h3,
+figure +
+h3 pre +
+h3,
+figure +
+h4 pre +
+h3,
+figure +
+h5 pre +
+h3,
+figure +
+h6 pre +
+h3,
+figure + h1 pre +
+h4,
+figure +
+h2 pre +
+h4,
+figure +
+h3 pre +
+h4,
+figure +
+h4 pre +
+h4,
+figure +
+h5 pre +
+h4,
+figure +
+h6 pre +
+h4,
+figure + h1 pre +
+h5,
+figure +
+h2 pre +
+h5,
+figure +
+h3 pre +
+h5,
+figure +
+h4 pre +
+h5,
+figure +
+h5 pre +
+h5,
+figure +
+h6 pre +
+h5,
+figure + h1 pre +
+h6,
+figure +
+h2 pre +
+h6,
+figure +
+h3 pre +
+h6,
+figure +
+h4 pre +
+h6,
+figure +
+h5 pre +
+h6,
+figure +
+h6 pre +
 h6 {
+  margin-top: 2.4375rem; }
+
+/* line 40, source/vendor/tyfy/source/scss/_spacing.scss */
+hr {
+  margin-bottom: 2.4375rem;
   margin-top: 2.4375rem; }
 
 /* line 1, source/scss/_reboot.scss */

@@ -1,21 +1,13 @@
-// Tyfy Functions
+// Tyfy Functions (Required)
 @import "../vendor/tyfy/source/scss/functions";
 
-// Tyfy Variables
-@import "../vendor/tyfy/source/scss/variables/grid";
-@import "../vendor/tyfy/source/scss/variables/fonts";
-@import "../vendor/tyfy/source/scss/variables/breakpoints";
-@import "../vendor/tyfy/source/scss/variables/colors";
-@import "../vendor/tyfy/source/scss/variables/timing";
+// Tyfy Variable Customizations
 
-// Tyfy variable overrides would need to go here, or in the custom theme variables file
-
-// Tyfy Mixins
+// Tyfy Required
+@import "../vendor/tyfy/source/scss/variables";
 @import "../vendor/tyfy/source/scss/mixins";
 
-// ---------------------
-
-// Theme Custom Variables
+// Bootstrap Variable Customizations
 @import "variables";
 
 // Bootstrap Required
@@ -32,9 +24,9 @@
 @import "../vendor/bootstrap/scss/tables";
 @import "../vendor/bootstrap/scss/utilities";
 
-
-// Tyfy Styles
+// Tyfy Optional
 @import "../vendor/tyfy/source/scss/base";
+@import "../vendor/tyfy/source/scss/spacing";
 
 // Theme Additions
 @import "reboot";
