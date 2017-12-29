@@ -18,13 +18,13 @@
 		<link href="https://fonts.googleapis.com/css?family=Overpass+Mono|Overpass:400,400i,600,600i,700,700i,800,800i|Zilla+Slab:400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 		<link rel="stylesheet" href="../dist/style/style.css">
 		<!--/ COMMON HEAD TAGS -->
-		<title>Tyfy Theme for Bootstrap</title>
+		<title>Concepts - Tyfy Bootstrap</title>
 	</head>
 	<body class="">
 		<header>
 			<div class="container-fluid">
 				<div class="row">
-					<div class="col">
+					<div class="col py-4">
 						<h1>Tyfy Theme for Bootstrap</h1>
 					</div>
 				</div>
@@ -56,12 +56,37 @@
 				</div>
 			</div>
 		</header>
-		<section id="main" class="py-4">
+		<section id="main" class="py-5">
 			<div class="container-fluid">
 				<div class="row">
 					<div class="col-md-6">
-						<p class="lead">This customization of Bootstrap v4 applies the typographic styles, vertical rhythm, and grid stability from the <a href="http://aaronpinero.net/tyfy/docs">Tyfy framework</a> to Bootstrap's robust library of content and user interface patterns.</p>
-						<p>The <a href="http://aaronpinero.net/tyfy/docs/modules.html">required and essential modules</a> from the Tyfy framework are used to customize Bootstrap in a maintainable way, consistent with Bootstrap's <a href="https://getbootstrap.com/docs/4.0/getting-started/theming/">theming guide</a>. In addition, Bootstrap has been amended to include additional variables – fonts, colors – that are useful for the author's professional projects.</p>
+
+						<h1>Concepts</h1>
+						<p>There are three main design concepts that are applied to Bootstrap with the addition of the Tyfy framework:</p>
+						<ul>
+							<li>a modular typographic scale;</li>
+							<li>a consistent vertical grid; and</li>
+							<li>intelligent margins.</li>
+						</ul>
+						
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg">
+						<h2>Modular Scale</h2>
+					</div>
+					<div class="col-lg">
+						<h2>Vertical Grid</h2>
+						<p>In many articles, this is also called a <a href="http://alistapart.com/article/settingtypeontheweb">baseline grid</a> because it is the grid on which the baseline of your text will run. Establishing a vertical or baseline grid provides a often unnoticed enhancement to the design. Robert Bringhurst, the godfather of typographic design, likens a baseline grid to the rhythm that provides a foundation a musical composition. You might not see it in the sheet music or hear it over the melody, but you know it's there and you feel it when it isn't.</p>
+						<p>Bootstrap does not have a vertical grid. There is a spacer variable that is used to provide padding and margin on some elements, but there are odd omissions. In addition, the line height for text is based on a percentage of the current font size instead of on a grid measure.</p> 
+						<p>Tyfy provides a grid unit SASS variable and two custom functions that facilitate the application of a baseline grid. The <code>grid()</code> function eliminates the need to calculate fractions or multiples of the baseline grid unit. The <code>leading()</code> function calculates a line height for a given font size as a function of multiples of the grid unit. Together, these functions eliminate much of the work of using a baseline grid and make it easier to employ. The Tyfy Bootstrap theme changes a number of the default Bootstrap element line-height, margin, and padding values so that they conform to the grid. As a result, a change to the value of the grid unit variable quickly changes the entire theme.</p> 
+					</div>
+					<div class="col-lg">
+						<h2>Intelligent Margins</h2>
+						<p>The default HTML behavior for elements like headings, paragraphs, and lists is to provide margin above and below the element. Bootstrap and other frameworks often modify these margins, but perpetuate the practice of providing arbitrary margins around elements.</p>
+						<p>Margins around elements are unnecessary.</p>
+						<p>Margins <em>between</em> elements are what is needed.</p>
+						<p>The Tyfy framework uses <a href="https://www.w3.org/TR/css3-selectors/#adjacent-sibling-combinators">adjacent sibling selectors</a> (i.e. <code>.class + .class</code>) to assign margins between elements instead of assigning blanket margins to everything. This avoids the problem of having margins at the start and end of a containing element that must then be accounted for.</p>
 					</div>
 				</div>
 			</div>
