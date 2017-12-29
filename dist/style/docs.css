@@ -1,129 +1,16 @@
-@font-face {
-  font-family: tyfyicons;
-  src: url("../fonts/tyfyicons/tyfyicons.eot");
-  src: url("../fonts/tyfyicons/tyfyicons.eot?#iefix") format("embedded-opentype"), url("../fonts/tyfyicons/tyfyicons.woff2") format("woff2"), url("../fonts/tyfyicons/tyfyicons.woff") format("woff"), url("../fonts/tyfyicons/tyfyicons.ttf") format("truetype"), url("../fonts/tyfyicons/tyfyicons.svg#tyfyicons") format("svg");
-  font-style: normal;
-  font-weight: 400; }
-
-/* line 27, source/vendor/tyfy/dist/fonts/tyfyicons/tyfyicons.scss */
-.tyfyicons {
-  display: inline-block;
-  -webkit-transform: translate(0, 0);
-          transform: translate(0, 0);
-  text-rendering: auto;
-  font: normal normal 400 14px/1 tyfyicons;
-  font-size: inherit;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased; }
-
-/* line 41, source/vendor/tyfy/dist/fonts/tyfyicons/tyfyicons.scss */
-.tyfyicons-lg {
-  vertical-align: -15%;
-  line-height: 0.75em;
-  font-size: 1.33333333em; }
-
-/* line 47, source/vendor/tyfy/dist/fonts/tyfyicons/tyfyicons.scss */
-.tyfyicons-2x {
-  font-size: 2em; }
-
-/* line 51, source/vendor/tyfy/dist/fonts/tyfyicons/tyfyicons.scss */
-.tyfyicons-3x {
-  font-size: 3em; }
-
-/* line 55, source/vendor/tyfy/dist/fonts/tyfyicons/tyfyicons.scss */
-.tyfyicons-4x {
-  font-size: 4em; }
-
-/* line 59, source/vendor/tyfy/dist/fonts/tyfyicons/tyfyicons.scss */
-.tyfyicons-5x {
-  font-size: 5em; }
-
-/* line 63, source/vendor/tyfy/dist/fonts/tyfyicons/tyfyicons.scss */
-.tyfyicons-fw {
-  width: 1.28571429em;
-  text-align: center; }
-
-/* line 68, source/vendor/tyfy/dist/fonts/tyfyicons/tyfyicons.scss */
-.tyfyicons-angle-down::before {
-  content: "\ea01"; }
-
-/* line 72, source/vendor/tyfy/dist/fonts/tyfyicons/tyfyicons.scss */
-.tyfyicons-angle-left::before {
-  content: "\ea02"; }
-
-/* line 76, source/vendor/tyfy/dist/fonts/tyfyicons/tyfyicons.scss */
-.tyfyicons-angle-right-small::before {
-  content: "\ea03"; }
-
-/* line 80, source/vendor/tyfy/dist/fonts/tyfyicons/tyfyicons.scss */
-.tyfyicons-angle-right::before {
-  content: "\ea04"; }
-
-/* line 84, source/vendor/tyfy/dist/fonts/tyfyicons/tyfyicons.scss */
-.tyfyicons-angle-up::before {
-  content: "\ea05"; }
-
-/* line 88, source/vendor/tyfy/dist/fonts/tyfyicons/tyfyicons.scss */
-.tyfyicons-bars::before {
-  content: "\ea06"; }
-
-/* line 92, source/vendor/tyfy/dist/fonts/tyfyicons/tyfyicons.scss */
-.tyfyicons-dash::before {
-  content: "\ea07"; }
-
-/* line 96, source/vendor/tyfy/dist/fonts/tyfyicons/tyfyicons.scss */
-.tyfyicons-facebook::before {
-  content: "\ea08"; }
-
-/* line 100, source/vendor/tyfy/dist/fonts/tyfyicons/tyfyicons.scss */
-.tyfyicons-instagram::before {
-  content: "\ea09"; }
-
-/* line 104, source/vendor/tyfy/dist/fonts/tyfyicons/tyfyicons.scss */
-.tyfyicons-linkedin::before {
-  content: "\ea0a"; }
-
-/* line 108, source/vendor/tyfy/dist/fonts/tyfyicons/tyfyicons.scss */
-.tyfyicons-quote-left::before {
-  content: "\ea0b"; }
-
-/* line 112, source/vendor/tyfy/dist/fonts/tyfyicons/tyfyicons.scss */
-.tyfyicons-quote-right::before {
-  content: "\ea0c"; }
-
-/* line 116, source/vendor/tyfy/dist/fonts/tyfyicons/tyfyicons.scss */
-.tyfyicons-search::before {
-  content: "\ea0d"; }
-
-/* line 120, source/vendor/tyfy/dist/fonts/tyfyicons/tyfyicons.scss */
-.tyfyicons-soundcloud::before {
-  content: "\ea0e"; }
-
-/* line 124, source/vendor/tyfy/dist/fonts/tyfyicons/tyfyicons.scss */
-.tyfyicons-twitter::before {
-  content: "\ea0f"; }
-
-/* line 128, source/vendor/tyfy/dist/fonts/tyfyicons/tyfyicons.scss */
-.tyfyicons-x::before {
-  content: "\ea10"; }
-
-/* line 132, source/vendor/tyfy/dist/fonts/tyfyicons/tyfyicons.scss */
-.tyfyicons-youtube::before {
-  content: "\ea11"; }
-
-/* line 24, source/scss/docs.scss */
+/* line 17, source/scss/docs.scss */
 .tybs-code,
 .tybs-example {
-  border: 2px #e9ecef solid;
+  border: 2px #dee2e6 solid;
   padding: 1.625rem; }
-  /* line 28, source/scss/docs.scss */
+  /* line 21, source/scss/docs.scss */
   * + .tybs-code, * +
   .tybs-example {
     margin-top: 1.625rem; }
 
-/* line 32, source/scss/docs.scss */
+/* line 25, source/scss/docs.scss */
 .tybs-code {
-  background-color: #e9ecef; }
-  /* line 34, source/scss/docs.scss */
+  background-color: #dee2e6; }
+  /* line 27, source/scss/docs.scss */
   .tybs-example + .tybs-code {
     margin-top: 0; }

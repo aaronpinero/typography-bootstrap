@@ -1,22 +1,15 @@
-// Tyfy Functions
-@import "../vendor/tyfy/source/scss/functions";
+// tyfy variable customizations
 
-// Tyfy Variables
-@import "../vendor/tyfy/source/scss/variables/grid";
-@import "../vendor/tyfy/source/scss/variables/fonts";
-@import "../vendor/tyfy/source/scss/variables/breakpoints";
-@import "../vendor/tyfy/source/scss/variables/colors";
-@import "../vendor/tyfy/source/scss/variables/timing";
+// tyfy required
+@import "../vendor/tyfy/source/scss/required/core";
+@import "../vendor/tyfy/source/scss/required/functions";
+@import "../vendor/tyfy/source/scss/required/settings";
+@import "../vendor/tyfy/source/scss/required/mixins";
 
-// Tyfy Mixins
-@import "../vendor/tyfy/source/scss/mixins";
-
-// ---------------------
-
-// Theme Custom Variables
+// bootstrap variable customizations
 @import "variables";
 
-// Bootstrap Required
+// bootstrap required
 @import "../vendor/bootstrap/scss/functions";
 @import "../vendor/bootstrap/scss/variables";
 @import "../vendor/bootstrap/scss/mixins";

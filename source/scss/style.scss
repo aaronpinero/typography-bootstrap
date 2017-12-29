@@ -1,35 +1,50 @@
-// Tyfy Functions (Required)
-@import "../vendor/tyfy/source/scss/functions";
+// tyfy variable customizations
 
-// Tyfy Variable Customizations
+// tyfy required
+@import "../vendor/tyfy/source/scss/required/core";
+@import "../vendor/tyfy/source/scss/required/functions";
+@import "../vendor/tyfy/source/scss/required/settings";
+@import "../vendor/tyfy/source/scss/required/mixins";
 
-// Tyfy Required
-@import "../vendor/tyfy/source/scss/variables";
-@import "../vendor/tyfy/source/scss/mixins";
-
-// Bootstrap Variable Customizations
+// bootstrap variable customizations
 @import "variables";
 
-// Bootstrap Required
+// bootstrap required
 @import "../vendor/bootstrap/scss/functions";
 @import "../vendor/bootstrap/scss/variables";
 @import "../vendor/bootstrap/scss/mixins";
 
-// Bootstrap Optional
+// bootstrap optional
+@import "../vendor/bootstrap/scss/root";
 @import "../vendor/bootstrap/scss/reboot";
 @import "../vendor/bootstrap/scss/type";
 @import "../vendor/bootstrap/scss/images";
 @import "../vendor/bootstrap/scss/code";
 @import "../vendor/bootstrap/scss/grid";
 @import "../vendor/bootstrap/scss/tables";
+@import "../vendor/bootstrap/scss/forms";
+@import "../vendor/bootstrap/scss/buttons";
+@import "../vendor/bootstrap/scss/transitions";
+@import "../vendor/bootstrap/scss/dropdown";
+@import "../vendor/bootstrap/scss/button-group";
+@import "../vendor/bootstrap/scss/input-group";
+@import "../vendor/bootstrap/scss/custom-forms";
+@import "../vendor/bootstrap/scss/nav";
+@import "../vendor/bootstrap/scss/navbar";
+@import "../vendor/bootstrap/scss/card";
+@import "../vendor/bootstrap/scss/breadcrumb";
+@import "../vendor/bootstrap/scss/pagination";
+@import "../vendor/bootstrap/scss/badge";
+
 @import "../vendor/bootstrap/scss/utilities";
 
-// Tyfy Optional
-@import "../vendor/tyfy/source/scss/base";
-@import "../vendor/tyfy/source/scss/spacing";
+// tyfy essential
+@import "../vendor/tyfy/source/scss/essential/body";
+@import "../vendor/tyfy/source/scss/essential/spacing";
 
-// Theme Additions
+// theme
 @import "reboot";
 @import "grid";
 @import "type";
 @import "tables";
+@import "nav";
