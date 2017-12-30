@@ -1,4 +1,11 @@
+// tyfy icon font
+@import "../vendor/tyfy/dist/fonts/tyfyicons/tyfyicons.scss";
+
+
 // tyfy variable customizations
+$tyfy-serif:"Merriweather",Georgia,Times,serif;
+$tyfy-sans:"Montserrat",Helvetica,Arial,sans-serif;
+$tyfy-font-base:$tyfy-serif;
 
 // tyfy required
 @import "../vendor/tyfy/source/scss/required/core";
@@ -41,6 +48,7 @@
 // tyfy essential
 @import "../vendor/tyfy/source/scss/essential/body";
 @import "../vendor/tyfy/source/scss/essential/spacing";
+@import "../vendor/tyfy/source/scss/optional/quotes";
 
 // theme
 @import "reboot";

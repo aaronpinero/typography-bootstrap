@@ -51,3 +51,11 @@ h6, .h6 {
 .display-4 {
 	font-family:$headings-font-family;
 }
+
+// Font face selection classes
+.font-family-serif {
+	font-family:$font-family-serif;
+}
+.font-family-sans-serif {
+	font-family:$font-family-sans-serif;
+}

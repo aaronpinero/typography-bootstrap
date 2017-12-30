@@ -142,7 +142,7 @@ $theme-colors: (
 //// variables. Mostly focused on spacing.
 //// You can add more entries to the $spacers map, should you need more variation.
 //
-$spacer:	grid(1);
+$spacer:	grid(2); // equivalent to the base line height
 //$spacers: (
 //  0: 0,
 //  1: ($spacer * .25),
@@ -250,7 +250,7 @@ $border-radius-sm:            grid(0.1667);
 //// Font, line-height, and color for body text, headings, and more.
 //
 //// stylelint-disable value-keyword-case
-$font-family-serif:      $tyfy-serif;
+$font-family-serif:      			$tyfy-serif;
 $font-family-sans-serif:			$tyfy-sans;
 $font-family-monospace:       $tyfy-mono;
 $font-family-base:            $tyfy-font-base;
@@ -275,7 +275,7 @@ $h2-font-size:								scale(4);
 $h1-font-size:								scale(6);
 //
 //$headings-margin-bottom:      ($spacer / 2) !default;
-$headings-font-family:				$font-family-serif;
+$headings-font-family:				$font-family-sans-serif;
 $headings-font-weight:				700;
 //$headings-line-height:        1.2 !default;
 //$headings-color:              inherit !default;
