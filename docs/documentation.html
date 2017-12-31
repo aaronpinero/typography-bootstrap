@@ -62,10 +62,18 @@
 		<section id="main" class="py-4 px-md-4 px-xl-5">
 			<div class="container-fluid">
 				<div class="row">
-					<div class="col-md-9 pb-4">
+					<div class="col-md-9">
 
 						<h1>Documentation</h1>
-						<h2>Colors</h2>
+						<h2>Variables</h2>
+						<p class="lead">The Tyfy Theme for Bootstrap introduces numerous new or updated SASS variables.</p>
+						<h3>Grid</h3>
+						<p>A new grid unit value governs margins, paddings, and line-heights in the theme.</p>
+						<dl>
+							<dt>$tyfy-grid-unit</dt><dd>This is a rem-unit value that should be set to half of the default line height. As this is a Tyfy variable, a custom value for the variable should be add at the very top of the main stylesheet.</dd>
+							<dt>$spacer</dt><dd>This Bootstrap variable has been set to <code>2 * $tyfy-grid-unit</code>.
+						</dl>
+						<h3>Colors</h3>
 						<p>Several new colors have been added to Bootstrap's <code>$colors</code> SASS map. These colors can be accessed in SASS using the <a href="https://getbootstrap.com/docs/4.0/getting-started/theming/#functions">color functions</a> provided in Bootstrap. The additional colors come from the Columbia College web style guide.</p>
 						<dl>
 							<dt>$blue-cc</dt><dd>#66aee6; // columbia college blue, p292</dd>
@@ -81,7 +89,7 @@
 							<dt>$blue-ad</dt><dd>#0060a8; // cc-seas admissions blue, p300</dd>
 							<dt>$cyan-ad</dt><dd>#0099e6; // cc-seas admissions cyan</dd>
 						</dl>
-						<h2>Theme Colors</h2>
+						<h3>Theme Colors</h3>
 						<p>Tyfy Bootstrap redefines the primary color using one of added colors. It also introduces a new theme color that can be implemented using Bootstrap's color theme classes.</p>
 						<dl>
 							<dt>$primary</dt><dd>$blue-ad</dd>
