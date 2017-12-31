@@ -7575,10 +7575,14 @@ h6, .h6 {
   font-family: "Montserrat", Helvetica, Arial, sans-serif; }
 
 /* line 56, source/scss/_type.scss */
+.lead {
+  line-height: 1.625rem; }
+
+/* line 61, source/scss/_type.scss */
 .font-family-serif {
   font-family: "Merriweather", Georgia, Times, serif; }
 
-/* line 59, source/scss/_type.scss */
+/* line 64, source/scss/_type.scss */
 .font-family-sans-serif {
   font-family: "Montserrat", Helvetica, Arial, sans-serif; }
 

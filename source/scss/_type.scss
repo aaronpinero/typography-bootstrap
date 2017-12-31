@@ -52,6 +52,11 @@ h6, .h6 {
 	font-family:$headings-font-family;
 }
 
+// Lead paragraph
+.lead {
+	line-height:leading($lead-font-size,tall);
+}
+
 // Font face selection classes
 .font-family-serif {
 	font-family:$font-family-serif;
