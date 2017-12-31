@@ -7390,6 +7390,177 @@ hr {
   margin-bottom: 2.4375rem;
   margin-top: 2.4375rem; }
 
+/* line 2, source/vendor/tyfy/source/scss/optional/_lists.scss */
+ol,
+ul {
+  line-height: 1.625rem;
+  padding-left: 2.4375rem; }
+
+/* line 7, source/vendor/tyfy/source/scss/optional/_lists.scss */
+li {
+  line-height: 1.625rem;
+  margin-bottom: 0;
+  margin-top: 0; }
+
+/* line 12, source/vendor/tyfy/source/scss/optional/_lists.scss */
+dl {
+  line-height: 1.625rem; }
+
+/* line 15, source/vendor/tyfy/source/scss/optional/_lists.scss */
+dt {
+  font-weight: 700;
+  line-height: 1.625rem;
+  margin-bottom: 0;
+  margin-top: 0; }
+
+/* line 21, source/vendor/tyfy/source/scss/optional/_lists.scss */
+dd {
+  line-height: 1.625rem;
+  margin: 0;
+  padding-left: 2.4375rem; }
+
+/* line 28, source/vendor/tyfy/source/scss/optional/_lists.scss */
+li + li {
+  margin-top: 0.8125rem; }
+
+/* line 31, source/vendor/tyfy/source/scss/optional/_lists.scss */
+* + dt {
+  margin-top: 0.8125rem; }
+
+/* line 38, source/vendor/tyfy/source/scss/optional/_lists.scss */
+ol ol,
+ol ul,
+ol * + ol,
+ol * + ul,
+ul ol,
+ul ul,
+ul * + ol,
+ul * + ul {
+  margin-top: 0.8125rem; }
+
+/* line 49, source/vendor/tyfy/source/scss/optional/_lists.scss */
+ul.list-icons li {
+  list-style-type: none;
+  position: relative; }
+  /* line 52, source/vendor/tyfy/source/scss/optional/_lists.scss */
+  ul.list-icons li:before {
+    color: #949494;
+    font-family: tyfyicons;
+    margin-right: 0.40625rem;
+    position: absolute;
+    right: 100%;
+    top: 0; }
+
+/* line 61, source/vendor/tyfy/source/scss/optional/_lists.scss */
+ul.list-icons.list-icons-angle li:before {
+  content: ""; }
+
+/* line 66, source/vendor/tyfy/source/scss/optional/_lists.scss */
+ul.no-bullet li {
+  list-style-type: none; }
+
+@media (min-width: 35em) {
+  /* line 73, source/vendor/tyfy/source/scss/optional/_lists.scss */
+  ol.list-cols-2, ol.list-cols-3,
+  ul.list-cols-2,
+  ul.list-cols-3 {
+    -webkit-columns: 2;
+            columns: 2;
+    -webkit-column-gap: 2.4375rem;
+            column-gap: 2.4375rem;
+    margin-bottom: -0.8125rem;
+    padding-right: 2.4375rem; }
+    /* line 80, source/vendor/tyfy/source/scss/optional/_lists.scss */
+    ol.list-cols-2 li, ol.list-cols-3 li,
+    ul.list-cols-2 li,
+    ul.list-cols-3 li {
+      -webkit-column-break-inside: avoid;
+      break-inside: avoid;
+      padding-bottom: 0.8125rem; }
+    /* line 86, source/vendor/tyfy/source/scss/optional/_lists.scss */
+    ol.list-cols-2 li + li, ol.list-cols-3 li + li,
+    ul.list-cols-2 li + li,
+    ul.list-cols-3 li + li {
+      margin-top: 0; } }
+
+@media (min-width: 55em) {
+  /* line 91, source/vendor/tyfy/source/scss/optional/_lists.scss */
+  ol.list-cols-3,
+  ul.list-cols-3 {
+    -webkit-columns: 3;
+            columns: 3; } }
+
+@media (min-width: 35em) {
+  /* line 2, source/vendor/bootstrap/scss/mixins/_clearfix.scss */
+  ol.list-grid-2::after, ol.list-grid-3::after, ol.list-grid-4::after,
+  ul.list-grid-2::after,
+  ul.list-grid-3::after,
+  ul.list-grid-4::after {
+    display: block;
+    clear: both;
+    content: ""; }
+  /* line 103, source/vendor/tyfy/source/scss/optional/_lists.scss */
+  ol.list-grid-2 li, ol.list-grid-3 li, ol.list-grid-4 li,
+  ul.list-grid-2 li,
+  ul.list-grid-3 li,
+  ul.list-grid-4 li {
+    box-sizing: border-box;
+    float: left;
+    padding-right: 2.4375rem;
+    width: 50%; }
+    /* line 108, source/vendor/tyfy/source/scss/optional/_lists.scss */
+    ol.list-grid-2 li:nth-child(2), ol.list-grid-3 li:nth-child(2), ol.list-grid-4 li:nth-child(2),
+    ul.list-grid-2 li:nth-child(2),
+    ul.list-grid-3 li:nth-child(2),
+    ul.list-grid-4 li:nth-child(2) {
+      margin-top: 0; }
+    /* line 111, source/vendor/tyfy/source/scss/optional/_lists.scss */
+    ol.list-grid-2 li:nth-child(2n+1), ol.list-grid-3 li:nth-child(2n+1), ol.list-grid-4 li:nth-child(2n+1),
+    ul.list-grid-2 li:nth-child(2n+1),
+    ul.list-grid-3 li:nth-child(2n+1),
+    ul.list-grid-4 li:nth-child(2n+1) {
+      clear: left; } }
+
+@media (min-width: 55em) {
+  /* line 120, source/vendor/tyfy/source/scss/optional/_lists.scss */
+  ol.list-grid-3 li, ol.list-grid-4 li,
+  ul.list-grid-3 li,
+  ul.list-grid-4 li {
+    width: 33.333%; }
+    /* line 122, source/vendor/tyfy/source/scss/optional/_lists.scss */
+    ol.list-grid-3 li:nth-child(3), ol.list-grid-4 li:nth-child(3),
+    ul.list-grid-3 li:nth-child(3),
+    ul.list-grid-4 li:nth-child(3) {
+      margin-top: 0; }
+    /* line 125, source/vendor/tyfy/source/scss/optional/_lists.scss */
+    ol.list-grid-3 li:nth-child(2n+1), ol.list-grid-4 li:nth-child(2n+1),
+    ul.list-grid-3 li:nth-child(2n+1),
+    ul.list-grid-4 li:nth-child(2n+1) {
+      clear: none; }
+    /* line 128, source/vendor/tyfy/source/scss/optional/_lists.scss */
+    ol.list-grid-3 li:nth-child(3n+1), ol.list-grid-4 li:nth-child(3n+1),
+    ul.list-grid-3 li:nth-child(3n+1),
+    ul.list-grid-4 li:nth-child(3n+1) {
+      clear: left; } }
+
+@media (min-width: 75em) {
+  /* line 136, source/vendor/tyfy/source/scss/optional/_lists.scss */
+  ol.list-grid-4 li,
+  ul.list-grid-4 li {
+    width: 25%; }
+    /* line 138, source/vendor/tyfy/source/scss/optional/_lists.scss */
+    ol.list-grid-4 li:nth-child(4),
+    ul.list-grid-4 li:nth-child(4) {
+      margin-top: 0; }
+    /* line 141, source/vendor/tyfy/source/scss/optional/_lists.scss */
+    ol.list-grid-4 li:nth-child(3n+1),
+    ul.list-grid-4 li:nth-child(3n+1) {
+      clear: none; }
+    /* line 144, source/vendor/tyfy/source/scss/optional/_lists.scss */
+    ol.list-grid-4 li:nth-child(4n+1),
+    ul.list-grid-4 li:nth-child(4n+1) {
+      clear: left; } }
+
 /* line 1, source/vendor/tyfy/source/scss/optional/_quotes.scss */
 blockquote {
   font-style: italic;
@@ -7578,11 +7749,19 @@ h6, .h6 {
 .lead {
   line-height: 1.625rem; }
 
-/* line 61, source/scss/_type.scss */
+/* line 62, source/scss/_type.scss */
+ul[class] li + li {
+  margin-top: inherit; }
+
+/* line 67, source/scss/_type.scss */
+dl[class] * + dt {
+  margin-top: inherit; }
+
+/* line 73, source/scss/_type.scss */
 .font-family-serif {
   font-family: "Merriweather", Georgia, Times, serif; }
 
-/* line 64, source/scss/_type.scss */
+/* line 76, source/scss/_type.scss */
 .font-family-sans-serif {
   font-family: "Montserrat", Helvetica, Arial, sans-serif; }
 
@@ -7597,31 +7776,56 @@ h6, .h6 {
   line-height: 1.625;
   padding: 0; }
 
+/* line 11, source/scss/_nav.scss */
+.navbar-nav .nav-link {
+  padding-right: 0.8125rem;
+  padding-left: 0.8125rem; }
+
 @media (min-width: 576px) {
-  /* line 18, source/scss/_nav.scss */
+  /* line 25, source/scss/_nav.scss */
   .navbar-expand-sm .navbar-nav .nav-link {
     padding-right: 0.8125rem;
     padding-left: 0.8125rem; } }
 
 @media (min-width: 768px) {
-  /* line 18, source/scss/_nav.scss */
+  /* line 25, source/scss/_nav.scss */
   .navbar-expand-md .navbar-nav .nav-link {
     padding-right: 0.8125rem;
     padding-left: 0.8125rem; } }
 
 @media (min-width: 992px) {
-  /* line 18, source/scss/_nav.scss */
+  /* line 25, source/scss/_nav.scss */
   .navbar-expand-lg .navbar-nav .nav-link {
     padding-right: 0.8125rem;
     padding-left: 0.8125rem; } }
 
 @media (min-width: 1200px) {
-  /* line 18, source/scss/_nav.scss */
+  /* line 25, source/scss/_nav.scss */
   .navbar-expand-xl .navbar-nav .nav-link {
     padding-right: 0.8125rem;
     padding-left: 0.8125rem; } }
 
-/* line 18, source/scss/_nav.scss */
+/* line 25, source/scss/_nav.scss */
 .navbar-expand .navbar-nav .nav-link {
   padding-right: 0.8125rem;
   padding-left: 0.8125rem; }
+
+/* line 24, source/vendor/bootstrap/scss/mixins/_hover.scss */
+.navbar-light .navbar-nav .nav-item:not([class*="active"]):focus, .navbar-light .navbar-nav .nav-item:not([class*="active"]):hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  transition: background-color 0.25s; }
+
+/* line 24, source/vendor/bootstrap/scss/mixins/_hover.scss */
+.navbar-light .navbar-toggler:focus, .navbar-light .navbar-toggler:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  transition: background-color 0.25s; }
+
+/* line 24, source/vendor/bootstrap/scss/mixins/_hover.scss */
+.navbar-dark .navbar-nav .nav-item:not([class*="active"]):focus, .navbar-dark .navbar-nav .nav-item:not([class*="active"]):hover {
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: background-color 0.25s; }
+
+/* line 24, source/vendor/bootstrap/scss/mixins/_hover.scss */
+.navbar-dark .navbar-toggler:focus, .navbar-dark .navbar-toggler:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: background-color 0.25s; }

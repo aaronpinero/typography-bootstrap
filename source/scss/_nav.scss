@@ -7,6 +7,13 @@
 	}
 }
 
+.navbar-nav {
+  .nav-link {
+    padding-right:grid(1);
+    padding-left:grid(1);
+  }
+}
+
 .navbar-expand {
   @each $breakpoint in map-keys($grid-breakpoints) {
     $next: breakpoint-next($breakpoint, $grid-breakpoints);
@@ -21,6 +28,40 @@
           }
         }
       }
+    }
+  }
+}
+
+.navbar-light {
+  .navbar-nav {
+    .nav-item:not([class*="active"]) {
+      @include hover-focus {
+	      background-color:rgba(white,0.2);
+	      transition:background-color 0.25s;
+      }
+    }
+  }
+  .navbar-toggler {
+    @include hover-focus {
+	  	background-color:rgba(white,0.2);
+	    transition:background-color 0.25s;
+	  }
+  }
+}
+
+.navbar-dark {
+  .navbar-nav {
+    .nav-item:not([class*="active"]) {
+      @include hover-focus {
+        background-color:rgba(black,0.2);
+	      transition:background-color 0.25s;
+      }
+    }
+  }
+  .navbar-toggler {
+    @include hover-focus {
+      background-color:rgba(black,0.2);
+	    transition:background-color 0.25s;
     }
   }
 }

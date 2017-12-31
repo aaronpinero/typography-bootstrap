@@ -18,7 +18,7 @@
 		<link href="https://fonts.googleapis.com/css?family=Overpass+Mono|Merriweather:400,400i,900,900i|Montserrat:400,400i,700,700i" rel="stylesheet">
 		<link id="mainstyles" rel="stylesheet" href="../dist/style/style.css">
 		<!--/ COMMON HEAD TAGS -->
-		<title>Tyfy Theme for Bootstrap</title>
+		<title>Documentation - Tyfy Bootstrap</title>
 	</head>
 	<body class="">
 		<header class="px-md-4 px-xl-5">
@@ -62,14 +62,32 @@
 		<section id="main" class="py-4 px-md-4 px-xl-5">
 			<div class="container-fluid">
 				<div class="row">
-					<div class="col-md-6">
-						<p class="lead">This customization of Bootstrap v4 applies the the modular typographic scale, vertical rhythm, and intelligent margins from the <a href="http://aaronpinero.net/tyfy/docs"><strong class="tyfy">Tyfy</strong> framework</a> to Bootstrap's robust library of content and user interface patterns.</p>
-						<p><a href="http://aaronpinero.net/tyfy/docs/modules.html">Modules</a> from the <strong class="tyfy">Tyfy</strong> framework are used to amend Bootstrap in a maintainable way, consistent with Bootstrap's <a href="https://getbootstrap.com/docs/4.0/getting-started/theming/">theming guide</a>. Bootstrap has also been customized by editing existing variables and adding new ones to provide additional font and color options.</p>
-						<p>While some styles have been added, overrides to Bootstrap style definitions have been limited to the minimum necessary. The overrides are most often used in cases where editing Bootstrap's default variables was not enough to create the desired results.</p>
+					<div class="col-md-9 pb-4">
+
+						<h1>Documentation</h1>
+						<h2>Colors</h2>
+						<p>Several new colors have been added to Bootstrap's <code>$colors</code> SASS map. These colors can be accessed in SASS using the <a href="https://getbootstrap.com/docs/4.0/getting-started/theming/#functions">color functions</a> provided in Bootstrap. The additional colors come from the Columbia College web style guide.</p>
+						<dl>
+							<dt>$blue-cc</dt><dd>#66aee6; // columbia college blue, p292</dd>
+							<dt>$blue-ca</dt><dd>#418fde; // college alumni blue, p279</dd>
+							<dt>$blue-cu</dt><dd>#b9d9eb; // columbia university blue, p290</dd>
+							<dt>$blue-cd</dt><dd>#002855; // college dark blue, p295</dd>
+							<dt>$gold-cc</dt><dd>#fcd450; // college gold, p122</dd>
+							<dt>$gray-wl</dt><dd>#cdc9c5; // college warm grey light, p3</dd>
+							<dt>$gray-wd</dt><dd>#5e514e; // college warm grey dark, p11</dd>
+							<dt>$blue-cu2</dt><dd>#a8cee2; // columbia university blue 2, p291</dd>
+							<dt>$blue-cu3</dt><dd>#75aadb; // columbia university blue 3, p284</dd>
+							<dt>$blue-cu4</dt><dd>#0038a8; // columbia university blue 4, p286</dd>
+							<dt>$blue-ad</dt><dd>#0060a8; // cc-seas admissions blue, p300</dd>
+							<dt>$cyan-ad</dt><dd>#0099e6; // cc-seas admissions cyan</dd>
+						</dl>
+						<h2>Theme Colors</h2>
+						<p>Tyfy Bootstrap redefines the primary color using one of added colors. It also introduces a new theme color that can be implemented using Bootstrap's color theme classes.</p>
+						<dl>
+							<dt>$primary</dt><dd>$blue-ad</dd>
+							<dt>$cu</dt><dd>$blue-cu</dd>
+						</dl>
 					</div>
-					<aside class="col-md-3 offset-md-3">
-						<p class="text-secondary font-italic"><small>To see the difference between Tyfy Bootstrap and regular Bootstrap, use the "Theme Toggle" option in the main menu.</small></p>
-					</aside>
 				</div>
 			</div>
 		</section>

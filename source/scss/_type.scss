@@ -57,6 +57,18 @@ h6, .h6 {
 	line-height:leading($lead-font-size,tall);
 }
 
+// Margins for non-generic items
+ul[class] {
+	li + li {
+		margin-top:inherit;
+	}
+}
+dl[class] {
+	* + dt {
+		margin-top:inherit;
+	}
+}
+
 // Font face selection classes
 .font-family-serif {
 	font-family:$font-family-serif;
