@@ -3,6 +3,7 @@
 
 
 // tyfy variable customizations
+$tyfy-grid-unit:0.75rem;
 $tyfy-serif:"Merriweather",Georgia,Times,serif;
 $tyfy-sans:"Montserrat",Helvetica,Arial,sans-serif;
 $tyfy-font-base:$tyfy-serif;
@@ -61,3 +62,4 @@ $tyfy-font-base:$tyfy-serif;
 @import "tables";
 @import "navbar";
 @import "buttons";
+@import "card";

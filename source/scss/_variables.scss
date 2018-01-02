@@ -87,8 +87,14 @@ $colors: (
 //  "gray-dark":  $gray-800
 //), $colors);
 //
-$primary:       $blue-ad;
+//$primary:       $blue !default;
 $cu:						$blue-cu;
+$cu2:						$blue-cu2;
+$cu3:						$blue-cu3;
+$cu4:						$blue-cu4;
+$cc:						$blue-cc;
+$ca:						$blue-ca;
+$ad:						$blue-ad;
 //$secondary:     $gray-600 !default;
 //$success:       $green !default;
 //$info:          $cyan !default;
@@ -98,7 +104,13 @@ $cu:						$blue-cu;
 //$dark:          $gray-800 !default;
 //
 $theme-colors: (
-	"cu": $blue-cu
+	"cu": $blue-cu,
+	"cu2": $blue-cu2,
+	"cu3": $blue-cu3,
+	"cu4": $blue-cu4,
+	"cc": $blue-cc,
+	"ca": $blue-ca,
+	"ad": $blue-ad
 );
 //$theme-colors: map-merge((
 //  "primary":    $primary,
@@ -171,7 +183,7 @@ $spacer:	grid(2); // equivalent to the base line height
 ////
 //// Style anchor elements.
 //
-//$link-color:                theme-color("primary") !default;
+$link-color:                $blue-ca;
 //$link-decoration:           none !default;
 //$link-hover-color:          darken($link-color, 15%) !default;
 //$link-hover-decoration:     underline !default;
@@ -674,8 +686,8 @@ $nav-link-padding-x:                grid(1);
 //
 //// Cards
 //
-//$card-spacer-y:                     .75rem !default;
-//$card-spacer-x:                     1.25rem !default;
+$card-spacer-y:                     grid(1);
+$card-spacer-x:                     grid(1.5);
 //$card-border-width:                 $border-width !default;
 //$card-border-radius:                $border-radius !default;
 //$card-border-color:                 rgba($black, .125) !default;
@@ -683,13 +695,13 @@ $nav-link-padding-x:                grid(1);
 //$card-cap-bg:                       rgba($black, .03) !default;
 //$card-bg:                           $white !default;
 //
-//$card-img-overlay-padding:          1.25rem !default;
+$card-img-overlay-padding:          grid(1.5);
 //
 //$card-group-margin:                 ($grid-gutter-width / 2) !default;
 //$card-deck-margin:                  $card-group-margin !default;
 //
 //$card-columns-count:                3 !default;
-//$card-columns-gap:                  1.25rem !default;
+$card-columns-gap:                  grid(1.5);
 //$card-columns-margin:               $card-spacer-y !default;
 //
 //
