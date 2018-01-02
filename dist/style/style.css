@@ -1862,7 +1862,7 @@ pre {
 .form-control {
   display: block;
   width: 100%;
-  padding: 0.375rem 0.75rem;
+  padding: 0.40625rem 0.8125rem;
   font-size: 1rem;
   line-height: 1.625;
   color: #495057;
@@ -1896,7 +1896,7 @@ pre {
 
 /* line 60, source/vendor/bootstrap/scss/_forms.scss */
 select.form-control:not([size]):not([multiple]) {
-  height: calc(2.375rem + 2px); }
+  height: calc(2.4375rem + 2px); }
 
 /* line 64, source/vendor/bootstrap/scss/_forms.scss */
 select.form-control:focus::-ms-value {
@@ -1911,32 +1911,32 @@ select.form-control:focus::-ms-value {
 
 /* line 89, source/vendor/bootstrap/scss/_forms.scss */
 .col-form-label {
-  padding-top: calc(0.375rem + 1px);
-  padding-bottom: calc(0.375rem + 1px);
+  padding-top: calc(0.40625rem + 1px);
+  padding-bottom: calc(0.40625rem + 1px);
   margin-bottom: 0;
   font-size: inherit;
   line-height: 1.625; }
 
 /* line 97, source/vendor/bootstrap/scss/_forms.scss */
 .col-form-label-lg {
-  padding-top: calc(0.5rem + 1px);
-  padding-bottom: calc(0.5rem + 1px);
+  padding-top: calc(0.8125rem + 1px);
+  padding-bottom: calc(0.8125rem + 1px);
   font-size: 1.2rem;
-  line-height: 1.5; }
+  line-height: 1.35417; }
 
 /* line 104, source/vendor/bootstrap/scss/_forms.scss */
 .col-form-label-sm {
-  padding-top: calc(0.25rem + 1px);
-  padding-bottom: calc(0.25rem + 1px);
+  padding-top: calc(0.20312rem + 1px);
+  padding-bottom: calc(0.20312rem + 1px);
   font-size: 0.83333rem;
-  line-height: 1.5; }
+  line-height: 1.95; }
 
 /* line 117, source/vendor/bootstrap/scss/_forms.scss */
 .form-control-plaintext {
   display: block;
   width: 100%;
-  padding-top: 0.375rem;
-  padding-bottom: 0.375rem;
+  padding-top: 0.40625rem;
+  padding-bottom: 0.40625rem;
   margin-bottom: 0;
   line-height: 1.625;
   background-color: transparent;
@@ -1961,9 +1961,9 @@ select.form-control:focus::-ms-value {
 .input-group-sm > .input-group-append > .input-group-text,
 .input-group-sm > .input-group-prepend > .btn,
 .input-group-sm > .input-group-append > .btn {
-  padding: 0.25rem 0.5rem;
+  padding: 0.20312rem 0.60938rem;
   font-size: 0.83333rem;
-  line-height: 1.5;
+  line-height: 1.95;
   border-radius: 0.13544rem; }
 
 /* line 152, source/vendor/bootstrap/scss/_forms.scss */
@@ -1972,7 +1972,7 @@ select.form-control-sm:not([size]):not([multiple]), .input-group-sm > select.for
 .input-group-sm > .input-group-append > select.input-group-text:not([size]):not([multiple]),
 .input-group-sm > .input-group-prepend > select.btn:not([size]):not([multiple]),
 .input-group-sm > .input-group-append > select.btn:not([size]):not([multiple]) {
-  height: calc(1.75rem + 2px); }
+  height: calc(2.03125rem + 2px); }
 
 /* line 157, source/vendor/bootstrap/scss/_forms.scss */
 .form-control-lg, .input-group-lg > .form-control,
@@ -1980,9 +1980,9 @@ select.form-control-sm:not([size]):not([multiple]), .input-group-sm > select.for
 .input-group-lg > .input-group-append > .input-group-text,
 .input-group-lg > .input-group-prepend > .btn,
 .input-group-lg > .input-group-append > .btn {
-  padding: 0.5rem 1rem;
+  padding: 0.8125rem 1.21875rem;
   font-size: 1.2rem;
-  line-height: 1.5;
+  line-height: 1.35417;
   border-radius: 0.26813rem; }
 
 /* line 165, source/vendor/bootstrap/scss/_forms.scss */
@@ -1991,7 +1991,7 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
 .input-group-lg > .input-group-append > select.input-group-text:not([size]):not([multiple]),
 .input-group-lg > .input-group-prepend > select.btn:not([size]):not([multiple]),
 .input-group-lg > .input-group-append > select.btn:not([size]):not([multiple]) {
-  height: calc(2.8rem + 2px); }
+  height: calc(3.25rem + 2px); }
 
 /* line 176, source/vendor/bootstrap/scss/_forms.scss */
 .form-group {
@@ -2304,7 +2304,7 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
   -webkit-user-select: none;
           user-select: none;
   border: 1px solid transparent;
-  padding: 0.375rem 0.75rem;
+  padding: calc(0.40625rem - 1px) calc(0.8125rem - 1px);
   font-size: 1rem;
   line-height: 1.625;
   border-radius: 0.20312rem;
@@ -2839,16 +2839,16 @@ fieldset[disabled] a.btn {
 
 /* line 117, source/vendor/bootstrap/scss/_buttons.scss */
 .btn-lg, .btn-group-lg > .btn {
-  padding: 0.5rem 1rem;
+  padding: calc(0.8125rem - 1px) calc(1.21875rem - 1px);
   font-size: 1.2rem;
-  line-height: 1.5;
+  line-height: 1.35417;
   border-radius: 0.26813rem; }
 
 /* line 121, source/vendor/bootstrap/scss/_buttons.scss */
 .btn-sm, .btn-group-sm > .btn {
-  padding: 0.25rem 0.5rem;
+  padding: calc(0.20312rem - 1px) calc(0.60938rem - 1px);
   font-size: 0.83333rem;
-  line-height: 1.5;
+  line-height: 1.95;
   border-radius: 0.13544rem; }
 
 /* line 130, source/vendor/bootstrap/scss/_buttons.scss */
@@ -3132,21 +3132,21 @@ tbody.collapse.show {
 
 /* line 75, source/vendor/bootstrap/scss/_button-group.scss */
 .dropdown-toggle-split {
-  padding-right: 0.5625rem;
-  padding-left: 0.5625rem; }
+  padding-right: 0.60938rem;
+  padding-left: 0.60938rem; }
   /* line 79, source/vendor/bootstrap/scss/_button-group.scss */
   .dropdown-toggle-split::after {
     margin-left: 0; }
 
 /* line 84, source/vendor/bootstrap/scss/_button-group.scss */
 .btn-sm + .dropdown-toggle-split, .btn-group-sm > .btn + .dropdown-toggle-split {
-  padding-right: 0.375rem;
-  padding-left: 0.375rem; }
+  padding-right: 0.45703rem;
+  padding-left: 0.45703rem; }
 
 /* line 89, source/vendor/bootstrap/scss/_button-group.scss */
 .btn-lg + .dropdown-toggle-split, .btn-group-lg > .btn + .dropdown-toggle-split {
-  padding-right: 0.75rem;
-  padding-left: 0.75rem; }
+  padding-right: 0.91406rem;
+  padding-left: 0.91406rem; }
 
 /* line 111, source/vendor/bootstrap/scss/_button-group.scss */
 .btn-group-vertical {
@@ -3280,7 +3280,7 @@ tbody.collapse.show {
 
 /* line 90, source/vendor/bootstrap/scss/_input-group.scss */
 .input-group-text {
-  padding: 0.375rem 0.75rem;
+  padding: 0.40625rem 0.8125rem;
   margin-bottom: 0;
   font-size: 1rem;
   font-weight: 400;
@@ -3417,7 +3417,7 @@ tbody.collapse.show {
 .custom-select {
   display: inline-block;
   width: 100%;
-  height: calc(2.375rem + 2px);
+  height: calc(2.4375rem + 2px);
   padding: 0.375rem 1.75rem 0.375rem 0.75rem;
   line-height: 1.625;
   color: #495057;
@@ -3452,14 +3452,14 @@ tbody.collapse.show {
 
 /* line 200, source/vendor/bootstrap/scss/_custom-forms.scss */
 .custom-select-sm {
-  height: calc(1.75rem + 2px);
+  height: calc(2.03125rem + 2px);
   padding-top: 0.375rem;
   padding-bottom: 0.375rem;
   font-size: 75%; }
 
 /* line 207, source/vendor/bootstrap/scss/_custom-forms.scss */
 .custom-select-lg {
-  height: calc(2.8rem + 2px);
+  height: calc(3.25rem + 2px);
   padding-top: 0.375rem;
   padding-bottom: 0.375rem;
   font-size: 125%; }
@@ -3469,7 +3469,7 @@ tbody.collapse.show {
   position: relative;
   display: inline-block;
   width: 100%;
-  height: calc(2.375rem + 2px);
+  height: calc(2.4375rem + 2px);
   margin-bottom: 0; }
 
 /* line 227, source/vendor/bootstrap/scss/_custom-forms.scss */
@@ -3477,7 +3477,7 @@ tbody.collapse.show {
   position: relative;
   z-index: 2;
   width: 100%;
-  height: calc(2.375rem + 2px);
+  height: calc(2.4375rem + 2px);
   margin: 0;
   opacity: 0; }
   /* line 235, source/vendor/bootstrap/scss/_custom-forms.scss */
@@ -3498,8 +3498,8 @@ tbody.collapse.show {
   right: 0;
   left: 0;
   z-index: 1;
-  height: calc(2.375rem + 2px);
-  padding: 0.375rem 0.75rem;
+  height: calc(2.4375rem + 2px);
+  padding: 0.40625rem 0.8125rem;
   line-height: 1.625;
   color: #495057;
   background-color: #fff;
@@ -3513,8 +3513,8 @@ tbody.collapse.show {
     bottom: 0;
     z-index: 3;
     display: block;
-    height: calc(calc(2.375rem + 2px) - 1px * 2);
-    padding: 0.375rem 0.75rem;
+    height: calc(calc(2.4375rem + 2px) - 1px * 2);
+    padding: 0.40625rem 0.8125rem;
     line-height: 1.625;
     color: #495057;
     content: "Browse";
@@ -4342,7 +4342,7 @@ tbody.collapse.show {
 .pagination-lg .page-link {
   padding: 0.75rem 1.5rem;
   font-size: 1.2rem;
-  line-height: 1.5; }
+  line-height: 1.35417; }
 
 /* line 12, source/vendor/bootstrap/scss/mixins/_pagination.scss */
 .pagination-lg .page-item:first-child .page-link {
@@ -4358,7 +4358,7 @@ tbody.collapse.show {
 .pagination-sm .page-link {
   padding: 0.25rem 0.5rem;
   font-size: 0.83333rem;
-  line-height: 1.5; }
+  line-height: 1.95; }
 
 /* line 12, source/vendor/bootstrap/scss/mixins/_pagination.scss */
 .pagination-sm .page-item:first-child .page-link {
@@ -7769,43 +7769,43 @@ dl[class] * + dt {
 .table {
   margin-bottom: 0; }
 
-/* line 2, source/scss/_nav.scss */
+/* line 2, source/scss/_navbar.scss */
 .navbar-toggler.navbar-text {
   border: none;
   font-size: 1rem;
   line-height: 1.625;
   padding: 0; }
 
-/* line 11, source/scss/_nav.scss */
+/* line 11, source/scss/_navbar.scss */
 .navbar-nav .nav-link {
   padding-right: 0.8125rem;
   padding-left: 0.8125rem; }
 
 @media (min-width: 576px) {
-  /* line 25, source/scss/_nav.scss */
+  /* line 25, source/scss/_navbar.scss */
   .navbar-expand-sm .navbar-nav .nav-link {
     padding-right: 0.8125rem;
     padding-left: 0.8125rem; } }
 
 @media (min-width: 768px) {
-  /* line 25, source/scss/_nav.scss */
+  /* line 25, source/scss/_navbar.scss */
   .navbar-expand-md .navbar-nav .nav-link {
     padding-right: 0.8125rem;
     padding-left: 0.8125rem; } }
 
 @media (min-width: 992px) {
-  /* line 25, source/scss/_nav.scss */
+  /* line 25, source/scss/_navbar.scss */
   .navbar-expand-lg .navbar-nav .nav-link {
     padding-right: 0.8125rem;
     padding-left: 0.8125rem; } }
 
 @media (min-width: 1200px) {
-  /* line 25, source/scss/_nav.scss */
+  /* line 25, source/scss/_navbar.scss */
   .navbar-expand-xl .navbar-nav .nav-link {
     padding-right: 0.8125rem;
     padding-left: 0.8125rem; } }
 
-/* line 25, source/scss/_nav.scss */
+/* line 25, source/scss/_navbar.scss */
 .navbar-expand .navbar-nav .nav-link {
   padding-right: 0.8125rem;
   padding-left: 0.8125rem; }
@@ -7829,3 +7829,7 @@ dl[class] * + dt {
 .navbar-dark .navbar-toggler:focus, .navbar-dark .navbar-toggler:hover {
   background-color: rgba(0, 0, 0, 0.2);
   transition: background-color 0.25s; }
+
+/* line 1, source/scss/_buttons.scss */
+.btn {
+  font-family: "Montserrat", Helvetica, Arial, sans-serif; }

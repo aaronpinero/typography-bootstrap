@@ -21,6 +21,9 @@ $tyfy-font-base:$tyfy-serif;
 @import "../vendor/bootstrap/scss/variables";
 @import "../vendor/bootstrap/scss/mixins";
 
+// bootstrap mixin customizations
+@import "mixins";
+
 // bootstrap optional
 @import "../vendor/bootstrap/scss/root";
 @import "../vendor/bootstrap/scss/reboot";
@@ -56,4 +59,5 @@ $tyfy-font-base:$tyfy-serif;
 @import "grid";
 @import "type";
 @import "tables";
-@import "nav";
+@import "navbar";
+@import "buttons";
