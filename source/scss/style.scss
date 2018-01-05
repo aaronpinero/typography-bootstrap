@@ -1,7 +1,6 @@
 // tyfy icon font
 @import "../vendor/tyfy/dist/fonts/tyfyicons/tyfyicons.scss";
 
-
 // tyfy variable customizations
 $tyfy-grid-unit:0.75rem;
 $tyfy-serif:"Merriweather",Georgia,Times,serif;
@@ -17,37 +16,8 @@ $tyfy-font-base:$tyfy-serif;
 // bootstrap variable customizations
 @import "variables";
 
-// bootstrap required
-@import "../vendor/bootstrap/scss/functions";
-@import "../vendor/bootstrap/scss/variables";
-@import "../vendor/bootstrap/scss/mixins";
-
-// bootstrap mixin customizations
-@import "mixins";
-
-// bootstrap optional
-@import "../vendor/bootstrap/scss/root";
-@import "../vendor/bootstrap/scss/reboot";
-@import "../vendor/bootstrap/scss/type";
-@import "../vendor/bootstrap/scss/images";
-@import "../vendor/bootstrap/scss/code";
-@import "../vendor/bootstrap/scss/grid";
-@import "../vendor/bootstrap/scss/tables";
-@import "../vendor/bootstrap/scss/forms";
-@import "../vendor/bootstrap/scss/buttons";
-@import "../vendor/bootstrap/scss/transitions";
-@import "../vendor/bootstrap/scss/dropdown";
-@import "../vendor/bootstrap/scss/button-group";
-@import "../vendor/bootstrap/scss/input-group";
-@import "../vendor/bootstrap/scss/custom-forms";
-@import "../vendor/bootstrap/scss/nav";
-@import "../vendor/bootstrap/scss/navbar";
-@import "../vendor/bootstrap/scss/card";
-@import "../vendor/bootstrap/scss/breadcrumb";
-@import "../vendor/bootstrap/scss/pagination";
-@import "../vendor/bootstrap/scss/badge";
-
-@import "../vendor/bootstrap/scss/utilities";
+// bootstrap
+@import "../vendor/bootstrap/scss/bootstrap";
 
 // tyfy essential
 @import "../vendor/tyfy/source/scss/essential/body";
@@ -55,7 +25,7 @@ $tyfy-font-base:$tyfy-serif;
 @import "../vendor/tyfy/source/scss/optional/lists";
 @import "../vendor/tyfy/source/scss/optional/quotes";
 
-// theme
+// theme additions
 @import "reboot";
 @import "grid";
 @import "type";

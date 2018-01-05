@@ -240,7 +240,7 @@ $grid-gutter-width:						grid(4);
 $line-height-lg:              leading(scale(1),base) / scale(1); // divide by font size to remove units and make relative
 $line-height-sm:              leading(scale(-1),base) / scale(-1); // divide by font size to remove units and make relative
 //
-//$border-width:                1px !default;
+$border-width:                grid(0.08333);
 //$border-color:                $gray-200 !default;
 //
 $border-radius:               grid(0.25);
@@ -358,20 +358,20 @@ $table-cell-padding-sm:       grid(0.5);
 ////
 //// Shared variables that are reassigned to `$input-` and `$btn-` specific variables.
 //
-$input-btn-padding-y:         grid(0.5);
-$input-btn-padding-x:       	grid(1);
+$input-btn-padding-y:         grid(0.5) - $border-width;
+$input-btn-padding-x:       	grid(1) - $border-width;
 //$input-btn-line-height:       $line-height-base !default;
 //
 //$input-btn-focus-width:       .2rem !default;
 //$input-btn-focus-color:       rgba(theme-color("primary"), .25) !default;
 //$input-btn-focus-box-shadow:  0 0 0 $input-btn-focus-width $input-btn-focus-color !default;
 //
-$input-btn-padding-y-sm:      grid(0.25);
-$input-btn-padding-x-sm:      grid(0.75);
+$input-btn-padding-y-sm:      grid(0.25) - $border-width;
+$input-btn-padding-x-sm:      grid(0.75) - $border-width;
 //$input-btn-line-height-sm:    $line-height-sm !default;
 //
-$input-btn-padding-y-lg:      grid(1);
-$input-btn-padding-x-lg:      grid(1.5);
+$input-btn-padding-y-lg:      grid(1) - $border-width;
+$input-btn-padding-x-lg:      grid(1.5) - $border-width;
 //$input-btn-line-height-lg:    $line-height-lg !default;
 //
 //$input-btn-border-width:      $border-width !default;
