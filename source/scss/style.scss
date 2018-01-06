@@ -1,8 +1,9 @@
 // tyfy variable customizations
 $tyfy-grid-unit:0.75rem;
 $tyfy-serif:"Merriweather",Georgia,Times,serif;
-$tyfy-sans:"Montserrat",Helvetica,Arial,sans-serif;
+$tyfy-sans:"Roboto",Helvetica,Arial,sans-serif;
 $tyfy-font-base:$tyfy-serif;
+$tyfy-symbol:"Material Icons";
 
 // tyfy required
 @import "../vendor/tyfy/source/scss/required/core";
