@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<%include head.html%>
+		<title>Documentation - Tyfy Bootstrap</title>
+	</head>
+	<body class="">
+		<%include header.html%>
+		<section id="main" class="py-3 px-md-3 px-lg-4 px-xl-5">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-9">
+
+						<h1>Documentation</h1>
+						<h2>Variables</h2>
+						<p class="lead">The Tyfy Theme for Bootstrap introduces numerous new or updated SASS variables.</p>
+						<h3>Grid</h3>
+						<p>A new grid unit value governs margins, paddings, and line-heights in the theme.</p>
+						<dl>
+							<dt>$tyfy-grid-unit</dt><dd>This is a rem-unit value that should be set to half of the default line height. As this is a Tyfy variable, a custom value for the variable should be add at the very top of the main stylesheet.</dd>
+							<dt>$spacer</dt><dd>This Bootstrap variable has been set to <code>2 * $tyfy-grid-unit</code>.
+						</dl>
+						<h3>Colors</h3>
+						<p>Several new colors have been added to Bootstrap's <code>$colors</code> SASS map. These colors can be accessed in SASS using the <a href="https://getbootstrap.com/docs/4.0/getting-started/theming/#functions">color functions</a> provided in Bootstrap. The additional colors come from the Columbia College web style guide.</p>
+						<dl>
+							<dt>$blue-cc</dt><dd>#66aee6; // columbia college blue, p292</dd>
+							<dt>$blue-ca</dt><dd>#418fde; // college alumni blue, p279</dd>
+							<dt>$blue-cu</dt><dd>#b9d9eb; // columbia university blue, p290</dd>
+							<dt>$blue-cd</dt><dd>#002855; // college dark blue, p295</dd>
+							<dt>$gold-cc</dt><dd>#fcd450; // college gold, p122</dd>
+							<dt>$gray-wl</dt><dd>#cdc9c5; // college warm grey light, p3</dd>
+							<dt>$gray-wd</dt><dd>#5e514e; // college warm grey dark, p11</dd>
+							<dt>$blue-cu2</dt><dd>#a8cee2; // columbia university blue 2, p291</dd>
+							<dt>$blue-cu3</dt><dd>#75aadb; // columbia university blue 3, p284</dd>
+							<dt>$blue-cu4</dt><dd>#0038a8; // columbia university blue 4, p286</dd>
+							<dt>$blue-ad</dt><dd>#0060a8; // cc-seas admissions blue, p300</dd>
+							<dt>$cyan-ad</dt><dd>#0099e6; // cc-seas admissions cyan</dd>
+						</dl>
+						<h3>Theme Colors</h3>
+						<p>Tyfy Bootstrap redefines the primary color using one of added colors. It also introduces a new theme color that can be implemented using Bootstrap's color theme classes.</p>
+						<dl>
+							<dt>$primary</dt><dd>$blue-ad</dd>
+							<dt>$cu</dt><dd>$blue-cu</dd>
+						</dl>
+					</div>
+				</div>
+			</div>
+		</section>
+		<%include footer.html%>
+	</body>
+</html>

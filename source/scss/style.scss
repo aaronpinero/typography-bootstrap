@@ -1,6 +1,3 @@
-// tyfy icon font
-@import "../vendor/tyfy/dist/fonts/tyfyicons/tyfyicons.scss";
-
 // tyfy variable customizations
 $tyfy-grid-unit:0.75rem;
 $tyfy-serif:"Merriweather",Georgia,Times,serif;
@@ -19,7 +16,7 @@ $tyfy-font-base:$tyfy-serif;
 // bootstrap
 @import "../vendor/bootstrap/scss/bootstrap";
 
-// tyfy essential
+// tyfy
 @import "../vendor/tyfy/source/scss/essential/body";
 @import "../vendor/tyfy/source/scss/essential/spacing";
 @import "../vendor/tyfy/source/scss/optional/lists";
