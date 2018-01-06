@@ -15,7 +15,7 @@ $tyfy-symbol:"Material Icons";
 @import "variables";
 
 // bootstrap
-@import "../vendor/bootstrap/scss/bootstrap";
+@import "../../node_modules/bootstrap/scss/bootstrap";
 
 // tyfy
 @import "../vendor/tyfy/source/scss/essential/body";
@@ -31,3 +31,4 @@ $tyfy-symbol:"Material Icons";
 @import "navbar";
 @import "buttons";
 @import "card";
+@import "list_group";

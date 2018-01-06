@@ -58,6 +58,11 @@ h6, .h6 {
 }
 
 // Margins for non-generic items
+* + ul[class],
+* + ol[class],
+* + dl[class] {
+	margin-top:inherit;
+}
 ul[class] {
 	li + li {
 		margin-top:inherit;
@@ -79,7 +84,15 @@ dl[class] {
 
 // Icon font
 .material-icons {
+	visibility:hidden;
 	font-size:140%;
 	line-height:inherit;
 	vertical-align:middle;
+	.wf-materialicons-n4-active.wf-active & {
+		visibility:visible;
+	}
+	.wf-active.wf-materialicons-n4-inactive,
+	.wf-inactive {
+		display:none;
+	}
 }
