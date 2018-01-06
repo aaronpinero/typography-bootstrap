@@ -94,7 +94,9 @@ $cu3:						$blue-cu3;
 $cu4:						$blue-cu4;
 $cc:						$blue-cc;
 $ca:						$blue-ca;
+$cd:						$blue-cd;
 $ad:						$blue-ad;
+$cy:						$cyan-ad;
 //$secondary:     $gray-600 !default;
 //$success:       $green !default;
 //$info:          $cyan !default;
@@ -110,6 +112,8 @@ $theme-colors: (
 	"cu4": $blue-cu4,
 	"cc": $blue-cc,
 	"ca": $blue-ca,
+	"cd":	$blue-cd,
+	"cy":	$cyan-ad,
 	"ad": $blue-ad
 );
 //$theme-colors: map-merge((
@@ -565,7 +569,7 @@ $input-btn-padding-x-lg:      grid(1.5) - $border-width;
 //// Dropdown menu container and contents.
 //
 //$dropdown-min-width:                10rem !default;
-//$dropdown-padding-y:                .5rem !default;
+$dropdown-padding-y:                grid(0.5);
 //$dropdown-spacer:                   .125rem !default;
 //$dropdown-bg:                       $white !default;
 //$dropdown-border-color:             rgba($black, .15) !default;
@@ -583,8 +587,8 @@ $input-btn-padding-x-lg:      grid(1.5) - $border-width;
 //
 //$dropdown-link-disabled-color:      $gray-600 !default;
 //
-//$dropdown-item-padding-y:           .25rem !default;
-//$dropdown-item-padding-x:           1.5rem !default;
+$dropdown-item-padding-y:           grid(0.5);
+$dropdown-item-padding-x:           grid(1);
 //
 //$dropdown-header-color:             $gray-600 !default;
 //
