@@ -26,7 +26,7 @@
 		<meta name="description" content="">
 		<link id="mainstyles" rel="stylesheet" href="../dist/style/style.css">
 		<!--/ COMMON HEAD TAGS -->
-		<title>Buttons - Examples - Tyfy Bootstrap</title>
+		<title>Documentation - Tyfy Bootstrap</title>
 	</head>
 	<body class="">
 		<!-- COMMON HEADER -->
@@ -82,73 +82,29 @@
 				<div class="row">
 					<div class="col-md-9">
 
-						<h1>Buttons</h1>
-						<h2>Button Themes</h2>
-						<p>In addition to the default Bootstrap themes, additional themes have been created that can be used for button colors.</p>
-						<div class="card">
-							<div class="card-body">
-								<a class="btn btn-cu" href="#" role="button">CU</a>
-								<a class="btn btn-cu2" href="#" role="button">CU2</a>
-								<a class="btn btn-cu3" href="#" role="button">CU3</a>
-								<a class="btn btn-cu4" href="#" role="button">CU4</a>
-								<a class="btn btn-cc" href="#" role="button">CC</a>
-								<a class="btn btn-ca" href="#" role="button">CA</a>
-								<a class="btn btn-cd" href="#" role="button">CD</a>
-								<a class="btn btn-cy" href="#" role="button">CY</a>
-								<a class="btn btn-ad" href="#" role="button">AD</a>
-							</div>
-							<div class="card-body bg-light">
-								<pre><code>&lt;a class="btn btn-cu" href="#" role="button"&gt;CU&lt;/a&gt;
-&lt;a class="btn btn-cu2" href="#" role="button"&gt;CU2&lt;/a&gt;
-&lt;a class="btn btn-cu3" href="#" role="button"&gt;CU3&lt;/a&gt;
-&lt;a class="btn btn-cu4" href="#" role="button"&gt;CU4&lt;/a&gt;
-&lt;a class="btn btn-cc" href="#" role="button"&gt;CC&lt;/a&gt;
-&lt;a class="btn btn-ca" href="#" role="button"&gt;CA&lt;/a&gt;
-&lt;a class="btn btn-cd" href="#" role="button"&gt;CD&lt;/a&gt;
-&lt;a class="btn btn-cy" href="#" role="button"&gt;CY&lt;/a&gt;
-&lt;a class="btn btn-ad" href="#" role="button"&gt;AD&lt;/a&gt;</code></pre>
-							</div>
-						</div>
-						<h2>Outline Buttons</h2>
-						<p>As with the default Bootstrap theme colors, the custom theme colors can also be used for outline buttons.</p>
-						<div class="card">
-							<div class="card-body">
-								<a class="btn btn-outline-cu" href="#" role="button">CU</a>
-								<a class="btn btn-outline-cu2" href="#" role="button">CU2</a>
-								<a class="btn btn-outline-cu3" href="#" role="button">CU3</a>
-								<a class="btn btn-outline-cu4" href="#" role="button">CU4</a>
-								<a class="btn btn-outline-cc" href="#" role="button">CC</a>
-								<a class="btn btn-outline-ca" href="#" role="button">CA</a>
-								<a class="btn btn-outline-cd" href="#" role="button">CD</a>
-								<a class="btn btn-outline-cy" href="#" role="button">CY</a>
-								<a class="btn btn-outline-ad" href="#" role="button">AD</a>
-							</div>
-							<div class="card-body bg-light">
-								<pre><code>&lt;a class="btn btn-outline-cu" href="#" role="button"&gt;CU&lt;/a&gt;
-&lt;a class="btn btn-outline-cu2" href="#" role="button"&gt;CU2&lt;/a&gt;
-&lt;a class="btn btn-outline-cu3" href="#" role="button"&gt;CU3&lt;/a&gt;
-&lt;a class="btn btn-outline-cu4" href="#" role="button"&gt;CU4&lt;/a&gt;
-&lt;a class="btn btn-outline-cc" href="#" role="button"&gt;CC&lt;/a&gt;
-&lt;a class="btn btn-outline-ca" href="#" role="button"&gt;CA&lt;/a&gt;
-&lt;a class="btn btn-outline-cd" href="#" role="button"&gt;CD&lt;/a&gt;
-&lt;a class="btn btn-outline-cy" href="#" role="button"&gt;CY&lt;/a&gt;
-&lt;a class="btn btn-outline-ad" href="#" role="button"&gt;AD&lt;/a&gt;</code></pre>
-							</div>
-						</div>
-						<h2>Button Sizes</h2>
-						<p>The padding and line-height for all buttons sizes now depend on the Tyfy core grid unit, enforcing the baseline grid.</p>
-						<div class="card">
-							<div class="card-body">
-								<a class="btn btn-lg btn-ca" href="#" role="button">Large</a>
-								<a class="btn btn-ca" href="#" role="button">Normal</a>
-								<a class="btn btn-sm btn-ca" href="#" role="button">Small</a>
-							</div>
-							<div class="card-body bg-light">
-								<pre><code>&lt;a class="btn btn-lg btn-ca" href="#" role="button"&gt;Large&lt;/a&gt;
-&lt;a class="btn btn-ca" href="#" role="button"&gt;Normal&lt;/a&gt;
-&lt;a class="btn btn-sm btn-ca" href="#" role="button"&gt;Small&lt;/a&gt;</code></pre>
-							</div>
-						</div>
+						<h1>Requirements</h1>
+						<p>Dependencies for building Tyfy Bootstrap CSS files is handled by node.js. However, there are a number of additional requirements 
+						<h2>Bootstrap</h2>
+						<p>Bootstrap's Javascript-enabled components depend on the following libraries, as described in the <a href="https://getbootstrap.com/docs/4.0/getting-started/introduction/#js">Bootstrap startup documentation</a>:</p>
+						<ul>
+							<li><a href="https://blog.jquery.com/2016/06/09/jquery-3-0-final-released/">jQuery slim build</a></li>
+							<li><a href="https://popper.js.org/">Popper.js</a></li>
+						</ul>
+						<h2>Web Font Loader</h2>
+						<p>The <a href="https://github.com/typekit/webfontloader">webfontloader</a> is a Javascript library for working with web font services. I particularly like it because it provides:</p>
+						<ul>
+							<li>a way to subset fonts from Google Fonts;</li>
+							<li>an option to timeout a load if it takes too long; and</li>
+							<li>CSS state classes indicating whether a font is loaded.</li>
+						</ul>
+						<h2>Material Icons</h2>
+						<p>As per the <a href="https://getbootstrap.com/docs/4.0/extend/icons/">Bootstrap extensions documentation</a>, Tyfy Bootstrap uses the <a href="https://material.io/icons/">Material Icons</a> web font from Google. This font is served from Google Fonts, making it an easy addition to the theme.</p>
+						<ul>
+							<li><a href="https://getbootstrap.com/docs/4.0/extend/icons/">Bootstrap icons documentation</a></li>
+							<li><a href="https://material.io/icons/">Material Icons documentation</a></li>
+							<li><a href="https://github.com/google/material-design-icons/">Material Icons on Github</a></li>
+						</ul>
+						
 					</div>
 				</div>
 			</div>
