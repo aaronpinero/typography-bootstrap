@@ -1,0 +1,15 @@
+// tyfy variable customizations
+$tyfy-grid-unit:0.75rem;
+$tyfy-serif:"Merriweather",Georgia,Times,serif;
+$tyfy-sans:"Roboto",Helvetica,Arial,sans-serif;
+$tyfy-font-base:$tyfy-serif;
+$tyfy-symbol:"Material Icons";
+
+// tyfy required
+@import "../vendor/tyfy/source/scss/required/core";
+@import "../vendor/tyfy/source/scss/required/functions";
+@import "../vendor/tyfy/source/scss/required/settings";
+@import "../vendor/tyfy/source/scss/required/mixins";
+
+// bootstrap variable customizations
+@import "customization/variables";
