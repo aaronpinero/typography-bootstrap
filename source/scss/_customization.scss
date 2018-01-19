@@ -6,10 +6,66 @@ $tyfy-font-base:$tyfy-serif;
 $tyfy-symbol:"Material Icons";
 
 // tyfy required
-@import "../vendor/tyfy/source/scss/required/core";
-@import "../vendor/tyfy/source/scss/required/functions";
-@import "../vendor/tyfy/source/scss/required/settings";
-@import "../vendor/tyfy/source/scss/required/mixins";
+@import "../../node_modules/tyfy/source/scss/required/core";
+@import "../../node_modules/tyfy/source/scss/required/functions";
+@import "../../node_modules/tyfy/source/scss/required/settings";
+@import "../../node_modules/tyfy/source/scss/required/mixins";
+
+// bootstrap variable additions
+
+// additional font variable
+$font-family-serif: $tyfy-serif;
+
+// new colors
+$blue-cc:		#66aee6; // columbia college blue, p292
+$blue-ca:		#418fde; // college alumni blue, p279
+$blue-cu:		#b9d9eb; // columbia university blue, p290
+$blue-cd:		#002855; // college dark blue, p295
+$gold-cc:		#fcd450; // college gold, p122
+$gray-wl:		#cdc9c5; // college warm grey light, p3
+$gray-wd:		#5e514e; // college warm grey dark, p11
+$blue-cu2:	#a8cee2; // columbia university blue 2, p291
+$blue-cu3:	#75aadb; // columbia university blue 3, p284
+$blue-cu4:	#0038a8; // columbia university blue 4, p286
+$blue-ad:		#0060a8; // cc-seas admissions blue, p300
+$cyan-ad:		#0099e6; // cc-seas admissions cyan
+
+$colors: (
+	"blue-cc": $blue-cc,
+	"blue-ca": $blue-ca,
+	"blue-cu": $blue-cu,
+	"blue-cd": $blue-cd,
+	"gold-cc": $gold-cc,
+	"gray-wl": $gray-wl,
+	"gray-wd": $gray-wd,
+	"blue-cu2": $blue-cu2,
+	"blue-cu3": $blue-cu3,
+	"blue-cu4": $blue-cu4,
+	"blue-ad": $blue-ad,
+	"cyan-ad": $cyan-ad
+);
+
+$cu: $blue-cu;
+$cu2: $blue-cu2;
+$cu3: $blue-cu3;
+$cu4: $blue-cu4;
+$cc: $blue-cc;
+$ca: $blue-ca;
+$cd: $blue-cd;
+$ad: $blue-ad;
+$cy: $cyan-ad;
+
+$theme-colors: (
+	"cu": $blue-cu,
+	"cu2": $blue-cu2,
+	"cu3": $blue-cu3,
+	"cu4": $blue-cu4,
+	"cc": $blue-cc,
+	"ca": $blue-ca,
+	"cd":	$blue-cd,
+	"cy":	$cyan-ad,
+	"ad": $blue-ad
+);
 
 // bootstrap variable customizations
 @import "customization/variables";

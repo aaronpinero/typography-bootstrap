@@ -1,3 +1,10 @@
+.navbar {
+	* + ul,
+	* + li.nav-item {
+		margin-top:0;
+	}
+}
+
 .navbar-toggler {
 	&.navbar-text {
 		border:none;
@@ -36,7 +43,7 @@
   .navbar-nav {
     .nav-item:not([class*="active"]) {
       @include hover-focus {
-	      background-color:rgba(white,0.2);
+	      background-color:rgba(white,0.5);
 	      transition:background-color 0.25s;
       }
     }

@@ -1,8 +1,8 @@
 // tyfy
-@import "../vendor/tyfy/source/scss/essential/body";
-@import "../vendor/tyfy/source/scss/essential/spacing";
-@import "../vendor/tyfy/source/scss/optional/lists";
-@import "../vendor/tyfy/source/scss/optional/quotes";
+@import "../../node_modules/tyfy/source/scss/essential/body";
+@import "../../node_modules/tyfy/source/scss/essential/spacing";
+@import "../../node_modules/tyfy/source/scss/optional/lists";
+@import "../../node_modules/tyfy/source/scss/optional/quotes";
 
 // theme additions
 @import "overrides/reboot";
@@ -10,6 +10,7 @@
 @import "overrides/type";
 @import "overrides/tables";
 @import "overrides/alert";
+@import "overrides/nav";
 @import "overrides/navbar";
 @import "overrides/buttons";
 @import "overrides/card";

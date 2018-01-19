@@ -57,20 +57,12 @@ h6, .h6 {
 	line-height:leading($lead-font-size,tall);
 }
 
-// Margins for non-generic items
-* + ul[class],
-* + ol[class],
-* + dl[class] {
-	margin-top:inherit;
-}
-ul[class] {
-	li + li {
-		margin-top:inherit;
-	}
-}
-dl[class] {
-	* + dt {
-		margin-top:inherit;
+// lists
+ul {
+	&.list-inline {
+		li.list-inline-item + li.list-inline-item {
+			margin-top:0;
+		}
 	}
 }
 
