@@ -797,9 +797,9 @@ $card-columns-gap:                  grid(1.5);
 ////
 //// Define alert colors, border radius, and padding.
 //
-//$alert-padding-y:                   .75rem !default;
-//$alert-padding-x:                   1.25rem !default;
-//$alert-margin-bottom:               1rem !default;
+$alert-padding-y:                   grid(1);
+$alert-padding-x:                   grid(1.5);
+$alert-margin-bottom:               0rem;
 //$alert-border-radius:               $border-radius !default;
 //$alert-link-font-weight:            $font-weight-bold !default;
 //$alert-border-width:                $border-width !default;

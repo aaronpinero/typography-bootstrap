@@ -5031,8 +5031,8 @@ tbody.collapse.show {
 /* line 5, node_modules/bootstrap/scss/_alert.scss */
 .alert {
   position: relative;
-  padding: 0.75rem 1.25rem;
-  margin-bottom: 1rem;
+  padding: 0.75rem 1.5rem;
+  margin-bottom: 0rem;
   border: 0.0625rem solid transparent;
   border-radius: 0.1875rem; }
 
@@ -5046,13 +5046,13 @@ tbody.collapse.show {
 
 /* line 29, node_modules/bootstrap/scss/_alert.scss */
 .alert-dismissible {
-  padding-right: 4rem; }
+  padding-right: 4.5rem; }
   /* line 33, node_modules/bootstrap/scss/_alert.scss */
   .alert-dismissible .close {
     position: absolute;
     top: 0;
     right: 0;
-    padding: 0.75rem 1.25rem;
+    padding: 0.75rem 1.5rem;
     color: inherit; }
 
 /* line 48, node_modules/bootstrap/scss/_alert.scss */
@@ -9908,6 +9908,19 @@ dl[class] * + dt {
 /* line 1, source/scss/overrides/_tables.scss */
 .table {
   margin-bottom: 0; }
+
+/* line 1, source/scss/overrides/_alert.scss */
+* + .alert {
+  margin-top: 1.5rem; }
+
+/* line 10, source/scss/overrides/_alert.scss */
+.alert + h1, .alert +
+h2, .alert +
+h3, .alert +
+h4, .alert +
+h5, .alert +
+h6 {
+  margin-top: 2.25rem; }
 
 /* line 2, source/scss/overrides/_navbar.scss */
 .navbar-toggler.navbar-text {
