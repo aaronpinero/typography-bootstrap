@@ -20,13 +20,6 @@
 	}
 	@include make-grid-columns-vertical-pad();
 }
-
-// make nested columns have less gutter
-.col .col {
-	padding-left:$grid-gutter-width/4;
-	padding-right:$grid-gutter-width/4;
-}
-
 // override body adjacent sibling margin from tyfy for rows
 * + .row {
 	margin-top:0;

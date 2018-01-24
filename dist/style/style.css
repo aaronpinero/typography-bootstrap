@@ -9655,12 +9655,7 @@ label {
 .col-xl-auto {
   margin-top: 0; }
 
-/* line 25, source/scss/overrides/_grid.scss */
-.col .col {
-  padding-left: 0.75rem;
-  padding-right: 0.75rem; }
-
-/* line 31, source/scss/overrides/_grid.scss */
+/* line 24, source/scss/overrides/_grid.scss */
 * + .row {
   margin-top: 0; }
 
@@ -9852,6 +9847,43 @@ h6, .h6 {
 /* line 4, source/scss/overrides/_buttons.scss */
 * + .btn:not(.btn-block) {
   margin-top: 0; }
+
+/* line 2, source/scss/overrides/_badge.scss */
+* + .badge {
+  margin-top: 0; }
+
+/* line 1, source/scss/overrides/_forms.scss */
+label + .form-control,
+label + .input-group,
+label + .custom-select {
+  margin-top: 0.75rem; }
+
+/* line 57, node_modules/tyfy/source/scss/required/_mixins.scss */
+.form-inline * + *,
+.form-check * + *,
+.form-row * + *,
+.custom-control * + *,
+.input-group * + * {
+  margin-top: 0rem; }
+
+/* line 13, source/scss/overrides/_forms.scss */
+.custom-control + .custom-control {
+  margin-top: 0; }
+
+/* line 16, source/scss/overrides/_forms.scss */
+.form-row {
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -0.75rem;
+  margin-left: -0.75rem; }
+  /* line 22, source/scss/overrides/_forms.scss */
+  .form-row > .col,
+  .form-row > [class*="col-"] {
+    padding-bottom: 0;
+    padding-right: 0.75rem;
+    padding-left: 0.75rem;
+    padding-top: 0; }
 
 /* line 57, node_modules/tyfy/source/scss/required/_mixins.scss */
 .list-group * + * {
