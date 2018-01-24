@@ -1,8 +1,3 @@
 .list-group {
-	.card & {
-		margin-top:0;
-	}
-	li.list-group-item + li.list-group-item {
-		margin-top:0;
-	}
+	@include sibling-margins(off);
 }

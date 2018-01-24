@@ -1,8 +1,5 @@
 .navbar {
-	* + ul,
-	* + li.nav-item {
-		margin-top:0;
-	}
+	@include sibling-margins(off);
 }
 
 .navbar-toggler {

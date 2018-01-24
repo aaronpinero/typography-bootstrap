@@ -9310,6 +9310,62 @@ a.text-ad:hover, a.text-ad:focus {
   .table-bordered td {
     border: 1px solid #ddd !important; } }
 
+/* line 2, node_modules/tyfy/source/scss/essential/_spacing.scss */
+* {
+  margin-top: 0;
+  margin-bottom: 0; }
+
+/* line 57, node_modules/tyfy/source/scss/required/_mixins.scss */
+body * + * {
+  margin-top: 1.5rem; }
+
+/* line 57, node_modules/tyfy/source/scss/required/_mixins.scss */
+body ul * + *, body ol * + *, body dl * + * {
+  margin-top: 0.75rem; }
+
+/* line 69, node_modules/tyfy/source/scss/required/_mixins.scss */
+body ul * + dd, body ol * + dd, body dl * + dd {
+  margin-top: 0rem; }
+
+/* line 46, node_modules/tyfy/source/scss/required/_mixins.scss */
+body :not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) + h1,
+body :not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) + h2,
+body :not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) + h3,
+body :not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) + h4,
+body :not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) + h5,
+body :not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) + h6 {
+  margin-top: 2.25rem; }
+
+/* line 9, node_modules/tyfy/source/scss/essential/_spacing.scss */
+hr {
+  margin-bottom: 2.25rem;
+  margin-top: 2.25rem; }
+
+/* line 57, node_modules/tyfy/source/scss/required/_mixins.scss */
+.sibling-margins-on * + * {
+  margin-top: 1.5rem; }
+
+/* line 57, node_modules/tyfy/source/scss/required/_mixins.scss */
+.sibling-margins-on ul * + *, .sibling-margins-on ol * + *, .sibling-margins-on dl * + * {
+  margin-top: 0.75rem; }
+
+/* line 69, node_modules/tyfy/source/scss/required/_mixins.scss */
+.sibling-margins-on ul * + dd, .sibling-margins-on ol * + dd, .sibling-margins-on dl * + dd {
+  margin-top: 0rem; }
+
+/* line 46, node_modules/tyfy/source/scss/required/_mixins.scss */
+.sibling-margins-on :not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) + h1,
+.sibling-margins-on :not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) + h2,
+.sibling-margins-on :not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) + h3,
+.sibling-margins-on :not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) + h4,
+.sibling-margins-on :not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) + h5,
+.sibling-margins-on :not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) + h6 {
+  margin-top: 2.25rem; }
+
+/* line 57, node_modules/tyfy/source/scss/required/_mixins.scss */
+.sibling-margins-off * + * {
+  margin-top: 0rem; }
+
 /* line 1, node_modules/tyfy/source/scss/essential/_body.scss */
 html {
   font-size: 100%; }
@@ -9322,218 +9378,6 @@ body {
   font-size: 1rem;
   line-height: 1.5rem; }
 
-/* line 1, node_modules/tyfy/source/scss/essential/_spacing.scss */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-dl,
-ol,
-ul,
-blockquote,
-address,
-table,
-figure,
-pre {
-  margin-bottom: 0;
-  margin-top: 0; }
-  /* line 18, node_modules/tyfy/source/scss/essential/_spacing.scss */
-  * + h1, * +
-  h2, * +
-  h3, * +
-  h4, * +
-  h5, * +
-  h6, * +
-  p, * +
-  dl, * +
-  ol, * +
-  ul, * +
-  blockquote, * +
-  address, * +
-  table, * +
-  figure, * +
-  pre {
-    margin-top: 1.5rem; }
-
-/* line 28, node_modules/tyfy/source/scss/essential/_spacing.scss */
-p + h1,
-dl + h1,
-ol + h1,
-ul + h1,
-blockquote + h1,
-address + h1,
-table + h1,
-figure + h1 pre + h1, p +
-h2,
-dl +
-h2,
-ol +
-h2,
-ul +
-h2,
-blockquote +
-h2,
-address +
-h2,
-table +
-h2,
-figure +
-h2 pre + h1, p +
-h3,
-dl +
-h3,
-ol +
-h3,
-ul +
-h3,
-blockquote +
-h3,
-address +
-h3,
-table +
-h3,
-figure +
-h3 pre + h1, p +
-h4,
-dl +
-h4,
-ol +
-h4,
-ul +
-h4,
-blockquote +
-h4,
-address +
-h4,
-table +
-h4,
-figure +
-h4 pre + h1, p +
-h5,
-dl +
-h5,
-ol +
-h5,
-ul +
-h5,
-blockquote +
-h5,
-address +
-h5,
-table +
-h5,
-figure +
-h5 pre + h1, p +
-h6,
-dl +
-h6,
-ol +
-h6,
-ul +
-h6,
-blockquote +
-h6,
-address +
-h6,
-table +
-h6,
-figure +
-h6 pre + h1,
-figure + h1 pre +
-h2,
-figure +
-h2 pre +
-h2,
-figure +
-h3 pre +
-h2,
-figure +
-h4 pre +
-h2,
-figure +
-h5 pre +
-h2,
-figure +
-h6 pre +
-h2,
-figure + h1 pre +
-h3,
-figure +
-h2 pre +
-h3,
-figure +
-h3 pre +
-h3,
-figure +
-h4 pre +
-h3,
-figure +
-h5 pre +
-h3,
-figure +
-h6 pre +
-h3,
-figure + h1 pre +
-h4,
-figure +
-h2 pre +
-h4,
-figure +
-h3 pre +
-h4,
-figure +
-h4 pre +
-h4,
-figure +
-h5 pre +
-h4,
-figure +
-h6 pre +
-h4,
-figure + h1 pre +
-h5,
-figure +
-h2 pre +
-h5,
-figure +
-h3 pre +
-h5,
-figure +
-h4 pre +
-h5,
-figure +
-h5 pre +
-h5,
-figure +
-h6 pre +
-h5,
-figure + h1 pre +
-h6,
-figure +
-h2 pre +
-h6,
-figure +
-h3 pre +
-h6,
-figure +
-h4 pre +
-h6,
-figure +
-h5 pre +
-h6,
-figure +
-h6 pre +
-h6 {
-  margin-top: 2.25rem; }
-
-/* line 40, node_modules/tyfy/source/scss/essential/_spacing.scss */
-hr {
-  margin-bottom: 2.25rem;
-  margin-top: 2.25rem; }
-
 /* line 2, node_modules/tyfy/source/scss/optional/_lists.scss */
 ol,
 ul {
@@ -9542,51 +9386,29 @@ ul {
 
 /* line 7, node_modules/tyfy/source/scss/optional/_lists.scss */
 li {
-  line-height: 1.5rem;
-  margin-bottom: 0;
-  margin-top: 0; }
+  line-height: 1.5rem; }
 
-/* line 12, node_modules/tyfy/source/scss/optional/_lists.scss */
+/* line 10, node_modules/tyfy/source/scss/optional/_lists.scss */
 dl {
   line-height: 1.5rem; }
 
-/* line 15, node_modules/tyfy/source/scss/optional/_lists.scss */
+/* line 13, node_modules/tyfy/source/scss/optional/_lists.scss */
 dt {
   font-weight: 700;
-  line-height: 1.5rem;
-  margin-bottom: 0;
-  margin-top: 0; }
+  line-height: 1.5rem; }
 
-/* line 21, node_modules/tyfy/source/scss/optional/_lists.scss */
+/* line 17, node_modules/tyfy/source/scss/optional/_lists.scss */
 dd {
   line-height: 1.5rem;
-  margin: 0;
+  margin-left: 0;
+  margin-right: 0;
   padding-left: 2.25rem; }
 
-/* line 28, node_modules/tyfy/source/scss/optional/_lists.scss */
-li + li {
-  margin-top: 0.75rem; }
-
-/* line 31, node_modules/tyfy/source/scss/optional/_lists.scss */
-* + dt {
-  margin-top: 0.75rem; }
-
-/* line 38, node_modules/tyfy/source/scss/optional/_lists.scss */
-ol ol,
-ol ul,
-ol * + ol,
-ol * + ul,
-ul ol,
-ul ul,
-ul * + ol,
-ul * + ul {
-  margin-top: 0.75rem; }
-
-/* line 49, node_modules/tyfy/source/scss/optional/_lists.scss */
+/* line 27, node_modules/tyfy/source/scss/optional/_lists.scss */
 ul.list-icons li {
   list-style-type: none;
   position: relative; }
-  /* line 52, node_modules/tyfy/source/scss/optional/_lists.scss */
+  /* line 30, node_modules/tyfy/source/scss/optional/_lists.scss */
   ul.list-icons li:before {
     color: #949494;
     font-family: "Material Icons";
@@ -9595,16 +9417,16 @@ ul.list-icons li {
     right: 100%;
     top: 0; }
 
-/* line 61, node_modules/tyfy/source/scss/optional/_lists.scss */
+/* line 39, node_modules/tyfy/source/scss/optional/_lists.scss */
 ul.list-icons.list-icons-angle li:before {
   content: ""; }
 
-/* line 66, node_modules/tyfy/source/scss/optional/_lists.scss */
+/* line 44, node_modules/tyfy/source/scss/optional/_lists.scss */
 ul.no-bullet li {
   list-style-type: none; }
 
 @media (min-width: 35em) {
-  /* line 73, node_modules/tyfy/source/scss/optional/_lists.scss */
+  /* line 51, node_modules/tyfy/source/scss/optional/_lists.scss */
   ol.list-cols-2, ol.list-cols-3,
   ul.list-cols-2,
   ul.list-cols-3 {
@@ -9614,21 +9436,21 @@ ul.no-bullet li {
             column-gap: 2.25rem;
     margin-bottom: -0.75rem;
     padding-right: 2.25rem; }
-    /* line 80, node_modules/tyfy/source/scss/optional/_lists.scss */
+    /* line 57, node_modules/tyfy/source/scss/required/_mixins.scss */
+    ol.list-cols-2 * + *, ol.list-cols-3 * + *,
+    ul.list-cols-2 * + *,
+    ul.list-cols-3 * + * {
+      margin-top: 0rem; }
+    /* line 59, node_modules/tyfy/source/scss/optional/_lists.scss */
     ol.list-cols-2 li, ol.list-cols-3 li,
     ul.list-cols-2 li,
     ul.list-cols-3 li {
       -webkit-column-break-inside: avoid;
       break-inside: avoid;
-      padding-bottom: 0.75rem; }
-    /* line 86, node_modules/tyfy/source/scss/optional/_lists.scss */
-    ol.list-cols-2 li + li, ol.list-cols-3 li + li,
-    ul.list-cols-2 li + li,
-    ul.list-cols-3 li + li {
-      margin-top: 0; } }
+      padding-bottom: 0.75rem; } }
 
 @media (min-width: 55em) {
-  /* line 91, node_modules/tyfy/source/scss/optional/_lists.scss */
+  /* line 67, node_modules/tyfy/source/scss/optional/_lists.scss */
   ol.list-cols-3,
   ul.list-cols-3 {
     -webkit-columns: 3;
@@ -9643,7 +9465,7 @@ ul.no-bullet li {
     display: block;
     clear: both;
     content: ""; }
-  /* line 103, node_modules/tyfy/source/scss/optional/_lists.scss */
+  /* line 79, node_modules/tyfy/source/scss/optional/_lists.scss */
   ol.list-grid-2 li, ol.list-grid-3 li, ol.list-grid-4 li,
   ul.list-grid-2 li,
   ul.list-grid-3 li,
@@ -9652,13 +9474,13 @@ ul.no-bullet li {
     float: left;
     padding-right: 2.25rem;
     width: 50%; }
-    /* line 108, node_modules/tyfy/source/scss/optional/_lists.scss */
+    /* line 84, node_modules/tyfy/source/scss/optional/_lists.scss */
     ol.list-grid-2 li:nth-child(2), ol.list-grid-3 li:nth-child(2), ol.list-grid-4 li:nth-child(2),
     ul.list-grid-2 li:nth-child(2),
     ul.list-grid-3 li:nth-child(2),
     ul.list-grid-4 li:nth-child(2) {
       margin-top: 0; }
-    /* line 111, node_modules/tyfy/source/scss/optional/_lists.scss */
+    /* line 87, node_modules/tyfy/source/scss/optional/_lists.scss */
     ol.list-grid-2 li:nth-child(2n+1), ol.list-grid-3 li:nth-child(2n+1), ol.list-grid-4 li:nth-child(2n+1),
     ul.list-grid-2 li:nth-child(2n+1),
     ul.list-grid-3 li:nth-child(2n+1),
@@ -9666,41 +9488,41 @@ ul.no-bullet li {
       clear: left; } }
 
 @media (min-width: 55em) {
-  /* line 120, node_modules/tyfy/source/scss/optional/_lists.scss */
+  /* line 96, node_modules/tyfy/source/scss/optional/_lists.scss */
   ol.list-grid-3 li, ol.list-grid-4 li,
   ul.list-grid-3 li,
   ul.list-grid-4 li {
     width: 33.333%; }
-    /* line 122, node_modules/tyfy/source/scss/optional/_lists.scss */
+    /* line 98, node_modules/tyfy/source/scss/optional/_lists.scss */
     ol.list-grid-3 li:nth-child(3), ol.list-grid-4 li:nth-child(3),
     ul.list-grid-3 li:nth-child(3),
     ul.list-grid-4 li:nth-child(3) {
       margin-top: 0; }
-    /* line 125, node_modules/tyfy/source/scss/optional/_lists.scss */
+    /* line 101, node_modules/tyfy/source/scss/optional/_lists.scss */
     ol.list-grid-3 li:nth-child(2n+1), ol.list-grid-4 li:nth-child(2n+1),
     ul.list-grid-3 li:nth-child(2n+1),
     ul.list-grid-4 li:nth-child(2n+1) {
       clear: none; }
-    /* line 128, node_modules/tyfy/source/scss/optional/_lists.scss */
+    /* line 104, node_modules/tyfy/source/scss/optional/_lists.scss */
     ol.list-grid-3 li:nth-child(3n+1), ol.list-grid-4 li:nth-child(3n+1),
     ul.list-grid-3 li:nth-child(3n+1),
     ul.list-grid-4 li:nth-child(3n+1) {
       clear: left; } }
 
 @media (min-width: 75em) {
-  /* line 136, node_modules/tyfy/source/scss/optional/_lists.scss */
+  /* line 112, node_modules/tyfy/source/scss/optional/_lists.scss */
   ol.list-grid-4 li,
   ul.list-grid-4 li {
     width: 25%; }
-    /* line 138, node_modules/tyfy/source/scss/optional/_lists.scss */
+    /* line 114, node_modules/tyfy/source/scss/optional/_lists.scss */
     ol.list-grid-4 li:nth-child(4),
     ul.list-grid-4 li:nth-child(4) {
       margin-top: 0; }
-    /* line 141, node_modules/tyfy/source/scss/optional/_lists.scss */
+    /* line 117, node_modules/tyfy/source/scss/optional/_lists.scss */
     ol.list-grid-4 li:nth-child(3n+1),
     ul.list-grid-4 li:nth-child(3n+1) {
       clear: none; }
-    /* line 144, node_modules/tyfy/source/scss/optional/_lists.scss */
+    /* line 120, node_modules/tyfy/source/scss/optional/_lists.scss */
     ol.list-grid-4 li:nth-child(4n+1),
     ul.list-grid-4 li:nth-child(4n+1) {
       clear: left; } }
@@ -9794,39 +9616,27 @@ blockquote {
         margin-left: 3rem;
         margin-right: 0; } }
 
-/* line 1, source/scss/overrides/_reboot.scss */
-ol ol,
-ul ul,
-ol ul,
-ul ol {
-  margin-top: 0.75rem;
+/* line 2, source/scss/overrides/_reboot.scss */
+address,
+ol,
+ul,
+dl,
+blockquote,
+pre,
+figure {
   margin-bottom: 0; }
 
-/* line 8, source/scss/overrides/_reboot.scss */
-dd {
-  margin-bottom: 0;
-  margin-left: 0; }
-
-/* line 12, source/scss/overrides/_reboot.scss */
-figure,
-pre {
-  margin-top: 0;
-  margin-bottom: 0; }
-  /* line 16, source/scss/overrides/_reboot.scss */
-  * + figure, * +
-  pre {
-    margin-top: 1.5rem; }
-
-/* line 20, source/scss/overrides/_reboot.scss */
+/* line 11, source/scss/overrides/_reboot.scss */
+dd,
 label {
-  margin-bottom: 0.75rem; }
+  margin-bottom: 0; }
 
-/* line 13, source/scss/overrides/_grid.scss */
+/* line 18, source/scss/overrides/_grid.scss */
 .container {
   padding-bottom: 0.75rem;
   padding-top: 0.75rem; }
 
-/* line 7, source/scss/overrides/_grid.scss */
+/* line 8, source/scss/overrides/_grid.scss */
 .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col,
 .col-auto, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm,
 .col-sm-auto, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md,
@@ -9835,6 +9645,24 @@ label {
 .col-xl-auto {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem; }
+
+/* line 13, source/scss/overrides/_grid.scss */
+* + .col-1, * + .col-2, * + .col-3, * + .col-4, * + .col-5, * + .col-6, * + .col-7, * + .col-8, * + .col-9, * + .col-10, * + .col-11, * + .col-12, * + .col, * +
+.col-auto, * + .col-sm-1, * + .col-sm-2, * + .col-sm-3, * + .col-sm-4, * + .col-sm-5, * + .col-sm-6, * + .col-sm-7, * + .col-sm-8, * + .col-sm-9, * + .col-sm-10, * + .col-sm-11, * + .col-sm-12, * + .col-sm, * +
+.col-sm-auto, * + .col-md-1, * + .col-md-2, * + .col-md-3, * + .col-md-4, * + .col-md-5, * + .col-md-6, * + .col-md-7, * + .col-md-8, * + .col-md-9, * + .col-md-10, * + .col-md-11, * + .col-md-12, * + .col-md, * +
+.col-md-auto, * + .col-lg-1, * + .col-lg-2, * + .col-lg-3, * + .col-lg-4, * + .col-lg-5, * + .col-lg-6, * + .col-lg-7, * + .col-lg-8, * + .col-lg-9, * + .col-lg-10, * + .col-lg-11, * + .col-lg-12, * + .col-lg, * +
+.col-lg-auto, * + .col-xl-1, * + .col-xl-2, * + .col-xl-3, * + .col-xl-4, * + .col-xl-5, * + .col-xl-6, * + .col-xl-7, * + .col-xl-8, * + .col-xl-9, * + .col-xl-10, * + .col-xl-11, * + .col-xl-12, * + .col-xl, * +
+.col-xl-auto {
+  margin-top: 0; }
+
+/* line 25, source/scss/overrides/_grid.scss */
+.col .col {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem; }
+
+/* line 31, source/scss/overrides/_grid.scss */
+* + .row {
+  margin-top: 0; }
 
 /* line 2, source/scss/overrides/_type.scss */
 h1, .h1 {
@@ -9897,95 +9725,77 @@ h6, .h6 {
 .lead {
   line-height: 1.5rem; }
 
-/* line 63, source/scss/overrides/_type.scss */
-ul.list-inline li.list-inline-item + li.list-inline-item {
-  margin-top: 0; }
+/* line 57, node_modules/tyfy/source/scss/required/_mixins.scss */
+.list-inline * + * {
+  margin-top: 0rem; }
 
-/* line 70, source/scss/overrides/_type.scss */
+/* line 66, source/scss/overrides/_type.scss */
 .font-family-serif {
   font-family: "Merriweather", Georgia, Times, serif; }
 
-/* line 73, source/scss/overrides/_type.scss */
+/* line 69, source/scss/overrides/_type.scss */
 .font-family-sans-serif {
   font-family: "Roboto", Helvetica, Arial, sans-serif; }
 
-/* line 78, source/scss/overrides/_type.scss */
+/* line 74, source/scss/overrides/_type.scss */
 .material-icons {
   visibility: hidden;
   font-size: 140%;
   line-height: inherit;
   vertical-align: middle; }
-  /* line 83, source/scss/overrides/_type.scss */
+  /* line 79, source/scss/overrides/_type.scss */
   .wf-materialicons-n4-active.wf-active .material-icons {
     visibility: visible; }
-  /* line 86, source/scss/overrides/_type.scss */
+  /* line 82, source/scss/overrides/_type.scss */
   .material-icons .wf-active.wf-materialicons-n4-inactive,
   .material-icons .wf-inactive {
     display: none; }
 
-/* line 1, source/scss/overrides/_tables.scss */
-.table {
-  margin-bottom: 0; }
+/* line 57, node_modules/tyfy/source/scss/required/_mixins.scss */
+.nav * + * {
+  margin-top: 0rem; }
 
-/* line 1, source/scss/overrides/_alert.scss */
-* + .alert {
-  margin-top: 1.5rem; }
+/* line 57, node_modules/tyfy/source/scss/required/_mixins.scss */
+.navbar * + * {
+  margin-top: 0rem; }
 
-/* line 10, source/scss/overrides/_alert.scss */
-.alert + h1, .alert +
-h2, .alert +
-h3, .alert +
-h4, .alert +
-h5, .alert +
-h6 {
-  margin-top: 2.25rem; }
-
-/* line 2, source/scss/overrides/_nav.scss */
-.nav * + li.nav-item {
-  margin-top: 0; }
-
-/* line 2, source/scss/overrides/_navbar.scss */
-.navbar * + ul,
-.navbar * + li.nav-item {
-  margin-top: 0; }
-
-/* line 9, source/scss/overrides/_navbar.scss */
+/* line 6, source/scss/overrides/_navbar.scss */
 .navbar-toggler.navbar-text {
   border: none;
   font-size: 1rem;
   line-height: 1.5;
   padding: 0; }
 
-/* line 18, source/scss/overrides/_navbar.scss */
+/* line 15, source/scss/overrides/_navbar.scss */
 .navbar-nav .nav-link {
   padding-right: 0.75rem;
   padding-left: 0.75rem; }
 
 @media (min-width: 576px) {
-  /* line 32, source/scss/overrides/_navbar.scss */
+  /* line 29, source/scss/overrides/_navbar.scss */
   .navbar-expand-sm .navbar-nav .nav-link {
     padding-right: 0.75rem;
     padding-left: 0.75rem; } }
 
 @media (min-width: 768px) {
-  /* line 32, source/scss/overrides/_navbar.scss */
+  /* line 29, source/scss/overrides/_navbar.scss */
   .navbar-expand-md .navbar-nav .nav-link {
     padding-right: 0.75rem;
     padding-left: 0.75rem; } }
 
 @media (min-width: 992px) {
-  /* line 32, source/scss/overrides/_navbar.scss */
+  /* line 29, source/scss/overrides/_navbar.scss */
   .navbar-expand-lg .navbar-nav .nav-link {
     padding-right: 0.75rem;
     padding-left: 0.75rem; } }
 
 @media (min-width: 1200px) {
-  /* line 32, source/scss/overrides/_navbar.scss */
+  /* line 29, source/scss/overrides/_navbar.scss */
   .navbar-expand-xl .navbar-nav .nav-link {
     padding-right: 0.75rem;
     padding-left: 0.75rem; } }
 
-/* line 32, source/scss/overrides/_navbar.scss */
+/* line 29, source/scss/overrides/_navbar.scss */
 .navbar-expand .navbar-nav .nav-link {
   padding-right: 0.75rem;
   padding-left: 0.75rem; }
@@ -10010,27 +9820,39 @@ h6 {
   background-color: rgba(0, 0, 0, 0.2);
   transition: background-color 0.25s; }
 
+/* line 57, node_modules/tyfy/source/scss/required/_mixins.scss */
+.card * + * {
+  margin-top: 0rem; }
+
+/* line 57, node_modules/tyfy/source/scss/required/_mixins.scss */
+.card .card-body * + * {
+  margin-top: 1.5rem; }
+
+/* line 57, node_modules/tyfy/source/scss/required/_mixins.scss */
+.card .card-body ul * + *, .card .card-body ol * + *, .card .card-body dl * + * {
+  margin-top: 0.75rem; }
+
+/* line 69, node_modules/tyfy/source/scss/required/_mixins.scss */
+.card .card-body ul * + dd, .card .card-body ol * + dd, .card .card-body dl * + dd {
+  margin-top: 0rem; }
+
+/* line 46, node_modules/tyfy/source/scss/required/_mixins.scss */
+.card .card-body :not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) + h1,
+.card .card-body :not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) + h2,
+.card .card-body :not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) + h3,
+.card .card-body :not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) + h4,
+.card .card-body :not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) + h5,
+.card .card-body :not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) + h6 {
+  margin-top: 2.25rem; }
+
 /* line 1, source/scss/overrides/_buttons.scss */
 .btn {
   font-family: "Roboto", Helvetica, Arial, sans-serif; }
 
-/* line 1, source/scss/overrides/_card.scss */
-* + .card {
-  margin-top: 1.5rem; }
-
-/* line 10, source/scss/overrides/_card.scss */
-.card + h1, .card +
-h2, .card +
-h3, .card +
-h4, .card +
-h5, .card +
-h6 {
-  margin-top: 2.25rem; }
-
-/* line 2, source/scss/overrides/_list_group.scss */
-.card .list-group {
+/* line 4, source/scss/overrides/_buttons.scss */
+* + .btn:not(.btn-block) {
   margin-top: 0; }
 
-/* line 5, source/scss/overrides/_list_group.scss */
-.list-group li.list-group-item + li.list-group-item {
-  margin-top: 0; }
+/* line 57, node_modules/tyfy/source/scss/required/_mixins.scss */
+.list-group * + * {
+  margin-top: 0rem; }

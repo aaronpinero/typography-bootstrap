@@ -57,13 +57,9 @@ h6, .h6 {
 	line-height:leading($lead-font-size,tall);
 }
 
-// lists
-ul {
-	&.list-inline {
-		li.list-inline-item + li.list-inline-item {
-			margin-top:0;
-		}
-	}
+// inline lists
+.list-inline {
+	@include sibling-margins(off);
 }
 
 // Font face selection classes

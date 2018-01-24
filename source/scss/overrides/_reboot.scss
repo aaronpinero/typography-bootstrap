@@ -1,22 +1,14 @@
-ol ol,
-ul ul,
-ol ul,
-ul ol {
-  margin-top:grid(1);
-  margin-bottom:0;
+// overriding bootstraps reboot
+address,
+ol,
+ul,
+dl,
+blockquote,
+pre,
+figure {
+  margin-bottom:$paragraph-margin-bottom;
 }
-dd {
-  margin-bottom:0;
-  margin-left:0;
-}
-figure,
-pre {
-  margin-top:0;
-  margin-bottom:0;
-  * + & {
-	  margin-top:$tyfy-spacing-standard;
-  }
-}
+dd,
 label {
-  margin-bottom:grid(1);
+  margin-bottom: $paragraph-margin-bottom/2;
 }
