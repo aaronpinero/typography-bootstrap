@@ -147,7 +147,7 @@ $spacer:	grid(2);
 //
 // Style anchor elements.
 //
-$link-color: $blue-ca;
+//$link-color:                theme-color("primary") !default;
 //$link-decoration:           none !default;
 //$link-hover-color:          darken($link-color, 15%) !default;
 //$link-hover-decoration:     underline !default;
@@ -250,7 +250,7 @@ $h5-font-size: scale(1);
 $h6-font-size: scale(0);
 //
 $headings-margin-bottom: 0;
-$headings-font-family: $font-family-sans-serif;
+$headings-font-family: $tyfy-serif;
 $headings-font-weight: 700;
 //$headings-line-height:        1.2 !default;
 //$headings-color:              inherit !default;
