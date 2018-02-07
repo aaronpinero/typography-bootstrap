@@ -62,11 +62,11 @@
 //  "gray-dark":  $gray-800
 //), $colors);
 //
-$primary:       $blue-ca;
+//$primary:       $blue !default;
 //$secondary:     $gray-600 !default;
 //$success:       $green !default;
 //$info:          $cyan !default;
-$warning:       $gold-cc;
+//$warning:       $yellow !default;
 //$danger:        $red !default;
 //$light:         $gray-100 !default;
 //$dark:          $gray-800 !default;
@@ -266,7 +266,7 @@ $display3-weight: 500;
 $display4-weight: 500;
 //$display-line-height:         $headings-line-height !default;
 //
-$lead-font-size: $font-size-lg;
+$lead-font-size: scale(2);
 //$lead-font-weight:            300 !default;
 //
 $small-font-size: 100%/$tyfy-font-size-scalar;

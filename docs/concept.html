@@ -11,11 +11,12 @@
 		
 		  gtag('config', 'UA-32897472-1');
 		</script>
+		<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
 		<script>
 		  WebFont.load({
 		    google: {
-		      families: ['Material Icons', 'Overpass Mono', 'Merriweather:400,400i,900,900i', 'Roboto:400,400i,700,700i']
+		      families: ['Overpass Mono', 'Overpass:400,400i,800,800i', 'Zilla+Slab:400,400i,700,700i']
 		    },
 		    timeout: 2000
 		  });
@@ -24,80 +25,75 @@
 		<meta http-equiv="x-ua-compatible" content="ie=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="description" content="">
-		<link id="mainstyles" rel="stylesheet" href="../dist/style/style.css">
+		<link id="mainstyles" rel="stylesheet" href="../dist/style/tyfy-bootstrap.css">
+		<link id="mainstyles" rel="stylesheet" href="../dist/style/tyfy-bootstrap-docs.css">
 		<!--/ COMMON HEAD TAGS -->
 		<title>Concepts - Tyfy Bootstrap</title>
 	</head>
 	<body class="">
 		<!-- COMMON HEADER -->
+		<nav class="navbar navbar-expand-md navbar-dark bg-dark font-family-sans-serif">
+			<span class="navbar-brand">Tyfy</span>
+			<span class="navbar-text navbar-toggler" data-toggle="collapse" data-target="#navoptions" aria-controls="navoptions" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</span>
+		  <div class="collapse navbar-collapse" id="navoptions">
+		    <ul class="navbar-nav">
+		      <li class="nav-item">
+		        <a class="nav-link" href="index.html"><i class="fas fa-home mr-1"></i> Home</a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="concept.html">Concept</a>
+		      </li>
+		      <li class="nav-item dropdown">
+		        <a class="nav-link dropdown-toggle" href="#" id="docslist" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Documentation</a>
+		        <div class="dropdown-menu" aria-labelledby="docslist">
+			        <a class="dropdown-item" href="docs-requirements.html">Requirements</a>
+			        <a class="dropdown-item" href="docs-colors.html">Colors</a>
+			        <a class="dropdown-item" href="docs-alerts.html">Alerts & Badges</a>
+			        <a class="dropdown-item" href="docs-buttons.html">Buttons</a>
+		        </div>
+		      </li>
+		      <li class="nav-item dropdown">
+		        <a class="nav-link dropdown-toggle" href="#" id="exampleslist" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Examples</a>
+		        <div class="dropdown-menu" aria-labelledby="exampleslist">
+			        <a class="dropdown-item" href="examples-checkout.html">Checkout Form</a>
+			        <a class="dropdown-item" href="examples-dashboard.html">Dashboard</a>
+		        </div>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="#" id="style-toggle">Toggle Theme</a>
+		      </li>
+		    </ul>
+		  </div>
+		</nav>
+		<!--/ COMMON HEADER -->
 		<header class="px-md-3 px-lg-4 px-xl-5">
 			<div class="container-fluid">
 				<div class="row">
-					<div class="col py-3">
-						<h1 class="font-weight-normal display-3">Tyfy Bootstrap</h1>
-					</div>
-				</div>
-				<div class="row">
 					<div class="col">
-						<nav class="navbar navbar-expand-md navbar-light bg-light border rounded font-family-sans-serif">
-							<span class="navbar-text d-md-none d-lg-none d-xl-none">Menu</span>
-							<span class="navbar-text navbar-toggler" data-toggle="collapse" data-target="#navoptions" aria-controls="navoptions" aria-expanded="false" aria-label="Toggle navigation">
-								<span class="navbar-toggler-icon"></span>
-							</span>
-						  <div class="collapse navbar-collapse" id="navoptions">
-						    <ul class="navbar-nav">
-						      <li class="nav-item">
-						        <a class="nav-link" href="index.html"><i class="material-icons">home</i></a>
-						      </li>
-						      <li class="nav-item">
-						        <a class="nav-link" href="concept.html">Concept</a>
-						      </li>
-						      <li class="nav-item dropdown">
-						        <a class="nav-link dropdown-toggle" href="#" id="docslist" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Documentation</a>
-						        <div class="dropdown-menu" aria-labelledby="docslist">
-							        <a class="dropdown-item" href="docs-requirements.html">Requirements</a>
-							        <a class="dropdown-item" href="docs-colors.html">Colors</a>
-							        <a class="dropdown-item" href="docs-alerts.html">Alerts & Badges</a>
-							        <a class="dropdown-item" href="docs-buttons.html">Buttons</a>
-						        </div>
-						      </li>
-						      <li class="nav-item dropdown">
-						        <a class="nav-link dropdown-toggle" href="#" id="exampleslist" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Examples</a>
-						        <div class="dropdown-menu" aria-labelledby="exampleslist">
-							        <a class="dropdown-item" href="examples-checkout.html">Checkout Form</a>
-							        <a class="dropdown-item" href="examples-dashboard.html">Dashboard</a>
-						        </div>
-						      </li>
-						      <li class="nav-item">
-						        <a class="nav-link" href="#" id="style-toggle">Toggle Theme</a>
-						      </li>
-						    </ul>
-						  </div>
-						</nav>
+						<h1 class="font-weight-normal display-3">Tyfy Concepts</h1>
 					</div>
 				</div>
 			</div>
 		</header>
-		<!--/ COMMON HEADER -->
 		<section id="main" class="px-md-3 px-lg-4 px-xl-5">
 			<div class="container-fluid">
 				<div class="row">
 					<div class="col-md-9 col-xl-6 pb-4">
 
-						<h1>Concept</h1>
-						<p>There are three main design enhancements that are applied to Bootstrap with the addition of the <strong class="tyfy">Tyfy</strong> framework:</p>
-						<ul>
+						<p>Tyfy applies three main design enhancements to Bootstrap:</p>
+						<ol>
 							<li>a modular typographic scale;</li>
 							<li>a consistent vertical grid; and</li>
 							<li>intelligent margins.</li>
-						</ul>
+						</ol>
 						
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-lg bg-light border border-white p-4">
-						<h2 class="text-center"><i class="material-icons bg-cd text-white rounded mx-auto p-2">format_size</i></h2>
-						<h2 class="text-center">Modular Scale</h2>
+					<div class="col-lg-4 bg-light border border-white p-4">
+						<h2 class="text-center"><i class="fas fa-signal"></i> Modular Scale</h2>
 						<p><a href="https://twitter.com/timbrown">Tim Brown</a>, head of Typography at Adobe Typekit, has this to say about modular scales:</p>
 						<blockquote><p>By basing the dimensions of our compositions on values from modular scales, we can achieve a visual harmony not found in layouts that use arbitrary, conventional, or easily divisible numbers.</p></blockquote>
 						<p>More simply, from Robert Bringhurst:</p>
@@ -105,16 +101,14 @@
 						<p>For typography, employing a modular scale for type sizes results in a series of type sizes that are related by a common mathematical ratio.</p>
 						<p><strong class="tyfy">Tyfy</strong> provides a ratio variable and a custom function for calculating type sizes for paragraphs, headings, and other elements that conform to a modular scale. The Bootstrap font size variables in this theme have been modified using the <code>scale()</code> function. Because all the font sizes are based on the ratio variable and the base font size, modifying either variable will quickly change all of the theme's font sizes.</p>
 					</div>
-					<div class="col-lg bg-light border border-white p-4">
-						<h2 class="text-center"><i class="material-icons bg-cd text-white rounded mx-auto p-2">border_horizontal</i></h2>
-						<h2 class="text-center">Vertical Grid</h2>
+					<div class="col-lg-4 bg-light border border-white p-4">
+						<h2 class="text-center"><i class="fas fa-th-large"></i> Baseline Grid</h2>
 						<p>In many articles, this is also called a <a href="http://alistapart.com/article/settingtypeontheweb">baseline grid</a> because it is the grid on which the baseline of your text will run. Establishing a vertical or baseline grid provides a often unnoticed enhancement to the design. Robert Bringhurst likens a baseline grid to the rhythm that provides a foundation for musical composition.</p>
 						<p>Bootstrap does not have a well established vertical grid. There is a spacer variable that is used to provide padding and margin on some elements, but there are odd omissions. In addition, the line height for text is based on a percentage of the current font size instead of on a grid measure.</p> 
 						<p><strong class="tyfy">Tyfy</strong> provides a grid unit SASS variable and two custom functions that facilitate the application of a baseline grid. The <code>grid()</code> function eliminates the need to calculate fractions or multiples of the baseline grid unit. The <code>leading()</code> function calculates a line height for a given font size as a function of multiples of the grid unit. Together, these functions eliminate much of the work of using a baseline grid and make it easier to employ. The Tyfy Bootstrap theme changes a number of the default Bootstrap element line-height, margin, and padding values so that they conform to the grid. As a result, a change to the value of the grid unit variable quickly changes the entire theme.</p> 
 					</div>
-					<div class="col-lg bg-light border border-white p-4">
-						<h2 class="text-center"><i class="material-icons bg-cd text-white rounded mx-auto p-2">vertical_align_center</i></h2>
-						<h2 class="text-center">Intelligent Margins</h2>
+					<div class="col-lg-4 bg-light border border-white p-4">
+						<h2 class="text-center"><i class="fas fa-arrows-alt-v"></i> Intelligent Margins</h2>
 						<p>The default HTML behavior for elements like headings, paragraphs, and lists is to provide margin above and below the element. Bootstrap and other frameworks often modify these margins, but perpetuate the practice of providing arbitrary margins around elements. Unfortunately, these extra margins cause unexpected or unwanted collisions at the beginning or end of a containing element, depending on whether or not the containing element has its own margin or padding.</p>
 						<p>Margins around elements are unnecessary.<br>Margins <em>between</em> elements are what is needed.</p>
 						<p>The <strong class="tyfy">Tyfy</strong> framework uses <a href="https://www.w3.org/TR/css3-selectors/#adjacent-sibling-combinators">adjacent sibling selectors</a> (i.e. <code>.class + .class</code>) to assign margins between elements instead of assigning blanket margins to everything. This avoids the problem of having margins at the start and end of a containing element that must then be accounted for.</p>
@@ -123,11 +117,11 @@
 			</div>
 		</section>
 		<!-- COMMON FOOTER -->
-		<footer class="card bg-light px-md-3 px-lg-4 px-xl-5 text-secondary">
+		<footer class="card bg-light px-md-3 px-lg-4 px-xl-5 border-0 text-secondary">
 			<div class="container-fluid">
 				<div class="row">
 					<div class="col py-5">
-						<h1 class="card-title h4">Tyfy Bootstrap, a Bootstrap 4 theme.</h1>
+						<h1 class="card-title h4">Tyfy for Bootstrap, a Bootstrap 4 theme.</h1>
 						<p class="card-text">&copy; 2017, 2018 by <a href="http://aaronpinero.net">Aaron Pinero</a></p>
 					</div>
 				</div>

@@ -69,18 +69,3 @@ h6, .h6 {
 .font-family-sans-serif {
 	font-family:$font-family-sans-serif;
 }
-
-// Icon font
-.material-icons {
-	visibility:hidden;
-	font-size:140%;
-	line-height:inherit;
-	vertical-align:middle;
-	.wf-materialicons-n4-active.wf-active & {
-		visibility:visible;
-	}
-	.wf-active.wf-materialicons-n4-inactive,
-	.wf-inactive {
-		display:none;
-	}
-}

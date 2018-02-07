@@ -1,0 +1,13 @@
+@import url(../../dist/fonts/league/stylesheet.css);
+/* line 4, source/scss/tyfy-bootstrap-docs.scss */
+.display-1, .display-2, .display-3, .display-4 {
+  font-family: "League Gothic";
+  font-weight: 400;
+  text-transform: uppercase; }
+
+/* line 9, source/scss/tyfy-bootstrap-docs.scss */
+.navbar .navbar-brand {
+  font-family: "League Gothic";
+  font-size: 1.75rem;
+  font-weight: 400;
+  text-transform: uppercase; }
