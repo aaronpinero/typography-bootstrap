@@ -11,3 +11,7 @@
   font-size: 1.75rem;
   font-weight: 400;
   text-transform: uppercase; }
+
+/* line 15, source/scss/tyfy-bootstrap-docs.scss */
+.text-orange {
+  color: #ffa000 !important; }
