@@ -18,32 +18,31 @@
 		<section id="main" class="px-md-3 px-lg-4 px-xl-5">
 			<div class="container-fluid">
 				<div class="row">
-					<div class="col-md-9 col-xl-6 pb-4">
+					<div class="col pb-3">
 
-						<p>Tyfy applies three main design enhancements to Bootstrap:</p>
-						<ol>
-							<li>a modular typographic scale;</li>
-							<li>a consistent vertical grid; and</li>
-							<li>intelligent margins.</li>
-						</ol>
+						<p class="lead">Tyfy applies three main design enhancements to Bootstrap.</p>
 						
 					</div>
 				</div>
 				<div class="row">
 					<div class="col-lg-4 bg-light border border-white p-4">
 						<h2 class="text-center"><i class="fas fa-signal"></i> Modular Scale</h2>
-						<p><a href="https://twitter.com/timbrown">Tim Brown</a>, head of Typography at Adobe Typekit, has this to say about modular scales:</p>
-						<blockquote><p>By basing the dimensions of our compositions on values from modular scales, we can achieve a visual harmony not found in layouts that use arbitrary, conventional, or easily divisible numbers.</p></blockquote>
-						<p>More simply, from Robert Bringhurst:</p>
-						<blockquote><p>A modular scale, like a musical scale, is a prearranged set of harmonious proportions.</p></blockquote>
-						<p>For typography, employing a modular scale for type sizes results in a series of type sizes that are related by a common mathematical ratio.</p>
-						<p><strong class="tyfy">Tyfy</strong> provides a ratio variable and a custom function for calculating type sizes for paragraphs, headings, and other elements that conform to a modular scale. The Bootstrap font size variables in this theme have been modified using the <code>scale()</code> function. Because all the font sizes are based on the ratio variable and the base font size, modifying either variable will quickly change all of the theme's font sizes.</p>
+						<p><a href="http://tbrown.org" data-href="http://tbrown.org">Tim Brown</a>, Head of Typography at Adobe Typekit and co-developer of <a href="http://www.modularscale.com">modularscale.com</a> writes:</p>
+						<blockquote>“By basing the dimensions of our compositions on values from modular scales, we can achieve a visual harmony not found in layouts that use arbitrary, conventional, or easily divisible numbers.”</blockquote>
+						<p>More simply, <a href="https://en.wikipedia.org/wiki/Robert_Bringhurst">Robert Bringhurst</a> writes “don’t compose without a scale”. Is he talking about music or graphic design? <em>Yes</em>.</p>
+						<p>Tyfy provides <span class="smallcaps">SASS</span> variables and custom functions that make it easy to establish a modular scale of text sizes. Every semantic <span class="smallcaps">HTML</span> element (headings, paragraphs, lists, etc.) has a text size defined as a function of the base text size and a scale variable. Assigning text sizes to other elements is also simplified through use of the custom functions.</p>
+						<p>By modifying either the base text size or the scalar value, the whole modular scale of sizes can be quickly adjusted to the desired appearance.</p>
 					</div>
 					<div class="col-lg-4 bg-light border border-white p-4">
 						<h2 class="text-center"><i class="fas fa-th-large"></i> Baseline Grid</h2>
-						<p>In many articles, this is also called a <a href="http://alistapart.com/article/settingtypeontheweb">baseline grid</a> because it is the grid on which the baseline of your text will run. Establishing a vertical or baseline grid provides a often unnoticed enhancement to the design. Robert Bringhurst likens a baseline grid to the rhythm that provides a foundation for musical composition.</p>
-						<p>Bootstrap does not have a well established vertical grid. There is a spacer variable that is used to provide padding and margin on some elements, but there are odd omissions. In addition, the line height for text is based on a percentage of the current font size instead of on a grid measure.</p> 
-						<p><strong class="tyfy">Tyfy</strong> provides a grid unit SASS variable and two custom functions that facilitate the application of a baseline grid. The <code>grid()</code> function eliminates the need to calculate fractions or multiples of the baseline grid unit. The <code>leading()</code> function calculates a line height for a given font size as a function of multiples of the grid unit. Together, these functions eliminate much of the work of using a baseline grid and make it easier to employ. The Tyfy Bootstrap theme changes a number of the default Bootstrap element line-height, margin, and padding values so that they conform to the grid. As a result, a change to the value of the grid unit variable quickly changes the entire theme.</p> 
+						<p>Applying and maintaining a baseline grid adds a rhythmical consistency to your design that is as important as a regular beat in music. Establishing the baseline grid depends in part of choosing the right leading for all different text sizes. Robert Bringhurst writes:</p>
+						<blockquote>“Headings, subheads, block quotations, footnotes, illustrations, captions, and other intrusions into the text create syncopations and variations against the base rhythm of regularly leaded lines. These variations can and should add life to the page, but the main text should also return after each variation precisely on beat and in phase. This means that the total amount of vertical space consumed by each departure from the main text should be an even multiple of the basic leading.”</blockquote>
+						<p><strong class="tyfy">Tyfy</strong> has a grid unit variable that, by default, is half the base line height. Line heights for headings, block quotes, lists items, etc. are defined as multiples of the grid unit, enforcing the baseline grid. In addition, the paddings and margins for most elements are defined as multiples of the grid unit. Custom <span class="smallcaps">SASS</span> functions can calculate line heights and other grid unit-based measures, making it easy to maintain the grid.</p>
+						<p>And because all of these values are defined as a function of the grid unit variable, changing the value will quickly change the visual character of the project.</p>
+
+
+
+
 					</div>
 					<div class="col-lg-4 bg-light border border-white p-4">
 						<h2 class="text-center"><i class="fas fa-arrows-alt-v"></i> Intelligent Margins</h2>
