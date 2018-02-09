@@ -28,7 +28,7 @@
 		<link id="mainstyles" rel="stylesheet" href="../dist/style/tyfy-bootstrap.css">
 		<link id="mainstyles" rel="stylesheet" href="../dist/style/tyfy-bootstrap-docs.css">
 		<!--/ COMMON HEAD TAGS -->
-		<title>Concepts - Tyfy Bootstrap</title>
+		<title>Tyfy Concepts - Tyfy for Bootstrap</title>
 	</head>
 	<body class="">
 		<!-- COMMON HEADER -->
@@ -40,19 +40,13 @@
 		  <div class="collapse navbar-collapse" id="navoptions">
 		    <ul class="navbar-nav">
 		      <li class="nav-item">
-		        <a class="nav-link" href="index.html"><i class="fas fa-home mr-1"></i> Home</a>
+		        <a class="nav-link" href="index.html"><i class="fas fa-home mr-1"></i></a>
 		      </li>
 		      <li class="nav-item">
 		        <a class="nav-link" href="concept.html">Concept</a>
 		      </li>
-		      <li class="nav-item dropdown">
-		        <a class="nav-link dropdown-toggle" href="#" id="docslist" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Documentation</a>
-		        <div class="dropdown-menu" aria-labelledby="docslist">
-			        <a class="dropdown-item" href="docs-requirements.html">Requirements</a>
-			        <a class="dropdown-item" href="docs-colors.html">Colors</a>
-			        <a class="dropdown-item" href="docs-alerts.html">Alerts & Badges</a>
-			        <a class="dropdown-item" href="docs-buttons.html">Buttons</a>
-		        </div>
+		      <li class="nav-item">
+		        <a class="nav-link" href="startup.html">Get Started</a>
 		      </li>
 		      <li class="nav-item dropdown">
 		        <a class="nav-link dropdown-toggle" href="#" id="exampleslist" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Examples</a>
@@ -88,7 +82,7 @@
 				</div>
 				<div class="row">
 					<div class="col-lg-4 bg-light border border-white p-4">
-						<h2 class="text-center"><i class="fas fa-signal d-block mx-auto text-orange"></i> Modular Scale</h2>
+						<h2 class="text-center"><i class="fas fa-signal d-block mx-auto mb-1 text-orange"></i> Modular Scale</h2>
 						<p><a href="http://tbrown.org" data-href="http://tbrown.org">Tim Brown</a>, Head of Typography at Adobe Typekit and co-developer of <a href="http://www.modularscale.com">modularscale.com</a> writes:</p>
 						<blockquote>“By basing the dimensions of our compositions on values from modular scales, we can achieve a visual harmony not found in layouts that use arbitrary, conventional, or easily divisible numbers.”</blockquote>
 						<p>More simply, <a href="https://en.wikipedia.org/wiki/Robert_Bringhurst">Robert Bringhurst</a> writes “don’t compose without a scale”. Is he talking about music or graphic design? <em>Yes</em>.</p>
@@ -96,14 +90,14 @@
 						<p>By modifying either the base text size or the scalar value, the whole modular scale of sizes can be quickly adjusted to the desired appearance.</p>
 					</div>
 					<div class="col-lg-4 bg-light border border-white p-4">
-						<h2 class="text-center"><i class="fas fa-bars d-block mx-auto text-orange"></i> Baseline Grid</h2>
+						<h2 class="text-center"><i class="fas fa-bars d-block mx-auto mb-1 text-orange"></i> Baseline Grid</h2>
 						<p>Applying and maintaining a baseline grid adds a rhythmical consistency to your design that is as important as a regular beat in music. Establishing the baseline grid depends in part of choosing the right leading for all different text sizes. Robert Bringhurst writes:</p>
 						<blockquote>“Headings, subheads, block quotations, footnotes, illustrations, captions, and other intrusions into the text create syncopations and variations against the base rhythm of regularly leaded lines. These variations can and should add life to the page, but the main text should also return after each variation precisely on beat and in phase. This means that the total amount of vertical space consumed by each departure from the main text should be an even multiple of the basic leading.”</blockquote>
 						<p><strong class="tyfy">Tyfy</strong> has a grid unit variable that, by default, is half the base line height. Line heights for headings, block quotes, lists items, etc. are defined as multiples of the grid unit, enforcing the baseline grid. In addition, the paddings and margins for most elements are defined as multiples of the grid unit. Custom <span class="smallcaps">SASS</span> functions can calculate line heights and other grid unit-based measures, making it easy to maintain the grid.</p>
 						<p>And because all of these values are defined as a function of the grid unit variable, changing the value will quickly change the visual character of the project.</p>
 					</div>
 					<div class="col-lg-4 bg-light border border-white p-4">
-						<h2 class="text-center"><i class="fas fa-arrows-alt-v d-block mx-auto text-orange"></i> Smart Margins</h2>
+						<h2 class="text-center"><i class="fas fa-arrows-alt-v d-block mx-auto mb-1 text-orange"></i> Smart Margins</h2>
 						
 						
 						<p>In <a href="https://alistapart.com/article/axiomatic-css-and-lobotomized-owls">Issue 406 of A List Apart</a>, Heydon Pickering precisely describes my complaint about <span class="smallcaps">HTML</span> margins:</p>
@@ -131,7 +125,8 @@
 		</footer>
 		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>		<script src="../dist/script/style_toggle.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+		<script src="../dist/script/style_toggle.js"></script>
 		<script src="../dist/script/nav_active.js"></script>
 		<!--/ COMMON FOOTER -->
 	</body>

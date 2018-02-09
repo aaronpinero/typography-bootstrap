@@ -8425,62 +8425,6 @@ blockquote {
         margin-left: 3.25rem;
         margin-right: 0; } }
 
-/* line 1, node_modules/tyfy/source/scss/optional/_utility.scss */
-b {
-  font-weight: 700; }
-
-/* line 4, node_modules/tyfy/source/scss/optional/_utility.scss */
-code {
-  background-color: rgba(17, 17, 17, 0.07);
-  color: #2b5182;
-  font-family: "Overpass Mono", monospace;
-  padding-left: 0.25em;
-  padding-right: 0.25em; }
-
-/* line 11, node_modules/tyfy/source/scss/optional/_utility.scss */
-em {
-  font-style: italic; }
-
-/* line 14, node_modules/tyfy/source/scss/optional/_utility.scss */
-hr {
-  border: none;
-  border-top: 1px #e2e2e2 solid;
-  height: 0; }
-
-/* line 19, node_modules/tyfy/source/scss/optional/_utility.scss */
-i {
-  font-style: italic; }
-
-/* line 22, node_modules/tyfy/source/scss/optional/_utility.scss */
-pre {
-  font-family: "Overpass Mono", monospace; }
-
-/* line 25, node_modules/tyfy/source/scss/optional/_utility.scss */
-small {
-  font-size: 0.9375rem; }
-
-/* line 28, node_modules/tyfy/source/scss/optional/_utility.scss */
-strong {
-  font-weight: 700; }
-
-/* line 32, node_modules/tyfy/source/scss/optional/_utility.scss */
-span.dropcap {
-  display: inline-block;
-  float: left;
-  font-size: 400%;
-  font-weight: bold;
-  line-height: 100%;
-  margin: 0 0.25em 0 0.125em;
-  text-align: center; }
-
-/* line 41, node_modules/tyfy/source/scss/optional/_utility.scss */
-span.smallcaps {
-  -webkit-font-feature-settings: "c2sc", "smcp";
-          font-feature-settings: "c2sc", "smcp";
-  font-variant-caps: all-small-caps;
-  font-weight: bolder;
-  letter-spacing: 0.05em; }
-
 /* line 2, source/scss/overrides/_reboot.scss */
 address,
 ol,
@@ -8596,6 +8540,24 @@ h6, .h6 {
 /* line 69, source/scss/overrides/_type.scss */
 .font-family-sans-serif {
   font-family: "Overpass", Helvetica, Arial, sans-serif; }
+
+/* line 74, source/scss/overrides/_type.scss */
+span.dropcap {
+  display: inline-block;
+  float: left;
+  font-size: 400%;
+  font-weight: bold;
+  line-height: 100%;
+  margin: 0 0.25em 0 0.125em;
+  text-align: center; }
+
+/* line 83, source/scss/overrides/_type.scss */
+span.smallcaps {
+  -webkit-font-feature-settings: "c2sc", "smcp";
+          font-feature-settings: "c2sc", "smcp";
+  font-variant-caps: all-small-caps;
+  font-weight: bolder;
+  letter-spacing: 0.05em; }
 
 /* line 57, node_modules/tyfy/source/scss/required/_mixins.scss */
 .nav * + * {
