@@ -240,7 +240,7 @@ $font-size-sm: scale(-1);
 //$font-weight-bold:            700 !default;
 //
 //$font-weight-base:            $font-weight-normal !default;
-$line-height-base: leading($font-size-base,base) / 1rem; // divide by font size to remove units and make relative
+$line-height-base: leading($font-size-base,base) / $font-size-base; // divide by font size to remove units and make relative
 //
 $h1-font-size: scale(6);
 $h2-font-size: scale(4);

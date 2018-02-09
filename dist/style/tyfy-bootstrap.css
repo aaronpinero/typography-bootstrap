@@ -61,7 +61,7 @@ body {
   font-family: "Overpass", Helvetica, Arial, sans-serif;
   font-size: 1.125rem;
   font-weight: 400;
-  line-height: 1.625;
+  line-height: 1.44444;
   color: #212529;
   text-align: left;
   background-color: #fff; }
@@ -1760,7 +1760,7 @@ pre {
   width: 100%;
   padding: 0.33854rem 0.74479rem;
   font-size: 1.125rem;
-  line-height: 1.625;
+  line-height: 1.44444;
   color: #495057;
   background-color: #fff;
   background-clip: padding-box;
@@ -1792,7 +1792,7 @@ pre {
 
 /* line 60, node_modules/bootstrap/scss/_forms.scss */
 select.form-control:not([size]):not([multiple]) {
-  height: calc(2.50521rem + 0.13541rem); }
+  height: calc(2.30209rem + 0.13541rem); }
 
 /* line 64, node_modules/bootstrap/scss/_forms.scss */
 select.form-control:focus::-ms-value {
@@ -1811,7 +1811,7 @@ select.form-control:focus::-ms-value {
   padding-bottom: calc(0.33854rem + 0.06771rem);
   margin-bottom: 0;
   font-size: inherit;
-  line-height: 1.625; }
+  line-height: 1.44444; }
 
 /* line 97, node_modules/bootstrap/scss/_forms.scss */
 .col-form-label-lg {
@@ -1834,7 +1834,7 @@ select.form-control:focus::-ms-value {
   padding-top: 0.33854rem;
   padding-bottom: 0.33854rem;
   margin-bottom: 0;
-  line-height: 1.625;
+  line-height: 1.44444;
   background-color: transparent;
   border: solid transparent;
   border-width: 0.06771rem 0; }
@@ -2214,7 +2214,7 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
   border: 0.06771rem solid transparent;
   padding: 0.33854rem 0.74479rem;
   font-size: 1.125rem;
-  line-height: 1.625;
+  line-height: 1.44444;
   border-radius: 0.20312rem;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; }
   /* line 19, node_modules/bootstrap/scss/mixins/_hover.scss */
@@ -3178,7 +3178,7 @@ tbody.collapse.show {
   margin-bottom: 0;
   font-size: 1.125rem;
   font-weight: 400;
-  line-height: 1.625;
+  line-height: 1.44444;
   color: #495057;
   text-align: center;
   white-space: nowrap;
@@ -3214,7 +3214,7 @@ tbody.collapse.show {
 .custom-control {
   position: relative;
   display: block;
-  min-height: 1.625rem;
+  min-height: 1.44444rem;
   padding-left: 1.5rem; }
 
 /* line 17, node_modules/bootstrap/scss/_custom-forms.scss */
@@ -3252,7 +3252,7 @@ tbody.collapse.show {
   /* line 63, node_modules/bootstrap/scss/_custom-forms.scss */
   .custom-control-label::before {
     position: absolute;
-    top: 0.3125rem;
+    top: 0.22222rem;
     left: 0;
     display: block;
     width: 1rem;
@@ -3265,7 +3265,7 @@ tbody.collapse.show {
   /* line 78, node_modules/bootstrap/scss/_custom-forms.scss */
   .custom-control-label::after {
     position: absolute;
-    top: 0.3125rem;
+    top: 0.22222rem;
     left: 0;
     display: block;
     width: 1rem;
@@ -3323,9 +3323,9 @@ tbody.collapse.show {
 .custom-select {
   display: inline-block;
   width: 100%;
-  height: calc(2.50521rem + 0.13541rem);
+  height: calc(2.30209rem + 0.13541rem);
   padding: 0.375rem 1.75rem 0.375rem 0.75rem;
-  line-height: 1.625;
+  line-height: 1.44444;
   color: #495057;
   vertical-align: middle;
   background: #fff url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='%23343a40' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E") no-repeat right 0.75rem center;
@@ -3375,7 +3375,7 @@ tbody.collapse.show {
   position: relative;
   display: inline-block;
   width: 100%;
-  height: calc(2.50521rem + 0.13541rem);
+  height: calc(2.30209rem + 0.13541rem);
   margin-bottom: 0; }
 
 /* line 242, node_modules/bootstrap/scss/_custom-forms.scss */
@@ -3383,7 +3383,7 @@ tbody.collapse.show {
   position: relative;
   z-index: 2;
   width: 100%;
-  height: calc(2.50521rem + 0.13541rem);
+  height: calc(2.30209rem + 0.13541rem);
   margin: 0;
   opacity: 0; }
   /* line 250, node_modules/bootstrap/scss/_custom-forms.scss */
@@ -3404,9 +3404,9 @@ tbody.collapse.show {
   right: 0;
   left: 0;
   z-index: 1;
-  height: calc(2.50521rem + 0.13541rem);
+  height: calc(2.30209rem + 0.13541rem);
   padding: 0.33854rem 0.74479rem;
-  line-height: 1.625;
+  line-height: 1.44444;
   color: #495057;
   background-color: #fff;
   border: 0.06771rem solid #ced4da;
@@ -3419,9 +3419,9 @@ tbody.collapse.show {
     bottom: 0;
     z-index: 3;
     display: block;
-    height: calc(calc(2.50521rem + 0.13541rem) - 0.06771rem * 2);
+    height: calc(calc(2.30209rem + 0.13541rem) - 0.06771rem * 2);
     padding: 0.33854rem 0.74479rem;
-    line-height: 1.625;
+    line-height: 1.44444;
     color: #495057;
     content: "Browse";
     background-color: #e9ecef;
@@ -3535,8 +3535,8 @@ tbody.collapse.show {
 /* line 42, node_modules/bootstrap/scss/_navbar.scss */
 .navbar-brand {
   display: inline-block;
-  padding-top: 0.22344rem;
-  padding-bottom: 0.22344rem;
+  padding-top: 0.24375rem;
+  padding-bottom: 0.24375rem;
   margin-right: 1.625rem;
   font-size: 1.35rem;
   line-height: inherit;
@@ -4891,7 +4891,7 @@ button.close {
 /* line 109, node_modules/bootstrap/scss/_modal.scss */
 .modal-title {
   margin-bottom: 0;
-  line-height: 1.625; }
+  line-height: 1.44444; }
 
 /* line 116, node_modules/bootstrap/scss/_modal.scss */
 .modal-body {
@@ -4951,7 +4951,7 @@ button.close {
   font-family: "Overpass", Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: 400;
-  line-height: 1.625;
+  line-height: 1.44444;
   text-align: left;
   text-align: start;
   text-decoration: none;
@@ -5053,7 +5053,7 @@ button.close {
   font-family: "Overpass", Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: 400;
-  line-height: 1.625;
+  line-height: 1.44444;
   text-align: left;
   text-align: start;
   text-decoration: none;
@@ -8571,7 +8571,7 @@ span.smallcaps {
 .navbar-toggler.navbar-text {
   border: none;
   font-size: 1.125rem;
-  line-height: 1.625;
+  line-height: 1.44444;
   padding: 0; }
 
 /* line 15, source/scss/overrides/_navbar.scss */
