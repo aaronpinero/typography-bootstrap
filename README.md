@@ -2,6 +2,8 @@
 
 _this is a pre-release package for testing_
 
+> “Peanut butter and jelly, Riggs and Murtaugh, Sonny and Cher, Tyfy and Bootstrap 4”
+
 Tyfy for Bootstrap is a themed version of Bootstrap 4. The tools for modular scale, baseline grid, and intelligent margins from the Tyfy framework are combined Bootstrap's grid system and user interface components.
 
 Tyfy for Bootstrap has been created according to Bootstrap's theming guide. Modules from the Tyfy framework add variables and functions that are used to help customize Bootstrap's SASS variables.
