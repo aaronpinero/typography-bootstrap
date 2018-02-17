@@ -1,8 +1,8 @@
 // tyfy required
-@import "../../tyfy/source/scss/required/core";
-@import "../../tyfy/source/scss/required/functions";
-@import "../../tyfy/source/scss/required/settings";
-@import "../../tyfy/source/scss/required/mixins";
+@import "../../node_modules/tyfy/source/scss/required/core";
+@import "../../node_modules/tyfy/source/scss/required/functions";
+@import "../../node_modules/tyfy/source/scss/required/settings";
+@import "../../node_modules/tyfy/source/scss/required/mixins";
 
 // bootstrap variable customizations
 @import "customization/variables";

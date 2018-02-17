@@ -1,6 +1,0 @@
-.card {
-	@include sibling-margins(off);
-	.card-body {
-		@include sibling-margins(on);
-	}
-}
