@@ -1,0 +1,26 @@
+// override bootstrap mixins for vertical padding
+@mixin make-container-vertical-pad() {
+  padding-bottom: ($grid-gutter-width / 4);
+  padding-top: ($grid-gutter-width / 4);
+}
+@mixin make-grid-columns-vertical-pad($columns: $grid-columns, $gutter: $grid-gutter-width, $breakpoints: $grid-breakpoints) {
+  // Common properties for all breakpoints
+  %grid-column {
+    padding-top: ($gutter / 4);
+    padding-bottom: ($gutter / 4);
+  }
+  // override body adjacent sibling margin from tyfy for cols
+  * + %grid-column {
+	  margin-top:0;
+	}
+}
+@if $enable-grid-classes {
+	.container {
+		@include make-container-vertical-pad();
+	}
+	@include make-grid-columns-vertical-pad();
+}
+// override body adjacent sibling margin from tyfy for rows
+* + .row {
+	margin-top:0;
+}
