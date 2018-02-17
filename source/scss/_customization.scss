@@ -1,11 +1,3 @@
-// tyfy variable customizations
-$tyfy-grid-unit:0.8125rem;
-$tyfy-serif:"Zilla Slab",Georgia,Times,serif;
-$tyfy-sans:"Overpass",Helvetica,Arial,sans-serif;
-$tyfy-font-base:$tyfy-sans;
-$tyfy-symbol:"Material Icons";
-$tyfy-font-size-base:1.125rem;
-
 // tyfy required
 @import "../../node_modules/tyfy/source/scss/required/core";
 @import "../../node_modules/tyfy/source/scss/required/functions";
