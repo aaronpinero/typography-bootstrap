@@ -1,6 +1,6 @@
 {
   "name": "tyfy-bootstrap",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "A Tyfy-based theme for Bootstrap 4",
   "main": "docs/index.html",
   "scripts": {
@@ -25,10 +25,12 @@
     "postcss-cli": "^4.1.1",
     "templatesjs": "^2.0.0"
   },
-  "dependencies": {
+  "bundledDependencies": {
     "bootstrap": "^4.0.0",
-    "install": "^0.10.2",
-    "npm": "^5.6.0",
     "tyfy": "^1.2.0"
+  },
+  "dependencies": {
+    "install": "^0.10.2",
+    "npm": "^5.6.0"
   }
 }

@@ -1,0 +1,8 @@
+# ignore all documentation related stuff for the npm package
+docs
+docs.js
+source/html
+source/includes
+source/scss/tyfy-bootstrap-docs.scss
+dist/fonts
+dist/script
