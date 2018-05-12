@@ -115,7 +115,7 @@
 // You can add more entries to the $spacers map, should you need more variation.
 //
 // stylelint-disable
-$spacer:	grid(2);
+$spacer:	tygrid(2);
 //$spacers: () !default;
 //$spacers: map-merge((
 //  0: 0,
@@ -195,21 +195,21 @@ $paragraph-margin-bottom: 0;
 // Set the number of columns and specify the width of the gutters.
 //
 //$grid-columns:                12 !default;
-$grid-gutter-width: grid(4);
+$grid-gutter-width: tygrid(4);
 //
 // Components
 //
 // Define common padding and border radius sizes and more.
 //
-$line-height-lg: leading(scale(1),base) / scale(1); // divide by font size to remove units and make relative
-$line-height-sm: leading(scale(-1),base) / scale(-1); // divide by font size to remove units and make relative
+$line-height-lg: tylead(tyscale(1),base) / tyscale(1); // divide by font size to remove units and make relative
+$line-height-sm: tylead(tyscale(-1),base) / tyscale(-1); // divide by font size to remove units and make relative
 //
-$border-width: grid(0.08333);
+$border-width: tygrid(0.08333);
 //$border-color:                $gray-300 !default;
 //
-$border-radius: grid(0.25);
-$border-radius-lg: grid(0.33);
-$border-radius-sm: grid(0.1667);
+$border-radius: tygrid(0.25);
+$border-radius-lg: tygrid(0.33);
+$border-radius-sm: tygrid(0.1667);
 //
 //$component-active-color:      $white !default;
 //$component-active-bg:         theme-color("primary") !default;
@@ -232,22 +232,22 @@ $font-family-base: $tyfy-font-base;
 // stylelint-enable value-keyword-case
 //
 $font-size-base: $tyfy-font-size-base;
-$font-size-lg: scale(1);
-$font-size-sm: scale(-1);
+$font-size-lg: tyscale(1);
+$font-size-sm: tyscale(-1);
 //
 //$font-weight-light:           300 !default;
 //$font-weight-normal:          400 !default;
 //$font-weight-bold:            700 !default;
 //
 //$font-weight-base:            $font-weight-normal !default;
-$line-height-base: leading($font-size-base,base) / $font-size-base; // divide by font size to remove units and make relative
+$line-height-base: tylead($font-size-base,base) / $font-size-base; // divide by font size to remove units and make relative
 //
-$h1-font-size: scale(6);
-$h2-font-size: scale(4);
-$h3-font-size: scale(3);
-$h4-font-size: scale(2);
-$h5-font-size: scale(1);
-$h6-font-size: scale(0);
+$h1-font-size: tyscale(6);
+$h2-font-size: tyscale(4);
+$h3-font-size: tyscale(3);
+$h4-font-size: tyscale(2);
+$h5-font-size: tyscale(1);
+$h6-font-size: tyscale(0);
 //
 $headings-margin-bottom: 0;
 $headings-font-family: $tyfy-serif;
@@ -255,10 +255,10 @@ $headings-font-weight: 700;
 //$headings-line-height:        1.2 !default;
 //$headings-color:              inherit !default;
 //
-$display1-size: scale(10);
-$display2-size: scale(9);
-$display3-size: scale(8);
-$display4-size: scale(7);
+$display1-size: tyscale(10);
+$display2-size: tyscale(9);
+$display3-size: tyscale(8);
+$display4-size: tyscale(7);
 //
 $display1-weight: 500;
 $display2-weight: 500;
@@ -266,7 +266,7 @@ $display3-weight: 500;
 $display4-weight: 500;
 //$display-line-height:         $headings-line-height !default;
 //
-$lead-font-size: scale(2);
+$lead-font-size: tyscale(2);
 //$lead-font-weight:            300 !default;
 //
 $small-font-size: 100%/$tyfy-font-size-scalar;
@@ -286,7 +286,7 @@ $blockquote-font-size: $font-size-lg;
 //$kbd-box-shadow:              inset 0 -.1rem 0 rgba($black, .25) !default;
 //$nested-kbd-font-weight:      $font-weight-bold !default;
 //
-$list-inline-padding: grid(1);
+$list-inline-padding: tygrid(1);
 //
 //$mark-bg:                     #fcf8e3 !default;
 //
@@ -297,8 +297,8 @@ $list-inline-padding: grid(1);
 //
 // Customizes the `.table` component with basic values, each used across all table variations.
 //
-$table-cell-padding: grid(1);
-$table-cell-padding-sm: grid(0.5);
+$table-cell-padding: tygrid(1);
+$table-cell-padding-sm: tygrid(0.5);
 //
 //$table-bg:                    transparent !default;
 //$table-accent-bg:             rgba($black, .05) !default;
@@ -322,20 +322,20 @@ $table-cell-padding-sm: grid(0.5);
 //
 // Shared variables that are reassigned to `$input-` and `$btn-` specific variables.
 //
-$input-btn-padding-y: grid(0.5) - $border-width;
-$input-btn-padding-x: grid(1) - $border-width;
+$input-btn-padding-y: tygrid(0.5) - $border-width;
+$input-btn-padding-x: tygrid(1) - $border-width;
 //$input-btn-line-height:       $line-height-base !default;
 //
 //$input-btn-focus-width:       .2rem !default;
 //$input-btn-focus-color:       rgba($component-active-bg, .25) !default;
 //$input-btn-focus-box-shadow:  0 0 0 $input-btn-focus-width $input-btn-focus-color !default;
 //
-$input-btn-padding-y-sm: grid(0.25) - $border-width;
-$input-btn-padding-x-sm: grid(0.75) - $border-width;
+$input-btn-padding-y-sm: tygrid(0.25) - $border-width;
+$input-btn-padding-x-sm: tygrid(0.75) - $border-width;
 //$input-btn-line-height-sm:    $line-height-sm !default;
 //
-$input-btn-padding-y-lg: grid(1) - $border-width;
-$input-btn-padding-x-lg: grid(1.5) - $border-width;
+$input-btn-padding-y-lg: tygrid(1) - $border-width;
+$input-btn-padding-x-lg: tygrid(1.5) - $border-width;
 //$input-btn-line-height-lg:    $line-height-lg !default;
 //
 //$input-btn-border-width:      $border-width !default;
@@ -368,7 +368,7 @@ $input-btn-padding-x-lg: grid(1.5) - $border-width;
 //
 //$btn-link-disabled-color:     $gray-600 !default;
 //
-$btn-block-spacing-y: grid(1);
+$btn-block-spacing-y: tygrid(1);
 //
 // Allows for customizing button radius independently from global border radius
 //$btn-border-radius:           $border-radius !default;
@@ -530,7 +530,7 @@ $btn-block-spacing-y: grid(1);
 // Dropdown menu container and contents.
 //
 //$dropdown-min-width:                10rem !default;
-$dropdown-padding-y: grid(0.5);
+$dropdown-padding-y: tygrid(0.5);
 //$dropdown-spacer:                   .125rem !default;
 //$dropdown-bg:                       $white !default;
 //$dropdown-border-color:             rgba($black, .15) !default;
@@ -548,8 +548,8 @@ $dropdown-padding-y: grid(0.5);
 //
 //$dropdown-link-disabled-color:      $gray-600 !default;
 //
-$dropdown-item-padding-y: grid(0.5);
-$dropdown-item-padding-x: grid(1);
+$dropdown-item-padding-y: tygrid(0.5);
+$dropdown-item-padding-x: tygrid(1);
 //
 //$dropdown-header-color:             $gray-600 !default;
 //
@@ -569,8 +569,8 @@ $dropdown-item-padding-x: grid(1);
 //
 // Navs
 //
-$nav-link-padding-y: grid(0.5);
-$nav-link-padding-x: grid(1);
+$nav-link-padding-y: tygrid(0.5);
+$nav-link-padding-x: tygrid(1);
 //$nav-link-disabled-color:           $gray-600 !default;
 //
 //$nav-tabs-border-color:             $gray-300 !default;
@@ -655,8 +655,8 @@ $nav-link-padding-x: grid(1);
 //
 // Cards
 //
-$card-spacer-y: grid(1);
-$card-spacer-x: grid(1.5);
+$card-spacer-y: tygrid(1);
+$card-spacer-x: tygrid(1.5);
 //$card-border-width:                 $border-width !default;
 //$card-border-radius:                $border-radius !default;
 //$card-border-color:                 rgba($black, .125) !default;
@@ -664,13 +664,13 @@ $card-spacer-x: grid(1.5);
 //$card-cap-bg:                       rgba($black, .03) !default;
 //$card-bg:                           $white !default;
 //
-$card-img-overlay-padding: grid(1.5);
+$card-img-overlay-padding: tygrid(1.5);
 //
 //$card-group-margin:                 ($grid-gutter-width / 2) !default;
 //$card-deck-margin:                  $card-group-margin !default;
 //
 //$card-columns-count:                3 !default;
-$card-columns-gap: grid(1.5);
+$card-columns-gap: tygrid(1.5);
 //$card-columns-margin:               $card-spacer-y !default;
 //
 //
@@ -766,8 +766,8 @@ $card-columns-gap: grid(1.5);
 //
 // Define alert colors, border radius, and padding.
 //
-$alert-padding-y: grid(1);
-$alert-padding-x: grid(1.5);
+$alert-padding-y: tygrid(1);
+$alert-padding-x: tygrid(1.5);
 $alert-margin-bottom: 0rem;
 //$alert-border-radius:               $border-radius !default;
 //$alert-link-font-weight:            $font-weight-bold !default;

@@ -4,7 +4,7 @@ h1, .h1 {
 	font-family:$headings-font-family;
 	font-size:$h1-font-size;
 	font-weight:$headings-font-weight;
-	line-height:leading($h1-font-size,heading);
+	line-height:tylead($h1-font-size,heading);
 }
 h2, .h2 {
 	color:$headings-color;
@@ -12,7 +12,7 @@ h2, .h2 {
 	font-size:$h2-font-size;
 	font-style:normal;
 	font-weight:$headings-font-weight;
-	line-height:leading($h2-font-size,heading);
+	line-height:tylead($h2-font-size,heading);
 }
 h3, .h3 {
 	color:$headings-color;
@@ -20,28 +20,28 @@ h3, .h3 {
 	font-size:$h3-font-size;
 	font-style:normal;
 	font-weight:$headings-font-weight;
-	line-height:leading($h3-font-size,heading);
+	line-height:tylead($h3-font-size,heading);
 }
 h4, .h4 {
 	color:$headings-color;
 	font-family:$headings-font-family;
 	font-size:$h4-font-size;
 	font-weight:$headings-font-weight;
-	line-height:leading($h4-font-size,heading);
+	line-height:tylead($h4-font-size,heading);
 }
 h5, .h5 {
 	color:$headings-color;
 	font-family:$headings-font-family;
 	font-size:$h5-font-size;
 	font-weight:$headings-font-weight;
-	line-height:leading($h5-font-size,heading);
+	line-height:tylead($h5-font-size,heading);
 }
 h6, .h6 {
 	color:$headings-color;
 	font-family:$headings-font-family;
 	font-size:$h6-font-size;
 	font-weight:$headings-font-weight;
-	line-height:leading($h6-font-size,heading);
+	line-height:tylead($h6-font-size,heading);
 }
 
 // Type display classes
@@ -54,7 +54,7 @@ h6, .h6 {
 
 // Lead paragraph
 .lead {
-	line-height:leading($lead-font-size,tall);
+	line-height:tylead($lead-font-size,tall);
 }
 
 // inline lists

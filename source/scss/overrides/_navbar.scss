@@ -13,8 +13,8 @@
 
 .navbar-nav {
   .nav-link {
-    padding-right:grid(1);
-    padding-left:grid(1);
+    padding-right:tygrid(1);
+    padding-left:tygrid(1);
   }
 }
 
@@ -27,8 +27,8 @@
       @include media-breakpoint-up($next) {
         .navbar-nav {
           .nav-link {
-            padding-right:grid(1);
-            padding-left:grid(1);
+            padding-right:tygrid(1);
+            padding-left:tygrid(1);
           }
         }
       }
