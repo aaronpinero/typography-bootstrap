@@ -1,17 +1,16 @@
-@import url(../../dist/fonts/league/stylesheet.css);
-/* line 4, source/scss/tyfy-bootstrap-docs.scss */
+/* line 1, source/scss/tyfy-bootstrap-docs.scss */
 .display-1, .display-2, .display-3, .display-4 {
-  font-family: "League Gothic";
-  font-weight: 400;
+  font-family: "IBM Plex Sans Condensed";
+  font-weight: 700;
   text-transform: uppercase; }
 
-/* line 9, source/scss/tyfy-bootstrap-docs.scss */
+/* line 6, source/scss/tyfy-bootstrap-docs.scss */
 .navbar .navbar-brand {
-  font-family: "League Gothic";
+  font-family: "IBM Plex Sans Condensed";
   font-size: 1.75rem;
-  font-weight: 400;
+  font-weight: 700;
   text-transform: uppercase; }
 
-/* line 15, source/scss/tyfy-bootstrap-docs.scss */
+/* line 12, source/scss/tyfy-bootstrap-docs.scss */
 .text-orange {
   color: #ffa000 !important; }

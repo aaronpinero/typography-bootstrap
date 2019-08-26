@@ -4,5 +4,10 @@
 @import "../../node_modules/tyfy/source/scss/required/settings";
 @import "../../node_modules/tyfy/source/scss/required/mixins";
 
+// tyfy customizations
+$tyfy-sans:'IBM Plex Sans',sans-serif;
+$tyfy-serif:'IBM Plex Serif',serif;
+$tyfy-font-base:$tyfy-serif;
+
 // bootstrap variable customizations
 @import "customization/variables";

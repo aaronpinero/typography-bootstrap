@@ -1,15 +1,12 @@
-@import "../../dist/fonts/league/stylesheet.css";
-// thank you to the League of Movable Type for the use of the League Gothic font
-
 .display-1, .display-2, .display-3, .display-4 {
-	font-family:"League Gothic";
-	font-weight:400;
+	font-family:"IBM Plex Sans Condensed";
+	font-weight:700;
 	text-transform:uppercase;
 }
 .navbar .navbar-brand {
-	font-family:"League Gothic";
+	font-family:"IBM Plex Sans Condensed";
 	font-size:1.75rem;
-	font-weight:400;
+	font-weight:700;
 	text-transform:uppercase;
 }
 .text-orange {

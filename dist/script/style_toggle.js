@@ -1,6 +1,6 @@
 theme_tyfy = "../dist/style/tyfy-bootstrap.css";
 theme_tyfy_docs = "../dist/style/tyfy-bootstrap-docs.css";
-theme_default = "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css";
+theme_default = "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css";
 $('#style-toggle').click(function(e){
 	e.preventDefault();
 	link = $('link#mainstyles');
