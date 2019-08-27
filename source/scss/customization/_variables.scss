@@ -25,21 +25,18 @@ $border-width: tygrid(1/16);
 $font-family-sans-serif: $tyfont-sans;
 $font-family-monospace: $tyfont-mono;
 $font-family-base: $tyfont-font-base;
-
 $font-size-base: $tyfont-size-base;
 $font-size-lg: tyscale(1);
 $font-size-sm: tyscale(-1);
 
 // from line 289
 $line-height-base: tylead($tyfont-size-base) / $tyfont-size-base; // divide by font size to remove units and make relative
-
 $h1-font-size: tyscale(6);
 $h2-font-size: tyscale(4);
 $h3-font-size: tyscale(3);
 $h4-font-size: tyscale(2);
 $h5-font-size: tyscale(1);
 $h6-font-size: tyscale(0);
-
 $headings-margin-bottom: 0;
 $headings-font-family: $tyfont-serif;
 $headings-font-weight: 700;
@@ -88,28 +85,36 @@ $input-btn-padding-x-lg: tygrid(1.5) - $border-width;
 // use grid units
 $btn-block-spacing-y: tygrid(1);
 
-// line 491
-$input-height-inner:                    calc(#{$input-line-height * 1em} + #{$input-padding-y * 2}) !default;
-$input-height-inner-half:               calc(#{$input-line-height * .5em} + #{$input-padding-y}) !default;
-$input-height-inner-quarter:            calc(#{$input-line-height * .25em} + #{$input-padding-y / 2}) !default;
+// from line 491
+// use grid units
+$input-height-inner:                    calc(#{tylead($tyfont-size-base)} + #{$input-padding-y * 2});
+$input-height-inner-half:               calc(#{tylead($tyfont-size-base) / 2} + #{$input-padding-y});
+$input-height-inner-quarter:            calc(#{tylead($tyfont-size-base) / 4} + #{$input-padding-y / 2});
+$input-height:                          calc(#{tylead($tyfont-size-base)} + #{$input-padding-y * 2} + #{$input-height-border}) !default;
+$input-height-sm:                       calc(#{tylead(tyscale(-1))} + #{$input-btn-padding-y-sm * 2} + #{$input-height-border}) !default;
+$input-height-lg:                       calc(#{tylead(tyscale(1))} + #{$input-btn-padding-y-lg * 2} + #{$input-height-border}) !default;
+$form-text-margin-top:                  tygrid(0.5);
+$form-check-input-gutter:               tygrid(3);
+$form-check-input-margin-y:             tygrid(0.5);
+$form-check-input-margin-x:             tygrid(0.5);
+$form-check-inline-margin-x:            tygrid(1);
+$form-check-inline-input-margin-x:      tygrid(0.5);
+$form-grid-gutter-width:                tygrid(1);
+$form-group-margin-bottom:              0;
 
-$input-height:                          calc(#{$input-line-height * 1em} + #{$input-padding-y * 2} + #{$input-height-border}) !default;
-$input-height-sm:                       calc(#{$input-line-height-sm * 1em} + #{$input-btn-padding-y-sm * 2} + #{$input-height-border}) !default;
-$input-height-lg:                       calc(#{$input-line-height-lg * 1em} + #{$input-btn-padding-y-lg * 2} + #{$input-height-border}) !default;
+// from line 519
+// use grid units
+$custom-control-gutter:                 tygrid(0.5);
+$custom-control-spacer-x:               tygrid(1);
+$custom-control-indicator-size:         tygrid(1);
 
-$input-transition:                      border-color .15s ease-in-out, box-shadow .15s ease-in-out !default;
+// from line 568
+// use grid units
+$custom-select-indicator-padding:       tygrid(1); // Extra padding to account for the presence of the background-image based indicator
 
-$form-text-margin-top:                  .25rem !default;
 
-$form-check-input-gutter:               1.25rem !default;
-$form-check-input-margin-y:             .3rem !default;
-$form-check-input-margin-x:             .25rem !default;
 
-$form-check-inline-margin-x:            .75rem !default;
-$form-check-inline-input-margin-x:      .3125rem !default;
 
-$form-grid-gutter-width:                10px !default;
-$form-group-margin-bottom:              1rem !default;
 
 
 
