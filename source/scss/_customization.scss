@@ -1,13 +1,8 @@
 // tyfy required
-@import "../../node_modules/tyfy/source/scss/required/core";
-@import "../../node_modules/tyfy/source/scss/required/functions";
-@import "../../node_modules/tyfy/source/scss/required/settings";
-@import "../../node_modules/tyfy/source/scss/required/mixins";
-
-// tyfy customizations
-$tyfy-sans:'IBM Plex Sans',sans-serif;
-$tyfy-serif:'IBM Plex Serif',serif;
-$tyfy-font-base:$tyfy-serif;
+@import "tyfy/required/core";
+@import "tyfy/required/functions";
+@import "tyfy/required/settings";
+@import "tyfy/required/mixins";
 
 // bootstrap variable customizations
 @import "customization/variables";

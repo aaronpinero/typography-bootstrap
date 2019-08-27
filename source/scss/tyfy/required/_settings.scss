@@ -1,0 +1,119 @@
+// variables are prefixed "ty" to avoid name collisions
+// with other frameworks
+
+// grid and spacing
+// sass maps of spacing and indent values are defined as multiple of
+// the grid unit
+$tyspacing: (
+  "medium":   2,
+  "large":    3,
+) !default;
+$tyindent: (
+  "medium":   3,
+  "small":    2,
+) !default;
+$tyspacing-md:                 tygrid(map-get($tyspacing,"medium")) !default;
+$tyspacing-lg:                 tygrid(map-get($tyspacing,"large")) !default;
+$tyindent-md:                  tygrid(map-get($tyindent,"medium")) !default;
+$tyindent-sm:                  tygrid(map-get($tyindent,"small")) !default;
+
+// toggle for adjacent sibling margins
+$tymargins-on:                 true !default;
+
+// fonts
+$tyfont-serif:                 georgia, serif !default;
+$tyfont-sans:                  helvetica, arial, sans-serif !default;
+$tyfont-mono:                  monaco, courier, monospace !default;
+$tyfont-symbol:                tyicons !default;
+
+// font assignments
+$tyfont-base:                  $tyfont-serif !default;
+$tyfont-heading:               $tyfont-sans !default;
+$tyfont-table:                 $tyfont-sans !default;
+$tyfont-input:                 $tyfont-sans !default;
+
+// font sizes
+// a sass map of font size values defined as number of steps up or down
+// the modular scale from the base font size
+$tyfont-size: (
+  "sm":       -1,
+  "h6":       0,
+  "h5":       1,
+  "h4":       2,
+  "h3":       3,
+  "h2":       4,
+  "h1":       6,
+  "quote":    2,
+  "lede":     2
+) !default;
+$tyfont-size-sm:               tyscale(map-get($tyfont-size,"sm")) !default;
+$tyfont-size-h6:               tyscale(map-get($tyfont-size,"h6")) !default;
+$tyfont-size-h5:               tyscale(map-get($tyfont-size,"h5")) !default;
+$tyfont-size-h4:               tyscale(map-get($tyfont-size,"h4")) !default;
+$tyfont-size-h3:               tyscale(map-get($tyfont-size,"h3")) !default;
+$tyfont-size-h2:               tyscale(map-get($tyfont-size,"h2")) !default;
+$tyfont-size-h1:               tyscale(map-get($tyfont-size,"h1")) !default;
+$tyfont-size-quote:            tyscale(map-get($tyfont-size,"quote")) !default;
+$tyfont-size-lede:             tyscale(map-get($tyfont-size,"lede")) !default;
+
+// measures
+$tywidth-border:               2px !default;
+$tyradius-border:              4px !default;
+
+// breakpoints
+$tybreak-float:                40em !default;
+$tybreak-quote:                40em !default;
+$tybreak-cols2:                50em !default;
+$tybreak-list-cols2:           35em !default;
+$tybreak-list-cols3:           55em !default;
+$tybreak-list-cols4:           75em !default;
+$tybreak-collapsables:         50em !default;
+$tybreak-tabs:                 40em !default;
+$tybreak-table:                40em !default;
+
+// durations for transition and animation
+$tyduration: (
+  "hover":    250ms,
+  "move":     500ms,
+  "long":     1000ms,
+  "longer":   2000ms,
+  "longest":  3000ms
+) !default;
+$tyduration-hover:             map-get($tyduration,"hover") !default;
+$tyduration-move:              map-get($tyduration,"move") !default;
+
+// colors
+$tycolor-bg:                   white !default;
+$tycolor-fg:                   #111111 !default;
+$tycolor-text-light:           mix($tycolor-fg,$tycolor-bg,60%) !default;
+$tycolor-link-default:         #0066CC !default;
+$tycolor-link-active:          #cc0066 !default;
+$tycolor-bg-tab-active:        rgba($tycolor-link-active,0.12) !default;
+$tycolor-border:               mix($tycolor-fg,$tycolor-bg,12%) !default;
+$tycolor-border-link-default:  rgba($tycolor-link-default,0.5) !default;
+$tycolor-border-link-active:   rgba($tycolor-link-active,0.75) !default;
+$tycolor-shade:                rgba($tycolor-fg,0.05) !default;
+
+// icons
+// path to icon fonts
+$tyicons-path:                 "../fonts/tyicons" !default; // do not add a trailing /
+
+// icon character codes
+// these are copied from the scss file that is output by running `npm build icons`
+// they are included here so tyicons is not a requirement for using tyfy;
+// the initial slash (\) has been removed so the values are stored as strings rather than as the actual character;
+// the tychar($code) function can be used to output the string with the initial '\';
+// these values can be overridden to allow a different icon font
+
+$tyicons-angle-down:           "ea01" !default;
+$tyicons-angle-left:           "ea02" !default;
+$tyicons-angle-right:          "ea03" !default;
+$tyicons-angle-up:             "ea04" !default;
+$tyicons-angle-up-down:        "ea05" !default;
+$tyicons-bars:                 "ea06" !default;
+$tyicons-check:                "ea07" !default;
+$tyicons-dash:                 "ea08" !default;
+$tyicons-quote-left:           "ea09" !default;
+$tyicons-quote-right:          "ea0a" !default;
+$tyicons-search:               "ea0b" !default;
+$tyicons-x:                    "ea0c" !default;

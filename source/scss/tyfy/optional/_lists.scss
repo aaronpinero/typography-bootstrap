@@ -1,0 +1,209 @@
+// default lists
+ol,
+ul {
+  padding-left:$tyindent-md;
+}
+dt {
+  font-family:$tyfont-heading;
+  font-weight:700;
+}
+dd {
+  margin-left:0;
+  margin-right:0;
+  padding-left:$tyindent-md;
+}
+
+// nested lists
+ol, ul {
+  ol, ul {
+    margin-top:$tyspacing-md/2;
+  }
+  .tymargins-off &,
+  &.tymargins-off {
+    ol, ul {
+      margin-top:0;
+    }
+  }
+}
+
+// unordered list variations
+ul {
+  &.list-icons {
+    li {
+      list-style-type:none;
+      position:relative;
+      &::before {
+        color:var(--tycolor-text-light);
+        font-family:$tyfont-symbol;
+        font-size:66%;
+        margin-right:tygrid(0.5);
+        position:absolute;
+        right:100%;
+        top:0;
+      }
+    }
+    &.list-icons-angle li::before {
+      content:tychar($tyicons-angle-right);
+    }
+    &.list-icons-dash li::before {
+      content:tychar($tyicons-dash);
+      margin-top:0.1em;
+    }
+    &.list-icons-check li::before {
+      content:tychar($tyicons-check);
+    }
+  }
+  &.list-nobullet {
+    padding-left:0;
+    li {
+      list-style-type:none;
+    }
+    &.list-indented {
+      li {
+        box-sizing:border-box;
+        padding-left:$tyindent-md/2;
+        text-indent:-1 * ($tyindent-md/2);
+      }
+      ol, ul {
+        margin-left:-1 * ($tyindent-md/2);
+      }
+    }
+    &.list-cols-2,
+    &.list-cols-3,
+    &.list-grid-2,
+    &.list-grid-3,
+    &.list-grid-4 {
+      @media (min-width:$tybreak-list-cols2) {
+        li {
+          margin-left:0;
+        }
+      }
+    }
+  }
+  &.list-flex {
+    @include tymargins(off);
+    display:flex;
+    flex-wrap:wrap;
+    padding-left:0;
+    li {
+      margin-left:$tyindent-md;
+    }
+    &.list-flex-center {
+      justify-content:center;
+    }
+    &.list-flex-right {
+      justify-content:flex-end;
+    }
+    &.list-nobullet {
+      li {
+        margin-left:0;
+      }
+    }
+  }
+}
+
+// ordered and unordered list variations
+ol,
+ul {
+  &.list-cols-2,
+  &.list-cols-3 {
+    @media (min-width:$tybreak-list-cols2) {
+      @include tymargins(off);
+      columns:2;
+      column-gap:$tyspacing-lg;
+      margin-bottom:tygrid(-1); // to balance out the bottom padding on the list items
+      padding-left:0;
+      li {
+        -webkit-column-break-inside:avoid;
+        page-break-inside:avoid;
+        break-inside:avoid;
+        margin-left:$tyindent-md;
+        padding-bottom:tygrid(1);
+      }
+      &.tymargins-off,
+      .tymargins-off & {
+        li {
+          padding-bottom:0;
+        }
+      }
+    }
+  }
+  &.list-cols-3 {
+    @media (min-width:$tybreak-list-cols3) {
+      columns:3;
+    }
+  }
+
+  &.list-grid-2,
+  &.list-grid-3,
+  &.list-grid-4 {
+    @media (min-width:$tybreak-list-cols2) {
+      display:flex;
+      flex-wrap:wrap;
+      padding-left:0;
+      li {
+        box-sizing:border-box;
+        margin-left:$tyindent-md;
+        width:calc(50% - #{$tyindent-md} - #{(0.5 * $tyspacing-lg)});
+        &:nth-child(2) {
+          margin-top:0; // override of the default margin
+        }
+        &:nth-child(2n+1) {
+          margin-right:$tyspacing-lg;
+        }
+      }
+      &.list-nobullet {
+        li {
+          width:calc(50% - #{(0.5 * $tyspacing-lg)});
+        }
+      }
+    }
+  }
+  &.list-grid-3,
+  &.list-grid-4 {
+    @media (min-width:$tybreak-list-cols3) {
+      li {
+        width:calc(33.33% - #{$tyindent-md} - #{(0.667 * $tyspacing-lg)});
+        &:nth-child(3) {
+          margin-top:0; // override of the default margin
+        }
+        &:nth-child(2n+1) {
+          margin-right:0;
+        }
+        &:nth-child(3n+1),
+        &:nth-child(3n+2) {
+          margin-right:$tyspacing-lg;
+        }
+      }
+      &.list-nobullet {
+        li {
+          width:calc(33.33% - #{(0.667 * $tyspacing-lg)});
+        }
+      }
+    }
+  }
+  &.list-grid-4 {
+    @media (min-width:$tybreak-list-cols4) {
+      li {
+        width:calc(25% - #{$tyindent-md} - #{(0.75 * $tyspacing-lg)});
+        &:nth-child(4) {
+          margin-top:0; // override of the default margin
+        }
+        &:nth-child(3n+1),
+        &:nth-child(3n+2) {
+          margin-right:0;
+        }
+        &:nth-child(4n+1),
+        &:nth-child(4n+2),
+        &:nth-child(4n+3) {
+          margin-right:$tyspacing-lg;
+        }
+      }
+      &.list-nobullet {
+        li {
+          width:calc(25% - #{(0.75 * $tyspacing-lg)});
+        }
+      }
+    }
+  }
+}
