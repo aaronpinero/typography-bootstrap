@@ -112,140 +112,46 @@ $custom-control-indicator-size:         tygrid(1);
 // use grid units
 $custom-select-indicator-padding:       tygrid(1); // Extra padding to account for the presence of the background-image based indicator
 
-
-
-
-
-
-
-// Dropdowns
-//
-// Dropdown menu container and contents.
-//
-//$dropdown-min-width:                10rem !default;
-$dropdown-padding-y: tygrid(0.5);
-//$dropdown-spacer:                   .125rem !default;
-//$dropdown-bg:                       $white !default;
-//$dropdown-border-color:             rgba($black, .15) !default;
-//$dropdown-border-radius:            $border-radius !default;
-//$dropdown-border-width:             $border-width !default;
-//$dropdown-divider-bg:               $gray-200 !default;
-//$dropdown-box-shadow:               0 .5rem 1rem rgba($black, .175) !default;
-//
-//$dropdown-link-color:               $gray-900 !default;
-//$dropdown-link-hover-color:         darken($gray-900, 5%) !default;
-//$dropdown-link-hover-bg:            $gray-100 !default;
-//
-//$dropdown-link-active-color:        $component-active-color !default;
-//$dropdown-link-active-bg:           $component-active-bg !default;
-//
-//$dropdown-link-disabled-color:      $gray-600 !default;
-//
-$dropdown-item-padding-y: tygrid(0.5);
-$dropdown-item-padding-x: tygrid(1);
-//
-//$dropdown-header-color:             $gray-600 !default;
-//
-//
-// Z-index master list
-//
-// Warning: Avoid customizing these values. They're used for a bird's eye view
-// of components dependent on the z-axis and are designed to all work together.
-//
-//$zindex-dropdown:                   1000 !default;
-//$zindex-sticky:                     1020 !default;
-//$zindex-fixed:                      1030 !default;
-//$zindex-modal-backdrop:             1040 !default;
-//$zindex-modal:                      1050 !default;
-//$zindex-popover:                    1060 !default;
-//$zindex-tooltip:                    1070 !default;
-//
-// Navs
-//
+// from line 689
+// use grid units
 $nav-link-padding-y: tygrid(0.5);
 $nav-link-padding-x: tygrid(1);
-//$nav-link-disabled-color:           $gray-600 !default;
-//
-//$nav-tabs-border-color:             $gray-300 !default;
-//$nav-tabs-border-width:             $border-width !default;
-//$nav-tabs-border-radius:            $border-radius !default;
-//$nav-tabs-link-hover-border-color:  $gray-200 $gray-200 $nav-tabs-border-color !default;
-//$nav-tabs-link-active-color:        $gray-700 !default;
-//$nav-tabs-link-active-bg:           $body-bg !default;
-//$nav-tabs-link-active-border-color: $gray-300 $gray-300 $nav-tabs-link-active-bg !default;
-//
-//$nav-pills-border-radius:           $border-radius !default;
-//$nav-pills-link-active-color:       $component-active-color !default;
-//$nav-pills-link-active-bg:          $component-active-bg !default;
-//
-// Navbar
-//
-//$navbar-padding-y:                  ($spacer / 2) !default;
-//$navbar-padding-x:                  $spacer !default;
-//
-//$navbar-nav-link-padding-x:         .5rem !default;
-//
-//$navbar-brand-font-size:            $font-size-lg !default;
-// Compute the navbar-brand padding-y so the navbar-brand will have the same height as navbar-text and nav-link
-//$nav-link-height:                   ($font-size-base * $line-height-base + $nav-link-padding-y * 2) !default;
-//$navbar-brand-height:               $navbar-brand-font-size * $line-height-base !default;
-//$navbar-brand-padding-y:            ($nav-link-height - $navbar-brand-height) / 2 !default;
-//
-//$navbar-toggler-padding-y:          .25rem !default;
-//$navbar-toggler-padding-x:          .75rem !default;
-//$navbar-toggler-font-size:          $font-size-lg !default;
-//$navbar-toggler-border-radius:      $btn-border-radius !default;
-//
-//$navbar-dark-color:                 rgba($white, .5) !default;
-//$navbar-dark-hover-color:           rgba($white, .75) !default;
-//$navbar-dark-active-color:          $white !default;
-//$navbar-dark-disabled-color:        rgba($white, .25) !default;
-//$navbar-dark-toggler-icon-bg:       str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#{$navbar-dark-color}' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"), "#", "%23") !default;
-//$navbar-dark-toggler-border-color:  rgba($white, .1) !default;
-//
-//$navbar-light-color:                rgba($black, .5) !default;
-//$navbar-light-hover-color:          rgba($black, .7) !default;
-//$navbar-light-active-color:         rgba($black, .9) !default;
-//$navbar-light-disabled-color:       rgba($black, .3) !default;
-//$navbar-light-toggler-icon-bg:      str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#{$navbar-light-color}' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"), "#", "%23") !default;
-//$navbar-light-toggler-border-color: rgba($black, .1) !default;
-//
-// Pagination
-//
-//$pagination-padding-y:              .5rem !default;
-//$pagination-padding-x:              .75rem !default;
-//$pagination-padding-y-sm:           .25rem !default;
-//$pagination-padding-x-sm:           .5rem !default;
-//$pagination-padding-y-lg:           .75rem !default;
-//$pagination-padding-x-lg:           1.5rem !default;
-//$pagination-line-height:            1.25 !default;
-//
-//$pagination-color:                  $link-color !default;
-//$pagination-bg:                     $white !default;
-//$pagination-border-width:           $border-width !default;
-//$pagination-border-color:           $gray-300 !default;
-//
-//$pagination-focus-box-shadow:       $input-btn-focus-box-shadow !default;
-//
-//$pagination-hover-color:            $link-hover-color !default;
-//$pagination-hover-bg:               $gray-200 !default;
-//$pagination-hover-border-color:     $gray-300 !default;
-//
-//$pagination-active-color:           $component-active-color !default;
-//$pagination-active-bg:              $component-active-bg !default;
-//$pagination-active-border-color:    $pagination-active-bg !default;
-//
-//$pagination-disabled-color:         $gray-600 !default;
-//$pagination-disabled-bg:            $white !default;
-//$pagination-disabled-border-color:  $gray-300 !default;
-//
-//
-// Jumbotron
-//
-//$jumbotron-padding:                 2rem !default;
-//$jumbotron-bg:                      $gray-200 !default;
-//
-//
+
+// from line 714
+// use grid units
+$navbar-nav-link-padding-x: tygrid(0.5);
+
+// from line 722
+// use grid units
+$navbar-toggler-padding-y: tygrid(0.5);
+$navbar-toggler-padding-x: tygrid(1);
+
+// from line 751
+// use grid units
+$dropdown-min-width: tygrid(12);
+$dropdown-padding-y: tygrid(0.5);
+$dropdown-spacer: tygrid(0.25);
+
+// from line 774
+// use grid units
+$dropdown-item-padding-y: tygrid(0.25);
+$dropdown-item-padding-x: tygrid(1.5);
+
+// from line 782
+// use grid units
+$pagination-padding-y: tygrid(0.5);
+$pagination-padding-x: tygrid(1);
+$pagination-padding-y-sm: tygrid(0.25);
+$pagination-padding-x-sm: tygrid(0.5);
+$pagination-padding-y-lg: tygrid(0.75);
+$pagination-padding-x-lg: tygrid(1.5);
+$pagination-line-height: tylead(tyscale(0));
+
+// from line 813
+// use grid units
+$jumbotron-padding: tygrid(4);
+
+
 // Cards
 //
 $card-spacer-y: tygrid(1);
