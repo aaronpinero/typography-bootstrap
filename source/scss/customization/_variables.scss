@@ -87,30 +87,30 @@ $btn-block-spacing-y: tygrid(1);
 
 // from line 491
 // use grid units
-$input-height-inner:                    calc(#{tylead($tyfont-size-base)} + #{$input-padding-y * 2});
-$input-height-inner-half:               calc(#{tylead($tyfont-size-base) / 2} + #{$input-padding-y});
-$input-height-inner-quarter:            calc(#{tylead($tyfont-size-base) / 4} + #{$input-padding-y / 2});
-$input-height:                          calc(#{tylead($tyfont-size-base)} + #{$input-padding-y * 2} + #{$input-height-border}) !default;
-$input-height-sm:                       calc(#{tylead(tyscale(-1))} + #{$input-btn-padding-y-sm * 2} + #{$input-height-border}) !default;
-$input-height-lg:                       calc(#{tylead(tyscale(1))} + #{$input-btn-padding-y-lg * 2} + #{$input-height-border}) !default;
-$form-text-margin-top:                  tygrid(0.5);
-$form-check-input-gutter:               tygrid(3);
-$form-check-input-margin-y:             tygrid(0.5);
-$form-check-input-margin-x:             tygrid(0.5);
-$form-check-inline-margin-x:            tygrid(1);
-$form-check-inline-input-margin-x:      tygrid(0.5);
-$form-grid-gutter-width:                tygrid(1);
-$form-group-margin-bottom:              0;
+$input-height-inner: calc(#{tylead($tyfont-size-base)} + #{$input-padding-y * 2});
+$input-height-inner-half: calc(#{tylead($tyfont-size-base) / 2} + #{$input-padding-y});
+$input-height-inner-quarter: calc(#{tylead($tyfont-size-base) / 4} + #{$input-padding-y / 2});
+$input-height: calc(#{tylead($tyfont-size-base)} + #{$input-padding-y * 2} + #{$input-height-border}) !default;
+$input-height-sm: calc(#{tylead(tyscale(-1))} + #{$input-btn-padding-y-sm * 2} + #{$input-height-border}) !default;
+$input-height-lg: calc(#{tylead(tyscale(1))} + #{$input-btn-padding-y-lg * 2} + #{$input-height-border}) !default;
+$form-text-margin-top: tygrid(0.5);
+$form-check-input-gutter: tygrid(3);
+$form-check-input-margin-y: tygrid(0.5);
+$form-check-input-margin-x: tygrid(0.5);
+$form-check-inline-margin-x: tygrid(1);
+$form-check-inline-input-margin-x: tygrid(0.5);
+$form-grid-gutter-width: tygrid(1);
+$form-group-margin-bottom: 0;
 
 // from line 519
 // use grid units
-$custom-control-gutter:                 tygrid(0.5);
-$custom-control-spacer-x:               tygrid(1);
-$custom-control-indicator-size:         tygrid(1);
+$custom-control-gutter: tygrid(0.5);
+$custom-control-spacer-x: tygrid(1);
+$custom-control-indicator-size: tygrid(1);
 
 // from line 568
 // use grid units
-$custom-select-indicator-padding:       tygrid(1); // Extra padding to account for the presence of the background-image based indicator
+$custom-select-indicator-padding: tygrid(1); // Extra padding to account for the presence of the background-image based indicator
 
 // from line 689
 // use grid units
@@ -151,244 +151,26 @@ $pagination-line-height: tylead(tyscale(0));
 // use grid units
 $jumbotron-padding: tygrid(4);
 
-
-// Cards
-//
+// from line 820
+// use grid units
 $card-spacer-y: tygrid(1);
 $card-spacer-x: tygrid(1.5);
-//$card-border-width:                 $border-width !default;
-//$card-border-radius:                $border-radius !default;
-//$card-border-color:                 rgba($black, .125) !default;
-//$card-inner-border-radius:          calc(#{$card-border-radius} - #{$card-border-width}) !default;
-//$card-cap-bg:                       rgba($black, .03) !default;
-//$card-bg:                           $white !default;
-//
+
+// from line 831
+// use grid units
 $card-img-overlay-padding: tygrid(1.5);
-//
-//$card-group-margin:                 ($grid-gutter-width / 2) !default;
-//$card-deck-margin:                  $card-group-margin !default;
-//
-//$card-columns-count:                3 !default;
+
+// from line 837
+// use grid units
 $card-columns-gap: tygrid(1.5);
-//$card-columns-margin:               $card-spacer-y !default;
-//
-//
-// Tooltips
-//
-//$tooltip-font-size:           $font-size-sm !default;
-//$tooltip-max-width:           200px !default;
-//$tooltip-color:               $white !default;
-//$tooltip-bg:                  $black !default;
-//$tooltip-border-radius:        $border-radius !default;
-//$tooltip-opacity:             .9 !default;
-//$tooltip-padding-y:           .25rem !default;
-//$tooltip-padding-x:           .5rem !default;
-//$tooltip-margin:              0 !default;
-//
-//$tooltip-arrow-width:         .8rem !default;
-//$tooltip-arrow-height:        .4rem !default;
-//$tooltip-arrow-color:         $tooltip-bg !default;
-//
-//
-// Popovers
-//
-//$popover-font-size:                 $font-size-sm !default;
-//$popover-bg:                        $white !default;
-//$popover-max-width:                 276px !default;
-//$popover-border-width:              $border-width !default;
-//$popover-border-color:              rgba($black, .2) !default;
-//$popover-border-radius:             $border-radius-lg !default;
-//$popover-box-shadow:                0 .25rem .5rem rgba($black, .2) !default;
-//
-//$popover-header-bg:                 darken($popover-bg, 3%) !default;
-//$popover-header-color:              $headings-color !default;
-//$popover-header-padding-y:          .5rem !default;
-//$popover-header-padding-x:          .75rem !default;
-//
-//$popover-body-color:                $body-color !default;
-//$popover-body-padding-y:            $popover-header-padding-y !default;
-//$popover-body-padding-x:            $popover-header-padding-x !default;
-//
-//$popover-arrow-width:               1rem !default;
-//$popover-arrow-height:              .5rem !default;
-//$popover-arrow-color:               $popover-bg !default;
-//
-//$popover-arrow-outer-color:         fade-in($popover-border-color, .05) !default;
-//
-//
-// Badges
-//
-//$badge-font-size:                   75% !default;
-//$badge-font-weight:                 $font-weight-bold !default;
-//$badge-padding-y:                   .25em !default;
-//$badge-padding-x:                   .4em !default;
-//$badge-border-radius:               $border-radius !default;
-//
-//$badge-pill-padding-x:              .6em !default;
-// Use a higher than normal value to ensure completely rounded edges when
-// customizing padding or font-size on labels.
-//$badge-pill-border-radius:          10rem !default;
-//
-//
-// Modals
-//
-// Padding applied to the modal body
-//$modal-inner-padding:         1rem !default;
-//
-//$modal-dialog-margin:         .5rem !default;
-//$modal-dialog-margin-y-sm-up: 1.75rem !default;
-//
-//$modal-title-line-height:           $line-height-base !default;
-//
-//$modal-content-bg:               $white !default;
-//$modal-content-border-color:     rgba($black, .2) !default;
-//$modal-content-border-width:     $border-width !default;
-//$modal-content-box-shadow-xs:    0 .25rem .5rem rgba($black, .5) !default;
-//$modal-content-box-shadow-sm-up: 0 .5rem 1rem rgba($black, .5) !default;
-//
-//$modal-backdrop-bg:           $black !default;
-//$modal-backdrop-opacity:      .5 !default;
-//$modal-header-border-color:   $gray-200 !default;
-//$modal-footer-border-color:   $modal-header-border-color !default;
-//$modal-header-border-width:   $modal-content-border-width !default;
-//$modal-footer-border-width:   $modal-header-border-width !default;
-//$modal-header-padding:        1rem !default;
-//
-//$modal-lg:                          800px !default;
-//$modal-md:                          500px !default;
-//$modal-sm:                          300px !default;
-//
-//$modal-transition:                  transform .3s ease-out !default;
-//
-//
-// Alerts
-//
-// Define alert colors, border radius, and padding.
-//
+
+// from line 969
+// use grid units
 $alert-padding-y: tygrid(1);
 $alert-padding-x: tygrid(1.5);
-$alert-margin-bottom: 0rem;
-//$alert-border-radius:               $border-radius !default;
-//$alert-link-font-weight:            $font-weight-bold !default;
-//$alert-border-width:                $border-width !default;
-//
-//$alert-bg-level:                    -10 !default;
-//$alert-border-level:                -9 !default;
-//$alert-color-level:                 6 !default;
-//
-//
-// Progress bars
-//
-//$progress-height:                   1rem !default;
-//$progress-font-size:                ($font-size-base * .75) !default;
-//$progress-bg:                       $gray-200 !default;
-//$progress-border-radius:            $border-radius !default;
-//$progress-box-shadow:               inset 0 .1rem .1rem rgba($black, .1) !default;
-//$progress-bar-color:                $white !default;
-//$progress-bar-bg:                   theme-color("primary") !default;
-//$progress-bar-animation-timing:     1s linear infinite !default;
-//$progress-bar-transition:           width .6s ease !default;
-//
-// List group
-//
-//$list-group-bg:                     $white !default;
-//$list-group-border-color:           rgba($black, .125) !default;
-//$list-group-border-width:           $border-width !default;
-//$list-group-border-radius:          $border-radius !default;
-//
-//$list-group-item-padding-y:         .75rem !default;
-//$list-group-item-padding-x:         1.25rem !default;
-//
-//$list-group-hover-bg:               $gray-100 !default;
-//$list-group-active-color:           $component-active-color !default;
-//$list-group-active-bg:              $component-active-bg !default;
-//$list-group-active-border-color:    $list-group-active-bg !default;
-//
-//$list-group-disabled-color:         $gray-600 !default;
-//$list-group-disabled-bg:            $list-group-bg !default;
-//
-//$list-group-action-color:           $gray-700 !default;
-//$list-group-action-hover-color:     $list-group-action-color !default;
-//
-//$list-group-action-active-color:    $body-color !default;
-//$list-group-action-active-bg:       $gray-200 !default;
-//
-//
-// Image thumbnails
-//
-//$thumbnail-padding:                 .25rem !default;
-//$thumbnail-bg:                      $body-bg !default;
-//$thumbnail-border-width:            $border-width !default;
-//$thumbnail-border-color:            $gray-300 !default;
-//$thumbnail-border-radius:           $border-radius !default;
-//$thumbnail-box-shadow:              0 1px 2px rgba($black, .075) !default;
-//
-//
-// Figures
-//
-//$figure-caption-font-size:          90% !default;
-//$figure-caption-color:              $gray-600 !default;
-//
-//
-// Breadcrumbs
-//
-//$breadcrumb-padding-y:              .75rem !default;
-//$breadcrumb-padding-x:              1rem !default;
-//$breadcrumb-item-padding:           .5rem !default;
-//
-//$breadcrumb-margin-bottom:          1rem !default;
-//
-//$breadcrumb-bg:                     $gray-200 !default;
-//$breadcrumb-divider-color:          $gray-600 !default;
-//$breadcrumb-active-color:           $gray-600 !default;
-//$breadcrumb-divider:                "/" !default;
-//
-//
-// Carousel
-//
-//$carousel-control-color:            $white !default;
-//$carousel-control-width:            15% !default;
-//$carousel-control-opacity:          .5 !default;
-//
-//$carousel-indicator-width:          30px !default;
-//$carousel-indicator-height:         3px !default;
-//$carousel-indicator-spacer:         3px !default;
-//$carousel-indicator-active-bg:      $white !default;
-//
-//$carousel-caption-width:            70% !default;
-//$carousel-caption-color:            $white !default;
-//
-//$carousel-control-icon-width:       20px !default;
-//
-//$carousel-control-prev-icon-bg:     str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='#{$carousel-control-color}' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E"), "#", "%23") !default;
-//$carousel-control-next-icon-bg:     str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='#{$carousel-control-color}' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E"), "#", "%23") !default;
-//
-//$carousel-transition:               transform .6s ease !default;
-//
-//
-// Close
-//
-//$close-font-size:                   $font-size-base * 1.5 !default;
-//$close-font-weight:                 $font-weight-bold !default;
-//$close-color:                       $black !default;
-//$close-text-shadow:                 0 1px 0 $white !default;
-//
-// Code
-//
-//$code-font-size:                    87.5% !default;
-//$code-color:                        $pink !default;
-//
-//$kbd-padding-y:                     .2rem !default;
-//$kbd-padding-x:                     .4rem !default;
-//$kbd-font-size:                     $code-font-size !default;
-//$kbd-color:                         $white !default;
-//$kbd-bg:                            $gray-900 !default;
-//
-//$pre-color:                         $gray-900 !default;
-//$pre-scrollable-max-height:         340px !default;
-//
-//
-// Printing
-//$print-page-size:                   a3 !default;
-//$print-body-min-width:              map-get($grid-breakpoints, "lg") !default;
-//
+$alert-margin-bottom: 0;
+
+// from line 1002
+// use grid units
+$list-group-item-padding-y: tygrid(1);
+$list-group-item-padding-x: tygrid(1.5);

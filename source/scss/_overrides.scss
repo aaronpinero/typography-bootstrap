@@ -1,8 +1,8 @@
 // tyfy
-@import "../../node_modules/tyfy/source/scss/essential/spacing";
-@import "../../node_modules/tyfy/source/scss/essential/body";
-@import "../../node_modules/tyfy/source/scss/optional/lists";
-@import "../../node_modules/tyfy/source/scss/optional/quotes";
+@import "tyfy/essential/spacing";
+@import "tyfy/essential/body";
+@import "tyfy/optional/lists";
+@import "tyfy/optional/quotes";
 
 // bootstrap overrides and additions
 @import "overrides/reboot";
