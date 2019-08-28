@@ -1,46 +1,20 @@
 // headings
 h1, .h1 {
-	color:$headings-color;
-	font-family:$headings-font-family;
-	font-size:$h1-font-size;
-	font-weight:$headings-font-weight;
 	line-height:tylead($h1-font-size,heading);
 }
 h2, .h2 {
-	color:$headings-color;
-	font-family:$headings-font-family;
-	font-size:$h2-font-size;
-	font-style:normal;
-	font-weight:$headings-font-weight;
 	line-height:tylead($h2-font-size,heading);
 }
 h3, .h3 {
-	color:$headings-color;
-	font-family:$headings-font-family;
-	font-size:$h3-font-size;
-	font-style:normal;
-	font-weight:$headings-font-weight;
 	line-height:tylead($h3-font-size,heading);
 }
 h4, .h4 {
-	color:$headings-color;
-	font-family:$headings-font-family;
-	font-size:$h4-font-size;
-	font-weight:$headings-font-weight;
 	line-height:tylead($h4-font-size,heading);
 }
 h5, .h5 {
-	color:$headings-color;
-	font-family:$headings-font-family;
-	font-size:$h5-font-size;
-	font-weight:$headings-font-weight;
 	line-height:tylead($h5-font-size,heading);
 }
 h6, .h6 {
-	color:$headings-color;
-	font-family:$headings-font-family;
-	font-size:$h6-font-size;
-	font-weight:$headings-font-weight;
 	line-height:tylead($h6-font-size,heading);
 }
 
@@ -51,39 +25,29 @@ h6, .h6 {
 .display-4 {
 	font-family:$headings-font-family;
 }
+.display-1 {
+	line-height:tylead($display1-size,heading);
+}
+.display-2 {
+	line-height:tylead($display2-size,heading);
+}
+.display-3 {
+	line-height:tylead($display3-size,heading);
+}
+.display-4 {
+	line-height:tylead($display4-size,heading);
+}
 
-// Lead paragraph
 .lead {
 	line-height:tylead($lead-font-size,tall);
 }
 
 // inline lists
 .list-inline {
-	@include sibling-margins(off);
+	@include tymargins(off);
 }
 
-// Font face selection classes
-.font-family-serif {
-	font-family:$tyfy-serif;
-}
-.font-family-sans-serif {
-	font-family:$font-family-sans-serif;
-}
-
-span {
-	&.dropcap {
-	  display:inline-block;
-	  float:left;
-	  font-size:400%;
-	  font-weight:bold;
-	  line-height:100%;
-	  margin:0 0.25em 0 0.125em;
-	  text-align:center;
-	}
-	&.smallcaps {
-		font-feature-settings:"c2sc", "smcp";
-		font-variant-caps:all-small-caps;
-		font-weight:bolder;
-		letter-spacing:0.05em;
-	}	
+// Blockquotes
+.blockquote {
+  margin-bottom:0;
 }
