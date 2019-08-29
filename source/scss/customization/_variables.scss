@@ -18,13 +18,13 @@ $line-height-lg: tylead(tyscale(1)) / tyscale(1); // divide by font size to remo
 $line-height-sm: tylead(tyscale(-1)) / tyscale(-1); // divide by font size to remove units and make relative
 
 // from line 232
-// need to use a grid unit to allow calculations in other places
-$border-width: tygrid(1/16);
+// use rem units to allow calculations
+$border-width: 0.0833rem !default;
 
 // from line 273
 $font-family-sans-serif: $tyfont-sans;
 $font-family-monospace: $tyfont-mono;
-$font-family-base: $tyfont-font-base;
+$font-family-base: $tyfont-base;
 $font-size-base: $tyfont-size-base;
 $font-size-lg: tyscale(1);
 $font-size-sm: tyscale(-1);
@@ -38,7 +38,7 @@ $h4-font-size: tyscale(2);
 $h5-font-size: tyscale(1);
 $h6-font-size: tyscale(0);
 $headings-margin-bottom: 0;
-$headings-font-family: $tyfont-serif;
+$headings-font-family: $tyfont-heading;
 $headings-font-weight: 700;
 
 // from line 304
@@ -60,6 +60,10 @@ $blockquote-font-size: $font-size-lg;
 // from line 336
 // use a grid unit
 $list-inline-padding: tygrid(1);
+
+// from line 340
+// larger hr spacing
+$hr-margin-y: tygrid(4);
 
 // from line 347
 // use grid units
@@ -99,6 +103,19 @@ $form-check-input-margin-y: tygrid(0.5);
 $form-check-input-margin-x: tygrid(0.5);
 $form-check-inline-margin-x: tygrid(1);
 $form-check-inline-input-margin-x: tygrid(0.5);
+$form-grid-gutter-width: tygrid(1);
+$form-group-margin-bottom: 0;
+
+// from line 501
+// use grid units
+$form-text-margin-top: tygrid(0.5);
+$form-check-input-gutter: tygrid(2);
+$form-check-input-margin-y: tygrid(0.5);
+$form-check-input-margin-x: tygrid(0.5);
+
+$form-check-inline-margin-x: tygrid(1);
+$form-check-inline-input-margin-x: tygrid(0.5);
+
 $form-grid-gutter-width: tygrid(1);
 $form-group-margin-bottom: 0;
 

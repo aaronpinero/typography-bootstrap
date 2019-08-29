@@ -6,9 +6,9 @@ dl,
 blockquote,
 pre,
 figure {
-  margin-bottom:$paragraph-margin-bottom;
+  margin-bottom:$paragraph-margin-bottom; // this value should be zero
 }
 dd,
 label {
-  margin-bottom:$paragraph-margin-bottom/2;
+  margin-bottom:$paragraph-margin-bottom/2; // this value should be zero divided by 2
 }

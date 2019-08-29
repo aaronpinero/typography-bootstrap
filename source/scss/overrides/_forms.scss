@@ -1,29 +1,15 @@
 label + .form-control,
 label + .input-group,
 label + .custom-select {
-	margin-top:$tyfy-spacing-standard * 0.5;
+	margin-top:$tyspacing-md * 0.5;
 }
 .form-inline,
 .form-check,
 .form-row,
 .custom-control,
 .input-group {
-	@include sibling-margins(off);
+	@include tymargins(off);
 }
 .custom-control + .custom-control {
 	margin-top:0;
-}
-.form-row {
-  display: flex;
-  flex-wrap: wrap;
-  margin-right: -0.5 * $tyfy-spacing-standard;
-  margin-left: -0.5 * $tyfy-spacing-standard;
-
-  > .col,
-  > [class*="col-"] {
-	  padding-bottom:0;
-    padding-right: 0.5 * $tyfy-spacing-standard;
-    padding-left: 0.5 * $tyfy-spacing-standard;
-    padding-top:0;
-  }
 }
