@@ -1,0 +1,9 @@
+$tygrid-unit: 0.9rem;
+$tyfont-size-base:1.1rem;
+
+$tyspacing: (
+  "small":    1,
+  "medium":   2,
+  "large":    4,
+);
+$tyspacing-sm:                 tygrid(map-get($tyspacing,"small"));

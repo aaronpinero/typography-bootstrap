@@ -1,3 +1,6 @@
+// tyfy variable customizations
+@import "customization/tyfy_variables";
+
 // tyfy required
 @import "tyfy/required/core";
 @import "tyfy/required/functions";
@@ -5,4 +8,4 @@
 @import "tyfy/required/mixins";
 
 // bootstrap variable customizations
-@import "customization/variables";
+@import "customization/bootstrap_variables";
