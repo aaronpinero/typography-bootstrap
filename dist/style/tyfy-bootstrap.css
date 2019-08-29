@@ -9156,6 +9156,28 @@ hr {
 .lead {
   line-height: 2.7rem; }
 
+/* line 51, source/scss/overrides/_type.scss */
+.list-unstyled {
+  padding-left: 0;
+  list-style: none; }
+  /* line 93, source/scss/tyfy/required/_mixins.scss */
+  .list-unstyled * + * {
+    margin-top: 0rem; }
+  /* line 81, source/scss/tyfy/required/_mixins.scss */
+  .list-unstyled dl * + *, .list-unstyled ol * + *, .list-unstyled ul * + * {
+    margin-top: 0rem; }
+  /* line 86, source/scss/tyfy/required/_mixins.scss */
+  .list-unstyled dl * + dd {
+    margin-top: 0; }
+  /* line 69, source/scss/tyfy/required/_mixins.scss */
+  .list-unstyled :not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) + h1,
+  .list-unstyled :not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) + h2,
+  .list-unstyled :not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) + h3,
+  .list-unstyled :not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) + h4,
+  .list-unstyled :not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) + h5,
+  .list-unstyled :not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) + h6 {
+    margin-top: 0rem; }
+
 /* line 93, source/scss/tyfy/required/_mixins.scss */
 .list-inline * + * {
   margin-top: 0rem; }
@@ -9177,28 +9199,28 @@ hr {
 .list-inline :not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) + h6 {
   margin-top: 0rem; }
 
-/* line 57, source/scss/overrides/_type.scss */
+/* line 62, source/scss/overrides/_type.scss */
 .blockquote {
   margin-bottom: 0;
   line-height: 1.8rem; }
 
-/* line 61, source/scss/overrides/_type.scss */
+/* line 66, source/scss/overrides/_type.scss */
 .blockquote * + .blockquote-footer {
   margin-top: 0.9rem; }
 
-/* line 66, source/scss/overrides/_type.scss */
+/* line 71, source/scss/overrides/_type.scss */
 .tyfont-sans {
   font-family: helvetica, arial, sans-serif; }
 
-/* line 69, source/scss/overrides/_type.scss */
+/* line 74, source/scss/overrides/_type.scss */
 .tyfont-serif {
   font-family: georgia, serif; }
 
-/* line 72, source/scss/overrides/_type.scss */
+/* line 77, source/scss/overrides/_type.scss */
 .tyfont-mono {
   font-family: monaco, courier, monospace; }
 
-/* line 76, source/scss/overrides/_type.scss */
+/* line 81, source/scss/overrides/_type.scss */
 span.dropcap {
   display: inline-block;
   float: left;
@@ -9208,9 +9230,13 @@ span.dropcap {
   margin: 0 0.25em 0 0.125em;
   text-align: center; }
 
-/* line 85, source/scss/overrides/_type.scss */
+/* line 90, source/scss/overrides/_type.scss */
 span.smallcaps {
   font-size: smaller;
   letter-spacing: 0.075em;
   margin-right: -0.0375em;
   text-transform: uppercase; }
+
+/* line 3, source/scss/overrides/_grid.scss */
+.row > [class*="col-"] + [class*="col-"] {
+  margin-top: 0; }
