@@ -55,7 +55,11 @@ hr {
 
 // Blockquotes
 .blockquote {
-  margin-bottom:0;
+  margin-bottom: 0;
+  line-height: tylead($blockquote-font-size);
+}
+.blockquote * + .blockquote-footer {
+  margin-top:$tyspacing-sm;
 }
 
 // stuff from tyfy utilities module

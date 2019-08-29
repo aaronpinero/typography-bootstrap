@@ -9179,21 +9179,26 @@ hr {
 
 /* line 57, source/scss/overrides/_type.scss */
 .blockquote {
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  line-height: 1.8rem; }
 
-/* line 62, source/scss/overrides/_type.scss */
+/* line 61, source/scss/overrides/_type.scss */
+.blockquote * + .blockquote-footer {
+  margin-top: 0.9rem; }
+
+/* line 66, source/scss/overrides/_type.scss */
 .tyfont-sans {
   font-family: helvetica, arial, sans-serif; }
 
-/* line 65, source/scss/overrides/_type.scss */
+/* line 69, source/scss/overrides/_type.scss */
 .tyfont-serif {
   font-family: georgia, serif; }
 
-/* line 68, source/scss/overrides/_type.scss */
+/* line 72, source/scss/overrides/_type.scss */
 .tyfont-mono {
   font-family: monaco, courier, monospace; }
 
-/* line 72, source/scss/overrides/_type.scss */
+/* line 76, source/scss/overrides/_type.scss */
 span.dropcap {
   display: inline-block;
   float: left;
@@ -9203,7 +9208,7 @@ span.dropcap {
   margin: 0 0.25em 0 0.125em;
   text-align: center; }
 
-/* line 81, source/scss/overrides/_type.scss */
+/* line 85, source/scss/overrides/_type.scss */
 span.smallcaps {
   font-size: smaller;
   letter-spacing: 0.075em;
