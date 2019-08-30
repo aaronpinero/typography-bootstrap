@@ -65,10 +65,10 @@ $list-inline-padding: tygrid(1);
 // larger hr spacing
 $hr-margin-y: $tyspacing-lg;
 
-// // from line 347
-// // use grid units
-// $table-cell-padding: tygrid(1);
-// $table-cell-padding-sm: tygrid(0.5);
+// from line 347
+// use grid units
+$table-cell-padding: tygrid(1);
+$table-cell-padding-sm: tygrid(0.5);
 
 // // from line 383
 // // use grid units

@@ -1,3 +1,6 @@
 .figure-img {
   margin-bottom:0;
 }
+figure * + figcaption {
+  margin-top:$tyspacing-sm;
+}

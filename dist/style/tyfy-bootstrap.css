@@ -214,8 +214,8 @@ table {
 
 /* line 271, node_modules/bootstrap/scss/_reboot.scss */
 caption {
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
+  padding-top: 0.9rem;
+  padding-bottom: 0.9rem;
   color: #6c757d;
   text-align: left;
   caption-side: bottom; }
@@ -1353,7 +1353,7 @@ pre {
   /* line 11, node_modules/bootstrap/scss/_tables.scss */
   .table th,
   .table td {
-    padding: 0.75rem;
+    padding: 0.9rem;
     vertical-align: top;
     border-top: 0.0833rem solid #dee2e6; }
   /* line 18, node_modules/bootstrap/scss/_tables.scss */
@@ -1367,7 +1367,7 @@ pre {
 /* line 34, node_modules/bootstrap/scss/_tables.scss */
 .table-sm th,
 .table-sm td {
-  padding: 0.3rem; }
+  padding: 0.45rem; }
 
 /* line 45, node_modules/bootstrap/scss/_tables.scss */
 .table-bordered {
@@ -9240,3 +9240,32 @@ span.smallcaps {
 /* line 3, source/scss/overrides/_grid.scss */
 .row > [class*="col-"] + [class*="col-"] {
   margin-top: 0; }
+
+/* line 1, source/scss/overrides/_images.scss */
+.figure-img {
+  margin-bottom: 0; }
+
+/* line 4, source/scss/overrides/_images.scss */
+figure * + figcaption {
+  margin-top: 0.9rem; }
+
+/* line 1, source/scss/overrides/_tables.scss */
+.table {
+  margin-bottom: 0; }
+
+/* line 6, source/scss/overrides/_tables.scss */
+table {
+  font-variant-numeric: lining-nums tabular-nums;
+  font-feature-settings: "lnum", "tnum"; }
+
+/* line 10, source/scss/overrides/_tables.scss */
+th {
+  font-family: helvetica, arial, sans-serif;
+  font-variant-numeric: lining-nums tabular-nums;
+  font-feature-settings: "lnum", "tnum"; }
+
+/* line 15, source/scss/overrides/_tables.scss */
+td {
+  font-family: helvetica, arial, sans-serif;
+  font-variant-numeric: lining-nums tabular-nums;
+  font-feature-settings: "lnum", "tnum"; }
