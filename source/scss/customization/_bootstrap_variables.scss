@@ -85,9 +85,9 @@ $input-btn-padding-x-sm: tygrid(0.75) - $border-width;
 $input-btn-padding-y-lg: tygrid(1) - $border-width;
 $input-btn-padding-x-lg: tygrid(1.5) - $border-width;
 
-// // from line 437
-// // use grid units
-// $btn-block-spacing-y: tygrid(1);
+// from line 437
+// use grid units
+$btn-block-spacing-y: $tyspacing-md;
 
 // // from line 491
 // // use grid units

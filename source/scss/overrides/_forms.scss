@@ -1,15 +1,22 @@
-label + .form-control,
-label + .input-group,
-label + .custom-select {
-	margin-top:$tyspacing-md * 0.5;
+button,
+input,
+select,
+textarea {
+	font-family:$tyfont-input;
 }
-.form-inline,
-.form-check,
-.form-row,
-.custom-control,
-.input-group {
-	@include tymargins(off);
-}
-.custom-control + .custom-control {
-	margin-top:0;
-}
+
+// label + .form-control,
+// label + .input-group,
+// label + .custom-select {
+// 	margin-top:$tyspacing-md * 0.5;
+// }
+// .form-inline,
+// .form-check,
+// .form-row,
+// .custom-control,
+// .input-group {
+// 	@include tymargins(off);
+// }
+// .custom-control + .custom-control {
+// 	margin-top:0;
+// }
