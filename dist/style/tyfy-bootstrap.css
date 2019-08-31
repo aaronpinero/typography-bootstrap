@@ -9415,27 +9415,61 @@ textarea {
 .card .card-body * + pre,
 .card .card-body * + section,
 .card .card-body * + table,
-.card .card-body * + ul {
+.card .card-body * + ul,
+.card .card-img-overlay * + address,
+.card .card-img-overlay * + article,
+.card .card-img-overlay * + aside,
+.card .card-img-overlay * + blockquote,
+.card .card-img-overlay * + details,
+.card .card-img-overlay * + dialog,
+.card .card-img-overlay * + div,
+.card .card-img-overlay * + fieldset,
+.card .card-img-overlay * + figure,
+.card .card-img-overlay * + footer,
+.card .card-img-overlay * + form,
+.card .card-img-overlay * + h1,
+.card .card-img-overlay * + h2,
+.card .card-img-overlay * + h3,
+.card .card-img-overlay * + h4,
+.card .card-img-overlay * + h5,
+.card .card-img-overlay * + h6,
+.card .card-img-overlay * + header,
+.card .card-img-overlay * + hgroup,
+.card .card-img-overlay * + main,
+.card .card-img-overlay * + nav,
+.card .card-img-overlay * + ol,
+.card .card-img-overlay * + p,
+.card .card-img-overlay * + pre,
+.card .card-img-overlay * + section,
+.card .card-img-overlay * + table,
+.card .card-img-overlay * + ul {
   margin-top: 0.9rem; }
 
 /* line 81, source/scss/tyfy/required/_mixins.scss */
-.card .card-body dl * + *, .card .card-body ol * + *, .card .card-body ul * + * {
+.card .card-body dl * + *, .card .card-body ol * + *, .card .card-body ul * + *,
+.card .card-img-overlay dl * + *,
+.card .card-img-overlay ol * + *,
+.card .card-img-overlay ul * + * {
   margin-top: 0; }
 
 /* line 86, source/scss/tyfy/required/_mixins.scss */
-.card .card-body dl * + dd {
+.card .card-body dl * + dd,
+.card .card-img-overlay dl * + dd {
   margin-top: 0; }
 
-/* line 9, source/scss/overrides/_card.scss */
-.card .card-body .card-title {
+/* line 10, source/scss/overrides/_card.scss */
+.card .card-body .card-title,
+.card .card-img-overlay .card-title {
   margin-bottom: 0; }
 
-/* line 13, source/scss/overrides/_card.scss */
+/* line 14, source/scss/overrides/_card.scss */
 .card .card-body .card-subtitle,
-.card .card-body .card-title + .card-subtitle {
+.card .card-body .card-title + .card-subtitle,
+.card .card-img-overlay .card-subtitle,
+.card .card-img-overlay .card-title + .card-subtitle {
   margin-top: 0; }
 
-/* line 20, source/scss/overrides/_card.scss */
+/* line 21, source/scss/overrides/_card.scss */
 .card .list-group * + * {
   margin-top: 0; }
 

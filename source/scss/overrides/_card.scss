@@ -2,7 +2,8 @@
 	> * + * {
 		margin-top:0;
 	}
-	.card-body {
+	.card-body,
+	.card-img-overlay {
 		@include tymargins-size(block,$tyspacing-sm);
 		@include tymargins-size(lists,0);
 
