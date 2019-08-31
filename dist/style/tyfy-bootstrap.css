@@ -9384,8 +9384,10 @@ select,
 textarea {
   font-family: helvetica, arial, sans-serif; }
 
-/* line 2, source/scss/overrides/_card.scss */
-.card > * + * {
+/* line 4, source/scss/overrides/_card.scss */
+.card > * + *,
+.card-deck > * + *,
+.card-group > * + * {
   margin-top: 0; }
 
 /* line 93, source/scss/tyfy/required/_mixins.scss */
@@ -9457,19 +9459,19 @@ textarea {
 .card .card-img-overlay dl * + dd {
   margin-top: 0; }
 
-/* line 10, source/scss/overrides/_card.scss */
+/* line 15, source/scss/overrides/_card.scss */
 .card .card-body .card-title,
 .card .card-img-overlay .card-title {
   margin-bottom: 0; }
 
-/* line 14, source/scss/overrides/_card.scss */
+/* line 19, source/scss/overrides/_card.scss */
 .card .card-body .card-subtitle,
 .card .card-body .card-title + .card-subtitle,
 .card .card-img-overlay .card-subtitle,
 .card .card-img-overlay .card-title + .card-subtitle {
   margin-top: 0; }
 
-/* line 21, source/scss/overrides/_card.scss */
+/* line 26, source/scss/overrides/_card.scss */
 .card .list-group * + * {
   margin-top: 0; }
 
