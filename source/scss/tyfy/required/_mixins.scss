@@ -63,7 +63,7 @@
 // in which case the specified margin size will be applied to all
 // descendants
 
-@mixin tymargins-size ($context:all, $measure:$tyspacing-md) {
+@mixin tymargins-size ($context:blocks, $measure:$tyspacing-md) {
   @if $context == headings {
     // headings
     :not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) + h1,
@@ -89,8 +89,34 @@
     }
   }
   @else {
-    // everything
-    * + * {
+    // blocks
+    * + address,
+    * + article,
+    * + aside,
+    * + blockquote,
+    * + details,
+    * + dialog,
+    * + div,
+    * + fieldset,
+    * + figure,
+    * + footer,
+    * + form,
+    * + h1,
+    * + h2,
+    * + h3,
+    * + h4,
+    * + h5,
+    * + h6,
+    * + header,
+    * + hgroup,
+    * + main,
+    * + nav,
+    * + ol,
+    * + p,
+    * + pre,
+    * + section,
+    * + table,
+    * + ul {
       margin-top:$measure;
     }
   }
@@ -106,7 +132,7 @@
 
 @mixin tymargins ($state:on) {
   @if $state == on {
-    // everything
+    // blocks
     @include tymargins-size;
     // lists
     @include tymargins-size(lists,$tyspacing-md/2);
@@ -114,8 +140,8 @@
     @include tymargins-size(headings,$tyspacing-lg);
   }
   @else {
-    // everything
-    @include tymargins-size(all,0rem);
+    // blocks
+    @include tymargins-size(blocks,0rem);
     // lists
     @include tymargins-size(lists,0rem);
     // headings

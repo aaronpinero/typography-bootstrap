@@ -1,4 +1,6 @@
 .badge {
+  font-variant-numeric:lining-nums tabular-nums;
+  font-feature-settings:"lnum", "tnum";
 	* + & {
 		margin-top:0;
 	}

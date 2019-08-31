@@ -1669,8 +1669,8 @@ pre {
 .form-control {
   display: block;
   width: 100%;
-  height: calc(1.63636em + 0.75rem + 0.1666rem);
-  padding: 0.375rem 0.75rem;
+  height: calc(1.63636em + 0.7334rem + 0.1666rem);
+  padding: 0.3667rem 0.8167rem;
   font-size: 1.1rem;
   font-weight: 400;
   line-height: 1.63636;
@@ -1717,23 +1717,23 @@ select.form-control:focus::-ms-value {
 
 /* line 82, node_modules/bootstrap/scss/_forms.scss */
 .col-form-label {
-  padding-top: calc(0.375rem + 0.0833rem);
-  padding-bottom: calc(0.375rem + 0.0833rem);
+  padding-top: calc(0.3667rem + 0.0833rem);
+  padding-bottom: calc(0.3667rem + 0.0833rem);
   margin-bottom: 0;
   font-size: inherit;
   line-height: 1.63636; }
 
 /* line 90, node_modules/bootstrap/scss/_forms.scss */
 .col-form-label-lg {
-  padding-top: calc(0.5rem + 0.0833rem);
-  padding-bottom: calc(0.5rem + 0.0833rem);
+  padding-top: calc(0.8167rem + 0.0833rem);
+  padding-bottom: calc(0.8167rem + 0.0833rem);
   font-size: 1.32rem;
   line-height: 1.36364; }
 
 /* line 97, node_modules/bootstrap/scss/_forms.scss */
 .col-form-label-sm {
-  padding-top: calc(0.25rem + 0.0833rem);
-  padding-bottom: calc(0.25rem + 0.0833rem);
+  padding-top: calc(0.1417rem + 0.0833rem);
+  padding-bottom: calc(0.1417rem + 0.0833rem);
   font-size: 0.91667rem;
   line-height: 1.96364; }
 
@@ -1741,8 +1741,8 @@ select.form-control:focus::-ms-value {
 .form-control-plaintext {
   display: block;
   width: 100%;
-  padding-top: 0.375rem;
-  padding-bottom: 0.375rem;
+  padding-top: 0.3667rem;
+  padding-bottom: 0.3667rem;
   margin-bottom: 0;
   line-height: 1.63636;
   color: #212529;
@@ -1756,16 +1756,16 @@ select.form-control:focus::-ms-value {
 
 /* line 137, node_modules/bootstrap/scss/_forms.scss */
 .form-control-sm {
-  height: calc(1.96364em + 0.5rem + 0.1666rem);
-  padding: 0.25rem 0.5rem;
+  height: calc(1.96364em + 0.2834rem + 0.1666rem);
+  padding: 0.1417rem 0.5917rem;
   font-size: 0.91667rem;
   line-height: 1.96364;
   border-radius: 0.2rem; }
 
 /* line 145, node_modules/bootstrap/scss/_forms.scss */
 .form-control-lg {
-  height: calc(1.36364em + 1rem + 0.1666rem);
-  padding: 0.5rem 1rem;
+  height: calc(1.36364em + 1.6334rem + 0.1666rem);
+  padding: 0.8167rem 1.2667rem;
   font-size: 1.32rem;
   line-height: 1.36364;
   border-radius: 0.3rem; }
@@ -1857,11 +1857,11 @@ textarea.form-control {
 /* line 54, node_modules/bootstrap/scss/mixins/_forms.scss */
 .was-validated .form-control:valid, .form-control.is-valid {
   border-color: #28a745;
-  padding-right: calc(1.63636em + 0.75rem);
+  padding-right: calc(1.63636em + 0.7334rem);
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%2328a745' d='M2.3 6.73L.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z'/%3e%3c/svg%3e");
   background-repeat: no-repeat;
-  background-position: center right calc(0.40909em + 0.1875rem);
-  background-size: calc(0.81818em + 0.375rem) calc(0.81818em + 0.375rem); }
+  background-position: center right calc(0.40909em + 0.18335rem);
+  background-size: calc(0.81818em + 0.3667rem) calc(0.81818em + 0.3667rem); }
   /* line 66, node_modules/bootstrap/scss/mixins/_forms.scss */
   .was-validated .form-control:valid:focus, .form-control.is-valid:focus {
     border-color: #28a745;
@@ -1874,14 +1874,14 @@ textarea.form-control {
 
 /* line 80, node_modules/bootstrap/scss/mixins/_forms.scss */
 .was-validated textarea.form-control:valid, textarea.form-control.is-valid {
-  padding-right: calc(1.63636em + 0.75rem);
-  background-position: top calc(0.40909em + 0.1875rem) right calc(0.40909em + 0.1875rem); }
+  padding-right: calc(1.63636em + 0.7334rem);
+  background-position: top calc(0.40909em + 0.18335rem) right calc(0.40909em + 0.18335rem); }
 
 /* line 90, node_modules/bootstrap/scss/mixins/_forms.scss */
 .was-validated .custom-select:valid, .custom-select.is-valid {
   border-color: #28a745;
-  padding-right: calc((1em + 0.75rem) * 3 / 4 + 1.75rem);
-  background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3e%3cpath fill='%23343a40' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e") no-repeat right 0.75rem center/8px 10px, url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%2328a745' d='M2.3 6.73L.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z'/%3e%3c/svg%3e") #fff no-repeat center right 1.75rem/calc(0.81818em + 0.375rem) calc(0.81818em + 0.375rem); }
+  padding-right: calc((1em + 0.7334rem) * 3 / 4 + 1.8167rem);
+  background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3e%3cpath fill='%23343a40' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e") no-repeat right 0.8167rem center/8px 10px, url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%2328a745' d='M2.3 6.73L.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z'/%3e%3c/svg%3e") #fff no-repeat center right 1.8167rem/calc(0.81818em + 0.3667rem) calc(0.81818em + 0.3667rem); }
   /* line 99, node_modules/bootstrap/scss/mixins/_forms.scss */
   .was-validated .custom-select:valid:focus, .custom-select.is-valid:focus {
     border-color: #28a745;
@@ -1975,11 +1975,11 @@ textarea.form-control {
 /* line 54, node_modules/bootstrap/scss/mixins/_forms.scss */
 .was-validated .form-control:invalid, .form-control.is-invalid {
   border-color: #dc3545;
-  padding-right: calc(1.63636em + 0.75rem);
+  padding-right: calc(1.63636em + 0.7334rem);
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23dc3545' viewBox='-2 -2 7 7'%3e%3cpath stroke='%23dc3545' d='M0 0l3 3m0-3L0 3'/%3e%3ccircle r='.5'/%3e%3ccircle cx='3' r='.5'/%3e%3ccircle cy='3' r='.5'/%3e%3ccircle cx='3' cy='3' r='.5'/%3e%3c/svg%3E");
   background-repeat: no-repeat;
-  background-position: center right calc(0.40909em + 0.1875rem);
-  background-size: calc(0.81818em + 0.375rem) calc(0.81818em + 0.375rem); }
+  background-position: center right calc(0.40909em + 0.18335rem);
+  background-size: calc(0.81818em + 0.3667rem) calc(0.81818em + 0.3667rem); }
   /* line 66, node_modules/bootstrap/scss/mixins/_forms.scss */
   .was-validated .form-control:invalid:focus, .form-control.is-invalid:focus {
     border-color: #dc3545;
@@ -1992,14 +1992,14 @@ textarea.form-control {
 
 /* line 80, node_modules/bootstrap/scss/mixins/_forms.scss */
 .was-validated textarea.form-control:invalid, textarea.form-control.is-invalid {
-  padding-right: calc(1.63636em + 0.75rem);
-  background-position: top calc(0.40909em + 0.1875rem) right calc(0.40909em + 0.1875rem); }
+  padding-right: calc(1.63636em + 0.7334rem);
+  background-position: top calc(0.40909em + 0.18335rem) right calc(0.40909em + 0.18335rem); }
 
 /* line 90, node_modules/bootstrap/scss/mixins/_forms.scss */
 .was-validated .custom-select:invalid, .custom-select.is-invalid {
   border-color: #dc3545;
-  padding-right: calc((1em + 0.75rem) * 3 / 4 + 1.75rem);
-  background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3e%3cpath fill='%23343a40' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e") no-repeat right 0.75rem center/8px 10px, url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23dc3545' viewBox='-2 -2 7 7'%3e%3cpath stroke='%23dc3545' d='M0 0l3 3m0-3L0 3'/%3e%3ccircle r='.5'/%3e%3ccircle cx='3' r='.5'/%3e%3ccircle cy='3' r='.5'/%3e%3ccircle cx='3' cy='3' r='.5'/%3e%3c/svg%3E") #fff no-repeat center right 1.75rem/calc(0.81818em + 0.375rem) calc(0.81818em + 0.375rem); }
+  padding-right: calc((1em + 0.7334rem) * 3 / 4 + 1.8167rem);
+  background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3e%3cpath fill='%23343a40' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e") no-repeat right 0.8167rem center/8px 10px, url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23dc3545' viewBox='-2 -2 7 7'%3e%3cpath stroke='%23dc3545' d='M0 0l3 3m0-3L0 3'/%3e%3ccircle r='.5'/%3e%3ccircle cx='3' r='.5'/%3e%3ccircle cy='3' r='.5'/%3e%3ccircle cx='3' cy='3' r='.5'/%3e%3c/svg%3E") #fff no-repeat center right 1.8167rem/calc(0.81818em + 0.3667rem) calc(0.81818em + 0.3667rem); }
   /* line 99, node_modules/bootstrap/scss/mixins/_forms.scss */
   .was-validated .custom-select:invalid:focus, .custom-select.is-invalid:focus {
     border-color: #dc3545;
@@ -2134,7 +2134,7 @@ textarea.form-control {
           user-select: none;
   background-color: transparent;
   border: 0.0833rem solid transparent;
-  padding: 0.375rem 0.75rem;
+  padding: 0.3667rem 0.8167rem;
   font-size: 1.1rem;
   line-height: 1.63636;
   border-radius: 0.25rem;
@@ -2628,14 +2628,14 @@ fieldset:disabled a.btn {
 
 /* line 107, node_modules/bootstrap/scss/_buttons.scss */
 .btn-lg, .btn-group-lg > .btn {
-  padding: 0.5rem 1rem;
+  padding: 0.8167rem 1.2667rem;
   font-size: 1.32rem;
   line-height: 1.36364;
   border-radius: 0.3rem; }
 
 /* line 111, node_modules/bootstrap/scss/_buttons.scss */
 .btn-sm, .btn-group-sm > .btn {
-  padding: 0.25rem 0.5rem;
+  padding: 0.1417rem 0.5917rem;
   font-size: 0.91667rem;
   line-height: 1.96364;
   border-radius: 0.2rem; }
@@ -2969,8 +2969,8 @@ input[type="button"].btn-block {
 
 /* line 69, node_modules/bootstrap/scss/_button-group.scss */
 .dropdown-toggle-split {
-  padding-right: 0.5625rem;
-  padding-left: 0.5625rem; }
+  padding-right: 0.61252rem;
+  padding-left: 0.61252rem; }
   /* line 73, node_modules/bootstrap/scss/_button-group.scss */
   .dropdown-toggle-split::after,
   .dropup .dropdown-toggle-split::after,
@@ -2982,13 +2982,13 @@ input[type="button"].btn-block {
 
 /* line 84, node_modules/bootstrap/scss/_button-group.scss */
 .btn-sm + .dropdown-toggle-split, .btn-group-sm > .btn + .dropdown-toggle-split {
-  padding-right: 0.375rem;
-  padding-left: 0.375rem; }
+  padding-right: 0.44378rem;
+  padding-left: 0.44378rem; }
 
 /* line 89, node_modules/bootstrap/scss/_button-group.scss */
 .btn-lg + .dropdown-toggle-split, .btn-group-lg > .btn + .dropdown-toggle-split {
-  padding-right: 0.75rem;
-  padding-left: 0.75rem; }
+  padding-right: 0.95003rem;
+  padding-left: 0.95003rem; }
 
 /* line 111, node_modules/bootstrap/scss/_button-group.scss */
 .btn-group-vertical {
@@ -3125,7 +3125,7 @@ input[type="button"].btn-block {
 .input-group-text {
   display: flex;
   align-items: center;
-  padding: 0.375rem 0.75rem;
+  padding: 0.3667rem 0.8167rem;
   margin-bottom: 0;
   font-size: 1.1rem;
   font-weight: 400;
@@ -3144,7 +3144,7 @@ input[type="button"].btn-block {
 /* line 130, node_modules/bootstrap/scss/_input-group.scss */
 .input-group-lg > .form-control:not(textarea),
 .input-group-lg > .custom-select {
-  height: calc(1.36364em + 1rem + 0.1666rem); }
+  height: calc(1.36364em + 1.6334rem + 0.1666rem); }
 
 /* line 135, node_modules/bootstrap/scss/_input-group.scss */
 .input-group-lg > .form-control,
@@ -3153,7 +3153,7 @@ input[type="button"].btn-block {
 .input-group-lg > .input-group-append > .input-group-text,
 .input-group-lg > .input-group-prepend > .btn,
 .input-group-lg > .input-group-append > .btn {
-  padding: 0.5rem 1rem;
+  padding: 0.8167rem 1.2667rem;
   font-size: 1.32rem;
   line-height: 1.36364;
   border-radius: 0.3rem; }
@@ -3161,7 +3161,7 @@ input[type="button"].btn-block {
 /* line 147, node_modules/bootstrap/scss/_input-group.scss */
 .input-group-sm > .form-control:not(textarea),
 .input-group-sm > .custom-select {
-  height: calc(1.96364em + 0.5rem + 0.1666rem); }
+  height: calc(1.96364em + 0.2834rem + 0.1666rem); }
 
 /* line 152, node_modules/bootstrap/scss/_input-group.scss */
 .input-group-sm > .form-control,
@@ -3170,7 +3170,7 @@ input[type="button"].btn-block {
 .input-group-sm > .input-group-append > .input-group-text,
 .input-group-sm > .input-group-prepend > .btn,
 .input-group-sm > .input-group-append > .btn {
-  padding: 0.25rem 0.5rem;
+  padding: 0.1417rem 0.5917rem;
   font-size: 0.91667rem;
   line-height: 1.96364;
   border-radius: 0.2rem; }
@@ -3178,7 +3178,7 @@ input[type="button"].btn-block {
 /* line 164, node_modules/bootstrap/scss/_input-group.scss */
 .input-group-lg > .custom-select,
 .input-group-sm > .custom-select {
-  padding-right: 1.75rem; }
+  padding-right: 1.8167rem; }
 
 /* line 177, node_modules/bootstrap/scss/_input-group.scss */
 .input-group > .input-group-prepend > .btn,
@@ -3339,14 +3339,14 @@ input[type="button"].btn-block {
 .custom-select {
   display: inline-block;
   width: 100%;
-  height: calc(1.63636em + 0.75rem + 0.1666rem);
-  padding: 0.375rem 1.75rem 0.375rem 0.75rem;
+  height: calc(1.63636em + 0.7334rem + 0.1666rem);
+  padding: 0.3667rem 1.8167rem 0.3667rem 0.8167rem;
   font-size: 1.1rem;
   font-weight: 400;
   line-height: 1.63636;
   color: #495057;
   vertical-align: middle;
-  background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3e%3cpath fill='%23343a40' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e") no-repeat right 0.75rem center/8px 10px;
+  background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3e%3cpath fill='%23343a40' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e") no-repeat right 0.8167rem center/8px 10px;
   background-color: #fff;
   border: 0.0833rem solid #ced4da;
   border-radius: 0.25rem;
@@ -3364,7 +3364,7 @@ input[type="button"].btn-block {
   /* line 250, node_modules/bootstrap/scss/_custom-forms.scss */
   .custom-select[multiple], .custom-select[size]:not([size="1"]) {
     height: auto;
-    padding-right: 0.75rem;
+    padding-right: 0.8167rem;
     background-image: none; }
   /* line 257, node_modules/bootstrap/scss/_custom-forms.scss */
   .custom-select:disabled {
@@ -3376,18 +3376,18 @@ input[type="button"].btn-block {
 
 /* line 268, node_modules/bootstrap/scss/_custom-forms.scss */
 .custom-select-sm {
-  height: calc(1.96364em + 0.5rem + 0.1666rem);
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
-  padding-left: 0.5rem;
+  height: calc(1.96364em + 0.2834rem + 0.1666rem);
+  padding-top: 0.1417rem;
+  padding-bottom: 0.1417rem;
+  padding-left: 0.5917rem;
   font-size: 0.91667rem; }
 
 /* line 276, node_modules/bootstrap/scss/_custom-forms.scss */
 .custom-select-lg {
-  height: calc(1.36364em + 1rem + 0.1666rem);
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  padding-left: 1rem;
+  height: calc(1.36364em + 1.6334rem + 0.1666rem);
+  padding-top: 0.8167rem;
+  padding-bottom: 0.8167rem;
+  padding-left: 1.2667rem;
   font-size: 1.32rem; }
 
 /* line 289, node_modules/bootstrap/scss/_custom-forms.scss */
@@ -3395,7 +3395,7 @@ input[type="button"].btn-block {
   position: relative;
   display: inline-block;
   width: 100%;
-  height: calc(1.63636em + 0.75rem + 0.1666rem);
+  height: calc(1.63636em + 0.7334rem + 0.1666rem);
   margin-bottom: 0; }
 
 /* line 297, node_modules/bootstrap/scss/_custom-forms.scss */
@@ -3403,7 +3403,7 @@ input[type="button"].btn-block {
   position: relative;
   z-index: 2;
   width: 100%;
-  height: calc(1.63636em + 0.75rem + 0.1666rem);
+  height: calc(1.63636em + 0.7334rem + 0.1666rem);
   margin: 0;
   opacity: 0; }
   /* line 305, node_modules/bootstrap/scss/_custom-forms.scss */
@@ -3427,8 +3427,8 @@ input[type="button"].btn-block {
   right: 0;
   left: 0;
   z-index: 1;
-  height: calc(1.63636em + 0.75rem + 0.1666rem);
-  padding: 0.375rem 0.75rem;
+  height: calc(1.63636em + 0.7334rem + 0.1666rem);
+  padding: 0.3667rem 0.8167rem;
   font-weight: 400;
   line-height: 1.63636;
   color: #495057;
@@ -3443,8 +3443,8 @@ input[type="button"].btn-block {
     bottom: 0;
     z-index: 3;
     display: block;
-    height: calc(1.63636em + 0.75rem);
-    padding: 0.375rem 0.75rem;
+    height: calc(1.63636em + 0.7334rem);
+    padding: 0.3667rem 0.8167rem;
     line-height: 1.63636;
     color: #495057;
     content: "Browse";
@@ -4224,19 +4224,19 @@ input[type="button"].btn-block {
 .breadcrumb {
   display: flex;
   flex-wrap: wrap;
-  padding: 0.75rem 1rem;
-  margin-bottom: 1rem;
+  padding: 0.9rem 1.35rem;
+  margin-bottom: 0;
   list-style: none;
   background-color: #e9ecef;
   border-radius: 0.25rem; }
 
 /* line 13, node_modules/bootstrap/scss/_breadcrumb.scss */
 .breadcrumb-item + .breadcrumb-item {
-  padding-left: 0.5rem; }
+  padding-left: 0.45rem; }
   /* line 16, node_modules/bootstrap/scss/_breadcrumb.scss */
   .breadcrumb-item + .breadcrumb-item::before {
     display: inline-block;
-    padding-right: 0.5rem;
+    padding-right: 0.45rem;
     color: #6c757d;
     content: "/"; }
 
@@ -4498,8 +4498,8 @@ input[type="button"].btn-block {
 /* line 5, node_modules/bootstrap/scss/_alert.scss */
 .alert {
   position: relative;
-  padding: 0.75rem 1.25rem;
-  margin-bottom: 1rem;
+  padding: 1.35rem 1.35rem;
+  margin-bottom: 0;
   border: 0.0833rem solid transparent;
   border-radius: 0.25rem; }
 
@@ -4513,13 +4513,13 @@ input[type="button"].btn-block {
 
 /* line 29, node_modules/bootstrap/scss/_alert.scss */
 .alert-dismissible {
-  padding-right: 4.15rem; }
+  padding-right: 4.35rem; }
   /* line 33, node_modules/bootstrap/scss/_alert.scss */
   .alert-dismissible .close {
     position: absolute;
     top: 0;
     right: 0;
-    padding: 0.75rem 1.25rem;
+    padding: 1.35rem 1.35rem;
     color: inherit; }
 
 /* line 48, node_modules/bootstrap/scss/_alert.scss */
@@ -9023,7 +9023,33 @@ a.text-dark:hover, a.text-dark:focus {
   margin-bottom: 0; }
 
 /* line 93, source/scss/tyfy/required/_mixins.scss */
-body * + * {
+body * + address,
+body * + article,
+body * + aside,
+body * + blockquote,
+body * + details,
+body * + dialog,
+body * + div,
+body * + fieldset,
+body * + figure,
+body * + footer,
+body * + form,
+body * + h1,
+body * + h2,
+body * + h3,
+body * + h4,
+body * + h5,
+body * + h6,
+body * + header,
+body * + hgroup,
+body * + main,
+body * + nav,
+body * + ol,
+body * + p,
+body * + pre,
+body * + section,
+body * + table,
+body * + ul {
   margin-top: 1.8rem; }
 
 /* line 81, source/scss/tyfy/required/_mixins.scss */
@@ -9044,7 +9070,33 @@ body :not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) + h6 {
   margin-top: 3.6rem; }
 
 /* line 93, source/scss/tyfy/required/_mixins.scss */
-.tymargins-on * + * {
+.tymargins-on * + address,
+.tymargins-on * + article,
+.tymargins-on * + aside,
+.tymargins-on * + blockquote,
+.tymargins-on * + details,
+.tymargins-on * + dialog,
+.tymargins-on * + div,
+.tymargins-on * + fieldset,
+.tymargins-on * + figure,
+.tymargins-on * + footer,
+.tymargins-on * + form,
+.tymargins-on * + h1,
+.tymargins-on * + h2,
+.tymargins-on * + h3,
+.tymargins-on * + h4,
+.tymargins-on * + h5,
+.tymargins-on * + h6,
+.tymargins-on * + header,
+.tymargins-on * + hgroup,
+.tymargins-on * + main,
+.tymargins-on * + nav,
+.tymargins-on * + ol,
+.tymargins-on * + p,
+.tymargins-on * + pre,
+.tymargins-on * + section,
+.tymargins-on * + table,
+.tymargins-on * + ul {
   margin-top: 1.8rem; }
 
 /* line 81, source/scss/tyfy/required/_mixins.scss */
@@ -9065,7 +9117,33 @@ body :not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) + h6 {
   margin-top: 3.6rem; }
 
 /* line 93, source/scss/tyfy/required/_mixins.scss */
-.tymargins-off * + * {
+.tymargins-off * + address,
+.tymargins-off * + article,
+.tymargins-off * + aside,
+.tymargins-off * + blockquote,
+.tymargins-off * + details,
+.tymargins-off * + dialog,
+.tymargins-off * + div,
+.tymargins-off * + fieldset,
+.tymargins-off * + figure,
+.tymargins-off * + footer,
+.tymargins-off * + form,
+.tymargins-off * + h1,
+.tymargins-off * + h2,
+.tymargins-off * + h3,
+.tymargins-off * + h4,
+.tymargins-off * + h5,
+.tymargins-off * + h6,
+.tymargins-off * + header,
+.tymargins-off * + hgroup,
+.tymargins-off * + main,
+.tymargins-off * + nav,
+.tymargins-off * + ol,
+.tymargins-off * + p,
+.tymargins-off * + pre,
+.tymargins-off * + section,
+.tymargins-off * + table,
+.tymargins-off * + ul {
   margin-top: 0rem; }
 
 /* line 81, source/scss/tyfy/required/_mixins.scss */
@@ -9160,67 +9238,36 @@ hr {
 .list-unstyled {
   padding-left: 0;
   list-style: none; }
-  /* line 93, source/scss/tyfy/required/_mixins.scss */
+  /* line 53, source/scss/overrides/_type.scss */
   .list-unstyled * + * {
-    margin-top: 0rem; }
-  /* line 81, source/scss/tyfy/required/_mixins.scss */
-  .list-unstyled dl * + *, .list-unstyled ol * + *, .list-unstyled ul * + * {
-    margin-top: 0rem; }
-  /* line 86, source/scss/tyfy/required/_mixins.scss */
-  .list-unstyled dl * + dd {
     margin-top: 0; }
-  /* line 69, source/scss/tyfy/required/_mixins.scss */
-  .list-unstyled :not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) + h1,
-  .list-unstyled :not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) + h2,
-  .list-unstyled :not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) + h3,
-  .list-unstyled :not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) + h4,
-  .list-unstyled :not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) + h5,
-  .list-unstyled :not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) + h6 {
-    margin-top: 0rem; }
 
-/* line 93, source/scss/tyfy/required/_mixins.scss */
+/* line 60, source/scss/overrides/_type.scss */
 .list-inline * + * {
-  margin-top: 0rem; }
-
-/* line 81, source/scss/tyfy/required/_mixins.scss */
-.list-inline dl * + *, .list-inline ol * + *, .list-inline ul * + * {
-  margin-top: 0rem; }
-
-/* line 86, source/scss/tyfy/required/_mixins.scss */
-.list-inline dl * + dd {
   margin-top: 0; }
 
-/* line 69, source/scss/tyfy/required/_mixins.scss */
-.list-inline :not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) + h1,
-.list-inline :not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) + h2,
-.list-inline :not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) + h3,
-.list-inline :not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) + h4,
-.list-inline :not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) + h5,
-.list-inline :not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) + h6 {
-  margin-top: 0rem; }
-
-/* line 62, source/scss/overrides/_type.scss */
+/* line 66, source/scss/overrides/_type.scss */
 .blockquote {
   margin-bottom: 0;
   line-height: 1.8rem; }
 
-/* line 66, source/scss/overrides/_type.scss */
+/* line 70, source/scss/overrides/_type.scss */
 .blockquote * + .blockquote-footer {
   margin-top: 0.9rem; }
 
-/* line 71, source/scss/overrides/_type.scss */
+/* line 75, source/scss/overrides/_type.scss */
 .tyfont-sans {
   font-family: helvetica, arial, sans-serif; }
 
-/* line 74, source/scss/overrides/_type.scss */
+/* line 78, source/scss/overrides/_type.scss */
 .tyfont-serif {
   font-family: georgia, serif; }
 
-/* line 77, source/scss/overrides/_type.scss */
+/* line 81, source/scss/overrides/_type.scss */
 .tyfont-mono {
   font-family: monaco, courier, monospace; }
 
-/* line 81, source/scss/overrides/_type.scss */
+/* line 85, source/scss/overrides/_type.scss */
 span.dropcap {
   display: inline-block;
   float: left;
@@ -9230,7 +9277,7 @@ span.dropcap {
   margin: 0 0.25em 0 0.125em;
   text-align: center; }
 
-/* line 90, source/scss/overrides/_type.scss */
+/* line 94, source/scss/overrides/_type.scss */
 span.smallcaps {
   font-size: smaller;
   letter-spacing: 0.075em;
@@ -9269,3 +9316,50 @@ td {
   font-family: helvetica, arial, sans-serif;
   font-variant-numeric: lining-nums tabular-nums;
   font-feature-settings: "lnum", "tnum"; }
+
+/* line 93, source/scss/tyfy/required/_mixins.scss */
+.alert * + address,
+.alert * + article,
+.alert * + aside,
+.alert * + blockquote,
+.alert * + details,
+.alert * + dialog,
+.alert * + div,
+.alert * + fieldset,
+.alert * + figure,
+.alert * + footer,
+.alert * + form,
+.alert * + h1,
+.alert * + h2,
+.alert * + h3,
+.alert * + h4,
+.alert * + h5,
+.alert * + h6,
+.alert * + header,
+.alert * + hgroup,
+.alert * + main,
+.alert * + nav,
+.alert * + ol,
+.alert * + p,
+.alert * + pre,
+.alert * + section,
+.alert * + table,
+.alert * + ul {
+  margin-top: 0.9rem; }
+
+/* line 3, source/scss/overrides/_alerts.scss */
+.alert hr {
+  margin-bottom: 0.9rem;
+  margin-top: 0.9rem; }
+
+/* line 1, source/scss/overrides/_badge.scss */
+.badge {
+  font-variant-numeric: lining-nums tabular-nums;
+  font-feature-settings: "lnum", "tnum"; }
+  /* line 4, source/scss/overrides/_badge.scss */
+  * + .badge {
+    margin-top: 0; }
+
+/* line 2, source/scss/overrides/_breadcrumb.scss */
+.breadcrumb * + * {
+  margin-top: 0; }

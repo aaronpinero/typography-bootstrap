@@ -50,12 +50,16 @@ hr {
 
 .list-unstyled {
   @include list-unstyled;
-	@include tymargins(off);
+  * + * {
+    margin-top:0;
+  }
 }
 
 // inline lists
 .list-inline {
-	@include tymargins(off);
+  * + * {
+    margin-top:0;
+  }
 }
 
 // Blockquotes
