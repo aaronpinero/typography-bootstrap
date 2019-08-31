@@ -1,3 +1,5 @@
 .nav {
-	@include sibling-margins(off);
+	* + * {
+		margin-top:0;
+	}
 }

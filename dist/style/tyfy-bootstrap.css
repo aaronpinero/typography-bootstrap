@@ -3603,7 +3603,7 @@ input[type="button"].btn-block {
 /* line 14, node_modules/bootstrap/scss/_nav.scss */
 .nav-link {
   display: block;
-  padding: 0.5rem 1rem; }
+  padding: 0.45rem 0.9rem; }
   /* line 17, node_modules/bootstrap/scss/mixins/_hover.scss */
   .nav-link:hover, .nav-link:focus {
     text-decoration: none; }
@@ -3692,8 +3692,8 @@ input[type="button"].btn-block {
 /* line 42, node_modules/bootstrap/scss/_navbar.scss */
 .navbar-brand {
   display: inline-block;
-  padding-top: 0.32rem;
-  padding-bottom: 0.32rem;
+  padding-top: 0.27rem;
+  padding-bottom: 0.27rem;
   margin-right: 1.8rem;
   font-size: 1.32rem;
   line-height: inherit;
@@ -3721,8 +3721,8 @@ input[type="button"].btn-block {
 /* line 84, node_modules/bootstrap/scss/_navbar.scss */
 .navbar-text {
   display: inline-block;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem; }
+  padding-top: 0.45rem;
+  padding-bottom: 0.45rem; }
 
 /* line 99, node_modules/bootstrap/scss/_navbar.scss */
 .navbar-collapse {
@@ -9437,4 +9437,12 @@ textarea {
 
 /* line 20, source/scss/overrides/_card.scss */
 .card .list-group * + * {
+  margin-top: 0; }
+
+/* line 2, source/scss/overrides/_nav.scss */
+.nav * + * {
+  margin-top: 0; }
+
+/* line 2, source/scss/overrides/_navbar.scss */
+.navbar * + * {
   margin-top: 0; }

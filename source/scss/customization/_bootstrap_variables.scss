@@ -129,10 +129,10 @@ $btn-block-spacing-y: $tyspacing-md;
 // // use grid units
 // $custom-select-indicator-padding: tygrid(1); // Extra padding to account for the presence of the background-image based indicator
 
-// // from line 689
-// // use grid units
-// $nav-link-padding-y: tygrid(0.5);
-// $nav-link-padding-x: tygrid(1);
+// from line 689
+// use grid units
+$nav-link-padding-y: tygrid(0.5);
+$nav-link-padding-x: tygrid(1);
 
 // // from line 714
 // // use grid units
