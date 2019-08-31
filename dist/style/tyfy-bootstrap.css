@@ -2712,9 +2712,9 @@ input[type="button"].btn-block {
   z-index: 1000;
   display: none;
   float: left;
-  min-width: 10rem;
-  padding: 0.5rem 0;
-  margin: 0.125rem 0 0;
+  min-width: 10.8rem;
+  padding: 0.45rem 0;
+  margin: 0.225rem 0 0;
   font-size: 1.1rem;
   color: #212529;
   text-align: left;
@@ -2779,7 +2779,7 @@ input[type="button"].btn-block {
   top: auto;
   bottom: 100%;
   margin-top: 0;
-  margin-bottom: 0.125rem; }
+  margin-bottom: 0.225rem; }
 
 /* line 30, node_modules/bootstrap/scss/mixins/_caret.scss */
 .dropup .dropdown-toggle::after {
@@ -2802,7 +2802,7 @@ input[type="button"].btn-block {
   right: auto;
   left: 100%;
   margin-top: 0;
-  margin-left: 0.125rem; }
+  margin-left: 0.225rem; }
 
 /* line 30, node_modules/bootstrap/scss/mixins/_caret.scss */
 .dropright .dropdown-toggle::after {
@@ -2829,7 +2829,7 @@ input[type="button"].btn-block {
   right: 100%;
   left: auto;
   margin-top: 0;
-  margin-right: 0.125rem; }
+  margin-right: 0.225rem; }
 
 /* line 30, node_modules/bootstrap/scss/mixins/_caret.scss */
 .dropleft .dropdown-toggle::after {
@@ -2876,7 +2876,7 @@ input[type="button"].btn-block {
 .dropdown-item {
   display: block;
   width: 100%;
-  padding: 0.25rem 1.5rem;
+  padding: 0.225rem 0.9rem;
   clear: both;
   font-weight: 400;
   color: #212529;
@@ -2907,7 +2907,7 @@ input[type="button"].btn-block {
 /* line 177, node_modules/bootstrap/scss/_dropdown.scss */
 .dropdown-header {
   display: block;
-  padding: 0.5rem 1.5rem;
+  padding: 0.45rem 0.9rem;
   margin-bottom: 0;
   font-size: 0.91667rem;
   color: #6c757d;
@@ -2916,7 +2916,7 @@ input[type="button"].btn-block {
 /* line 187, node_modules/bootstrap/scss/_dropdown.scss */
 .dropdown-item-text {
   display: block;
-  padding: 0.25rem 1.5rem;
+  padding: 0.225rem 0.9rem;
   color: #212529; }
 
 /* line 4, node_modules/bootstrap/scss/_button-group.scss */
@@ -4032,15 +4032,15 @@ input[type="button"].btn-block {
 /* line 34, node_modules/bootstrap/scss/_card.scss */
 .card-body {
   flex: 1 1 auto;
-  padding: 1.25rem; }
+  padding: 1.35rem; }
 
 /* line 42, node_modules/bootstrap/scss/_card.scss */
 .card-title {
-  margin-bottom: 0.75rem; }
+  margin-bottom: 0.9rem; }
 
 /* line 46, node_modules/bootstrap/scss/_card.scss */
 .card-subtitle {
-  margin-top: -0.375rem;
+  margin-top: -0.45rem;
   margin-bottom: 0; }
 
 /* line 51, node_modules/bootstrap/scss/_card.scss */
@@ -4053,11 +4053,11 @@ input[type="button"].btn-block {
 
 /* line 60, node_modules/bootstrap/scss/_card.scss */
 .card-link + .card-link {
-  margin-left: 1.25rem; }
+  margin-left: 1.35rem; }
 
 /* line 69, node_modules/bootstrap/scss/_card.scss */
 .card-header {
-  padding: 0.75rem 1.25rem;
+  padding: 0.9rem 1.35rem;
   margin-bottom: 0;
   background-color: rgba(0, 0, 0, 0.03);
   border-bottom: 0.0833rem solid rgba(0, 0, 0, 0.125); }
@@ -4070,7 +4070,7 @@ input[type="button"].btn-block {
 
 /* line 87, node_modules/bootstrap/scss/_card.scss */
 .card-footer {
-  padding: 0.75rem 1.25rem;
+  padding: 0.9rem 1.35rem;
   background-color: rgba(0, 0, 0, 0.03);
   border-top: 0.0833rem solid rgba(0, 0, 0, 0.125); }
   /* line 92, node_modules/bootstrap/scss/_card.scss */
@@ -4079,15 +4079,15 @@ input[type="button"].btn-block {
 
 /* line 102, node_modules/bootstrap/scss/_card.scss */
 .card-header-tabs {
-  margin-right: -0.625rem;
-  margin-bottom: -0.75rem;
-  margin-left: -0.625rem;
+  margin-right: -0.675rem;
+  margin-bottom: -0.9rem;
+  margin-left: -0.675rem;
   border-bottom: 0; }
 
 /* line 109, node_modules/bootstrap/scss/_card.scss */
 .card-header-pills {
-  margin-right: -0.625rem;
-  margin-left: -0.625rem; }
+  margin-right: -0.675rem;
+  margin-left: -0.675rem; }
 
 /* line 115, node_modules/bootstrap/scss/_card.scss */
 .card-img-overlay {
@@ -4183,7 +4183,7 @@ input[type="button"].btn-block {
 
 /* line 239, node_modules/bootstrap/scss/_card.scss */
 .card-columns .card {
-  margin-bottom: 0.75rem; }
+  margin-bottom: 0.9rem; }
 
 @media (min-width: 576px) {
   /* line 238, node_modules/bootstrap/scss/_card.scss */
@@ -4697,7 +4697,7 @@ input[type="button"].btn-block {
 .list-group-item {
   position: relative;
   display: block;
-  padding: 0.75rem 1.25rem;
+  padding: 0.9rem 1.35rem;
   margin-bottom: -0.0833rem;
   background-color: #fff;
   border: 0.0833rem solid rgba(0, 0, 0, 0.125); }
@@ -9383,3 +9383,58 @@ input,
 select,
 textarea {
   font-family: helvetica, arial, sans-serif; }
+
+/* line 2, source/scss/overrides/_card.scss */
+.card > * + * {
+  margin-top: 0; }
+
+/* line 93, source/scss/tyfy/required/_mixins.scss */
+.card .card-body * + address,
+.card .card-body * + article,
+.card .card-body * + aside,
+.card .card-body * + blockquote,
+.card .card-body * + details,
+.card .card-body * + dialog,
+.card .card-body * + div,
+.card .card-body * + fieldset,
+.card .card-body * + figure,
+.card .card-body * + footer,
+.card .card-body * + form,
+.card .card-body * + h1,
+.card .card-body * + h2,
+.card .card-body * + h3,
+.card .card-body * + h4,
+.card .card-body * + h5,
+.card .card-body * + h6,
+.card .card-body * + header,
+.card .card-body * + hgroup,
+.card .card-body * + main,
+.card .card-body * + nav,
+.card .card-body * + ol,
+.card .card-body * + p,
+.card .card-body * + pre,
+.card .card-body * + section,
+.card .card-body * + table,
+.card .card-body * + ul {
+  margin-top: 0.9rem; }
+
+/* line 81, source/scss/tyfy/required/_mixins.scss */
+.card .card-body dl * + *, .card .card-body ol * + *, .card .card-body ul * + * {
+  margin-top: 0; }
+
+/* line 86, source/scss/tyfy/required/_mixins.scss */
+.card .card-body dl * + dd {
+  margin-top: 0; }
+
+/* line 9, source/scss/overrides/_card.scss */
+.card .card-body .card-title {
+  margin-bottom: 0; }
+
+/* line 13, source/scss/overrides/_card.scss */
+.card .card-body .card-subtitle,
+.card .card-body .card-title + .card-subtitle {
+  margin-top: 0; }
+
+/* line 20, source/scss/overrides/_card.scss */
+.card .list-group * + * {
+  margin-top: 0; }

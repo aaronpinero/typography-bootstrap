@@ -143,16 +143,16 @@ $btn-block-spacing-y: $tyspacing-md;
 // $navbar-toggler-padding-y: tygrid(0.5);
 // $navbar-toggler-padding-x: tygrid(1);
 
-// // from line 751
-// // use grid units
-// $dropdown-min-width: tygrid(12);
-// $dropdown-padding-y: tygrid(0.5);
-// $dropdown-spacer: tygrid(0.25);
+// from line 751
+// use grid units
+$dropdown-min-width: tygrid(12);
+$dropdown-padding-y: tygrid(0.5);
+$dropdown-spacer: tygrid(0.25);
 
-// // from line 774
-// // use grid units
-// $dropdown-item-padding-y: tygrid(0.25);
-// $dropdown-item-padding-x: tygrid(1.5);
+// from line 774
+// use grid units
+$dropdown-item-padding-y: tygrid(0.25);
+$dropdown-item-padding-x: tygrid(1);
 
 // // from line 782
 // // use grid units
@@ -168,10 +168,10 @@ $btn-block-spacing-y: $tyspacing-md;
 // // use grid units
 // $jumbotron-padding: tygrid(4);
 
-// // from line 820
-// // use grid units
-// $card-spacer-y: tygrid(1);
-// $card-spacer-x: tygrid(1.5);
+// from line 820
+// use grid units
+$card-spacer-y: tygrid(1);
+$card-spacer-x: tygrid(1.5);
 
 // // from line 831
 // // use grid units
@@ -187,10 +187,10 @@ $alert-padding-y: tygrid(1.5);
 $alert-padding-x: tygrid(1.5);
 $alert-margin-bottom: 0;
 
-// // from line 1002
-// // use grid units
-// $list-group-item-padding-y: tygrid(1);
-// $list-group-item-padding-x: tygrid(1.5);
+// from line 1002
+// use grid units
+$list-group-item-padding-y: tygrid(1);
+$list-group-item-padding-x: tygrid(1.5);
 
 // from line 1038
 // use grid units

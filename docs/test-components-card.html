@@ -20,7 +20,7 @@
 		<link id="mainstyles" rel="stylesheet" href="../dist/style/tyfy-bootstrap.css">
 		<link id="docstyles" rel="stylesheet" href="../dist/style/tyfy-bootstrap-docs.css">
 		<!--/ COMMON HEAD TAGS -->
-		<title>Test - Tyfy for Bootstrap</title>
+		<title>Test: Components: Card - Tyfy for Bootstrap</title>
 	</head>
 	<body class="">
 		<!-- COMMON HEADER -->
@@ -58,7 +58,14 @@
 			<div class="container-fluid">
 				<div class="row">
 					<div class="col">
-						<h1>Test</h1>
+  					  <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Tyfy</a></li>
+                <li class="breadcrumb-item"><a href="test.html">Test</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Components: Card</li>
+              </ol>
+            </nav>
+						<h1>Test: Components: Card</h1>
 					</div>
 				</div>
 			</div>
@@ -68,12 +75,39 @@
 				<div class="row">
 					<div class="col-md-9">
   					
-  					  <ul>
-    					  <li><a href="test-content.html">Content</a></li>
-    					  <li><a href="test-components-01.html">Components, Part 1</a></li>
-    					  <li><a href="test-components-card.html">Components: Card</a></li>
-  					  </ul>
- 
+            <div class="card" style="width: 18rem;">
+              <img src="http://via.placeholder.com/640x360" class="card-img-top" alt="placeholder image">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <div><a href="#" class="btn btn-primary">Go somewhere</a></div>
+              </div>
+            </div>
+
+            <hr>
+
+            <div class="card" style="width: 18rem;">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <h6 class="card-subtitle">Card subtitle</h6>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <div>
+                  <a href="#" class="card-link">Card link</a>
+                  <a href="#" class="card-link">Another link</a>
+                </div>
+              </div>
+            </div>
+
+            <hr>
+
+            <div class="card" style="width: 18rem;">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Cras justo odio</li>
+                <li class="list-group-item">Dapibus ac facilisis in</li>
+                <li class="list-group-item">Vestibulum at eros</li>
+              </ul>
+            </div>
+
 					</div>
 				</div>
 			</div>
