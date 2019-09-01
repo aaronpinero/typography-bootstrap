@@ -10,7 +10,7 @@ $paragraph-margin-bottom: 0;
 
 // from line 222
 // set gutter to a multiple of the grid unit
-$grid-gutter-width: $tyspacing-lg;
+$grid-gutter-width: tygrid(3);
 
 // from line 229
 // relative units based on modular scale and baseline grid

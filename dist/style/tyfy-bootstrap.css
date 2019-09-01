@@ -547,8 +547,8 @@ pre {
 /* line 6, node_modules/bootstrap/scss/_grid.scss */
 .container {
   width: 100%;
-  padding-right: 1.8rem;
-  padding-left: 1.8rem;
+  padding-right: 1.35rem;
+  padding-left: 1.35rem;
   margin-right: auto;
   margin-left: auto; }
   @media (min-width: 576px) {
@@ -571,8 +571,8 @@ pre {
 /* line 18, node_modules/bootstrap/scss/_grid.scss */
 .container-fluid {
   width: 100%;
-  padding-right: 1.8rem;
-  padding-left: 1.8rem;
+  padding-right: 1.35rem;
+  padding-left: 1.35rem;
   margin-right: auto;
   margin-left: auto; }
 
@@ -580,8 +580,8 @@ pre {
 .row {
   display: flex;
   flex-wrap: wrap;
-  margin-right: -1.8rem;
-  margin-left: -1.8rem; }
+  margin-right: -1.35rem;
+  margin-left: -1.35rem; }
 
 /* line 34, node_modules/bootstrap/scss/_grid.scss */
 .no-gutters {
@@ -602,8 +602,8 @@ pre {
 .col-xl-auto {
   position: relative;
   width: 100%;
-  padding-right: 1.8rem;
-  padding-left: 1.8rem; }
+  padding-right: 1.35rem;
+  padding-left: 1.35rem; }
 
 /* line 31, node_modules/bootstrap/scss/mixins/_grid-framework.scss */
 .col {
@@ -4121,21 +4121,21 @@ input[type="button"].btn-block {
   flex-direction: column; }
   /* line 147, node_modules/bootstrap/scss/_card.scss */
   .card-deck .card {
-    margin-bottom: 1.8rem; }
+    margin-bottom: 1.35rem; }
   @media (min-width: 576px) {
     /* line 143, node_modules/bootstrap/scss/_card.scss */
     .card-deck {
       flex-flow: row wrap;
-      margin-right: -1.8rem;
-      margin-left: -1.8rem; }
+      margin-right: -1.35rem;
+      margin-left: -1.35rem; }
       /* line 156, node_modules/bootstrap/scss/_card.scss */
       .card-deck .card {
         display: flex;
         flex: 1 0 0%;
         flex-direction: column;
-        margin-right: 1.8rem;
+        margin-right: 1.35rem;
         margin-bottom: 0;
-        margin-left: 1.8rem; } }
+        margin-left: 1.35rem; } }
 
 /* line 173, node_modules/bootstrap/scss/_card.scss */
 .card-group {
@@ -4143,7 +4143,7 @@ input[type="button"].btn-block {
   flex-direction: column; }
   /* line 179, node_modules/bootstrap/scss/_card.scss */
   .card-group > .card {
-    margin-bottom: 1.8rem; }
+    margin-bottom: 1.35rem; }
   @media (min-width: 576px) {
     /* line 173, node_modules/bootstrap/scss/_card.scss */
     .card-group {

@@ -140,12 +140,9 @@
     @include tymargins-size(headings,$tyspacing-lg);
   }
   @else {
-    // blocks
-    @include tymargins-size(blocks,0rem);
-    // lists
-    @include tymargins-size(lists,0rem);
-    // headings
-    @include tymargins-size(headings,0rem);
+    * + * {
+      margin-top:0;
+    }
   }
 }
 
