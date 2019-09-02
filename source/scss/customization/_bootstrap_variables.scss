@@ -2,7 +2,7 @@
 
 // line 130
 // set the spacer equal to 2 grid units
-$spacer:	$tyspacing-md;
+$spacer:	tyspacing(md);
 
 // from line 183
 // don't set a bottom margin on everything
@@ -63,7 +63,7 @@ $list-inline-padding: tygrid(1);
 
 // from line 340
 // larger hr spacing
-$hr-margin-y: $tyspacing-lg;
+$hr-margin-y: tyspacing(lg);
 
 // from line 347
 // use grid units
@@ -87,7 +87,7 @@ $input-btn-padding-x-lg: tygrid(1.5) - $border-width;
 
 // from line 437
 // use grid units
-$btn-block-spacing-y: $tyspacing-md;
+$btn-block-spacing-y: tyspacing(md);
 
 // // from line 491
 // // use grid units

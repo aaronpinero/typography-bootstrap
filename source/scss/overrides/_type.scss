@@ -68,7 +68,7 @@ hr {
   line-height: tylead($blockquote-font-size);
 }
 .blockquote * + .blockquote-footer {
-  margin-top:$tyspacing-sm;
+  margin-top:tyspacing(sm);
 }
 
 // stuff from tyfy utilities module

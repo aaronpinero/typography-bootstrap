@@ -2,5 +2,5 @@
   margin-bottom:0;
 }
 figure * + figcaption {
-  margin-top:$tyspacing-sm;
+  margin-top:tyspacing(sm);
 }
