@@ -1,0 +1,10 @@
+.carousel-inner,
+.carousel-indicators {
+  > * + * {
+    margin-top:0;
+  }
+}
+
+.carousel-indicators {
+  bottom:tyspacing(sm);
+}

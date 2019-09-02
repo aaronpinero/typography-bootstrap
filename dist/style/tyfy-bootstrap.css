@@ -9440,3 +9440,12 @@ textarea {
 /* line 2, source/scss/overrides/_navbar.scss */
 .navbar * + * {
   margin-top: 0; }
+
+/* line 3, source/scss/overrides/_carousel.scss */
+.carousel-inner > * + *,
+.carousel-indicators > * + * {
+  margin-top: 0; }
+
+/* line 8, source/scss/overrides/_carousel.scss */
+.carousel-indicators {
+  bottom: 0.9rem; }
