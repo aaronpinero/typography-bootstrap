@@ -1,6 +1,7 @@
 .card,
 .card-deck,
-.card-group {
+.card-group,
+.card-columns {
 	> * + * {
 		margin-top:0;
 	}

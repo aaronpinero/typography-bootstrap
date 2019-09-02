@@ -4183,13 +4183,13 @@ input[type="button"].btn-block {
 
 /* line 239, node_modules/bootstrap/scss/_card.scss */
 .card-columns .card {
-  margin-bottom: 0.9rem; }
+  margin-bottom: 1.35rem; }
 
 @media (min-width: 576px) {
   /* line 238, node_modules/bootstrap/scss/_card.scss */
   .card-columns {
     column-count: 3;
-    column-gap: 1.25rem;
+    column-gap: 1.35rem;
     orphans: 1;
     widows: 1; }
     /* line 249, node_modules/bootstrap/scss/_card.scss */
@@ -9341,10 +9341,11 @@ select,
 textarea {
   font-family: helvetica, arial, sans-serif; }
 
-/* line 4, source/scss/overrides/_card.scss */
+/* line 5, source/scss/overrides/_card.scss */
 .card > * + *,
 .card-deck > * + *,
-.card-group > * + * {
+.card-group > * + *,
+.card-columns > * + * {
   margin-top: 0; }
 
 /* line 93, source/scss/tyfy/required/_mixins.scss */
@@ -9416,19 +9417,19 @@ textarea {
 .card .card-img-overlay dl * + dd {
   margin-top: 0; }
 
-/* line 15, source/scss/overrides/_card.scss */
+/* line 16, source/scss/overrides/_card.scss */
 .card .card-body .card-title,
 .card .card-img-overlay .card-title {
   margin-bottom: 0; }
 
-/* line 19, source/scss/overrides/_card.scss */
+/* line 20, source/scss/overrides/_card.scss */
 .card .card-body .card-subtitle,
 .card .card-body .card-title + .card-subtitle,
 .card .card-img-overlay .card-subtitle,
 .card .card-img-overlay .card-title + .card-subtitle {
   margin-top: 0; }
 
-/* line 26, source/scss/overrides/_card.scss */
+/* line 27, source/scss/overrides/_card.scss */
 .card .list-group * + * {
   margin-top: 0; }
 

@@ -177,9 +177,10 @@ $card-spacer-x: tygrid(1.5);
 // // use grid units
 // $card-img-overlay-padding: tygrid(1.5);
 
-// // from line 837
-// // use grid units
-// $card-columns-gap: tygrid(1.5);
+// from line 837
+// use grid units
+$card-columns-gap: tygrid(1.5);
+$card-columns-margin: tygrid(1.5);
 
 // from line 969
 // use grid units
