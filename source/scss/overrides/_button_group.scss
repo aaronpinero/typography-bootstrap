@@ -1,8 +1,11 @@
 .btn-group,
 .btn-group-vertical {
-  * + * {
+  * + *:not(.dropdown-divider) {
     margin-top:0;
   }
+}
+.btn-group + .btn-group {
+  margin-top:0;
 }
 
 .btn-toolbar {

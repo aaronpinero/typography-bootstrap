@@ -9242,7 +9242,7 @@ span.smallcaps {
   text-transform: uppercase; }
 
 /* line 3, source/scss/overrides/_grid.scss */
-.row > [class*="col-"] + [class*="col-"] {
+.row > [class*="col"] + [class*="col"] {
   margin-top: 0; }
 
 /* line 1, source/scss/overrides/_images.scss */
@@ -9326,11 +9326,15 @@ td {
   font-family: helvetica, arial, sans-serif; }
 
 /* line 3, source/scss/overrides/_button_group.scss */
-.btn-group * + *,
-.btn-group-vertical * + * {
+.btn-group * + *:not(.dropdown-divider),
+.btn-group-vertical * + *:not(.dropdown-divider) {
   margin-top: 0; }
 
-/* line 9, source/scss/overrides/_button_group.scss */
+/* line 7, source/scss/overrides/_button_group.scss */
+.btn-group + .btn-group {
+  margin-top: 0; }
+
+/* line 12, source/scss/overrides/_button_group.scss */
 .btn-toolbar * + * {
   margin-top: 0; }
 
@@ -9433,6 +9437,10 @@ textarea {
 .card .list-group * + * {
   margin-top: 0; }
 
+/* line 34, source/scss/overrides/_card.scss */
+.accordion > .card + .card {
+  margin-top: 0; }
+
 /* line 2, source/scss/overrides/_nav.scss */
 .nav * + * {
   margin-top: 0; }
@@ -9449,3 +9457,12 @@ textarea {
 /* line 8, source/scss/overrides/_carousel.scss */
 .carousel-indicators {
   bottom: 0.9rem; }
+
+/* line 12, source/scss/overrides/_carousel.scss */
+.carousel-caption {
+  bottom: 1.8rem;
+  padding-top: 1.8rem;
+  padding-bottom: 1.8rem; }
+  /* line 16, source/scss/overrides/_carousel.scss */
+  .carousel-caption * + * {
+    margin-top: 0.9rem; }

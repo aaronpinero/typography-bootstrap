@@ -29,3 +29,9 @@
 		}
 	}
 }
+
+.accordion {
+  > .card  + .card{
+    margin-top:0;
+  }
+}

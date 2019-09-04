@@ -1,6 +1,6 @@
 @if $enable-grid-classes {
   .row {
-    > [class*="col-"] + [class*="col-"] {
+    > [class*="col"] + [class*="col"] {
       margin-top: 0;
     }
   }

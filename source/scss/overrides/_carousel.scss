@@ -8,3 +8,12 @@
 .carousel-indicators {
   bottom:tyspacing(sm);
 }
+
+.carousel-caption {
+  bottom:tyspacing(md);
+  padding-top:tyspacing(md);
+  padding-bottom:tyspacing(md);
+  * + * {
+    margin-top:tyspacing(sm);
+  }
+}
