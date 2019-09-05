@@ -1,8 +1,6 @@
 .carousel-inner,
 .carousel-indicators {
-  > * + * {
-    margin-top:0;
-  }
+  @include tymargins(skip);
 }
 
 .carousel-indicators {

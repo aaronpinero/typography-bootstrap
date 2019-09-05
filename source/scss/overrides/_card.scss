@@ -24,14 +24,12 @@
 		
 	}
 	.list-group {
-		* + * {
-			margin-top:0;
-		}
+		@include tymargins(off);
 	}
 }
 
 .accordion {
-  > .card  + .card{
+  > .card  + .card {
     margin-top:0;
   }
 }

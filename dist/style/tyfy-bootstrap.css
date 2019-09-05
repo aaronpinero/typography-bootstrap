@@ -9199,36 +9199,36 @@ hr {
 .list-unstyled {
   padding-left: 0;
   list-style: none; }
-  /* line 53, source/scss/overrides/_type.scss */
+  /* line 150, source/scss/tyfy/required/_mixins.scss */
   .list-unstyled * + * {
     margin-top: 0; }
 
-/* line 60, source/scss/overrides/_type.scss */
+/* line 150, source/scss/tyfy/required/_mixins.scss */
 .list-inline * + * {
   margin-top: 0; }
 
-/* line 66, source/scss/overrides/_type.scss */
+/* line 62, source/scss/overrides/_type.scss */
 .blockquote {
   margin-bottom: 0;
   line-height: 1.8rem; }
 
-/* line 70, source/scss/overrides/_type.scss */
+/* line 66, source/scss/overrides/_type.scss */
 .blockquote * + .blockquote-footer {
   margin-top: 0.9rem; }
 
-/* line 75, source/scss/overrides/_type.scss */
+/* line 71, source/scss/overrides/_type.scss */
 .tyfont-sans {
   font-family: helvetica, arial, sans-serif; }
 
-/* line 78, source/scss/overrides/_type.scss */
+/* line 74, source/scss/overrides/_type.scss */
 .tyfont-serif {
   font-family: georgia, serif; }
 
-/* line 81, source/scss/overrides/_type.scss */
+/* line 77, source/scss/overrides/_type.scss */
 .tyfont-mono {
   font-family: monaco, courier, monospace; }
 
-/* line 85, source/scss/overrides/_type.scss */
+/* line 81, source/scss/overrides/_type.scss */
 span.dropcap {
   display: inline-block;
   float: left;
@@ -9238,7 +9238,7 @@ span.dropcap {
   margin: 0 0.25em 0 0.125em;
   text-align: center; }
 
-/* line 94, source/scss/overrides/_type.scss */
+/* line 90, source/scss/overrides/_type.scss */
 span.smallcaps {
   font-size: smaller;
   letter-spacing: 0.075em;
@@ -9321,7 +9321,7 @@ td {
   * + .badge {
     margin-top: 0; }
 
-/* line 2, source/scss/overrides/_breadcrumb.scss */
+/* line 150, source/scss/tyfy/required/_mixins.scss */
 .breadcrumb * + * {
   margin-top: 0; }
 
@@ -9338,7 +9338,7 @@ td {
 .btn-group + .btn-group {
   margin-top: 0; }
 
-/* line 12, source/scss/overrides/_button_group.scss */
+/* line 150, source/scss/tyfy/required/_mixins.scss */
 .btn-toolbar * + * {
   margin-top: 0; }
 
@@ -9437,36 +9437,36 @@ textarea {
 .card .card-img-overlay .card-title + .card-subtitle {
   margin-top: 0; }
 
-/* line 27, source/scss/overrides/_card.scss */
+/* line 150, source/scss/tyfy/required/_mixins.scss */
 .card .list-group * + * {
   margin-top: 0; }
 
-/* line 34, source/scss/overrides/_card.scss */
+/* line 32, source/scss/overrides/_card.scss */
 .accordion > .card + .card {
   margin-top: 0; }
 
-/* line 2, source/scss/overrides/_nav.scss */
+/* line 150, source/scss/tyfy/required/_mixins.scss */
 .nav * + * {
   margin-top: 0; }
 
-/* line 2, source/scss/overrides/_navbar.scss */
+/* line 150, source/scss/tyfy/required/_mixins.scss */
 .navbar * + * {
   margin-top: 0; }
 
-/* line 3, source/scss/overrides/_carousel.scss */
+/* line 144, source/scss/tyfy/required/_mixins.scss */
 .carousel-inner > * + *,
 .carousel-indicators > * + * {
   margin-top: 0; }
 
-/* line 8, source/scss/overrides/_carousel.scss */
+/* line 6, source/scss/overrides/_carousel.scss */
 .carousel-indicators {
   bottom: 0.9rem; }
 
-/* line 12, source/scss/overrides/_carousel.scss */
+/* line 10, source/scss/overrides/_carousel.scss */
 .carousel-caption {
   bottom: 1.8rem;
   padding-top: 1.8rem;
   padding-bottom: 1.8rem; }
-  /* line 16, source/scss/overrides/_carousel.scss */
+  /* line 14, source/scss/overrides/_carousel.scss */
   .carousel-caption * + * {
     margin-top: 0.9rem; }

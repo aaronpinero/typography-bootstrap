@@ -9,7 +9,5 @@
 }
 
 .btn-toolbar {
-  * + * {
-    margin-top:0;
-  }
+  @include tymargins(off);
 }
