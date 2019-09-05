@@ -9116,7 +9116,11 @@ body :not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) + h6 {
 .tymargins-on :not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) + h6 {
   margin-top: 3.6rem; }
 
-/* line 143, source/scss/tyfy/required/_mixins.scss */
+/* line 144, source/scss/tyfy/required/_mixins.scss */
+.tymargins-skip > * + * {
+  margin-top: 0; }
+
+/* line 150, source/scss/tyfy/required/_mixins.scss */
 .tymargins-off * + * {
   margin-top: 0; }
 
