@@ -5,18 +5,18 @@ textarea {
 	font-family:$tyfont-input;
 }
 
-// label + .form-control,
-// label + .input-group,
-// label + .custom-select {
-// 	margin-top:$tyspacing-md * 0.5;
+label + .form-control,
+label + .input-group,
+label + .custom-select {
+  margin-top:tyspacing(sm);
+}
+//  .form-inline,
+//  .form-check,
+//  .form-row,
+//  .custom-control,
+//  .input-group {
+//  	@include tymargins(off);
 // }
-// .form-inline,
-// .form-check,
-// .form-row,
-// .custom-control,
-// .input-group {
-// 	@include tymargins(off);
-// }
-// .custom-control + .custom-control {
-// 	margin-top:0;
+//  .custom-control + .custom-control {
+//  	margin-top:0;
 // }

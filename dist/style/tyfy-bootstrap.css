@@ -1780,12 +1780,12 @@ textarea.form-control {
 
 /* line 170, node_modules/bootstrap/scss/_forms.scss */
 .form-group {
-  margin-bottom: 1rem; }
+  margin-bottom: 0; }
 
 /* line 174, node_modules/bootstrap/scss/_forms.scss */
 .form-text {
   display: block;
-  margin-top: 0.25rem; }
+  margin-top: 0.45rem; }
 
 /* line 184, node_modules/bootstrap/scss/_forms.scss */
 .form-row {
@@ -1835,7 +1835,7 @@ textarea.form-control {
 .valid-feedback {
   display: none;
   width: 100%;
-  margin-top: 0.25rem;
+  margin-top: 0.45rem;
   font-size: 83.33333%;
   color: #28a745; }
 
@@ -1953,7 +1953,7 @@ textarea.form-control {
 .invalid-feedback {
   display: none;
   width: 100%;
-  margin-top: 0.25rem;
+  margin-top: 0.45rem;
   font-size: 83.33333%;
   color: #dc3545; }
 
@@ -9348,6 +9348,12 @@ input,
 select,
 textarea {
   font-family: helvetica, arial, sans-serif; }
+
+/* line 8, source/scss/overrides/_forms.scss */
+label + .form-control,
+label + .input-group,
+label + .custom-select {
+  margin-top: 0.9rem; }
 
 /* line 5, source/scss/overrides/_card.scss */
 .card > * + *,
