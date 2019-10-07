@@ -31,7 +31,8 @@
   ],
   "dependencies": {
     "install": "^0.13.0",
-    "npm": "^6.7.0"
+    "npm": "^6.7.0",
+    "tyfy": "^2.0.3"
   },
   "browserslist": [
     "> 5%"
