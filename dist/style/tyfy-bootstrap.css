@@ -9351,6 +9351,7 @@ textarea {
 
 /* line 8, source/scss/overrides/_forms.scss */
 label + .form-control,
+label + .form-control-file,
 label + .input-group,
 label + .custom-select {
   margin-top: 0.9rem; }
