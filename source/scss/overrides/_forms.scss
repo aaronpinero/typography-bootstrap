@@ -5,11 +5,14 @@ textarea {
 	font-family:$tyfont-input;
 }
 
-label + .form-control,
-label + .form-control-file,
-label + .input-group,
-label + .custom-select {
-  margin-top:tyspacing(sm);
+label:not(.sr-only) {
+  & + .form-control,
+  & + .form-control-file,
+  & + .form-control-plaintext,
+  & + .input-group,
+  & + .custom-select {
+    margin-top:tyspacing(sm);
+  }
 }
 .form-inline,
 .form-check,

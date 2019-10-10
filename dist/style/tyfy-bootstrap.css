@@ -9275,11 +9275,12 @@ select,
 textarea {
   font-family: helvetica, arial, sans-serif; }
 
-/* line 8, source/scss/overrides/_forms.scss */
-label + .form-control,
-label + .form-control-file,
-label + .input-group,
-label + .custom-select {
+/* line 9, source/scss/overrides/_forms.scss */
+label:not(.sr-only) + .form-control,
+label:not(.sr-only) + .form-control-file,
+label:not(.sr-only) + .form-control-plaintext,
+label:not(.sr-only) + .input-group,
+label:not(.sr-only) + .custom-select {
   margin-top: 0.9rem; }
 
 /* line 118, node_modules/tyfy/source/scss/required/_mixins.scss */
@@ -9359,3 +9360,7 @@ label + .custom-select {
   /* line 14, source/scss/overrides/_carousel.scss */
   .carousel-caption * + * {
     margin-top: 0.9rem; }
+
+/* line 1, source/scss/overrides/_utilities.scss */
+.sr-only + * {
+  margin-top: 0; }
