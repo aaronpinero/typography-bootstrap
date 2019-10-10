@@ -83,6 +83,7 @@
 
 						<hr>
 
+						<h2>Sizes</h2>
 						<form>
 							<input class="form-control form-control-lg" type="text" placeholder=".form-control-lg">
 							<input class="form-control" type="text" placeholder="Default input">
@@ -100,6 +101,7 @@
 
 						<hr>
 
+						<h2>Read-only</h2>
 						<form>
 							<input class="form-control" type="text" placeholder="Readonly input here..." readonly>
 							<div class="form-group row">
@@ -129,7 +131,149 @@
 							</div>
 							<button type="submit" class="btn btn-primary mb-2">Confirm identity</button>
 						</form>
-												
+
+						<hr>
+						
+						<h2>Range</h2>
+						<form>
+							<div class="form-group">
+								<label for="formControlRange">Example Range input</label>
+								<input type="range" class="form-control-range" id="formControlRange">
+							</div>
+						</form>						
+						
+						<hr>
+
+						<h2>Checkboxes</h2>
+						<form class="tymargins-skip">
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+								<label class="form-check-label" for="defaultCheck1">
+									Default checkbox
+								</label>
+							</div>
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" value="" id="defaultCheck2" disabled>
+								<label class="form-check-label" for="defaultCheck2">
+									Disabled checkbox
+								</label>
+							</div>
+							<div class="form-check">
+								<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+								<label class="form-check-label" for="exampleRadios1">
+									Default radio
+								</label>
+							</div>
+							<div class="form-check">
+								<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+								<label class="form-check-label" for="exampleRadios2">
+									Second default radio
+								</label>
+							</div>
+							<div class="form-check">
+								<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" disabled>
+								<label class="form-check-label" for="exampleRadios3">
+									Disabled radio
+								</label>
+							</div>
+						</form>
+
+						<hr>
+
+						<h2>Inline</h2>
+						<form>
+							<div class="form-check form-check-inline">
+								<input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+								<label class="form-check-label" for="inlineCheckbox1">1</label>
+							</div>
+							<div class="form-check form-check-inline">
+								<input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+								<label class="form-check-label" for="inlineCheckbox2">2</label>
+							</div>
+							<div class="form-check form-check-inline">
+								<input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3" disabled>
+								<label class="form-check-label" for="inlineCheckbox3">3 (disabled)</label>
+							</div>
+						</form>
+
+						<hr>
+
+						<h2>Form Grid</h2>
+						<form>
+							<div class="row">
+								<div class="col">
+									<input type="text" class="form-control" placeholder="First name">
+								</div>
+								<div class="col">
+									<input type="text" class="form-control" placeholder="Last name">
+								</div>
+							</div>
+						</form>
+
+						<hr>
+
+						<h2>Form Row</h2>
+						<form>
+							<div class="form-row">
+								<div class="col">
+									<input type="text" class="form-control" placeholder="First name">
+								</div>
+								<div class="col">
+									<input type="text" class="form-control" placeholder="Last name">
+								</div>
+							</div>
+						</form>
+
+						<hr>
+
+						<h2>Complex Form Rows</h2>
+						<form>
+							<div class="form-row">
+								<div class="form-group col-md-6">
+									<label for="inputEmail4">Email</label>
+									<input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+								</div>
+								<div class="form-group col-md-6">
+									<label for="inputPassword4">Password</label>
+									<input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="inputAddress">Address</label>
+								<input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+							</div>
+							<div class="form-group">
+								<label for="inputAddress2">Address 2</label>
+								<input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+							</div>
+							<div class="form-row">
+								<div class="form-group col-md-6">
+									<label for="inputCity">City</label>
+									<input type="text" class="form-control" id="inputCity">
+								</div>
+								<div class="form-group col-md-4">
+									<label for="inputState">State</label>
+									<select id="inputState" class="form-control">
+										<option selected>Choose...</option>
+										<option>...</option>
+									</select>
+								</div>
+								<div class="form-group col-md-2">
+									<label for="inputZip">Zip</label>
+									<input type="text" class="form-control" id="inputZip">
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="form-check">
+									<input class="form-check-input" type="checkbox" id="gridCheck">
+									<label class="form-check-label" for="gridCheck">
+										Check me out
+									</label>
+								</div>
+							</div>
+							<button type="submit" class="btn btn-primary">Sign in</button>
+						</form>
+						
           </div>
 				</div>
 			</div>
