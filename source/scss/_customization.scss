@@ -5,7 +5,8 @@
 @import "../../node_modules/tyfy/source/scss/required/core";
 @import "../../node_modules/tyfy/source/scss/required/functions";
 @import "../../node_modules/tyfy/source/scss/required/settings";
-@import "customization/mixins"; // customize version of the tyfy mixins module
+@import "../../node_modules/tyfy/source/scss/required/mixins"; 
+// @import "customization/mixins"; // customize version of the tyfy mixins module
 
 // bootstrap variable customizations
 @import "customization/bootstrap_variables";
