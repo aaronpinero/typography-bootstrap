@@ -9276,20 +9276,34 @@ textarea {
   font-family: helvetica, arial, sans-serif; }
 
 /* line 9, source/scss/overrides/_forms.scss */
-label:not(.sr-only) + .form-control,
-label:not(.sr-only) + .form-control-file,
-label:not(.sr-only) + .form-control-plaintext,
-label:not(.sr-only) + .input-group,
-label:not(.sr-only) + .custom-select {
+form:not(.form-inline) label:not(.sr-only) + .form-control,
+form:not(.form-inline) label:not(.sr-only) + .form-control-file,
+form:not(.form-inline) label:not(.sr-only) + .form-control-plaintext,
+form:not(.form-inline) label:not(.sr-only) + .input-group,
+form:not(.form-inline) label:not(.sr-only) + .custom-range,
+form:not(.form-inline) label:not(.sr-only) + .custom-select {
   margin-top: 0.9rem; }
 
 /* line 118, node_modules/tyfy/source/scss/required/_mixins.scss */
 .form-inline > * + *,
+.form-inline .form-group > * + *,
 .form-check > * + *,
 .form-row > * + *,
 .custom-control > * + *,
 .input-group > * + * {
   margin-top: 0; }
+
+/* line 27, source/scss/overrides/_forms.scss */
+* + .valid-feedback,
+* + .invalid-feedback {
+  margin-top: 0.45rem; }
+
+/* line 32, source/scss/overrides/_forms.scss */
+.custom-file-input {
+  margin: 0; }
+  /* line 34, source/scss/overrides/_forms.scss */
+  .custom-file-input + .custom-file-label {
+    margin-top: unset; }
 
 /* line 5, source/scss/overrides/_card.scss */
 .card > * + *,

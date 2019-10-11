@@ -5,22 +5,33 @@ textarea {
 	font-family:$tyfont-input;
 }
 
-label:not(.sr-only) {
+form:not(.form-inline) label:not(.sr-only) {
   & + .form-control,
   & + .form-control-file,
   & + .form-control-plaintext,
   & + .input-group,
+  & + .custom-range,
   & + .custom-select {
     margin-top:tyspacing(sm);
   }
 }
 .form-inline,
+.form-inline .form-group,
 .form-check,
 .form-row,
 .custom-control,
 .input-group {
   @include tymargins(skip);
 }
-//  .custom-control + .custom-control {
-//  	margin-top:0;
-// }
+
+* + .valid-feedback,
+* + .invalid-feedback {
+  margin-top:tygrid(0.5);
+}
+
+.custom-file-input {
+  margin:0;
+  & + .custom-file-label {
+    margin-top:unset;
+  }
+}
