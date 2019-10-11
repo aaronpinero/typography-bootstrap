@@ -9268,6 +9268,10 @@ td {
 .btn-toolbar * + * {
   margin-top: 0; }
 
+/* line 2, source/scss/overrides/_dropdown.scss */
+.dropdown-menu * + *:not(.dropdown-divider) {
+  margin-top: 0; }
+
 /* line 1, source/scss/overrides/_forms.scss */
 button,
 input,
@@ -9289,21 +9293,26 @@ form:not(.form-inline) label:not(.sr-only) + .custom-select {
 .form-inline .form-group > * + *,
 .form-check > * + *,
 .form-row > * + *,
-.custom-control > * + *,
-.input-group > * + * {
+.custom-control > * + * {
   margin-top: 0; }
 
-/* line 27, source/scss/overrides/_forms.scss */
+/* line 26, source/scss/overrides/_forms.scss */
 * + .valid-feedback,
 * + .invalid-feedback {
   margin-top: 0.45rem; }
 
-/* line 32, source/scss/overrides/_forms.scss */
+/* line 31, source/scss/overrides/_forms.scss */
 .custom-file-input {
   margin: 0; }
-  /* line 34, source/scss/overrides/_forms.scss */
+  /* line 33, source/scss/overrides/_forms.scss */
   .custom-file-input + .custom-file-label {
     margin-top: unset; }
+
+/* line 118, node_modules/tyfy/source/scss/required/_mixins.scss */
+.input-group > * + *,
+.input-group-prepend > * + *,
+.input-group-append > * + * {
+  margin-top: 0; }
 
 /* line 5, source/scss/overrides/_card.scss */
 .card > * + *,

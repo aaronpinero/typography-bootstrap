@@ -1,0 +1,5 @@
+.dropdown-menu {
+  * + *:not(.dropdown-divider) {
+    margin-top:0;
+  }
+}

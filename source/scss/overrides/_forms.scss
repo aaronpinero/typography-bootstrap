@@ -19,8 +19,7 @@ form:not(.form-inline) label:not(.sr-only) {
 .form-inline .form-group,
 .form-check,
 .form-row,
-.custom-control,
-.input-group {
+.custom-control {
   @include tymargins(skip);
 }
 
