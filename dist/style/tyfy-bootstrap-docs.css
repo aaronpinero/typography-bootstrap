@@ -9408,3 +9408,13 @@ form:not(.form-inline) label:not(.sr-only) + .custom-select {
 /* line 118, node_modules/tyfy/source/scss/required/_mixins.scss */
 .modal-content > * + * {
   margin-top: 0; }
+
+/* line 8, source/scss/tyfy-bootstrap-docs.scss */
+strong.tyfy {
+  /* autoprefixer: off */
+  background: -webkit-linear-gradient(#cc0066, #0066CC);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "IBM Plex Sans Condensed", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase; }
