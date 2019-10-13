@@ -1,0 +1,7 @@
+.modal,
+.modal-backdrop {
+  margin-top:0px;
+}
+.modal-content {
+  @include tymargins(skip);
+}

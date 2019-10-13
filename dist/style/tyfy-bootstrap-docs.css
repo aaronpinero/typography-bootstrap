@@ -9362,6 +9362,10 @@ form:not(.form-inline) label:not(.sr-only) + .custom-select {
 .nav * + * {
   margin-top: 0; }
 
+/* line 118, node_modules/tyfy/source/scss/required/_mixins.scss */
+.tab-content > * + * {
+  margin-top: 0; }
+
 /* line 123, node_modules/tyfy/source/scss/required/_mixins.scss */
 .navbar * + * {
   margin-top: 0; }
@@ -9390,4 +9394,17 @@ form:not(.form-inline) label:not(.sr-only) + .custom-select {
 
 /* line 123, node_modules/tyfy/source/scss/required/_mixins.scss */
 .list-group * + * {
+  margin-top: 0; }
+
+/* line 118, node_modules/tyfy/source/scss/required/_mixins.scss */
+.media > * + * {
+  margin-top: 0; }
+
+/* line 1, source/scss/overrides/_modal.scss */
+.modal,
+.modal-backdrop {
+  margin-top: 0px; }
+
+/* line 118, node_modules/tyfy/source/scss/required/_mixins.scss */
+.modal-content > * + * {
   margin-top: 0; }
