@@ -9387,3 +9387,7 @@ form:not(.form-inline) label:not(.sr-only) + .custom-select {
 /* line 1, source/scss/overrides/_utilities.scss */
 .sr-only + * {
   margin-top: 0; }
+
+/* line 123, node_modules/tyfy/source/scss/required/_mixins.scss */
+.list-group * + * {
+  margin-top: 0; }

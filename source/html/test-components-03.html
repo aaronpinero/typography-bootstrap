@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<%include head.html%>
+		<title>Test: Components Part 3 - Tyfy for Bootstrap</title>
+	</head>
+	<body class="">
+		<%include header.html%>
+		<header class="px-md-3 px-lg-4 px-xl-5">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col">
+  					  <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">TYBS</a></li>
+                <li class="breadcrumb-item"><a href="test.html">Test</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Components, Part 3</li>
+              </ol>
+            </nav>
+						<h1>Test: Components, Part 3</h1>
+					</div>
+				</div>
+			</div>
+		</header>
+		<section id="main" class="px-md-3 px-lg-4 px-xl-5">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-9">
+  					
+
+						<h2>Jumbotron</h2>
+
+						<div class="jumbotron">
+							<h1 class="display-4">Hello, world!</h1>
+							<p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+							<hr class="my-4">
+							<p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+							<a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+						</div>
+
+						<div class="jumbotron jumbotron-fluid">
+							<div class="container">
+								<h1 class="display-4">Fluid jumbotron</h1>
+								<p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+							</div>
+						</div>
+
+						<hr>
+
+						<h2>List Group</h2>
+
+						<ul class="list-group">
+							<li class="list-group-item">Cras justo odio</li>
+							<li class="list-group-item">Dapibus ac facilisis in</li>
+							<li class="list-group-item">Morbi leo risus</li>
+							<li class="list-group-item">Porta ac consectetur ac</li>
+							<li class="list-group-item">Vestibulum at eros</li>
+						</ul>
+
+						<ul class="list-group">
+							<li class="list-group-item active">Cras justo odio</li>
+							<li class="list-group-item">Dapibus ac facilisis in</li>
+							<li class="list-group-item">Morbi leo risus</li>
+							<li class="list-group-item">Porta ac consectetur ac</li>
+							<li class="list-group-item">Vestibulum at eros</li>
+						</ul>
+
+						<ul class="list-group">
+							<li class="list-group-item disabled" aria-disabled="true">Cras justo odio</li>
+							<li class="list-group-item">Dapibus ac facilisis in</li>
+							<li class="list-group-item">Morbi leo risus</li>
+							<li class="list-group-item">Porta ac consectetur ac</li>
+							<li class="list-group-item">Vestibulum at eros</li>
+						</ul>
+
+						<div class="list-group">
+							<a href="#" class="list-group-item list-group-item-action active">
+								Cras justo odio
+							</a>
+							<a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis in</a>
+							<a href="#" class="list-group-item list-group-item-action">Morbi leo risus</a>
+							<a href="#" class="list-group-item list-group-item-action">Porta ac consectetur ac</a>
+							<a href="#" class="list-group-item list-group-item-action disabled" tabindex="-1" aria-disabled="true">Vestibulum at eros</a>
+						</div>
+
+						<div class="list-group">
+							<button type="button" class="list-group-item list-group-item-action active">
+								Cras justo odio
+							</button>
+							<button type="button" class="list-group-item list-group-item-action">Dapibus ac facilisis in</button>
+							<button type="button" class="list-group-item list-group-item-action">Morbi leo risus</button>
+							<button type="button" class="list-group-item list-group-item-action">Porta ac consectetur ac</button>
+							<button type="button" class="list-group-item list-group-item-action" disabled>Vestibulum at eros</button>
+						</div>
+
+						<ul class="list-group list-group-flush">
+							<li class="list-group-item">Cras justo odio</li>
+							<li class="list-group-item">Dapibus ac facilisis in</li>
+							<li class="list-group-item">Morbi leo risus</li>
+							<li class="list-group-item">Porta ac consectetur ac</li>
+							<li class="list-group-item">Vestibulum at eros</li>
+						</ul>
+
+						<ul class="list-group list-group-horizontal">
+							<li class="list-group-item">Cras justo odio</li>
+							<li class="list-group-item">Dapibus ac facilisis in</li>
+							<li class="list-group-item">Morbi leo risus</li>
+						</ul>
+
+						<ul class="list-group">
+							<li class="list-group-item">Dapibus ac facilisis in</li>
+							<li class="list-group-item list-group-item-primary">A simple primary list group item</li>
+							<li class="list-group-item list-group-item-secondary">A simple secondary list group item</li>
+							<li class="list-group-item list-group-item-success">A simple success list group item</li>
+							<li class="list-group-item list-group-item-danger">A simple danger list group item</li>
+							<li class="list-group-item list-group-item-warning">A simple warning list group item</li>
+							<li class="list-group-item list-group-item-info">A simple info list group item</li>
+							<li class="list-group-item list-group-item-light">A simple light list group item</li>
+							<li class="list-group-item list-group-item-dark">A simple dark list group item</li>
+						</ul>
+
+						<div class="list-group">
+							<a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis in</a>
+							<a href="#" class="list-group-item list-group-item-action list-group-item-primary">A simple primary list group item</a>
+							<a href="#" class="list-group-item list-group-item-action list-group-item-secondary">A simple secondary list group item</a>
+							<a href="#" class="list-group-item list-group-item-action list-group-item-success">A simple success list group item</a>
+							<a href="#" class="list-group-item list-group-item-action list-group-item-danger">A simple danger list group item</a>
+							<a href="#" class="list-group-item list-group-item-action list-group-item-warning">A simple warning list group item</a>
+							<a href="#" class="list-group-item list-group-item-action list-group-item-info">A simple info list group item</a>
+							<a href="#" class="list-group-item list-group-item-action list-group-item-light">A simple light list group item</a>
+							<a href="#" class="list-group-item list-group-item-action list-group-item-dark">A simple dark list group item</a>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</section>
+		<%include footer.html%>
+	</body>
+</html>
