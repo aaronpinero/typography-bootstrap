@@ -18,9 +18,9 @@
 		<meta name="description" content="">
 		<link id="docstyles" rel="stylesheet" href="../dist/style/tyfy-bootstrap-docs.css">
 		<!--/ COMMON HEAD TAGS -->
-		<title>Tyfy Concepts - Tyfy Bootstrap</title>
+		<title>Concepts - Tyfy Bootstrap</title>
 	</head>
-	<body class="">
+	<body class="tymargins-skip">
 		<!-- COMMON HEADER -->
 		<nav class="navbar navbar-expand-md navbar-light bg-white tyfont-sans border-bottom border-dark">
 			<span class="navbar-brand text-orange"><strong class="tyfy">TyBs</strong></span>
@@ -33,22 +33,23 @@
 		        <a class="nav-link" href="index.html"><i class="fas fa-home"></i></a>
 		      </li>
 		      <li class="nav-item">
-		        <a class="nav-link" href="concept.html">Concept</a>
+		        <a class="nav-link" href="concept.html">Concepts</a>
 		      </li>
 		      <li class="nav-item">
 		        <a class="nav-link" href="startup.html">Get Started</a>
 		      </li>
 		      <li class="nav-item dropdown">
-		        <a class="nav-link dropdown-toggle" href="#" id="exampleslist" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Examples</a>
+		        <a class="nav-link dropdown-toggle" href="examples.html" id="exampleslist" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Examples</a>
 		        <div class="dropdown-menu" aria-labelledby="exampleslist">
-			        <a class="dropdown-item" href="examples-pricing.html">Pricing</a>
+			        <a class="dropdown-item" href="examples-pricing.html">Pricing Page</a>
 			        <a class="dropdown-item" href="examples-checkout.html">Checkout Form</a>
+			        <a class="dropdown-item" href="examples-product.html">Product Page</a>
 			        <a class="dropdown-item" href="examples-dashboard.html">Dashboard</a>
 		        </div>
 		      </li>
 		      <li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" href="#" id="exampleslist" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Tests</a>
-							<div class="dropdown-menu" aria-labelledby="exampleslist">
+							<a class="nav-link dropdown-toggle" href="test.html" id="testlist" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Tests</a>
+							<div class="dropdown-menu" aria-labelledby="testlist">
 								<a class="dropdown-item" href="test-content.html">Content Elements</a>
 								<a class="dropdown-item" href="test-components-01.html">Components, Part 1</a>
 								<a class="dropdown-item" href="test-components-card.html">Components: Cards</a>
@@ -60,68 +61,59 @@
 							</div>
 						</li>
 						<li class="nav-item">
-		        <a class="nav-link" href="#" id="style-toggle">Toggle Theme</a>
 		      </li>
 		    </ul>
 		  </div>
+			<a class="btn btn-sm btn-outline-secondary" href="#toggletheme" id="style-toggle">Toggle Theme</a>
 		</nav>
 		<!--/ COMMON HEADER -->
-		<header class="px-md-3 px-lg-4 px-xl-5">
+		<header class="px-md-3 px-lg-4 px-xl-5 py-3 py-lg-4 pt-xl-5">
 			<div class="container-fluid">
 				<div class="row">
 					<div class="col">
-						<h1 class="font-weight-normal display-3">Tyfy Concepts</h1>
+						<h1 class="display-2">Concepts</h1>
 					</div>
 				</div>
 			</div>
 		</header>
-		<section id="main" class="px-md-3 px-lg-4 px-xl-5">
+		<section id="main" class="px-md-3 px-lg-4 px-xl-5 pb-3 pb-lg-4 pb-xl-5">
 			<div class="container-fluid">
 				<div class="row">
 					<div class="col pb-3">
-
-						<p class="lead">Tyfy applies three main design enhancements to Bootstrap.</p>
-						
+						<p class="lead"><strong class="tyfy">TyBs</strong> applies three main design enhancements to Bootstrap.</p>
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-lg-4 bg-light border border-white p-4">
-						<h2 class="text-center"><i class="fas fa-signal d-block mx-auto mb-1 text-orange"></i> Modular Scale</h2>
+					<div class="col-lg-4 pr-lg-3">
+						<h2>Modular Scale</h2>
 						<p><a href="http://tbrown.org" data-href="http://tbrown.org">Tim Brown</a>, Head of Typography at Adobe Typekit and co-developer of <a href="http://www.modularscale.com">modularscale.com</a> writes:</p>
 						<blockquote>“By basing the dimensions of our compositions on values from modular scales, we can achieve a visual harmony not found in layouts that use arbitrary, conventional, or easily divisible numbers.”</blockquote>
 						<p>More simply, <a href="https://en.wikipedia.org/wiki/Robert_Bringhurst">Robert Bringhurst</a> writes “don’t compose without a scale”. Is he talking about music or graphic design? <em>Yes</em>.</p>
 						<p><strong class="tyfy">Tyfy</strong> provides <span class="smallcaps">SASS</span> variables and custom functions that make it easy to establish a modular scale of text sizes. Every semantic <span class="smallcaps">HTML</span> element (headings, paragraphs, lists, etc.) has a text size defined as a function of the base text size and a scale variable. Assigning text sizes to other elements is also simplified through use of the custom functions.</p>
 						<p>By modifying either the base text size or the scalar value, the whole modular scale of sizes can be quickly adjusted to the desired appearance.</p>
 					</div>
-					<div class="col-lg-4 bg-light border border-white p-4">
-						<h2 class="text-center"><i class="fas fa-bars d-block mx-auto mb-1 text-orange"></i> Baseline Grid</h2>
+					<div class="col-lg-4 px-lg-2 mt-4 mt-lg-0">
+						<h2>Baseline Grid</h2>
 						<p>Applying and maintaining a baseline grid adds a rhythmical consistency to your design that is as important as a regular beat in music. Establishing the baseline grid depends in part of choosing the right leading for all different text sizes. Robert Bringhurst writes:</p>
 						<blockquote>“Headings, subheads, block quotations, footnotes, illustrations, captions, and other intrusions into the text create syncopations and variations against the base rhythm of regularly leaded lines. These variations can and should add life to the page, but the main text should also return after each variation precisely on beat and in phase. This means that the total amount of vertical space consumed by each departure from the main text should be an even multiple of the basic leading.”</blockquote>
 						<p><strong class="tyfy">Tyfy</strong> has a grid unit variable that, by default, is half the base line height. Line heights for headings, block quotes, lists items, etc. are defined as multiples of the grid unit, enforcing the baseline grid. In addition, the paddings and margins for most elements are defined as multiples of the grid unit. Custom <span class="smallcaps">SASS</span> functions can calculate line heights and other grid unit-based measures, making it easy to maintain the grid.</p>
 						<p>And because all of these values are defined as a function of the grid unit variable, changing the value will quickly change the visual character of the project.</p>
 					</div>
-					<div class="col-lg-4 bg-light border border-white p-4">
-						<h2 class="text-center"><i class="fas fa-arrows-alt-v d-block mx-auto mb-1 text-orange"></i> Smart Margins</h2>
-						
-						
+					<div class="col-lg-4 pl-lg-3 mt-4 mt-lg-0">
+						<h2>Smart Margins</h2>
 						<p>In <a href="https://alistapart.com/article/axiomatic-css-and-lobotomized-owls">Issue 406 of A List Apart</a>, Heydon Pickering precisely describes my complaint about <span class="smallcaps">HTML</span> margins:</p>
 						<blockquote>“Margins are something that exist between elements. Simply giving an element a top margin makes no sense, no matter how few or how many times you do it. It’s like applying glue to one side of an object before you’ve determined whether you actually want to stick it to something or what that something might be.”</blockquote>
 						<p>By default, <span class="smallcaps">HTML</span> headings, paragraphs, and lists have top and bottom margins. These extra margins often cause unexpected or unwanted collisions at the beginning or end of a containing element, depending on whether or not the containing element has its own margin or padding.</p>
 						<p><strong class="tyfy">Tyfy</strong> uses <a href="https://www.w3.org/TR/css3-selectors/#adjacent-sibling-combinators">adjacent sibling selectors</a> (in this case, Mr. Pickering’s <a href="https://css-tricks.com/lobotomized-owls/">lobotomized owl</a>) to put vertical margins <em>between</em> elements instead of assigning blanket margins to everything. This avoids the problem of having margins at the start and end of a containing element that must then be accounted for. <strong class="tyfy">Tyfy</strong> includes mixins and utility classes to facilitate enabling and disabling these ‘smart’ vertical margins in components where they are not needed.</p>
-						
-						
-						
-						
 					</div>
 				</div>
 			</div>
 		</section>
 		<!-- COMMON FOOTER -->
-		<footer class="card bg-light px-md-3 px-lg-4 px-xl-5 border-0 text-secondary">
+		<footer class="card px-md-3 px-lg-4 px-xl-5 border-left-0 border-right-0 border-bottom-0 text-secondary border-dark">
 			<div class="container-fluid">
 				<div class="row">
-					<div class="col py-5">
-						<h1 class="card-title h4">Tyfy Bootstrap, a Bootstrap 4 theme.</h1>
+					<div class="col py-3 py-lg-4">
 						<p class="card-text">&copy; 2017–2019 by <a href="http://aaronpinero.net">Aaron Pinero</a></p>
 					</div>
 				</div>
