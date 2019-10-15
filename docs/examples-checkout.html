@@ -20,7 +20,7 @@
 		<!--/ COMMON HEAD TAGS -->
 		<title>Example: Checkout Form - Tyfy Bootstrap</title>
 	</head>
-	<body>
+	<body class="tymargins-skip bg-light">
     <!-- COMMON HEADER -->
 		<nav class="navbar navbar-expand-md navbar-light bg-white tyfont-sans border-bottom border-dark">
 			<span class="navbar-brand text-orange"><strong class="tyfy">TyBs</strong></span>
@@ -44,6 +44,7 @@
 			        <a class="dropdown-item" href="examples-pricing.html">Pricing Page</a>
 			        <a class="dropdown-item" href="examples-checkout.html">Checkout Form</a>
 			        <a class="dropdown-item" href="examples-product.html">Product Page</a>
+			        <a class="dropdown-item" href="examples-album.html">Album</a>
 			        <a class="dropdown-item" href="examples-dashboard.html">Dashboard</a>
 		        </div>
 		      </li>
@@ -68,7 +69,7 @@
 		</nav>
 		<!--/ COMMON HEADER -->
 
-    <div class="container">
+    <div class="container pb-5">
       <div class="py-5 text-center">
         <h2>Checkout form</h2>
         <p class="lead">Below is an example form built entirely with Bootstrap’s form controls. Each required form group has a validation state that can be triggered by attempting to submit the form without completing it.</p>
@@ -285,8 +286,8 @@
       </footer>
     </div>
 
-		<!-- COMMON FOOTER -->
-		<footer class="card px-md-3 px-lg-4 px-xl-5 border-left-0 border-right-0 border-bottom-0 text-secondary border-dark">
+    <!-- COMMON FOOTER -->
+		<footer class="card px-md-3 px-lg-4 px-xl-5 border-left-0 border-right-0 border-bottom-0 text-secondary border-dark bg-white">
 			<div class="container-fluid">
 				<div class="row">
 					<div class="col py-3 py-lg-4">
@@ -309,5 +310,28 @@
 		<script src="../dist/script/style_toggle.js"></script>
 		<script src="../dist/script/nav_active.js"></script>
 		<!--/ COMMON FOOTER -->
+    
+    <script>
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+      (function () {
+        'use strict'
+
+        window.addEventListener('load', function () {
+          // Fetch all the forms we want to apply custom Bootstrap validation styles to
+          var forms = document.getElementsByClassName('needs-validation')
+
+          // Loop over them and prevent submission
+          Array.prototype.filter.call(forms, function (form) {
+            form.addEventListener('submit', function (event) {
+              if (form.checkValidity() === false) {
+                event.preventDefault()
+                event.stopPropagation()
+              }
+              form.classList.add('was-validated')
+            }, false)
+          })
+        }, false)
+      }())
+    </script>
 	</body>
 </html>
