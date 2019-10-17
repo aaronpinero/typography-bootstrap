@@ -4,29 +4,43 @@
 		<%include head.html%>
 		<title>Test: Content - Tyfy Bootstrap</title>
 	</head>
-	<body class="">
+	<body class="tymargins-skip position-relative bg-light" data-spy="scroll" data-target="#sectionnav">
 		<%include header.html%>
-		<header class="px-md-3 px-lg-4 px-xl-5">
+		<header class="px-md-3 px-lg-4 px-xl-5 py-3 py-lg-4">
 			<div class="container-fluid">
 				<div class="row">
-					<div class="col">
-  					  <nav aria-label="breadcrumb">
-              <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="index.html">TYBS</a></li>
-                <li class="breadcrumb-item"><a href="test.html">Test</a></li>
+					<div class="col tymargins-off">
+						<nav aria-label="breadcrumb">
+              <ol class="breadcrumb bg-transparent px-0 pt-0 border-bottom">
+                <li class="breadcrumb-item"><a href="index.html">TyBs</a></li>
+                <li class="breadcrumb-item"><a href="tests.html">Tests</a></li>
                 <li class="breadcrumb-item active" aria-current="page">Content</li>
               </ol>
             </nav>
-						<h1>Test: Content</h1>
+						<h1 class="display-2 mt-3">Tests</h1>
 					</div>
 				</div>
 			</div>
 		</header>
-		<section id="main" class="px-md-3 px-lg-4 px-xl-5">
+		<section id="main" class="px-md-3 px-lg-4 px-xl-5 pb-3 pb-lg-4 pb-xl-5">
 			<div class="container-fluid">
 				<div class="row">
-					<div class="col-md-9">
+					<div class="d-none d-md-block col-md-3 order-12">
 
+						<nav id="sectionnav" class="navbar navbar-light bg-transparent sticky-top tyfont-sans">
+							<ul class="nav nav-pills flex-column">
+								<li class="nav-item"><a class="nav-link" href="#headings">Headings</a></li>
+								<li class="nav-item"><a class="nav-link" href="#headingclasses">Heading Classes</a></li>
+								<li class="nav-item"><a class="nav-link" href="#customheadings">Customized Headings</a></li>
+								<li class="nav-item"><a class="nav-link" href="#displayheadings">Display Headings</a></li>
+								<li class="nav-item"><a class="nav-link" href="#lead">Lead Paragraph</a></li>
+								<li class="nav-item"><a class="nav-link" href="#blockquote">Blockquote</a></li>
+								<li class="nav-item"><a class="nav-link" href="#unstyledlist">Unstyled List</a></li>
+							</ul>
+						</nav>
+					</div>
+					<div class="col-md-9">
+						<h2 class="badge badge-primary" id="headings">Headings</h2>
 						<h1>h1. Bootstrap heading</h1>
 						<h2>h2. Bootstrap heading</h2>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -35,9 +49,8 @@
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 						<h5>h5. Bootstrap heading</h5>
 						<h6>h6. Bootstrap heading</h6>
-
 						<hr>
-
+						<h2 class="badge badge-primary" id="headingclasses">Heading Classes</h2>
 						<p class="h1">h1. Bootstrap heading</p>
 						<p class="h2">h2. Bootstrap heading</p>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -46,35 +59,30 @@
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 						<p class="h5">h5. Bootstrap heading</p>
 						<p class="h6">h6. Bootstrap heading</p>
-
 						<hr>
-
+						<h2 class="badge badge-primary" id="customheadings">Customized Headings</h2>
 						<h3>
 							Fancy display heading
 							<small class="text-muted">With faded secondary text</small>
 						</h3>
-
 						<hr>
-
+						<h2 class="badge badge-primary" id="displayheadings">Display Headings</h2>
 						<h1 class="display-1">Display 1</h1>
 						<h1 class="display-2">Display 2</h1>
 						<h1 class="display-3">Display 3</h1>
 						<h1 class="display-4">Display 4</h1>
-						
 						<hr>
-
+						<h2 class="badge badge-primary" id="lead">Lead Paragraph</h2>
 						<p class="lead">Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.</p>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
 						<hr>
-
+						<h2 class="badge badge-primary" id="blockquote">Blockquote</h2>
 						<blockquote class="blockquote">
 							<p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
 							<footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
 						</blockquote>
-
 						<hr>
-
+						<h2 class="badge badge-primary" id="unstyledlist">Unstyled List</h2>
 						<ul class="list-unstyled">
 							<li>Lorem ipsum dolor sit amet</li>
 							<li>Consectetur adipiscing elit</li>
