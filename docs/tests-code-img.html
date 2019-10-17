@@ -18,9 +18,9 @@
 		<meta name="description" content="">
 		<link id="docstyles" rel="stylesheet" href="../dist/style/tyfy-bootstrap-docs.css">
 		<!--/ COMMON HEAD TAGS -->
-		<title>Concepts - Tyfy Bootstrap</title>
+		<title>Tests: Code &amp; Images - Tyfy Bootstrap</title>
 	</head>
-	<body class="tymargins-skip bg-light">
+	<body class="tymargins-skip position-relative bg-light" data-spy="scroll" data-target="#sectionnav">
 		<!-- COMMON HEADER -->
 		<nav class="navbar navbar-expand-md navbar-light bg-white tyfont-sans border-bottom border-dark">
 			<span class="navbar-brand text-orange"><strong class="tyfy">TyBs</strong></span>
@@ -70,11 +70,18 @@
 			<a class="btn btn-sm btn-outline-secondary" href="#toggletheme" id="style-toggle">Toggle Theme</a>
 		</nav>
 		<!--/ COMMON HEADER -->
-		<header class="px-md-3 px-lg-4 px-xl-5 py-3 py-lg-4 pt-xl-5">
+		<header class="px-md-3 px-lg-4 px-xl-5 py-3 py-lg-4">
 			<div class="container-fluid">
 				<div class="row">
-					<div class="col">
-						<h1 class="display-2">Concepts</h1>
+					<div class="col tymargins-off">
+						<nav aria-label="breadcrumb">
+              <ol class="breadcrumb bg-transparent px-0 pt-0 border-bottom">
+                <li class="breadcrumb-item"><a href="index.html">TyBs</a></li>
+                <li class="breadcrumb-item"><a href="tests.html">Tests</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Code &amp; Images</li>
+              </ol>
+            </nav>
+						<h1 class="display-2 mt-3">Code &amp; Images</h1>
 					</div>
 				</div>
 			</div>
@@ -82,32 +89,56 @@
 		<section id="main" class="px-md-3 px-lg-4 px-xl-5 pb-3 pb-lg-4 pb-xl-5">
 			<div class="container-fluid">
 				<div class="row">
-					<div class="col pb-3">
-						<p class="lead"><strong class="tyfy">TyBs</strong> applies three main design enhancements to Bootstrap.</p>
+					<div class="d-none d-md-block col-md-3 order-12">
+
+						<nav id="sectionnav" class="navbar navbar-light bg-transparent sticky-top tyfont-sans">
+							<ul class="nav nav-pills flex-column">
+								<li class="nav-item"><a class="nav-link" href="#code">Code</a></li>
+								<li class="nav-item"><a class="nav-link" href="#codeblock">Code Block</a></li>
+								<li class="nav-item"><a class="nav-link" href="#vars">Variables</a></li>
+								<li class="nav-item"><a class="nav-link" href="#input">User Input</a></li>
+								<li class="nav-item"><a class="nav-link" href="#output">Sample Output</a></li>
+								<li class="nav-item"><a class="nav-link" href="#responsiveimg">Responsive Image</a></li>
+								<li class="nav-item"><a class="nav-link" href="#imgthumb">Image Thumbnail</a></li>
+								<li class="nav-item"><a class="nav-link" href="#figures">Figures</a></li>
+							</ul>
+						</nav>
 					</div>
-				</div>
-				<div class="row">
-					<div class="col-lg-4 pr-lg-3">
-						<h2>Modular Scale</h2>
-						<p><a href="http://tbrown.org" data-href="http://tbrown.org">Tim Brown</a>, Head of Typography at Adobe Typekit and co-developer of <a href="http://www.modularscale.com">modularscale.com</a> writes:</p>
-						<blockquote>“By basing the dimensions of our compositions on values from modular scales, we can achieve a visual harmony not found in layouts that use arbitrary, conventional, or easily divisible numbers.”</blockquote>
-						<p>More simply, <a href="https://en.wikipedia.org/wiki/Robert_Bringhurst">Robert Bringhurst</a> writes “don’t compose without a scale”. Is he talking about music or graphic design? <em>Yes</em>.</p>
-						<p><strong class="tyfy">Tyfy</strong> provides <span class="smallcaps">SASS</span> variables and custom functions that make it easy to establish a modular scale of text sizes. Every semantic <span class="smallcaps">HTML</span> element (headings, paragraphs, lists, etc.) has a text size defined as a function of the base text size and a scale variable. Assigning text sizes to other elements is also simplified through use of the custom functions.</p>
-						<p>By modifying either the base text size or the scalar value, the whole modular scale of sizes can be quickly adjusted to the desired appearance.</p>
-					</div>
-					<div class="col-lg-4 px-lg-2 mt-4 mt-lg-0">
-						<h2>Baseline Grid</h2>
-						<p>Applying and maintaining a baseline grid adds a rhythmical consistency to your design that is as important as a regular beat in music. Establishing the baseline grid depends in part of choosing the right leading for all different text sizes. Robert Bringhurst writes:</p>
-						<blockquote>“Headings, subheads, block quotations, footnotes, illustrations, captions, and other intrusions into the text create syncopations and variations against the base rhythm of regularly leaded lines. These variations can and should add life to the page, but the main text should also return after each variation precisely on beat and in phase. This means that the total amount of vertical space consumed by each departure from the main text should be an even multiple of the basic leading.”</blockquote>
-						<p><strong class="tyfy">Tyfy</strong> has a grid unit variable that, by default, is half the base line height. Line heights for headings, block quotes, lists items, etc. are defined as multiples of the grid unit, enforcing the baseline grid. In addition, the paddings and margins for most elements are defined as multiples of the grid unit. Custom <span class="smallcaps">SASS</span> functions can calculate line heights and other grid unit-based measures, making it easy to maintain the grid.</p>
-						<p>And because all of these values are defined as a function of the grid unit variable, changing the value will quickly change the visual character of the project.</p>
-					</div>
-					<div class="col-lg-4 pl-lg-3 mt-4 mt-lg-0">
-						<h2>Smart Margins</h2>
-						<p>In <a href="https://alistapart.com/article/axiomatic-css-and-lobotomized-owls">Issue 406 of A List Apart</a>, Heydon Pickering precisely describes my complaint about <span class="smallcaps">HTML</span> margins:</p>
-						<blockquote>“Margins are something that exist between elements. Simply giving an element a top margin makes no sense, no matter how few or how many times you do it. It’s like applying glue to one side of an object before you’ve determined whether you actually want to stick it to something or what that something might be.”</blockquote>
-						<p>By default, <span class="smallcaps">HTML</span> headings, paragraphs, and lists have top and bottom margins. These extra margins often cause unexpected or unwanted collisions at the beginning or end of a containing element, depending on whether or not the containing element has its own margin or padding.</p>
-						<p><strong class="tyfy">Tyfy</strong> uses <a href="https://www.w3.org/TR/css3-selectors/#adjacent-sibling-combinators">adjacent sibling selectors</a> (in this case, Mr. Pickering’s <a href="https://css-tricks.com/lobotomized-owls/">lobotomized owl</a>) to put vertical margins <em>between</em> elements instead of assigning blanket margins to everything. This avoids the problem of having margins at the start and end of a containing element that must then be accounted for. <strong class="tyfy">Tyfy</strong> includes mixins and utility classes to facilitate enabling and disabling these ‘smart’ vertical margins in components where they are not needed.</p>
+					<div class="col-md-9">
+						<h2 class="badge badge-primary" id="code">Code</h2>
+						<p>For example, <code>&lt;section&gt;</code> should be wrapped as inline.</p>
+						<hr>
+						<h2 class="badge badge-primary" id="codeblock">Code Block</h2>
+						<pre><code>&lt;p&gt;Sample text here...&lt;/p&gt;
+&lt;p&gt;And another line of sample text here...&lt;/p&gt;</code></pre>
+						<hr>
+						<h2 class="badge badge-primary" id="vars">Variables</h2>
+						<p><var>y</var> = <var>m</var><var>x</var> + <var>b</var></p>
+						<hr>
+						<h2 class="badge badge-primary" id="input">User Input</h2>
+						<p>To switch directories, type <kbd>cd</kbd> followed by the name of the directory.<br>To edit settings, press <kbd><kbd>ctrl</kbd> + <kbd>,</kbd></kbd></p>
+						<hr>
+						<h2 class="badge badge-primary" id="output">Sample Output</h2>
+						<p><samp>This text is meant to be treated as sample output from a computer program.</samp></p>
+						<hr>
+						<h2 class="badge badge-primary" id="responsiveimg">Responsive Image</h2>
+						<div><img src="http://via.placeholder.com/1920x1080" class="img-fluid" alt="Responsive image"></div>
+						<hr>
+						<h2 class="badge badge-primary" id="imgthumb">Image Thumbnail</h2>
+						<div><img src="http://via.placeholder.com/640x360" alt="placeholder image" class="img-thumbnail"></div>
+						<hr>
+						<h2 class="badge badge-primary" id="figures">Figures</h2>
+						<div>
+							<figure class="figure">
+								<img src="http://via.placeholder.com/640x360" class="figure-img img-fluid rounded" alt="placeholder image">
+								<figcaption class="figure-caption">A caption for the above image.</figcaption>
+							</figure>
+							<figure class="figure">
+								<img src="http://via.placeholder.com/640x360" class="figure-img img-fluid rounded" alt="placeholder image">
+								<figcaption class="figure-caption text-right">A caption for the above image.</figcaption>
+							</figure>
+						</div>
+
 					</div>
 				</div>
 			</div>
