@@ -9022,7 +9022,7 @@ a.text-dark:hover, a.text-dark:focus {
   margin-top: 0;
   margin-bottom: 0; }
 
-/* line 93, node_modules/tyfy/source/scss/required/_mixins.scss */
+/* line 99, node_modules/tyfy/source/scss/required/_mixins.scss */
 body * + * {
   margin-top: 1.8rem; }
 
@@ -9043,7 +9043,7 @@ body :not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) + h5,
 body :not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) + h6 {
   margin-top: 3.6rem; }
 
-/* line 93, node_modules/tyfy/source/scss/required/_mixins.scss */
+/* line 99, node_modules/tyfy/source/scss/required/_mixins.scss */
 .tymargins-on * + * {
   margin-top: 1.8rem; }
 
@@ -9064,12 +9064,16 @@ body :not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) + h6 {
 .tymargins-on :not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) + h6 {
   margin-top: 3.6rem; }
 
-/* line 118, node_modules/tyfy/source/scss/required/_mixins.scss */
-.tymargins-skip > * + * {
+/* line 132, node_modules/tyfy/source/scss/required/_mixins.scss */
+.tymargins-off * + * {
   margin-top: 0; }
 
-/* line 123, node_modules/tyfy/source/scss/required/_mixins.scss */
-.tymargins-off * + * {
+/* line 93, node_modules/tyfy/source/scss/required/_mixins.scss */
+.tymargins-once > * + * {
+  margin-top: 1.8rem; }
+
+/* line 124, node_modules/tyfy/source/scss/required/_mixins.scss */
+.tymargins-skip > * + * {
   margin-top: 0; }
 
 /* line 2, source/scss/overrides/_reboot.scss */
@@ -9147,11 +9151,11 @@ hr {
 .list-unstyled {
   padding-left: 0;
   list-style: none; }
-  /* line 123, node_modules/tyfy/source/scss/required/_mixins.scss */
+  /* line 132, node_modules/tyfy/source/scss/required/_mixins.scss */
   .list-unstyled * + * {
     margin-top: 0; }
 
-/* line 123, node_modules/tyfy/source/scss/required/_mixins.scss */
+/* line 132, node_modules/tyfy/source/scss/required/_mixins.scss */
 .list-inline * + * {
   margin-top: 0; }
 
@@ -9226,7 +9230,7 @@ td {
   font-variant-numeric: lining-nums tabular-nums;
   font-feature-settings: "lnum", "tnum"; }
 
-/* line 93, node_modules/tyfy/source/scss/required/_mixins.scss */
+/* line 99, node_modules/tyfy/source/scss/required/_mixins.scss */
 .alert * + * {
   margin-top: 0.9rem; }
 
@@ -9243,7 +9247,7 @@ td {
   * + .badge {
     margin-top: 0; }
 
-/* line 123, node_modules/tyfy/source/scss/required/_mixins.scss */
+/* line 132, node_modules/tyfy/source/scss/required/_mixins.scss */
 .breadcrumb * + * {
   margin-top: 0; }
 
@@ -9264,7 +9268,7 @@ td {
 .btn-group + .btn-group {
   margin-top: 0; }
 
-/* line 123, node_modules/tyfy/source/scss/required/_mixins.scss */
+/* line 132, node_modules/tyfy/source/scss/required/_mixins.scss */
 .btn-toolbar * + * {
   margin-top: 0; }
 
@@ -9288,7 +9292,7 @@ form:not(.form-inline) label:not(.sr-only) + .custom-range,
 form:not(.form-inline) label:not(.sr-only) + .custom-select {
   margin-top: 0.9rem; }
 
-/* line 118, node_modules/tyfy/source/scss/required/_mixins.scss */
+/* line 124, node_modules/tyfy/source/scss/required/_mixins.scss */
 .form-inline > * + *,
 .form-inline .form-group > * + *,
 .form-check > * + *,
@@ -9308,7 +9312,7 @@ form:not(.form-inline) label:not(.sr-only) + .custom-select {
   .custom-file-input + .custom-file-label {
     margin-top: unset; }
 
-/* line 118, node_modules/tyfy/source/scss/required/_mixins.scss */
+/* line 124, node_modules/tyfy/source/scss/required/_mixins.scss */
 .input-group > * + *,
 .input-group-prepend > * + *,
 .input-group-append > * + * {
@@ -9321,7 +9325,7 @@ form:not(.form-inline) label:not(.sr-only) + .custom-select {
 .card-columns > * + * {
   margin-top: 0; }
 
-/* line 93, node_modules/tyfy/source/scss/required/_mixins.scss */
+/* line 99, node_modules/tyfy/source/scss/required/_mixins.scss */
 .card .card-body * + *,
 .card .card-img-overlay * + * {
   margin-top: 0.9rem; }
@@ -9350,7 +9354,7 @@ form:not(.form-inline) label:not(.sr-only) + .custom-select {
 .card .card-img-overlay .card-title + .card-subtitle {
   margin-top: 0; }
 
-/* line 123, node_modules/tyfy/source/scss/required/_mixins.scss */
+/* line 132, node_modules/tyfy/source/scss/required/_mixins.scss */
 .card .list-group * + * {
   margin-top: 0; }
 
@@ -9358,33 +9362,34 @@ form:not(.form-inline) label:not(.sr-only) + .custom-select {
 .accordion > .card + .card {
   margin-top: 0; }
 
-/* line 123, node_modules/tyfy/source/scss/required/_mixins.scss */
+/* line 132, node_modules/tyfy/source/scss/required/_mixins.scss */
 .nav * + * {
   margin-top: 0; }
 
-/* line 118, node_modules/tyfy/source/scss/required/_mixins.scss */
+/* line 124, node_modules/tyfy/source/scss/required/_mixins.scss */
 .tab-content > * + * {
   margin-top: 0; }
 
-/* line 123, node_modules/tyfy/source/scss/required/_mixins.scss */
+/* line 132, node_modules/tyfy/source/scss/required/_mixins.scss */
 .navbar * + * {
   margin-top: 0; }
 
-/* line 118, node_modules/tyfy/source/scss/required/_mixins.scss */
+/* line 124, node_modules/tyfy/source/scss/required/_mixins.scss */
+.carousel > * + *,
 .carousel-inner > * + *,
 .carousel-indicators > * + * {
   margin-top: 0; }
 
-/* line 6, source/scss/overrides/_carousel.scss */
+/* line 7, source/scss/overrides/_carousel.scss */
 .carousel-indicators {
   bottom: 0.9rem; }
 
-/* line 10, source/scss/overrides/_carousel.scss */
+/* line 11, source/scss/overrides/_carousel.scss */
 .carousel-caption {
   bottom: 1.8rem;
   padding-top: 1.8rem;
   padding-bottom: 1.8rem; }
-  /* line 14, source/scss/overrides/_carousel.scss */
+  /* line 15, source/scss/overrides/_carousel.scss */
   .carousel-caption * + * {
     margin-top: 0.9rem; }
 
@@ -9392,11 +9397,11 @@ form:not(.form-inline) label:not(.sr-only) + .custom-select {
 .sr-only + * {
   margin-top: 0; }
 
-/* line 123, node_modules/tyfy/source/scss/required/_mixins.scss */
+/* line 132, node_modules/tyfy/source/scss/required/_mixins.scss */
 .list-group * + * {
   margin-top: 0; }
 
-/* line 118, node_modules/tyfy/source/scss/required/_mixins.scss */
+/* line 124, node_modules/tyfy/source/scss/required/_mixins.scss */
 .media > * + * {
   margin-top: 0; }
 
@@ -9405,7 +9410,7 @@ form:not(.form-inline) label:not(.sr-only) + .custom-select {
 .modal-backdrop {
   margin-top: 0px; }
 
-/* line 118, node_modules/tyfy/source/scss/required/_mixins.scss */
+/* line 124, node_modules/tyfy/source/scss/required/_mixins.scss */
 .modal-content > * + * {
   margin-top: 0; }
 
@@ -9418,3 +9423,7 @@ strong.tyfy {
   font-family: "IBM Plex Sans Condensed", sans-serif;
   font-weight: bold;
   text-transform: uppercase; }
+
+/* line 17, source/scss/tyfy-bootstrap-docs.scss */
+.navbar-tybs {
+  z-index: 10000; }
