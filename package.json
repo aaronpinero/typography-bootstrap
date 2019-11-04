@@ -5,7 +5,8 @@
   "main": "docs/index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build-css-dev": "./bin/build-css-dev"
+    "build-css-dev": "./bin/build-css-dev",
+    "build-css": "./bin/build-css"
   },
   "repository": {
     "type": "git",
@@ -30,8 +31,6 @@
     "tyfy"
   ],
   "dependencies": {
-    "install": "^0.13.0",
-    "npm": "^6.7.0",
     "tyfy": "^2.0.4"
   },
   "browserslist": [
