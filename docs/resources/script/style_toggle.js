@@ -1,4 +1,4 @@
-theme_tyfy= "../dist/style/tyfy-bootstrap-docs.css";
+theme_tyfy= "resources/style/tyfy-bootstrap-docs.css";
 theme_default = "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css";
 $('#style-toggle').click(function(e){
 	e.preventDefault();

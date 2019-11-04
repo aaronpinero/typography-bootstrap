@@ -5,7 +5,7 @@ $tyfont-mono:SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courie
 // brand font
 $tyfont-condensed:"IBM Plex Sans Condensed",sans-serif;
 
-@import "tyfy-bootstrap";
+@import "../../../source/scss/tyfy-bootstrap.scss";
 
 strong.tyfy {
   /* autoprefixer: off */

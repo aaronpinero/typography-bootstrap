@@ -6,7 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build-css-dev": "./bin/build-css-dev",
-    "build-css": "./bin/build-css"
+    "build-css": "./bin/build-css",
+    "build-docs-css-dev": "./bin/build-docs-css-dev",
+    "build-docs-css": "./bin/build-docs-css"
   },
   "repository": {
     "type": "git",
