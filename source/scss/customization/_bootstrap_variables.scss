@@ -1,8 +1,8 @@
 // from bootstrap variables
 
 // line 130
-// set the spacer equal to 2 grid units
-$spacer:	tyspacing(md);
+// set the spacer equal the grid unit
+$spacer: $tygrid-unit;
 
 // from line 183
 // don't set a bottom margin on everything

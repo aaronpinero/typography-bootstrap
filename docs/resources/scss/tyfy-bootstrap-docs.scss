@@ -1,6 +1,7 @@
 // fonts from bootstrap for better comparision
 $tyfont-sans:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 $tyfont-mono:SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+$tyfont-base: $tyfont-sans;
 
 // brand font
 $tyfont-condensed:"IBM Plex Sans Condensed",sans-serif;
