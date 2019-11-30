@@ -3,5 +3,5 @@
   margin-top:0px;
 }
 .modal-content {
-  @include tymargins(skip);
+  @include sibling-margins(skip);
 }

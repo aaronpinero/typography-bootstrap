@@ -1,10 +1,3 @@
-button,
-input,
-select,
-textarea {
-	font-family:$tyfont-input;
-}
-
 form:not(.form-inline) label:not(.sr-only) {
   & + .form-control,
   & + .form-control-file,
@@ -12,7 +5,7 @@ form:not(.form-inline) label:not(.sr-only) {
   & + .input-group,
   & + .custom-range,
   & + .custom-select {
-    margin-top:tyspacing(sm);
+    margin-top:space(1);
   }
 }
 .form-inline,
@@ -20,12 +13,12 @@ form:not(.form-inline) label:not(.sr-only) {
 .form-check,
 .form-row,
 .custom-control {
-  @include tymargins(skip);
+  @include sibling-margins(skip);
 }
 
 * + .valid-feedback,
 * + .invalid-feedback {
-  margin-top:tygrid(0.5);
+  margin-top:space(0.5);
 }
 
 .custom-file-input {

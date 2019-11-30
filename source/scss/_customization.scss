@@ -1,11 +1,25 @@
-// tyfy variable customizations
-@import "customization/tyfy_variables";
+// critical variable values
+$spacer-override: 0.8125rem !default; // customizeable variable that will be used to set the bootstrap spacer value
+$spacer: $spacer-override;
+$font-size-base-override: 1rem !default; // customizeable variable that will be used to set the bootstrap base font size value
+$font-size-base: $font-size-base-override;
+$scale-ratio: 1.2 !default; // ratio for the typographic scale
+$sibling-margins-on: true !default; // set all element top and bottom margins to zero and turn on adjacent sibling margins
 
-// tyfy required
-@import "../../node_modules/tyfy/source/scss/required/core";
-@import "../../node_modules/tyfy/source/scss/required/functions";
-@import "../../node_modules/tyfy/source/scss/required/settings";
-@import "../../node_modules/tyfy/source/scss/required/mixins"; 
+@import "customization/tybs_functions";
+@import "customization/tybs_mixins";
+@import "customization/tybs_variables";
 
-// bootstrap variable customizations
-@import "customization/bootstrap_variables";
+// adjacent sibling margin utility classes
+.sibling-margins-on {
+  @include sibling-margins(on);
+}
+.sibling-margins-off {
+  @include sibling-margins(off);
+}
+.sibling-margins-once {
+  @include sibling-margins(once);
+}
+.sibling-margins-skip {
+  @include sibling-margins(skip);
+}

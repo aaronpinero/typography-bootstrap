@@ -1,7 +1,7 @@
 .alert {
-  @include tymargins-size(blocks,tyspacing(sm));
+  @include sibling-margin-size(once,space(1));
   hr {
-    margin-bottom:tyspacing(sm);
-    margin-top:tyspacing(sm);
+    margin-bottom:space(1);
+    margin-top:space(1);
   }
 }

@@ -1,5 +1,5 @@
 .navbar {
-	@include tymargins(off);
+	@include sibling-margins(off);
 }
 
 // .navbar-toggler {

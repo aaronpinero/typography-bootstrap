@@ -29,12 +29,8 @@
     "templatesjs": "^2.0.0"
   },
   "bundledDependencies": [
-    "bootstrap",
-    "tyfy"
+    "bootstrap"
   ],
-  "dependencies": {
-    "tyfy": "^2.0.4"
-  },
   "browserslist": [
     "> 5%"
   ]

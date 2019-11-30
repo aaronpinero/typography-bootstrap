@@ -1,6 +1,6 @@
 .nav {
-	@include tymargins(off);
+	@include sibling-margins(off);
 }
 .tab-content {
-	@include tymargins(skip);
+	@include sibling-margins(skip);
 }

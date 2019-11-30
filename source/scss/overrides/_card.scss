@@ -10,8 +10,8 @@
 .card {
 	.card-body,
 	.card-img-overlay {
-		@include tymargins-size(block,tyspacing(sm));
-		@include tymargins-size(lists,0);
+		@include sibling-margin-size(all,space(1));
+		@include sibling-margin-size(lists,0);
 
 		.card-title {
 			margin-bottom:0;
@@ -24,7 +24,7 @@
 		
 	}
 	.list-group {
-		@include tymargins(off);
+		@include sibling-margins(off);
 	}
 }
 

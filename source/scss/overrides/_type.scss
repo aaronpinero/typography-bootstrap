@@ -1,41 +1,35 @@
 // headings
 h1, .h1 {
-	line-height:tylead($h1-font-size,heading);
+	line-height:leading($h1-font-size,head);
 }
 h2, .h2 {
-	line-height:tylead($h2-font-size,heading);
+	line-height:leading($h2-font-size,head);
 }
 h3, .h3 {
-	line-height:tylead($h3-font-size,heading);
+	line-height:leading($h3-font-size,head);
 }
 h4, .h4 {
-	line-height:tylead($h4-font-size,heading);
+	line-height:leading($h4-font-size,head);
 }
 h5, .h5 {
-	line-height:tylead($h5-font-size,heading);
+	line-height:leading($h5-font-size,head);
 }
 h6, .h6 {
-	line-height:tylead($h6-font-size,heading);
+	line-height:leading($h6-font-size,head);
 }
 
 // Type display classes
-.display-1,
-.display-2,
-.display-3,
-.display-4 {
-	font-family:$headings-font-family;
-}
 .display-1 {
-	line-height:tylead($display1-size,heading);
+	line-height:leading($display1-size,head);
 }
 .display-2 {
-	line-height:tylead($display2-size,heading);
+	line-height:leading($display2-size,head);
 }
 .display-3 {
-	line-height:tylead($display3-size,heading);
+	line-height:leading($display3-size,head);
 }
 .display-4 {
-	line-height:tylead($display4-size,heading);
+	line-height:leading($display4-size,head);
 }
 
 // need this here to override the tyfy spacing module in the one case of the hr element
@@ -45,38 +39,29 @@ hr {
 }
 
 .lead {
-	line-height:tylead($lead-font-size,tall);
+	line-height:leading($lead-font-size,tall);
 }
 
 .list-unstyled {
   @include list-unstyled;
-  @include tymargins(off);
+  @include sibling-margins(off);
 }
 
 // inline lists
 .list-inline {
-  @include tymargins(off);
+  @include sibling-margins(off);
 }
 
 // Blockquotes
 .blockquote {
   margin-bottom: 0;
-  line-height: tylead($blockquote-font-size);
+  line-height: leading($blockquote-font-size);
 }
 .blockquote * + .blockquote-footer {
-  margin-top:tyspacing(sm);
+  margin-top: space(1);
 }
 
 // stuff from tyfy utilities module
-.tyfont-sans {
-  font-family:$tyfont-sans;
-}
-.tyfont-serif {
-  font-family:$tyfont-serif;
-}
-.tyfont-mono {
-  font-family:$tyfont-mono;
-}
 span {
   &.dropcap {
     display:inline-block;

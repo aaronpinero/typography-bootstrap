@@ -1,9 +1,13 @@
-// tyfy essential
-@import "../../node_modules/tyfy/source/scss/essential/spacing";
-
-// tyfy optional
-// @import "tyfy/optional/lists";
-// @import "tyfy/optional/quotes";
+// adjacent sibling margins
+@if $sibling-margins-on {
+  * {
+    margin-top:0;
+    margin-bottom:0;
+  }
+  body {
+    @include sibling-margins(on);
+  }
+}
 
 // bootstrap overrides
 @import "overrides/reboot";
@@ -27,4 +31,3 @@
 @import "overrides/list_group";
 @import "overrides/media";
 @import "overrides/modal";
-

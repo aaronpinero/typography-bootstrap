@@ -1,8 +1,3 @@
-// fonts from bootstrap for better comparision
-$tyfont-sans:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-$tyfont-mono:SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
-$tyfont-base: $tyfont-sans;
-
 // brand font
 $tyfont-condensed:"IBM Plex Sans Condensed",sans-serif;
 
@@ -10,7 +5,7 @@ $tyfont-condensed:"IBM Plex Sans Condensed",sans-serif;
 
 strong.tyfy {
   /* autoprefixer: off */
-  background:-webkit-linear-gradient($tycolor-link-active, $tycolor-link-default);
+  background:-webkit-linear-gradient($pink,$blue);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-family:$tyfont-condensed;

@@ -1,0 +1,82 @@
+////////// sibling-margin-size mixin //////////
+//
+// based on css-tricks.com/lobotomized-owls/
+//
+// set the size of the adjacent sibling margins on descendants
+//
+// using the context parameter, different measure values can be applied
+// to different types of elements; the default context is "all"
+// in which case the specified margin size will be applied to all
+// descendants
+
+@mixin sibling-margin-size ($context:all, $measure:space(2)) {
+  @if $context == headings {
+    // headings
+    :not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) + h1,
+    :not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) + h2,
+    :not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) + h3,
+    :not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) + h4,
+    :not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) + h5,
+    :not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) + h6 {
+      margin-top:$measure;
+    }
+  }
+  @else if $context == lists {
+    // lists
+    dl, ol, ul {
+      * + * {
+        margin-top:$measure;
+      }
+    }
+    dl {
+      * + dd {
+        margin-top:0;
+      }
+    }
+  }
+  @else if $context == once {
+    // just the immediate descendants
+    > * + * {
+      margin-top:$measure;
+    }
+  }
+  @else {
+    // everything
+    * + * {
+      margin-top:$measure;
+    }
+  }
+}
+
+////////// sibling-margins mixin //////////
+//
+// apply or remove adjacent sibling margins depending
+// on the value of the state parameter;
+//
+// the margin values applied for the "on" state are the framework's
+// default values; for custom values, use the tymargins-set mixin
+
+@mixin sibling-margins ($state:on) {
+  @if $state == on {
+    // everything
+    @include sibling-margin-size(all,space(2));
+    // lists
+    @include sibling-margin-size(lists,space(1));
+    // headings
+    @include sibling-margin-size(headings,space(4));
+  }
+  @else if $state == skip {
+    // don't apply the margins to the immediate descendants
+    > * + * {
+      margin-top:0;
+    }
+  }
+  @else if $state == once {
+    @include sibling-margin-size(once,space(2));
+  }
+  @else { // $state == off
+    * + * {
+      margin-top:0;
+    };
+  }
+}

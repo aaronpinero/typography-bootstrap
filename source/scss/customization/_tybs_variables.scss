@@ -1,0 +1,183 @@
+// from bootstrap variables
+
+// from line 131
+// more spacer map values
+$spacers: (6: ($spacer * 4));
+
+
+// from line 183
+// don't set a bottom margin on everything
+$paragraph-margin-bottom: 0;
+
+// from line 222
+// set gutter to a multiple of the grid unit
+$grid-gutter-width: space(3);
+
+// from line 229
+// relative units based on modular scale and baseline grid
+$line-height-lg: leading(fontsize(1)) / fontsize(1); // divide by font size to remove units and make relative
+$line-height-sm: leading(fontsize(-1)) / fontsize(-1); // divide by font size to remove units and make relative
+
+// from line 232
+// use rem units to allow calculations
+$border-width: 0.0833rem !default;
+
+// from line 279
+$font-size-lg: fontsize(1);
+$font-size-sm: fontsize(-1);
+
+// from line 289
+$line-height-base: leading($font-size-base) / $font-size-base; // divide by font size to remove units and make relative
+$h1-font-size: fontsize(6);
+$h2-font-size: fontsize(4);
+$h3-font-size: fontsize(3);
+$h4-font-size: fontsize(2);
+$h5-font-size: fontsize(1);
+$h6-font-size: fontsize(0);
+$headings-margin-bottom: 0;
+
+// from line 304
+$display1-size: fontsize(10);
+$display2-size: fontsize(9);
+$display3-size: fontsize(8);
+$display4-size: fontsize(7);
+
+// from line 315
+$lead-font-size: fontsize(2);
+
+// from line 318
+$small-font-size: 100%/$scale-ratio;
+
+// from line 324
+// use a font size from the modular scalse
+$blockquote-font-size: $font-size-lg;
+
+// from line 336
+// use a grid unit
+$list-inline-padding: space(1);
+
+// from line 340
+// larger hr spacing
+$hr-margin-y: space(3);
+
+// from line 347
+// use spacer
+$table-cell-padding: space(1);
+$table-cell-padding-sm: space(0.5);
+
+// from line 383
+// use spacer
+$input-btn-padding-y: space(0.5) - $border-width;
+$input-btn-padding-x: space(1) - $border-width;
+
+// from line 393
+// use spacer
+$input-btn-padding-y-sm: space(0.25) - $border-width;
+$input-btn-padding-x-sm: space(0.75) - $border-width;
+
+// from line 398
+// use spacer
+$input-btn-padding-y-lg: space(1) - $border-width;
+$input-btn-padding-x-lg: space(1.5) - $border-width;
+
+// from line 437
+// use spacer
+$btn-block-spacing-y: space(2);
+
+// from line 491
+// use spacer
+// $input-height-inner: calc(#{leading($font-size-base)} + #{$input-padding-y * 2});
+// $input-height-inner-half: calc(#{leading($font-size-base) / 2} + #{$input-padding-y});
+// $input-height-inner-quarter: calc(#{leading($font-size-base) / 4} + #{$input-padding-y / 2});
+// $input-height: calc(#{leading($font-size-base)} + #{$input-padding-y * 2} + #{$input-height-border}) !default;
+// $input-height-sm: calc(#{leading(fontsize(-1))} + #{$input-btn-padding-y-sm * 2} + #{$input-height-border}) !default;
+// $input-height-lg: calc(#{leading(fontsize(1))} + #{$input-btn-padding-y-lg * 2} + #{$input-height-border}) !default;
+$form-text-margin-top: space(0.5);
+// $form-check-input-gutter: space(3);
+// $form-check-input-margin-y: space(0.5);
+// $form-check-input-margin-x: space(0.5);
+// $form-check-inline-margin-x: space(1);
+// $form-check-inline-input-margin-x: space(0.5);
+// $form-grid-gutter-width: space(1);
+$form-group-margin-bottom: 0;
+
+// // from line 519
+// // use spacer
+// $custom-control-gutter: space(0.5);
+// $custom-control-spacer-x: space(1);
+// $custom-control-indicator-size: space(1);
+
+// // from line 568
+// // use spacer
+// $custom-select-indicator-padding: space(1); // Extra padding to account for the presence of the background-image based indicator
+
+// from line 689
+// use spacer
+$nav-link-padding-y: space(0.5);
+$nav-link-padding-x: space(1);
+
+// // from line 714
+// // use spacer
+// $navbar-nav-link-padding-x: space(0.5);
+
+// // from line 722
+// // use spacer
+// $navbar-toggler-padding-y: space(0.5);
+// $navbar-toggler-padding-x: space(1);
+
+// from line 751
+// use spacer
+$dropdown-min-width: space(12);
+$dropdown-padding-y: space(0.5);
+$dropdown-spacer: 0;
+
+// from line 774
+// use spacer
+$dropdown-item-padding-y: space(0.25);
+$dropdown-item-padding-x: space(1);
+
+// // from line 782
+// // use spacer
+// $pagination-padding-y: space(0.5);
+// $pagination-padding-x: space(1);
+// $pagination-padding-y-sm: space(0.25);
+// $pagination-padding-x-sm: space(0.5);
+// $pagination-padding-y-lg: space(0.75);
+// $pagination-padding-x-lg: space(1.5);
+// $pagination-line-height: leading(fontsize(0));
+
+// // from line 813
+// // use spacer
+// $jumbotron-padding: space(4);
+
+// from line 820
+// use spacer
+$card-spacer-y: space(1);
+$card-spacer-x: space(1.5);
+
+// // from line 831
+// // use spacer
+// $card-img-overlay-padding: space(1.5);
+
+// from line 837
+// use spacer
+$card-columns-gap: space(1.5);
+$card-columns-margin: space(1.5);
+
+// from line 969
+// use spacer
+$alert-padding-y: space(1.5);
+$alert-padding-x: space(1.5);
+$alert-margin-bottom: 0;
+
+// from line 1002
+// use spacer
+$list-group-item-padding-y: space(1);
+$list-group-item-padding-x: space(1.5);
+
+// from line 1038
+// use spacer
+$breadcrumb-padding-y: space(1);
+$breadcrumb-padding-x: space(1.5);
+$breadcrumb-item-padding: space(0.5);
+$breadcrumb-margin-bottom: 0;

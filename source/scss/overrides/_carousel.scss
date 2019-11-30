@@ -1,18 +1,18 @@
 .carousel,
 .carousel-inner,
 .carousel-indicators {
-  @include tymargins(skip);
+  @include sibling-margins(skip);
 }
 
 .carousel-indicators {
-  bottom:tyspacing(sm);
+  bottom:space(1);
 }
 
 .carousel-caption {
-  bottom:tyspacing(md);
-  padding-top:tyspacing(md);
-  padding-bottom:tyspacing(md);
+  bottom:space(2);
+  padding-top:space(2);
+  padding-bottom:space(2);
   * + * {
-    margin-top:tyspacing(sm);
+    margin-top:space(1);
   }
 }
