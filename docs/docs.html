@@ -18,10 +18,10 @@
 		<meta name="description" content="">
 		<link id="docstyles" rel="stylesheet" href="resources/style/tyfy-bootstrap-docs.css">
 		<!--/ COMMON HEAD TAGS -->
-		<title>Tests: Code &amp; Images - Tyfy Bootstrap</title>
+		<title>Test: Components: Cards - Tyfy Bootstrap</title>
 	</head>
 	<body class="tymargins-skip position-relative bg-light" data-spy="scroll" data-target="#sectionnav">
-		<!-- COMMON HEADER -->
+    <!-- COMMON HEADER -->
 		<nav class="navbar navbar-expand-md navbar-light bg-white border-bottom border-dark">
 			<span class="navbar-brand"><strong class="tyfy">TyBs</strong></span>
 			<span class="navbar-text navbar-toggler" data-toggle="collapse" data-target="#navoptions" aria-controls="navoptions" aria-expanded="false" aria-label="Toggle navigation">
@@ -75,76 +75,62 @@
 		  </div>
 		</nav>
 		<!--/ COMMON HEADER -->
-		<header class="px-md-3 px-lg-4 px-xl-5 py-3 py-lg-4">
-			<div class="container-fluid">
-				<div class="row">
-					<div class="col tymargins-off">
-						<nav aria-label="breadcrumb">
-              <ol class="breadcrumb bg-transparent px-0 pt-0 border-bottom">
-                <li class="breadcrumb-item"><a href="index.html">TyBs</a></li>
-                <li class="breadcrumb-item"><a href="tests.html">Tests</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Code &amp; Images</li>
-              </ol>
+    <header class="p-3 p-lg-4 p-xl-5">
+      <div class="container-fluid">
+        <h1 class="display-2 mt-3">Documentation</h1>
+      </div>
+    </header>
+    <section id="main" class="px-3 px-lg-4 px-xl-5 pb-3 pb-lg-4 pb-xl-5">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="d-none d-md-block col-md-3 order-12">
+            <nav id="sectionnav" class="navbar navbar-light bg-transparent sticky-top tyfont-sans">
+              <ul class="nav nav-pills flex-column">
+                <li class="nav-item"><a class="nav-link" href="#variables">Variables</a></li>
+                <li class="nav-item"><a class="nav-link" href="#functions">Functions</a></li>
+                <li class="nav-item"><a class="nav-link" href="#mixins">Mixins</a></li>
+                <li class="nav-item"><a class="nav-link" href="#utilities">Utilities</a></li>
+              </ul>
             </nav>
-						<h1 class="display-2 mt-3">Code &amp; Images</h1>
-					</div>
-				</div>
-			</div>
-		</header>
-		<section id="main" class="px-md-3 px-lg-4 px-xl-5 pb-3 pb-lg-4 pb-xl-5">
-			<div class="container-fluid">
-				<div class="row">
-					<div class="d-none d-md-block col-md-3 order-12">
+          </div>
+          <div class="col-md-9">
+            <h2 id="variables">Variables</h2>
+            <p><strong class="tyfy">TyBs</strong> adds the following variables to Bootstrap.</p>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">Name</th>
+                  <th scope="col" class="text-nowrap">Default Value</th>
+                  <th scope="col">Purpose</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row" class="text-nowrap">$spacer-override</th>
+                  <td>0.8125rem</td>
+                  <td>A rem unit value used to override Bootstrap’s default spacer value. This variable is set using the <span class="smallcaps">SASS</span> <code>!default</code> declaration and can be overridden. This value sets the baseline grid size. It is recommended that the value be half the default line height.</td>
+                </tr>
+                <tr>
+                  <th scope="row" class="text-nowrap">$font-size-base-override</th>
+                  <td>1rem</td>
+                  <td>A rem unit value used to override Bootstrap’s default base font size value. This variable is set using the <span class="smallcaps">SASS</span> <code>!default</code> declaration and can be overridden.</td>
+                </tr>
+                <tr>
+                  <th scope="row" class="text-nowrap">$scale-ratio</th>
+                  <td>1.2</td>
+                  <td>A unitless value that sets the ratio between font sizes in the modular scale. The value should be greater than 1. Larger values will create more font size contrast. This variable is set using the <span class="smallcaps">SASS</span> <code>!default</code> declaration and can be overridden.</td>
+                </tr>
+                <tr>
+                  <th scope="row" class="text-nowrap">$sibling-margins-on</th>
+                  <td>true</td>
+                  <td>A boolean value determining if the adjacent sibling margins are applied by default. If not, they can be applied using utility classes for spacing. This variable is set using the <span class="smallcaps">SASS</span> <code>!default</code> declaration and can be overridden.</td>
+                </tr>
+              </tbody>
+            </table>
+            <h2 id="functions">Functions</h2>
+            <p><strong class="tyfy">TyBs</strong> adds the following custom <span class="smallcaps">SASS</span> functions.</p>
 
-						<nav id="sectionnav" class="navbar navbar-light bg-transparent sticky-top tyfont-sans">
-							<ul class="nav nav-pills flex-column">
-								<li class="nav-item"><a class="nav-link" href="#code">Code</a></li>
-								<li class="nav-item"><a class="nav-link" href="#codeblock">Code Block</a></li>
-								<li class="nav-item"><a class="nav-link" href="#vars">Variables</a></li>
-								<li class="nav-item"><a class="nav-link" href="#input">User Input</a></li>
-								<li class="nav-item"><a class="nav-link" href="#output">Sample Output</a></li>
-								<li class="nav-item"><a class="nav-link" href="#responsiveimg">Responsive Image</a></li>
-								<li class="nav-item"><a class="nav-link" href="#imgthumb">Image Thumbnail</a></li>
-								<li class="nav-item"><a class="nav-link" href="#figures">Figures</a></li>
-							</ul>
-						</nav>
-					</div>
-					<div class="col-md-9">
-						<h2 class="badge badge-primary" id="code">Code</h2>
-						<p>For example, <code>&lt;section&gt;</code> should be wrapped as inline.</p>
-						<hr>
-						<h2 class="badge badge-primary" id="codeblock">Code Block</h2>
-						<pre><code>&lt;p&gt;Sample text here...&lt;/p&gt;
-&lt;p&gt;And another line of sample text here...&lt;/p&gt;</code></pre>
-						<hr>
-						<h2 class="badge badge-primary" id="vars">Variables</h2>
-						<p><var>y</var> = <var>m</var><var>x</var> + <var>b</var></p>
-						<hr>
-						<h2 class="badge badge-primary" id="input">User Input</h2>
-						<p>To switch directories, type <kbd>cd</kbd> followed by the name of the directory.<br>To edit settings, press <kbd><kbd>ctrl</kbd> + <kbd>,</kbd></kbd></p>
-						<hr>
-						<h2 class="badge badge-primary" id="output">Sample Output</h2>
-						<p><samp>This text is meant to be treated as sample output from a computer program.</samp></p>
-						<hr>
-						<h2 class="badge badge-primary" id="responsiveimg">Responsive Image</h2>
-						<div><img src="http://via.placeholder.com/1920x1080" class="img-fluid" alt="Responsive image"></div>
-						<hr>
-						<h2 class="badge badge-primary" id="imgthumb">Image Thumbnail</h2>
-						<div><img src="http://via.placeholder.com/640x360" alt="placeholder image" class="img-thumbnail"></div>
-						<hr>
-						<h2 class="badge badge-primary" id="figures">Figures</h2>
-						<div>
-							<figure class="figure">
-								<img src="http://via.placeholder.com/640x360" class="figure-img img-fluid rounded" alt="placeholder image">
-								<figcaption class="figure-caption">A caption for the above image.</figcaption>
-							</figure>
-							<figure class="figure">
-								<img src="http://via.placeholder.com/640x360" class="figure-img img-fluid rounded" alt="placeholder image">
-								<figcaption class="figure-caption text-right">A caption for the above image.</figcaption>
-							</figure>
-						</div>
-
-					</div>
+          </div>
 				</div>
 			</div>
 		</section>

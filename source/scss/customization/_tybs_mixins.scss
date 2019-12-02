@@ -63,7 +63,7 @@
     // lists
     @include sibling-margin-size(lists,space(1));
     // headings
-    @include sibling-margin-size(headings,space(4));
+    @include sibling-margin-size(headings,space(3));
   }
   @else if $state == skip {
     // don't apply the margins to the immediate descendants

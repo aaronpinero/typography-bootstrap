@@ -1,9 +1,10 @@
+* {
+  margin-top:0;
+  margin-bottom:0;
+}
+
 // adjacent sibling margins
 @if $sibling-margins-on {
-  * {
-    margin-top:0;
-    margin-bottom:0;
-  }
   body {
     @include sibling-margins(on);
   }
