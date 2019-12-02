@@ -143,7 +143,7 @@
                   <th scope="row" class="text-nowrap">leading()</th>
                   <td class="text-nowrap">$font-size,<br>$leading-style:base</td>
                   <td>A <code>$spacer-override</code>-based line height (leading) value in rem units</td>
-                  <td>This function has been used to override Bootstrap’s <code>line-height</code> values. The new values are based on the $spacer value, establishing a consistent baseline grid. The value of the <code>$leading-style</code> argument can be base, tall, short, or head.</td>
+                  <td>This function has been used to override Bootstrap’s <code>line-height</code> values. The new values are based on the $spacer value, establishing a consistent baseline grid. The value of the <code>$leading-style</code> argument can be <kbd>base</kbd>, <kbd>tall</kbd>, <kbd>short</kbd>, or <kbd>head</kbd>.</td>
                 </tr>
                 <tr>
                   <th scope="row" class="text-nowrap">space()</th>
@@ -158,6 +158,84 @@
                   <td>The <code>$exponent</code> argument determines the number of steps up (positive) or down (negative) the modular scale from the base font size. Positive steps result in larger font sizes. This function is used to override all of Bootstrap’s default font sizes. The <code>$exponent</code> must be an integer.</td>
                 </tr>
               </tbody>
+            </table>
+            <h2 id="mixins">Mixins</h2>
+            <p><strong class="tyfy">TyBs</strong> sets the top and bottom margin of all elements to zero. This removes unnecessary margins on elements that do not need margins. To enable desired margins between adjacent elements, <strong class="tyfy">TyBs</strong> adds the following <span class="smallcaps">SASS</span> mixins. The mixins help define the margins for the appropriate contexts.</p>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col" class="text-nowrap">Name</th>
+                  <th scope="col" class="text-nowrap">Arguments[:default]</th>
+                  <th scope="col" class="text-nowrap">Description</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row" class="text-nowrap">sibling-margin-size()</th>
+                  <td class="text-nowrap">$context:all<br>$measure:space(2)</td>
+                  <td>This mixin defines the size of the adjacent sibling margins in specific contexts. The value of the <code>$context</code> argument can be <kbd>all</kbd>, <kbd>headings</kbd>, <kbd>lists</kbd>, or <kbd>once</kbd>. The <code>$measure</code> argument sets the size of the margin in the given context.</td>
+                </tr>
+                <tr>
+                  <th scope="row" class="text-nowrap">sibling-margins()</th>
+                  <td class="text-nowrap">$state:on</td>
+                  <td>This mixin sets the state of the sibling margins for decendents of the element to which the mixin is applied. The possible state values are <kbd>on</kbd>, <kbd>off</kbd>, <kbd>skip</kbd>, and <kbd>once</kbd>.</kbd></td>
+                </tr>
+              </tbody>
+            </table>
+            <h3>Default Sibling Margins</h3>
+            <p>If the value of the <code>$sibling-margins-on</code> variable is true, default sibling margins are applied to all elements using the <em>sibling-margins</em> mixin with the state argument <kbd>on</kbd>. The default margin values are as follows:</p>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col" class="text-nowrap">Context Value</th>
+                  <th scope="col">Context Description</th>
+                  <th scope="col">Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><kbd>all</kbd></td>
+                  <td>All <span class="smallcaps">HTML</span> elements that follow an <span class="smallcaps">HTML</span> element</td>
+                  <td class="text-nowrap">margin-top:space(2)</td>
+                </tr>
+                <tr>
+                  <td><kbd>lists</kbd></td>
+                  <td>List items inside an ordered, unordered, or definition list that follow a list item; overrides the <kbd>all</kbd> context</td>
+                  <td class="text-nowrap">margin-top:space(1)</td>
+                </tr>
+                <tr>
+                  <td><kbd>headings</kbd></td>
+                  <td>All headings that follow a non-heading element; overrides the <kbd>all</kbd> context</td>
+                  <td class="text-nowrap">margin-top:space(3)</td>
+                </tr>
+              </tbody>
+            </table>
+            <h2 id="utilities">Utilities</h2>
+            <p><strong class="tyfy">TyBs</strong> adds the following classes to Bootstrap.</p>
+            <h3>Text Utilities</h3>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col" class="text-nowrap">Class Name</th>
+                  <th scope="col" class="text-nowrap">Element(s)</th>
+                  <th scope="col" class="text-nowrap">Description</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>.dropcap</td>
+                  <td class="text-nowrap"><code>&lt;span&gt;</code> only</td>
+                  <td>Uses <code>float:left</code> style to create a drop cap that is 400% of the base font size.</td>
+                </tr>
+                <tr>
+                  <td>.smallcaps</td>
+                  <td class="text-nowrap"><code>&lt;span&gt;</code> only</td>
+                  <td>Creates a fake small caps style; most web fonts (at the time of writing this documentation) don't have proper small caps or have poor quality small caps.</td>
+                </tr>
+              </tbody>
+            </table>
+            <h3>Adjacent Sibling Margin Utilities</h3>
+            <table class="table">
             </table>
           </div>
 				</div>
