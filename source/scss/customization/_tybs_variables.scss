@@ -1,5 +1,20 @@
 // from bootstrap variables
 
+// from line 8
+// needed for other variable definitions
+$white:    #fff;
+$black:    #000;
+
+
+// from line 37
+// make colors meet WCAG accessibilty guidelines
+$blue:    #006FE6; // instead of #007bff
+$pink:    #db1a74; // instead of #e83e8c;
+$red:     #DB3344; // instead of #dc3545;
+$orange:  #C05702; // instead of #fd7e14;
+$green:   #218739; // instead of #28a745;
+
+
 // from line 131
 // more spacer map values
 $spacers: (6: ($spacer * 4));
@@ -116,14 +131,24 @@ $form-group-margin-bottom: 0;
 $nav-link-padding-y: space(0.5);
 $nav-link-padding-x: space(1);
 
-// // from line 714
-// // use spacer
-// $navbar-nav-link-padding-x: space(0.5);
+// from line 714
+// use spacer
+$navbar-nav-link-padding-x: space(0.75);
 
 // // from line 722
 // // use spacer
 // $navbar-toggler-padding-y: space(0.5);
 // $navbar-toggler-padding-x: space(1);
+
+// from line 727
+// more color contrast
+$navbar-dark-color:                 rgba($white, .7);
+$navbar-dark-hover-color:           rgba($white, .95);
+$navbar-dark-active-color:          $white;
+
+$navbar-light-color:                rgba($black, .7);
+$navbar-light-hover-color:          rgba($black, .95);
+$navbar-light-active-color:         $black;
 
 // from line 751
 // use spacer
