@@ -20,9 +20,9 @@
 		<!--/ COMMON HEAD TAGS -->
 		<title>Documentation - Tyfy Bootstrap</title>
 	</head>
-	<body class="tymargins-skip position-relative bg-light" data-spy="scroll" data-target="#sectionnav">
+	<body class="sibling-margins-skip position-relative bg-light" data-spy="scroll" data-target="#sectionnav">
     <!-- COMMON HEADER -->
-		<nav class="navbar navbar-expand-md navbar-light bg-white border-bottom border-dark">
+		<nav class="navbar navbar-tybs navbar-expand-md navbar-light bg-white border-bottom border-dark">
 			<span class="navbar-brand"><strong class="tyfy">TyBs</strong></span>
 			<span class="navbar-text navbar-toggler" data-toggle="collapse" data-target="#navoptions" aria-controls="navoptions" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
@@ -236,6 +236,35 @@
             </table>
             <h3>Adjacent Sibling Margin Utilities</h3>
             <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col" class="text-nowrap">Class Name</th>
+                  <th scope="col" class="text-nowrap">Element(s)</th>
+                  <th scope="col" class="text-nowrap">Description</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="text-nowrap">.sibling-margins-on</td>
+                  <td class="text-nowrap">any</td>
+                  <td>If you choose to turn off the adjacent sibling margins by default (<code>$sibling-margins-on:</code><kbd>false</kbd>), this class can be added to turn on the default sibling margins inside an <span class="smallcaps">HTML</span> element.</td>
+                </tr>
+                <tr>
+                  <td class="text-nowrap">.sibling-margins-off</td>
+                  <td class="text-nowrap">any</td>
+                  <td>If the adjacent sibling margins are on, this class can be added to turn margins off inside an <span class="smallcaps">HTML</span> element.</td>
+                </tr>
+                <tr>
+                  <td class="text-nowrap">.sibling-margins-once</td>
+                  <td class="text-nowrap">any</td>
+                  <td>If you choose to turn off the adjacent sibling margins (<code>$sibling-margins-on:</code><kbd>false</kbd> or with the <code>sibling-margins-off</code> class), this class will apply sibling margins for only the immediate decendents of an <span class="smallcaps">HTML</span> element.</td>
+                </tr>
+                <tr>
+                  <td class="text-nowrap">.sibling-margins-skip</td>
+                  <td class="text-nowrap">any</td>
+                  <td>If the adjacent sibling margins are on, this class can be added to turn margins off for only the immediate decendents of an <span class="smallcaps">HTML</span> element.</td>
+                </tr>
+              </tbody>
             </table>
           </div>
 				</div>
