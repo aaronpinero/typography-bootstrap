@@ -1,4 +1,4 @@
-# Tyfy Bootstrap v1.0.0
+# Tyfy Bootstrap v1.1.0
 
 > “Peanut butter and jelly, Riggs and Murtaugh, Sonny and Cher, Tyfy and Bootstrap 4”
 
