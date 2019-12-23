@@ -29,6 +29,14 @@
 								<li class="nav-item"><a class="nav-link" href="#sizes">Sizes</a></li>
 								<li class="nav-item"><a class="nav-link" href="#readonly">Read-Only</a></li>
 								<li class="nav-item"><a class="nav-link" href="#range">Range</a></li>
+								<li class="nav-item"><a class="nav-link" href="#checkboxes">Checkboxes</a></li>
+								<li class="nav-item"><a class="nav-link" href="#grid">Form Grid</a></li>
+								<li class="nav-item"><a class="nav-link" href="#row">Form Row</a></li>
+								<li class="nav-item"><a class="nav-link" href="#horizontal">Horizontal Form</a></li>
+								<li class="nav-item"><a class="nav-link" href="#inline">Inline Form</a></li>
+								<li class="nav-item"><a class="nav-link" href="#help">Help Text</a></li>
+								<li class="nav-item"><a class="nav-link" href="#validation">Validation</a></li>
+								<li class="nav-item"><a class="nav-link" href="#custom">Custom Elements</a></li>
 							</ul>
 						</nav>
 					</div>
@@ -94,11 +102,6 @@
 								<label for="staticEmail2" class="sr-only">Email</label>
 								<input type="text" readonly class="form-control-plaintext" id="staticEmail2" value="email@example.com">
 							</div>
-							<div class="form-group mx-sm-3 mb-2">
-								<label for="inputPassword2" class="sr-only">Password</label>
-								<input type="password" class="form-control" id="inputPassword2" placeholder="Password">
-							</div>
-							<button type="submit" class="btn btn-primary mb-2">Confirm identity</button>
 						</form>
 						<hr>
 						<h2 class="badge badge-primary" id="range">Range</h2>
@@ -108,11 +111,9 @@
 								<input type="range" class="form-control-range" id="formControlRange">
 							</div>
 						</form>						
-						
 						<hr>
-
-						<h2>Checkboxes</h2>
-						<form class="tymargins-skip">
+						<h2 class="badge badge-primary" id="checkboxes">Checkboxes</h2>
+						<form class="sibling-margins-skip">
 							<div class="form-check">
 								<input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
 								<label class="form-check-label" for="defaultCheck1">
@@ -144,10 +145,6 @@
 								</label>
 							</div>
 						</form>
-
-						<hr>
-
-						<h2>Inline</h2>
 						<form>
 							<div class="form-check form-check-inline">
 								<input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
@@ -162,10 +159,8 @@
 								<label class="form-check-label" for="inlineCheckbox3">3 (disabled)</label>
 							</div>
 						</form>
-
 						<hr>
-
-						<h2>Form Grid</h2>
+						<h2 class="badge badge-primary" id="grid">Form Grid</h2>
 						<form>
 							<div class="row">
 								<div class="col">
@@ -176,10 +171,8 @@
 								</div>
 							</div>
 						</form>
-
 						<hr>
-
-						<h2>Form Row</h2>
+						<h2 class="badge badge-primary" id="row">Form Row</h2>
 						<form>
 							<div class="form-row">
 								<div class="col">
@@ -190,60 +183,8 @@
 								</div>
 							</div>
 						</form>
-
 						<hr>
-
-						<h2>Complex Form Rows</h2>
-						<form>
-							<div class="form-row">
-								<div class="form-group col-md-6">
-									<label for="inputEmail4">Email</label>
-									<input type="email" class="form-control" id="inputEmail4" placeholder="Email">
-								</div>
-								<div class="form-group col-md-6">
-									<label for="inputPassword4">Password</label>
-									<input type="password" class="form-control" id="inputPassword4" placeholder="Password">
-								</div>
-							</div>
-							<div class="form-group">
-								<label for="inputAddress">Address</label>
-								<input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-							</div>
-							<div class="form-group">
-								<label for="inputAddress2">Address 2</label>
-								<input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
-							</div>
-							<div class="form-row">
-								<div class="form-group col-md-6">
-									<label for="inputCity">City</label>
-									<input type="text" class="form-control" id="inputCity">
-								</div>
-								<div class="form-group col-md-4">
-									<label for="inputState">State</label>
-									<select id="inputState" class="form-control">
-										<option selected>Choose...</option>
-										<option>...</option>
-									</select>
-								</div>
-								<div class="form-group col-md-2">
-									<label for="inputZip">Zip</label>
-									<input type="text" class="form-control" id="inputZip">
-								</div>
-							</div>
-							<div class="form-group">
-								<div class="form-check">
-									<input class="form-check-input" type="checkbox" id="gridCheck">
-									<label class="form-check-label" for="gridCheck">
-										Check me out
-									</label>
-								</div>
-							</div>
-							<button type="submit" class="btn btn-primary">Sign in</button>
-						</form>
-
-						<hr>
-
-						<h2>Horizontal Form</h2>
+						<h2 class="badge badge-primary" id="horizontal">Horizontal Form</h2>
 						<form>
 							<div class="form-group row">
 								<label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
@@ -260,7 +201,7 @@
 							<fieldset class="form-group">
 								<div class="row">
 									<legend class="col-form-label col-sm-2 pt-0">Radios</legend>
-									<div class="col-sm-10">
+									<div class="col-sm-10 sibling-margins-skip">
 										<div class="form-check">
 											<input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
 											<label class="form-check-label" for="gridRadios1">
@@ -293,15 +234,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="form-group row">
-								<div class="col-sm-10">
-									<button type="submit" class="btn btn-primary">Sign in</button>
-								</div>
-							</div>
 						</form>
-
-						<hr>
-
 						<form>
 							<div class="form-group row">
 								<label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Email</label>
@@ -322,58 +255,8 @@
 								</div>
 							</div>
 						</form>
-
 						<hr>
-
-						<h2>Column Sizing</h2>
-
-						<form>
-							<div class="form-row">
-								<div class="col-7">
-									<input type="text" class="form-control" placeholder="City">
-								</div>
-								<div class="col">
-									<input type="text" class="form-control" placeholder="State">
-								</div>
-								<div class="col">
-									<input type="text" class="form-control" placeholder="Zip">
-								</div>
-							</div>
-						</form>
-
-						<form>
-							<div class="form-row align-items-center">
-								<div class="col-auto">
-									<label class="sr-only" for="inlineFormInput">Name</label>
-									<input type="text" class="form-control mb-2" id="inlineFormInput" placeholder="Jane Doe">
-								</div>
-								<div class="col-auto">
-									<label class="sr-only" for="inlineFormInputGroup">Username</label>
-									<div class="input-group mb-2">
-										<div class="input-group-prepend">
-											<div class="input-group-text">@</div>
-										</div>
-										<input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Username">
-									</div>
-								</div>
-								<div class="col-auto">
-									<div class="form-check mb-2">
-										<input class="form-check-input" type="checkbox" id="autoSizingCheck">
-										<label class="form-check-label" for="autoSizingCheck">
-											Remember me
-										</label>
-									</div>
-								</div>
-								<div class="col-auto">
-									<button type="submit" class="btn btn-primary mb-2">Submit</button>
-								</div>
-							</div>
-						</form>
-
-						<hr>
-
-						<h2>Inline Form</h2>
-
+						<h2 class="badge badge-primary" id="inline">Inline Form</h2>
 						<form class="form-inline">
 							<label class="sr-only" for="inlineFormInputName2">Name</label>
 							<input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="Jane Doe">
@@ -392,14 +275,10 @@
 									Remember me
 								</label>
 							</div>
-						
 							<button type="submit" class="btn btn-primary mb-2">Submit</button>
 						</form>
-
 						<hr>
-
-						<h2>Help Text</h2>
-
+						<h2 class="badge badge-primary" id="help">Help Text</h2>
 						<form>
 							<label for="inputPassword5">Password</label>
 							<input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock">
@@ -407,7 +286,6 @@
 								Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.
 							</small>
 						</form>
-
 						<form class="form-inline">
 							<div class="form-group">
 								<label for="inputPassword6">Password</label>
@@ -417,11 +295,8 @@
 								</small>
 							</div>
 						</form>
-
 						<hr>
-
-						<h2>Validation</h2>
-
+						<h2 class="badge badge-primary" id="validation">Validation</h2>
 						<form>
 							<div class="form-row">
 								<div class="col-md-4 mb-3">
@@ -532,7 +407,7 @@
 
 						<hr>
 
-						<h2>Custom Form Elements</h2>
+						<h2 class="badge badge-primary" id="custom">Custom Elements</h2>
 						<form>
 							<div class="custom-control custom-checkbox">
 								<input type="checkbox" class="custom-control-input" id="customCheck1">
