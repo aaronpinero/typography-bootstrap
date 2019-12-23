@@ -20,7 +20,7 @@
 		<!--/ COMMON HEAD TAGS -->
 		<title>Test: Components: Nav and Navbar - Tyfy Bootstrap</title>
 	</head>
-	<body class="">
+	<body class="sibling-margins-skip position-relative bg-light" data-spy="scroll" data-target="#sectionnav">
 		<!-- COMMON HEADER -->
 		<nav class="navbar navbar-tybs navbar-expand-md navbar-light bg-white border-bottom border-dark">
 			<span class="navbar-brand"><strong class="tyfy">TyBs</strong></span>
@@ -75,25 +75,28 @@
 		  </div>
 		</nav>
 		<!--/ COMMON HEADER -->
-		<header class="px-md-3 px-lg-4 px-xl-5">
-			<div class="container-fluid">
-				<div class="row">
-					<div class="col">
-  					  <nav aria-label="breadcrumb">
-              <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="index.html">TYBS</a></li>
-                <li class="breadcrumb-item"><a href="tests.html">Tests</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Components: Nav and Navbar</li>
-              </ol>
-            </nav>
-						<h1>Test: Components: Nav and Navbar</h1>
-					</div>
-				</div>
+		<header class="px-3 px-lg-4 px-xl-5 pt-3 pb-3 pb-lg-4 pb-xl-5">
+			<div class="container-fluid sibling-margins-off">
+				<nav aria-label="breadcrumb">
+					<ol class="breadcrumb bg-transparent px-0 pt-0 border-bottom">
+						<li class="breadcrumb-item"><a href="index.html">TyBs</a></li>
+						<li class="breadcrumb-item"><a href="tests.html">Tests</a></li>
+						<li class="breadcrumb-item active" aria-current="page">Components: Nav and Navbar</li>
+					</ol>
+				</nav>
+        <h1 class="display-2">Components</h1>
+        <h2>Nav and Navbar</h2>
 			</div>
 		</header>
-		<section id="main" class="px-md-3 px-lg-4 px-xl-5">
+		<section id="main" class="px-3 px-lg-4 px-xl-5 pb-3 pb-lg-4 pb-xl-5">
 			<div class="container-fluid">
 				<div class="row">
+					<div class="d-none d-md-block col-md-3 order-12">
+						<nav id="sectionnav" class="navbar navbar-light bg-transparent sticky-top">
+							<ul class="nav nav-pills flex-column">
+							</ul>
+						</nav>
+					</div>
 					<div class="col-md-9">
 
 						<ul class="nav">
