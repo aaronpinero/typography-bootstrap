@@ -4,29 +4,39 @@
 		<%include head.html%>
 		<title>Test: Components: Input Groups - Tyfy Bootstrap</title>
 	</head>
-	<body class="">
+	<body class="sibling-margins-skip position-relative bg-light" data-spy="scroll" data-target="#sectionnav">
 		<%include header.html%>
-		<header class="px-md-3 px-lg-4 px-xl-5">
-			<div class="container-fluid">
-				<div class="row">
-					<div class="col">
-  					  <nav aria-label="breadcrumb">
-              <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="index.html">TYBS</a></li>
-                <li class="breadcrumb-item"><a href="test.html">Test</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Components: Input Groups</li>
-              </ol>
-            </nav>
-						<h1>Test: Components: Input Groups</h1>
-					</div>
-				</div>
+		<header class="px-3 px-lg-4 px-xl-5 pt-3 pb-3 pb-lg-4 pb-xl-5">
+			<div class="container-fluid sibling-margins-off">
+				<nav aria-label="breadcrumb">
+					<ol class="breadcrumb bg-transparent px-0 pt-0 border-bottom">
+						<li class="breadcrumb-item"><a href="index.html">TyBs</a></li>
+						<li class="breadcrumb-item"><a href="tests.html">Tests</a></li>
+						<li class="breadcrumb-item active" aria-current="page">Components: Input Groups</li>
+					</ol>
+				</nav>
+        <h1 class="display-2">Components</h1>
+        <h2>Input Groups</h2>
 			</div>
 		</header>
-		<section id="main" class="px-md-3 px-lg-4 px-xl-5">
+		<section id="main" class="px-3 px-lg-4 px-xl-5 pb-3 pb-lg-4 pb-xl-5">
 			<div class="container-fluid">
 				<div class="row">
+					<div class="d-none d-md-block col-md-3 order-12">
+						<nav id="sectionnav" class="navbar navbar-light bg-transparent sticky-top">
+							<ul class="nav nav-pills flex-column">
+								<li class="nav-item"><a class="nav-link" href="#basics">Basics</a></li>
+								<li class="nav-item"><a class="nav-link" href="#sizing">Sizing</a></li>
+								<li class="nav-item"><a class="nav-link" href="#checks">Checks and Radios</a></li>
+								<li class="nav-item"><a class="nav-link" href="#multiinput">Multiple Inputs</a></li>
+								<li class="nav-item"><a class="nav-link" href="#multiaddons">Multiple Add-ons</a></li>
+								<li class="nav-item"><a class="nav-link" href="#buttons">Button Add-ons</a></li>
+								<li class="nav-item"><a class="nav-link" href="#custom">Custom Elements</a></li>
+							</ul>
+						</nav>
+					</div>
 					<div class="col-md-9">
-
+						<h2 class="badge badge-primary" id="basics">Basics</h2>
 						<form>
 							<div class="input-group mb-3">
 								<div class="input-group-prepend">
@@ -34,7 +44,6 @@
 								</div>
 								<input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
 							</div>
-							
 							<div class="input-group mb-3">
 								<input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
 								<div class="input-group-append">
@@ -70,7 +79,7 @@
 
 						<hr>
 
-						<h2>Sizing</h2>
+						<h2 class="badge badge-primary" id="sizing">Sizing</h2>
 
 						<form>
 							<div class="input-group input-group-sm mb-3">
@@ -97,7 +106,7 @@
 
 						<hr>
 
-						<h2>Checks and Radios</h2>
+						<h2 class="badge badge-primary" id="checks">Checks and Radios</h2>
 
 						<form>
 							<div class="input-group mb-3">
@@ -121,7 +130,7 @@
 
 						<hr>
 
-						<h2>Multiple Inputs</h2>
+						<h2 class="badge badge-primary" id="multiinput">Multiple Inputs</h2>
 
 						<form>
 							<div class="input-group">
@@ -135,7 +144,7 @@
 
 						<hr>
 
-						<h2>Multiple Add-ons</h2>
+						<h2 class="badge badge-primary" id="multiaddons">Multiple Add-ons</h2>
 
 						<form>
 							<div class="input-group mb-3">
@@ -157,7 +166,7 @@
 
 						<hr>
 
-						<h2>Button Add-ons</h2>
+						<h2 class="badge badge-primary" id="buttons">Button Add-ons</h2>
 
 						<form>
 							<div class="input-group mb-3">
@@ -254,7 +263,7 @@
 
 							<hr>
 
-							<h2>Custom Form Elements</h2>
+							<h2 class="badge badge-primary" id="custom">Custom Elements</h2>
 
 							<form>
 								<div class="input-group mb-3">

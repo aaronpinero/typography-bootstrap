@@ -1,11 +1,80 @@
 <!doctype html>
 <html lang="en">
 	<head>
-		<%include head.html%>
+		<!-- COMMON HEAD TAGS -->
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-32897472-1"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+		
+		  gtag('config', 'UA-32897472-1');
+		</script>
+		<script defer src="https://use.fontawesome.com/releases/v5.11.2/js/all.js"></script>
+		<meta charset="utf8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="">
+		<link id="docstyles" rel="stylesheet" href="resources/style/tyfy-bootstrap-docs.css">
+		<!--/ COMMON HEAD TAGS -->
 		<title>Test: Components: Nav and Navbar - Tyfy Bootstrap</title>
 	</head>
 	<body class="">
-		<%include header.html%>
+		<!-- COMMON HEADER -->
+		<nav class="navbar navbar-tybs navbar-expand-md navbar-light bg-white border-bottom border-dark">
+			<span class="navbar-brand"><strong class="tyfy">TyBs</strong></span>
+			<span class="navbar-text navbar-toggler" data-toggle="collapse" data-target="#navoptions" aria-controls="navoptions" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</span>
+		  <div class="collapse navbar-collapse" id="navoptions">
+		    <ul class="navbar-nav mr-auto">
+		      <li class="nav-item">
+		        <a class="nav-link" href="index.html"><i class="fas fa-home"></i></a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="benefits.html">Benefits</a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="startup.html">Get Started</a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="docs.html">Documentation</a>
+		      </li>
+		      <li class="nav-item dropdown">
+		        <a class="nav-link dropdown-toggle" href="examples.html" id="exampleslist" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Examples</a>
+		        <div class="dropdown-menu" aria-labelledby="exampleslist">
+			        <a class="dropdown-item" href="examples.html">Overview</a>
+			        <a class="dropdown-item" href="examples-pricing.html">Pricing Page</a>
+			        <a class="dropdown-item" href="examples-checkout.html">Checkout Form</a>
+			        <a class="dropdown-item" href="examples-product.html">Product Page</a>
+			        <a class="dropdown-item" href="examples-album.html">Album</a>
+			        <a class="dropdown-item" href="examples-carousel.html">Carousel</a>
+		        </div>
+		      </li>
+		      <li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="tests.html" id="testlist" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Tests</a>
+							<div class="dropdown-menu" aria-labelledby="testlist">
+								<a class="dropdown-item" href="tests.html">Overview</a>
+								<a class="dropdown-item" href="tests-content.html">Content</a>
+								<a class="dropdown-item" href="tests-code-img.html">Code &amp; Images</a>
+								<a class="dropdown-item" href="tests-tables.html">Tables</a>
+								<a class="dropdown-item" href="tests-components-01.html">Components: Alerts to Button Groups</a>
+								<a class="dropdown-item" href="tests-components-card.html">Components: Cards</a>
+    					  <a class="dropdown-item" href="tests-components-02.html">Components: Carousels to Dropdowns</a>
+								<a class="dropdown-item" href="tests-components-forms.html">Components: Forms</a>
+								<a class="dropdown-item" href="tests-components-inputgroup.html">Components: Input Groups</a>
+								<a class="dropdown-item" href="tests-components-03.html">Components: Jumbotron to Modal</a>
+								<a class="dropdown-item" href="tests-components-nav.html">Components: Nav and Navbar</a>
+							</div>
+						</li>
+						<li class="nav-item">
+		      </li>
+		    </ul>
+				<a class="btn btn-sm btn-outline-secondary" href="#toggletheme" id="style-toggle">Toggle Theme</a>
+		  </div>
+		</nav>
+		<!--/ COMMON HEADER -->
 		<header class="px-md-3 px-lg-4 px-xl-5">
 			<div class="container-fluid">
 				<div class="row">
@@ -13,7 +82,7 @@
   					  <nav aria-label="breadcrumb">
               <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="index.html">TYBS</a></li>
-                <li class="breadcrumb-item"><a href="test.html">Test</a></li>
+                <li class="breadcrumb-item"><a href="tests.html">Tests</a></li>
                 <li class="breadcrumb-item active" aria-current="page">Components: Nav and Navbar</li>
               </ol>
             </nav>
@@ -227,6 +296,25 @@
 				</div>
 			</div>
 		</section>
-		<%include footer.html%>
+		<!-- COMMON FOOTER -->
+		<footer class="card p-3 p-lg-4 p-xl-5 border-left-0 border-right-0 border-bottom-0 text-secondary border-dark bg-white">
+			<div class="container-fluid">
+				<p class="card-text">&copy; 2017–2019 by <a href="http://aaronpinero.net">Aaron Pinero</a></p>
+			</div>
+		</footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+      WebFont.load({
+        google: {
+          families: ['IBM+Plex+Sans+Condensed:700']
+        }
+      });
+    </script>
+		<script src="resources/script/style_toggle.js"></script>
+		<script src="resources/script/nav_active.js"></script>
+		<!--/ COMMON FOOTER -->
 	</body>
 </html>

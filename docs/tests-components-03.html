@@ -18,9 +18,9 @@
 		<meta name="description" content="">
 		<link id="docstyles" rel="stylesheet" href="resources/style/tyfy-bootstrap-docs.css">
 		<!--/ COMMON HEAD TAGS -->
-		<title>Test: Components Part 3 - Tyfy Bootstrap</title>
+		<title>Test: Components: Jumbotron to Modal - Tyfy Bootstrap</title>
 	</head>
-	<body class="">
+	<body class="sibling-margins-skip position-relative bg-light" data-spy="scroll" data-target="#sectionnav">
 		<!-- COMMON HEADER -->
 		<nav class="navbar navbar-tybs navbar-expand-md navbar-light bg-white border-bottom border-dark">
 			<span class="navbar-brand"><strong class="tyfy">TyBs</strong></span>
@@ -64,8 +64,8 @@
     					  <a class="dropdown-item" href="tests-components-02.html">Components: Carousels to Dropdowns</a>
 								<a class="dropdown-item" href="tests-components-forms.html">Components: Forms</a>
 								<a class="dropdown-item" href="tests-components-inputgroup.html">Components: Input Groups</a>
-								<a class="dropdown-item" href="test-components-03.html">Components, Part 3</a>
-								<a class="dropdown-item" href="test-components-nav.html">Components, Nav and Navbar</a>
+								<a class="dropdown-item" href="tests-components-03.html">Components: Jumbotron to Modal</a>
+								<a class="dropdown-item" href="tests-components-nav.html">Components: Nav and Navbar</a>
 							</div>
 						</li>
 						<li class="nav-item">
@@ -75,29 +75,34 @@
 		  </div>
 		</nav>
 		<!--/ COMMON HEADER -->
-		<header class="px-md-3 px-lg-4 px-xl-5">
-			<div class="container-fluid">
-				<div class="row">
-					<div class="col">
-  					  <nav aria-label="breadcrumb">
-              <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="index.html">TYBS</a></li>
-                <li class="breadcrumb-item"><a href="test.html">Test</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Components, Part 3</li>
-              </ol>
-            </nav>
-						<h1>Test: Components, Part 3</h1>
-					</div>
-				</div>
+		<header class="px-3 px-lg-4 px-xl-5 pt-3 pb-3 pb-lg-4 pb-xl-5">
+			<div class="container-fluid sibling-margins-off">
+				<nav aria-label="breadcrumb">
+					<ol class="breadcrumb bg-transparent px-0 pt-0 border-bottom">
+						<li class="breadcrumb-item"><a href="index.html">TyBs</a></li>
+						<li class="breadcrumb-item"><a href="tests.html">Tests</a></li>
+						<li class="breadcrumb-item active" aria-current="page">Components: Jumbotron to Modal</li>
+					</ol>
+				</nav>
+        <h1 class="display-2">Components</h1>
+        <h2>Jumbotron to Modal</h2>
 			</div>
 		</header>
-		<section id="main" class="px-md-3 px-lg-4 px-xl-5">
+		<section id="main" class="px-3 px-lg-4 px-xl-5 pb-3 pb-lg-4 pb-xl-5">
 			<div class="container-fluid">
 				<div class="row">
+					<div class="d-none d-md-block col-md-3 order-12">
+						<nav id="sectionnav" class="navbar navbar-light bg-transparent sticky-top">
+							<ul class="nav nav-pills flex-column">
+								<li class="nav-item"><a class="nav-link" href="#jumbotron">Jumbotron</a></li>
+								<li class="nav-item"><a class="nav-link" href="#listgroup">List Group</a></li>
+								<li class="nav-item"><a class="nav-link" href="#media">Media Object</a></li>
+								<li class="nav-item"><a class="nav-link" href="#modal">Modal</a></li>
+							</ul>
+						</nav>
+					</div>
 					<div class="col-md-9">
-  					
-
-						<h2>Jumbotron</h2>
+						<h2 class="badge badge-primary" id="jumbotron">Jumbotron</h2>
 
 						<div class="jumbotron">
 							<h1 class="display-4">Hello, world!</h1>
@@ -116,7 +121,7 @@
 
 						<hr>
 
-						<h2>List Group</h2>
+						<h2 class="badge badge-primary" id="listgroup">List Group</h2>
 
 						<ul class="list-group">
 							<li class="list-group-item">Cras justo odio</li>
@@ -263,7 +268,7 @@
 
 						<hr>
 
-						<h2>Media Object</h2>
+						<h2 class="badge badge-primary" id="media">Media Object</h2>
 
 						<div class="media">
 							<img src="http://via.placeholder.com/100x100" class="mr-3" alt="placeholder image">
@@ -317,12 +322,14 @@
 						
 						<hr>
 
-						<h2>Modal</h2>
+						<h2 class="badge badge-primary" id="modal">Modal</h2>
 
 						<!-- Button trigger modal -->
-						<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalScrollable">
-							Launch demo modal
-						</button>
+						<div>
+							<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalScrollable">
+								Launch demo modal
+							</button>
+						</div>
 						
 						<!-- Modal -->
 						<div class="modal fade" id="exampleModalScrollable" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
