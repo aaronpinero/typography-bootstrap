@@ -33,12 +33,12 @@ $leading-short:1.2 !default;
   //
   // now that we have the adjustment factor value, calculate the leading
   // if the font size is smaller than the adjusted grid unit
-  @if $font-size <= ($spacer*$adjustment_factor) {
+  @if $font-size <= ($type-spacer*$adjustment_factor) {
     @return $spacer;
   }
   // else, the leading will be some multiple of the grid unit
   @else {
-    @return ceil($font-size/($spacer*$adjustment_factor)) * $spacer;
+    @return ceil($font-size/($type-spacer*$adjustment_factor)) * $type-spacer;
   }
 }
 
@@ -49,6 +49,15 @@ $leading-short:1.2 !default;
 
 @function space($multiplier:1) {
   @return $spacer * $multiplier;
+}
+
+////////// typespace function //////////
+//
+// used to calculate a multiple of the spacer;
+// this function makes it easier to work with the spacer
+
+@function typespace($multiplier:1) {
+  @return $type-spacer * $multiplier;
 }
 
 ////////// fontsize function //////////

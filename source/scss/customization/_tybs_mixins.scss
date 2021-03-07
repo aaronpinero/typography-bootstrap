@@ -9,7 +9,7 @@
 // in which case the specified margin size will be applied to all
 // descendants
 
-@mixin sibling-margin-size ($context:all, $measure:space(2)) {
+@mixin sibling-margin-size ($context:all, $measure:typespace(2)) {
   @if $context == headings {
     // headings
     :not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) + h1,
@@ -59,11 +59,11 @@
 @mixin sibling-margins ($state:on) {
   @if $state == on {
     // everything
-    @include sibling-margin-size(all,space(2));
+    @include sibling-margin-size(all,typespace(2));
     // lists
-    @include sibling-margin-size(lists,space(1));
+    @include sibling-margin-size(lists,typespace(1));
     // headings
-    @include sibling-margin-size(headings,space(3));
+    @include sibling-margin-size(headings,typespace(3));
   }
   @else if $state == skip {
     // don't apply the margins to the immediate descendants
@@ -72,7 +72,7 @@
     }
   }
   @else if $state == once {
-    @include sibling-margin-size(once,space(2));
+    @include sibling-margin-size(once,typespace(2));
   }
   @else { // $state == off
     * + * {
