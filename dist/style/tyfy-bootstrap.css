@@ -11169,4 +11169,16 @@ label {
   margin-bottom: 0;
 }
 
+.nav * + * {
+  margin-top: 0;
+}
+
+.tab-content > * + * {
+  margin-top: 0;
+}
+
+.navbar * + * {
+  margin-top: 0;
+}
+
 /*# sourceMappingURL=tyfy-bootstrap.css.map */

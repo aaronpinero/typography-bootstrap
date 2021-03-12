@@ -1,16 +1,21 @@
 // brand font
-$tyfont-condensed:"IBM Plex Sans Condensed",sans-serif;
+$font-condensed: "IBM Plex Sans Condensed",sans-serif;
 
 @import "../../../source/scss/tyfy-bootstrap.scss";
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@700&display=swap');
+
 
 strong.tyfy {
   /* autoprefixer: off */
   background:-webkit-linear-gradient($pink,$blue);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-family:$tyfont-condensed;
+  font-family:$font-condensed;
   font-weight:bold;
   text-transform:uppercase;
+  .navbar-tybs & {
+    font-size: fontsize(1);
+  }
 }
 .navbar-tybs {
   z-index:10000;

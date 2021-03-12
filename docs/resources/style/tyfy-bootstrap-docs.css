@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@700&display=swap");
 .sibling-margins-on * + * {
   margin-top: 1.625rem;
 }
@@ -11169,6 +11170,18 @@ label {
   margin-bottom: 0;
 }
 
+.nav * + * {
+  margin-top: 0;
+}
+
+.tab-content > * + * {
+  margin-top: 0;
+}
+
+.navbar * + * {
+  margin-top: 0;
+}
+
 strong.tyfy {
   /* autoprefixer: off */
   background: -webkit-linear-gradient(#d63384, #0d6efd);
@@ -11177,6 +11190,9 @@ strong.tyfy {
   font-family: "IBM Plex Sans Condensed", sans-serif;
   font-weight: bold;
   text-transform: uppercase;
+}
+.navbar-tybs strong.tyfy {
+  font-size: 1.25rem;
 }
 
 .navbar-tybs {

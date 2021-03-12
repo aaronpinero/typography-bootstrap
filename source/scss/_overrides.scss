@@ -12,7 +12,7 @@
 
 // bootstrap overrides
 @import "overrides/reboot";
-@import "overrides/type";
+// @import "overrides/type";
 // @import "overrides/grid";
 // @import "overrides/images";
 // @import "overrides/tables";
@@ -25,8 +25,8 @@
 // @import "overrides/forms";
 // @import "overrides/input-group";
 // @import "overrides/card";
-// @import "overrides/nav";
-// @import "overrides/navbar";
+@import "overrides/nav";
+@import "overrides/navbar";
 // @import "overrides/carousel";
 // @import "overrides/utilities";
 // @import "overrides/list_group";
