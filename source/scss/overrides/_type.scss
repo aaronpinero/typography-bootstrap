@@ -1,81 +1,107 @@
-// headings
-h1, .h1 {
-	line-height:leading($h1-font-size,head);
-}
-h2, .h2 {
-	line-height:leading($h2-font-size,head);
-}
-h3, .h3 {
-	line-height:leading($h3-font-size,head);
-}
-h4, .h4 {
-	line-height:leading($h4-font-size,head);
-}
-h5, .h5 {
-	line-height:leading($h5-font-size,head);
-}
-h6, .h6 {
-	line-height:leading($h6-font-size,head);
+//
+// Headings
+//
+// .h1 {
+//   @extend h1;
+// }
+// 
+// .h2 {
+//   @extend h2;
+// }
+// 
+// .h3 {
+//   @extend h3;
+// }
+// 
+// .h4 {
+//   @extend h4;
+// }
+// 
+// .h5 {
+//   @extend h5;
+// }
+// 
+// .h6 {
+//   @extend h6;
+// }
+
+
+.lead {
+  @include font-size($lead-font-size);
+  font-weight: $lead-font-weight;
+  line-height: leading($lead-font-size,base);
 }
 
 // Type display classes
-.display-1 {
-	line-height:leading($display1-size,head);
-}
-.display-2 {
-	line-height:leading($display2-size,head);
-}
-.display-3 {
-	line-height:leading($display3-size,head);
-}
-.display-4 {
-	line-height:leading($display4-size,head);
+@each $display, $font-size in $display-font-sizes {
+  .display-#{$display} {
+    @include font-size($font-size);
+    font-weight: $display-font-weight;
+    line-height: leading($font-size,head);
+  }
 }
 
-// need this here to override the tyfy spacing module in the one case of the hr element
-hr {
-  margin-top: $hr-margin-y;
-  margin-bottom: $hr-margin-y;
-}
+//
+// Emphasis
+//
+// .small {
+//   @extend small;
+// }
+// 
+// .mark {
+//   @extend mark;
+// }
 
-.lead {
-	line-height:leading($lead-font-size,tall);
-}
+//
+// Lists
+//
 
-.list-unstyled {
-  @include list-unstyled;
-  @include sibling-margins(off);
-}
+// .list-unstyled {
+//   @include list-unstyled();
+// }
 
-// inline lists
-.list-inline {
-  @include sibling-margins(off);
-}
+// Inline turns list items into inline-block
+// .list-inline {
+//   @include list-unstyled();
+// }
+// .list-inline-item {
+//   display: inline-block;
+// 
+//   &:not(:last-child) {
+//     margin-right: $list-inline-padding;
+//   }
+// }
+
+
+//
+// Misc
+//
+
+// Builds on `abbr`
+// .initialism {
+//   @include font-size($initialism-font-size);
+//   text-transform: uppercase;
+// }
 
 // Blockquotes
 .blockquote {
-  margin-bottom: 0;
-  line-height: leading($blockquote-font-size);
-}
-.blockquote * + .blockquote-footer {
-  margin-top: space(1);
+  margin-bottom: $blockquote-margin-y;
+  @include font-size($blockquote-font-size);
+  line-height: leading($blockquote-font-size,tall);
+
+  > :last-child {
+    margin-bottom: 0;
+  }
 }
 
-// stuff from tyfy utilities module
-span {
-  &.dropcap {
-    display:inline-block;
-    float:left;
-    font-size:400%;
-    font-weight:bold;
-    line-height:100%;
-    margin:0 0.25em 0 0.125em;
-    text-align:center;
-  }
-  &.smallcaps { // styles based on https://joeclark.org/standards/small-caps.html; I like the fake better
-    font-size:smaller;
-    letter-spacing:0.075em;
-    margin-right:-0.0375em;
-    text-transform:uppercase;
+.blockquote-footer {
+  margin-top: -$blockquote-margin-y;
+  margin-bottom: $blockquote-margin-y;
+  @include font-size($blockquote-footer-font-size);
+  line-height: leading($blockquote-footer-font-size);
+  color: $blockquote-footer-color;
+
+  &::before {
+    content: "\2014\00A0"; // em dash, nbsp
   }
 }

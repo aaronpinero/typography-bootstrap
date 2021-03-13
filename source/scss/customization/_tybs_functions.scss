@@ -8,10 +8,10 @@
 // larger leading; the adjustment variable values can be overridden,
 // but in most cases the defaults will do
 
-$leading-tall:0.8  !default; 
-$leading-base:0.9  !default;
-$leading-head:1    !default;
-$leading-short:1.2 !default;
+$leading-tall:0.8   !default; 
+$leading-base:0.9   !default;
+$leading-head:1     !default;
+$leading-short:1.2  !default;
 
 @function leading($font-size,$leading-style:base) {
   // by default, use the base adjustment value

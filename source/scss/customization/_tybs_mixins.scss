@@ -59,7 +59,7 @@
 @mixin sibling-margins ($state:on) {
   @if $state == on {
     // everything
-    @include sibling-margin-size(all,typespace(2));
+    @include sibling-margin-size(all,typespace(1));
     // lists
     @include sibling-margin-size(lists,typespace(1));
     // headings
@@ -72,7 +72,7 @@
     }
   }
   @else if $state == once {
-    @include sibling-margin-size(once,typespace(2));
+    @include sibling-margin-size(once,typespace(1));
   }
   @else { // $state == off
     * + * {
