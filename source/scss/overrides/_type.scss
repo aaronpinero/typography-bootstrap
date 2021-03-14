@@ -29,7 +29,7 @@
 .lead {
   @include font-size($lead-font-size);
   font-weight: $lead-font-weight;
-  line-height: leading($lead-font-size,base);
+  line-height: leading($lead-font-size,tall);
 }
 
 // Type display classes

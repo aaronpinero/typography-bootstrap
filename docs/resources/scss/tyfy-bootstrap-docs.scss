@@ -13,12 +13,12 @@ strong.tyfy {
   font-family:$font-condensed;
   font-weight:bold;
   text-transform:uppercase;
-  .navbar-tybs & {
-    font-size: fontsize(1);
-  }
 }
 .navbar-tybs {
   z-index:10000;
+}
+.nav-link.active {
+  font-weight: bolder;
 }
 .blockquote span.highlighter {
   background:linear-gradient(to right,rgba(255,230,0,0),rgba(255,230,0,0.25) 2%,rgba(255,230,0,0.25) 95%,rgba(255,230,0,0) 100%);
