@@ -1141,7 +1141,7 @@ $toast-font-size:                   fontsize(-1);
 
 // Badges
 
-$badge-font-size:                   fontsize(-2);
+$badge-font-size:                   (fontsize(-2) / 1rem) * 1em;
 // $badge-font-weight:                 $font-weight-bold !default;
 // $badge-color:                       $white !default;
 // $badge-padding-y:                   .35em !default;
@@ -1269,11 +1269,11 @@ $progress-font-size:                fontsize(-1);
 
 // Breadcrumbs
 
-// $breadcrumb-font-size:              null !default;
+$breadcrumb-font-size:              $font-size-base;
 // $breadcrumb-padding-y:              0 !default;
 // $breadcrumb-padding-x:              0 !default;
 // $breadcrumb-item-padding-x:         .5rem !default;
-// $breadcrumb-margin-bottom:          1rem !default;
+$breadcrumb-margin-bottom:          0;
 // $breadcrumb-bg:                     null !default;
 // $breadcrumb-divider-color:          $gray-600 !default;
 // $breadcrumb-active-color:           $gray-600 !default;

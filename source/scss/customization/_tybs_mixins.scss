@@ -75,8 +75,11 @@
     @include sibling-margin-size(once,typespace(1));
   }
   @else { // $state == off
-    * + * {
-      margin-top:0;
-    };
+    // everything
+    @include sibling-margin-size(all,typespace(0));
+    // lists
+    @include sibling-margin-size(lists,typespace(0));
+    // headings
+    @include sibling-margin-size(headings,typespace(0));
   }
 }

@@ -24,7 +24,26 @@
 }
 
 .sibling-margins-off * + * {
+  margin-top: 0rem;
+}
+.sibling-margins-off dl * + *, .sibling-margins-off ol * + *, .sibling-margins-off ul * + * {
+  margin-top: 0rem;
+}
+.sibling-margins-off dl * + dd {
   margin-top: 0;
+}
+.sibling-margins-off :not(h1):not(.h1):not(h2):not(.h2):not(h3):not(.h3):not(h4):not(.h4):not(h5):not(.h5):not(h6):not(.h6) + h1, .sibling-margins-off :not(h1):not(.h1):not(h2):not(.h2):not(h3):not(.h3):not(h4):not(.h4):not(h5):not(.h5):not(h6):not(.h6) + .h1,
+.sibling-margins-off :not(h1):not(.h1):not(h2):not(.h2):not(h3):not(.h3):not(h4):not(.h4):not(h5):not(.h5):not(h6):not(.h6) + h2,
+.sibling-margins-off :not(h1):not(.h1):not(h2):not(.h2):not(h3):not(.h3):not(h4):not(.h4):not(h5):not(.h5):not(h6):not(.h6) + .h2,
+.sibling-margins-off :not(h1):not(.h1):not(h2):not(.h2):not(h3):not(.h3):not(h4):not(.h4):not(h5):not(.h5):not(h6):not(.h6) + h3,
+.sibling-margins-off :not(h1):not(.h1):not(h2):not(.h2):not(h3):not(.h3):not(h4):not(.h4):not(h5):not(.h5):not(h6):not(.h6) + .h3,
+.sibling-margins-off :not(h1):not(.h1):not(h2):not(.h2):not(h3):not(.h3):not(h4):not(.h4):not(h5):not(.h5):not(h6):not(.h6) + h4,
+.sibling-margins-off :not(h1):not(.h1):not(h2):not(.h2):not(h3):not(.h3):not(h4):not(.h4):not(h5):not(.h5):not(h6):not(.h6) + .h4,
+.sibling-margins-off :not(h1):not(.h1):not(h2):not(.h2):not(h3):not(.h3):not(h4):not(.h4):not(h5):not(.h5):not(h6):not(.h6) + h5,
+.sibling-margins-off :not(h1):not(.h1):not(h2):not(.h2):not(h3):not(.h3):not(h4):not(.h4):not(h5):not(.h5):not(h6):not(.h6) + .h5,
+.sibling-margins-off :not(h1):not(.h1):not(h2):not(.h2):not(h3):not(.h3):not(h4):not(.h4):not(h5):not(.h5):not(h6):not(.h6) + h6,
+.sibling-margins-off :not(h1):not(.h1):not(h2):not(.h2):not(h3):not(.h3):not(h4):not(.h4):not(h5):not(.h5):not(h6):not(.h6) + .h6 {
+  margin-top: 0rem;
 }
 
 .sibling-margins-once > * + * {
@@ -4595,7 +4614,8 @@ textarea.form-control-lg {
   display: flex;
   flex-wrap: wrap;
   padding: 0 0;
-  margin-bottom: 1rem;
+  margin-bottom: 0;
+  font-size: 1rem;
   list-style: none;
 }
 
@@ -4709,7 +4729,7 @@ textarea.form-control-lg {
 .badge {
   display: inline-block;
   padding: 0.35em 0.65em;
-  font-size: 0.5627813555rem;
+  font-size: 0.5627813555em;
   font-weight: 700;
   line-height: 1;
   color: #fff;
@@ -11217,6 +11237,10 @@ body :not(h1):not(.h1):not(h2):not(.h2):not(h3):not(.h3):not(h4):not(.h4):not(h5
   margin-top: 2.625rem;
 }
 
+hr {
+  margin: 2rem 0;
+}
+
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   margin-top: 0;
   margin-bottom: 0;
@@ -11394,8 +11418,68 @@ small, .small {
   content: "— ";
 }
 
-.nav * + * {
+.figure-img {
+  margin-bottom: 0;
+  line-height: 1;
+}
+
+.figure-caption {
+  font-size: 0.7501875469rem;
+  line-height: 1rem;
+  color: #6c757d;
+}
+
+.table {
+  margin-bottom: 0;
+}
+
+.breadcrumb {
+  line-height: 1.75rem;
+}
+.breadcrumb * + * {
+  margin-top: 0rem;
+}
+.breadcrumb dl * + *, .breadcrumb ol * + *, .breadcrumb ul * + * {
+  margin-top: 0rem;
+}
+.breadcrumb dl * + dd {
   margin-top: 0;
+}
+.breadcrumb :not(h1):not(.h1):not(h2):not(.h2):not(h3):not(.h3):not(h4):not(.h4):not(h5):not(.h5):not(h6):not(.h6) + h1, .breadcrumb :not(h1):not(.h1):not(h2):not(.h2):not(h3):not(.h3):not(h4):not(.h4):not(h5):not(.h5):not(h6):not(.h6) + .h1,
+.breadcrumb :not(h1):not(.h1):not(h2):not(.h2):not(h3):not(.h3):not(h4):not(.h4):not(h5):not(.h5):not(h6):not(.h6) + h2,
+.breadcrumb :not(h1):not(.h1):not(h2):not(.h2):not(h3):not(.h3):not(h4):not(.h4):not(h5):not(.h5):not(h6):not(.h6) + .h2,
+.breadcrumb :not(h1):not(.h1):not(h2):not(.h2):not(h3):not(.h3):not(h4):not(.h4):not(h5):not(.h5):not(h6):not(.h6) + h3,
+.breadcrumb :not(h1):not(.h1):not(h2):not(.h2):not(h3):not(.h3):not(h4):not(.h4):not(h5):not(.h5):not(h6):not(.h6) + .h3,
+.breadcrumb :not(h1):not(.h1):not(h2):not(.h2):not(h3):not(.h3):not(h4):not(.h4):not(h5):not(.h5):not(h6):not(.h6) + h4,
+.breadcrumb :not(h1):not(.h1):not(h2):not(.h2):not(h3):not(.h3):not(h4):not(.h4):not(h5):not(.h5):not(h6):not(.h6) + .h4,
+.breadcrumb :not(h1):not(.h1):not(h2):not(.h2):not(h3):not(.h3):not(h4):not(.h4):not(h5):not(.h5):not(h6):not(.h6) + h5,
+.breadcrumb :not(h1):not(.h1):not(h2):not(.h2):not(h3):not(.h3):not(h4):not(.h4):not(h5):not(.h5):not(h6):not(.h6) + .h5,
+.breadcrumb :not(h1):not(.h1):not(h2):not(.h2):not(h3):not(.h3):not(h4):not(.h4):not(h5):not(.h5):not(h6):not(.h6) + h6,
+.breadcrumb :not(h1):not(.h1):not(h2):not(.h2):not(h3):not(.h3):not(h4):not(.h4):not(h5):not(.h5):not(h6):not(.h6) + .h6 {
+  margin-top: 0rem;
+}
+
+.nav * + * {
+  margin-top: 0rem;
+}
+.nav dl * + *, .nav ol * + *, .nav ul * + * {
+  margin-top: 0rem;
+}
+.nav dl * + dd {
+  margin-top: 0;
+}
+.nav :not(h1):not(.h1):not(h2):not(.h2):not(h3):not(.h3):not(h4):not(.h4):not(h5):not(.h5):not(h6):not(.h6) + h1, .nav :not(h1):not(.h1):not(h2):not(.h2):not(h3):not(.h3):not(h4):not(.h4):not(h5):not(.h5):not(h6):not(.h6) + .h1,
+.nav :not(h1):not(.h1):not(h2):not(.h2):not(h3):not(.h3):not(h4):not(.h4):not(h5):not(.h5):not(h6):not(.h6) + h2,
+.nav :not(h1):not(.h1):not(h2):not(.h2):not(h3):not(.h3):not(h4):not(.h4):not(h5):not(.h5):not(h6):not(.h6) + .h2,
+.nav :not(h1):not(.h1):not(h2):not(.h2):not(h3):not(.h3):not(h4):not(.h4):not(h5):not(.h5):not(h6):not(.h6) + h3,
+.nav :not(h1):not(.h1):not(h2):not(.h2):not(h3):not(.h3):not(h4):not(.h4):not(h5):not(.h5):not(h6):not(.h6) + .h3,
+.nav :not(h1):not(.h1):not(h2):not(.h2):not(h3):not(.h3):not(h4):not(.h4):not(h5):not(.h5):not(h6):not(.h6) + h4,
+.nav :not(h1):not(.h1):not(h2):not(.h2):not(h3):not(.h3):not(h4):not(.h4):not(h5):not(.h5):not(h6):not(.h6) + .h4,
+.nav :not(h1):not(.h1):not(h2):not(.h2):not(h3):not(.h3):not(h4):not(.h4):not(h5):not(.h5):not(h6):not(.h6) + h5,
+.nav :not(h1):not(.h1):not(h2):not(.h2):not(h3):not(.h3):not(h4):not(.h4):not(h5):not(.h5):not(h6):not(.h6) + .h5,
+.nav :not(h1):not(.h1):not(h2):not(.h2):not(h3):not(.h3):not(h4):not(.h4):not(h5):not(.h5):not(h6):not(.h6) + h6,
+.nav :not(h1):not(.h1):not(h2):not(.h2):not(h3):not(.h3):not(h4):not(.h4):not(h5):not(.h5):not(h6):not(.h6) + .h6 {
+  margin-top: 0rem;
 }
 
 .tab-content > * + * {
@@ -11403,7 +11487,26 @@ small, .small {
 }
 
 .navbar * + * {
+  margin-top: 0rem;
+}
+.navbar dl * + *, .navbar ol * + *, .navbar ul * + * {
+  margin-top: 0rem;
+}
+.navbar dl * + dd {
   margin-top: 0;
+}
+.navbar :not(h1):not(.h1):not(h2):not(.h2):not(h3):not(.h3):not(h4):not(.h4):not(h5):not(.h5):not(h6):not(.h6) + h1, .navbar :not(h1):not(.h1):not(h2):not(.h2):not(h3):not(.h3):not(h4):not(.h4):not(h5):not(.h5):not(h6):not(.h6) + .h1,
+.navbar :not(h1):not(.h1):not(h2):not(.h2):not(h3):not(.h3):not(h4):not(.h4):not(h5):not(.h5):not(h6):not(.h6) + h2,
+.navbar :not(h1):not(.h1):not(h2):not(.h2):not(h3):not(.h3):not(h4):not(.h4):not(h5):not(.h5):not(h6):not(.h6) + .h2,
+.navbar :not(h1):not(.h1):not(h2):not(.h2):not(h3):not(.h3):not(h4):not(.h4):not(h5):not(.h5):not(h6):not(.h6) + h3,
+.navbar :not(h1):not(.h1):not(h2):not(.h2):not(h3):not(.h3):not(h4):not(.h4):not(h5):not(.h5):not(h6):not(.h6) + .h3,
+.navbar :not(h1):not(.h1):not(h2):not(.h2):not(h3):not(.h3):not(h4):not(.h4):not(h5):not(.h5):not(h6):not(.h6) + h4,
+.navbar :not(h1):not(.h1):not(h2):not(.h2):not(h3):not(.h3):not(h4):not(.h4):not(h5):not(.h5):not(h6):not(.h6) + .h4,
+.navbar :not(h1):not(.h1):not(h2):not(.h2):not(h3):not(.h3):not(h4):not(.h4):not(h5):not(.h5):not(h6):not(.h6) + h5,
+.navbar :not(h1):not(.h1):not(h2):not(.h2):not(h3):not(.h3):not(h4):not(.h4):not(h5):not(.h5):not(h6):not(.h6) + .h5,
+.navbar :not(h1):not(.h1):not(h2):not(.h2):not(h3):not(.h3):not(h4):not(.h4):not(h5):not(.h5):not(h6):not(.h6) + h6,
+.navbar :not(h1):not(.h1):not(h2):not(.h2):not(h3):not(.h3):not(h4):not(.h4):not(h5):not(.h5):not(h6):not(.h6) + .h6 {
+  margin-top: 0rem;
 }
 
 strong.tyfy {
