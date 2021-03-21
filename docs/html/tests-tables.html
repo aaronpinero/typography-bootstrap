@@ -4,7 +4,7 @@
 		<%include head.html%>
 		<title>Tests: Tables - Tyfy Bootstrap</title>
 	</head>
-	<body class="sibling-margins-skip position-relative bg-light" data-spy="scroll" data-target="#sectionnav">
+	<body class="sibling-margins-skip position-relative bg-light" data-bs-spy="scroll" data-bs-target="#sectionnav" data-bs-offset="0" tabindex="0">
 		<%include header.html%>
 		<header class="px-3 px-lg-4 px-xl-5 pt-3 pb-3 pb-lg-4 pb-xl-5">
 			<div class="container-fluid sibling-margins-off">
@@ -36,8 +36,10 @@
 								<li class="nav-item"><a class="nav-link" href="#caption">Caption</a></li>
 							</ul>
 						</nav>
+						
 					</div>
 					<div class="col-md-9">
+						
 						<h2 class="h4"><span class="badge bg-primary" id="table">Table</span></h2>
 						<table class="table">
 							<thead>
@@ -69,6 +71,7 @@
 								</tr>
 							</tbody>
 						</table>
+						
 						<h2 class="h4"><span class="badge bg-primary" id="darktable">Dark Table</span></h2>
 						<table class="table table-dark">
 							<thead>
@@ -100,11 +103,11 @@
 								</tr>
 							</tbody>
 						</table>
-						<hr>
-						<h2 class="badge badge-primary" id="thoptions">Table Head Options</h2>
+
+						<h2 class="h4"><span class="badge bg-primary" id="thoptions">Table Head Options</span></h2>
 						<table class="table">
-							<thead class="thead-dark">
-								<tr>
+							<thead">
+								<tr class="table-dark">
 									<th scope="col">#</th>
 									<th scope="col">First</th>
 									<th scope="col">Last</th>
@@ -134,8 +137,8 @@
 						</table>
 						
 						<table class="table">
-							<thead class="thead-light">
-								<tr>
+							<thead>
+								<tr class="table-light">
 									<th scope="col">#</th>
 									<th scope="col">First</th>
 									<th scope="col">Last</th>
@@ -163,8 +166,8 @@
 								</tr>
 							</tbody>
 						</table>
-						<hr>
-						<h2 class="badge badge-primary" id="stripes">Striped Rows</h2>
+
+						<h2 class="h4"><span class="badge bg-primary" id="stripes">Striped Rows</span></h2>
 						<table class="table table-striped">
 							<thead>
 								<tr>
@@ -226,8 +229,8 @@
 								</tr>
 							</tbody>
 						</table>
-						<hr>
-						<h2 class="badge badge-primary" id="bordered">Bordered Table</h2>
+
+						<h2 class="h4"><span class="badge bg-primary" id="bordered">Bordered Table</span></h2>
 						<table class="table table-bordered">
 							<thead>
 								<tr>
@@ -287,8 +290,8 @@
 								</tr>
 							</tbody>
 						</table>
-						<hr>
-						<h2 class="badge badge-primary" id="borderless">Borderless Table</h2>
+
+						<h2 class="h4"><span class="badge bg-primary" id="borderless">Borderless Table</span></h2>
 						<table class="table table-borderless">
 							<thead>
 								<tr>
@@ -348,8 +351,8 @@
 								</tr>
 							</tbody>
 						</table>
-						<hr>
-						<h2 class="badge badge-primary" id="hover">Hoverable Rows</h2>
+
+						<h2 class="h4"><span class="badge bg-primary" id="hover">Hoverable Rows</span></h2>
 						<table class="table table-hover">
 							<thead>
 								<tr>
@@ -409,8 +412,8 @@
 								</tr>
 							</tbody>
 						</table>
-						<hr>
-						<h2 class="badge badge-primary" id="small">Small Table</h2>
+
+						<h2 class="h4"><span class="badge bg-primary" id="small">Small Table</span></h2>
 						<table class="table table-sm">
 							<thead>
 								<tr>
@@ -470,8 +473,8 @@
 								</tr>
 							</tbody>
 						</table>
-						<hr>
-						<h2 class="badge badge-primary" id="caption">Caption</h2>
+
+						<h2 class="h4"><span class="badge bg-primary" id="caption">Caption</span></h2>
 						<table class="table">
 							<caption>List of users</caption>
 							<thead>

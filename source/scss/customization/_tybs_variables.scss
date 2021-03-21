@@ -10,7 +10,7 @@
 // $gray-100: #f8f9fa !default;
 // $gray-200: #e9ecef !default;
 // $gray-300: #dee2e6 !default;
-// $gray-400: #ced4da !default;
+$gray-400: #ced4da !default;
 // $gray-500: #adb5bd !default;
 // $gray-600: #6c757d !default;
 // $gray-700: #495057 !default;
@@ -365,7 +365,7 @@ $paragraph-margin-bottom:   0;
 //   5: 5px
 // ) !default;
 // 
-// $border-color:                $gray-300 !default;
+$border-color:                $gray-400;
 // 
 // $border-radius:               .25rem !default;
 // $border-radius-sm:            .2rem !default;
@@ -522,18 +522,18 @@ $legend-font-size:            fontsize(1);
 // $table-th-font-weight:        null !default;
 // 
 // $table-striped-color:         $table-color !default;
-// $table-striped-bg-factor:     .05 !default;
+$table-striped-bg-factor:     .1;
 // $table-striped-bg:            rgba($black, $table-striped-bg-factor) !default;
 // 
 // $table-active-color:          $table-color !default;
-// $table-active-bg-factor:      .1 !default;
+$table-active-bg-factor:      .15;
 // $table-active-bg:             rgba($black, $table-active-bg-factor) !default;
 // 
 // $table-hover-color:           $table-color !default;
-// $table-hover-bg-factor:       .075 !default;
+$table-hover-bg-factor:       .125;
 // $table-hover-bg:              rgba($black, $table-hover-bg-factor) !default;
 // 
-// $table-border-factor:         .1 !default;
+// $table-border-factor:         .15 !default;
 // $table-border-width:          $border-width !default;
 // $table-border-color:          $border-color !default;
 // 
