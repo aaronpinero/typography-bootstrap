@@ -61,9 +61,10 @@
 // }
 
 // Inline turns list items into inline-block
-// .list-inline {
-//   @include list-unstyled();
-// }
+.list-inline {
+  @include list-unstyled();
+  @include sibling-margins(off);
+}
 // .list-inline-item {
 //   display: inline-block;
 // 

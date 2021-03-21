@@ -24,26 +24,27 @@
   @else if $context == lists {
     // lists
     dl, ol, ul {
-      * + * {
-        margin-top:$measure;
+      * + *,
+      dl, ol, ul {
+        margin-top: $measure;
       }
     }
     dl {
       * + dd {
-        margin-top:0;
+        margin-top: 0;
       }
     }
   }
   @else if $context == once {
     // just the immediate descendants
     > * + * {
-      margin-top:$measure;
+      margin-top: $measure;
     }
   }
   @else {
     // everything
     * + * {
-      margin-top:$measure;
+      margin-top: $measure;
     }
   }
 }
@@ -68,7 +69,7 @@
   @else if $state == skip {
     // don't apply the margins to the immediate descendants
     > * + * {
-      margin-top:0;
+      margin-top: 0;
     }
   }
   @else if $state == once {

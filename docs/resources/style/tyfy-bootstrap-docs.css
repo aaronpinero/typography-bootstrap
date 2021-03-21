@@ -3,7 +3,10 @@
 .sibling-margins-on * + * {
   margin-top: 0.875rem;
 }
-.sibling-margins-on dl * + *, .sibling-margins-on ol * + *, .sibling-margins-on ul * + * {
+.sibling-margins-on dl * + *,
+.sibling-margins-on dl dl, .sibling-margins-on dl ol, .sibling-margins-on dl ul, .sibling-margins-on ol * + *,
+.sibling-margins-on ol dl, .sibling-margins-on ol ol, .sibling-margins-on ol ul, .sibling-margins-on ul * + *,
+.sibling-margins-on ul dl, .sibling-margins-on ul ol, .sibling-margins-on ul ul {
   margin-top: 0.875rem;
 }
 .sibling-margins-on dl * + dd {
@@ -26,7 +29,10 @@
 .sibling-margins-off * + * {
   margin-top: 0rem;
 }
-.sibling-margins-off dl * + *, .sibling-margins-off ol * + *, .sibling-margins-off ul * + * {
+.sibling-margins-off dl * + *,
+.sibling-margins-off dl dl, .sibling-margins-off dl ol, .sibling-margins-off dl ul, .sibling-margins-off ol * + *,
+.sibling-margins-off ol dl, .sibling-margins-off ol ol, .sibling-margins-off ol ul, .sibling-margins-off ul * + *,
+.sibling-margins-off ul dl, .sibling-margins-off ul ol, .sibling-margins-off ul ul {
   margin-top: 0rem;
 }
 .sibling-margins-off dl * + dd {
@@ -135,48 +141,43 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
 }
 
 h1, .h1 {
-  font-size: calc(1.6860232975rem + 5.2322795699vw);
+  font-size: calc(1.4407216344rem + 2.2886596128vw);
 }
 @media (min-width: 1200px) {
   h1, .h1 {
-    font-size: 5.6102329749rem;
+    font-size: 3.157216344rem;
   }
 }
 
 h2, .h2 {
-  font-size: calc(1.4407334518rem + 2.288801422vw);
+  font-size: calc(1.3534616rem + 1.2415392vw);
 }
 @media (min-width: 1200px) {
   h2, .h2 {
-    font-size: 3.1573345183rem;
+    font-size: 2.284616rem;
   }
 }
 
 h3, .h3 {
-  font-size: calc(1.3618593037rem + 1.3423116444vw);
+  font-size: calc(1.3201308rem + 0.8415696vw);
 }
 @media (min-width: 1200px) {
   h3, .h3 {
-    font-size: 2.368593037rem;
+    font-size: 1.951308rem;
   }
 }
 
 h4, .h4 {
-  font-size: calc(1.3026889rem + 0.6322668vw);
+  font-size: calc(1.2662rem + 0.1944vw);
 }
 @media (min-width: 1200px) {
   h4, .h4 {
-    font-size: 1.776889rem;
+    font-size: 1.412rem;
   }
 }
 
 h5, .h5 {
-  font-size: calc(1.2583rem + 0.0996vw);
-}
-@media (min-width: 1200px) {
-  h5, .h5 {
-    font-size: 1.333rem;
-  }
+  font-size: 1.206rem;
 }
 
 h6, .h6 {
@@ -242,7 +243,7 @@ strong {
 }
 
 small, .small {
-  font-size: 0.7501875469rem;
+  font-size: 0.8726823239rem;
 }
 
 mark, .mark {
@@ -253,7 +254,7 @@ mark, .mark {
 sub,
 sup {
   position: relative;
-  font-size: 0.5627813555rem;
+  font-size: 0.7453646477rem;
   line-height: 0;
   vertical-align: baseline;
 }
@@ -294,7 +295,7 @@ pre {
   margin-top: 0;
   margin-bottom: 1rem;
   overflow: auto;
-  font-size: 0.7501875469rem;
+  font-size: 0.8726823239rem;
 }
 pre code {
   font-size: inherit;
@@ -303,7 +304,7 @@ pre code {
 }
 
 code {
-  font-size: 0.7501875469rem;
+  font-size: 0.8726823239rem;
   color: #d63384;
   word-wrap: break-word;
 }
@@ -313,7 +314,7 @@ a > code {
 
 kbd {
   padding: 0.2rem 0.4rem;
-  font-size: 0.7501875469rem;
+  font-size: 0.8726823239rem;
   color: #fff;
   background-color: #212529;
   border-radius: 0.2rem;
@@ -435,13 +436,8 @@ legend {
   width: 100%;
   padding: 0;
   margin-bottom: 0;
-  font-size: calc(1.2583rem + 0.0996vw);
+  font-size: 1.206rem;
   line-height: inherit;
-}
-@media (min-width: 1200px) {
-  legend {
-    font-size: 1.333rem;
-  }
 }
 legend + * {
   clear: left;
@@ -513,78 +509,78 @@ progress {
 }
 
 .lead {
-  font-size: calc(1.3026889rem + 0.6322668vw);
+  font-size: calc(1.2662rem + 0.1944vw);
   font-weight: 300;
 }
 @media (min-width: 1200px) {
   .lead {
-    font-size: 1.776889rem;
+    font-size: 1.412rem;
   }
 }
 
 .display-1 {
-  font-size: calc(2.8963382228rem + 19.7560586731vw);
+  font-size: calc(2.0927178811rem + 10.1126145726vw);
   font-weight: 300;
   line-height: 1.2;
 }
 @media (min-width: 1200px) {
   .display-1 {
-    font-size: 17.7133822276rem;
+    font-size: 9.6771788105rem;
   }
 }
 
 .display-2 {
-  font-size: calc(2.453835876rem + 14.4460305124vw);
+  font-size: calc(1.951535244rem + 8.4184229282vw);
   font-weight: 300;
   line-height: 1.2;
 }
 @media (min-width: 1200px) {
   .display-2 {
-    font-size: 13.2883587604rem;
+    font-size: 8.2653524401rem;
   }
 }
 
 .display-3 {
-  font-size: calc(2.1218761261rem + 10.4625135127vw);
+  font-size: calc(1.810352607rem + 6.7242312837vw);
   font-weight: 300;
   line-height: 1.2;
 }
 @media (min-width: 1200px) {
   .display-3 {
-    font-size: 9.9687612606rem;
+    font-size: 6.8535260698rem;
   }
 }
 
 .display-4 {
-  font-size: calc(1.8728440556rem + 7.4741286667vw);
+  font-size: calc(1.7230951057rem + 5.6771412686vw);
   font-weight: 300;
   line-height: 1.2;
 }
 @media (min-width: 1200px) {
   .display-4 {
-    font-size: 7.4784405556rem;
+    font-size: 5.9809510572rem;
   }
 }
 
 .display-5 {
-  font-size: calc(1.6860232975rem + 5.2322795699vw);
+  font-size: calc(1.6358376045rem + 4.6300512535vw);
   font-weight: 300;
   line-height: 1.2;
 }
 @media (min-width: 1200px) {
   .display-5 {
-    font-size: 5.6102329749rem;
+    font-size: 5.1083760446rem;
   }
 }
 
 .display-6 {
-  font-size: calc(1.5458726913rem + 3.5504722955vw);
+  font-size: calc(1.5485801032rem + 3.5829612384vw);
   font-weight: 300;
   line-height: 1.2;
 }
 @media (min-width: 1200px) {
   .display-6 {
-    font-size: 4.2087269129rem;
+    font-size: 4.235801032rem;
   }
 }
 
@@ -606,18 +602,13 @@ progress {
 }
 
 .initialism {
-  font-size: 0.7501875469rem;
+  font-size: 0.8726823239rem;
   text-transform: uppercase;
 }
 
 .blockquote {
   margin-bottom: 0;
-  font-size: calc(1.2583rem + 0.0996vw);
-}
-@media (min-width: 1200px) {
-  .blockquote {
-    font-size: 1.333rem;
-  }
+  font-size: 1.206rem;
 }
 .blockquote > :last-child {
   margin-bottom: 0;
@@ -626,7 +617,7 @@ progress {
 .blockquote-footer {
   margin-top: 0;
   margin-bottom: 0;
-  font-size: 0.7501875469rem;
+  font-size: 0.8726823239rem;
   color: #6c757d;
 }
 .blockquote-footer::before {
@@ -657,7 +648,7 @@ progress {
 }
 
 .figure-caption {
-  font-size: 0.7501875469rem;
+  font-size: 0.8726823239rem;
   color: #6c757d;
 }
 
@@ -2261,23 +2252,18 @@ progress {
 .col-form-label-lg {
   padding-top: calc(0.5rem + 1px);
   padding-bottom: calc(0.5rem + 1px);
-  font-size: calc(1.2583rem + 0.0996vw);
-}
-@media (min-width: 1200px) {
-  .col-form-label-lg {
-    font-size: 1.333rem;
-  }
+  font-size: 1.206rem;
 }
 
 .col-form-label-sm {
   padding-top: calc(0.25rem + 1px);
   padding-bottom: calc(0.25rem + 1px);
-  font-size: 0.7501875469rem;
+  font-size: 0.8726823239rem;
 }
 
 .form-text {
   margin-top: 0.25rem;
-  font-size: 0.7501875469rem;
+  font-size: 0.8726823239rem;
   color: #6c757d;
 }
 
@@ -2392,7 +2378,7 @@ progress {
 .form-control-sm {
   min-height: calc(1.75em + 0.5rem + 2px);
   padding: 0.25rem 0.5rem;
-  font-size: 0.7501875469rem;
+  font-size: 0.8726823239rem;
   border-radius: 0.2rem;
 }
 .form-control-sm::file-selector-button {
@@ -2409,13 +2395,8 @@ progress {
 .form-control-lg {
   min-height: calc(1.75em + 1rem + 2px);
   padding: 0.5rem 1rem;
-  font-size: calc(1.2583rem + 0.0996vw);
+  font-size: 1.206rem;
   border-radius: 0.3rem;
-}
-@media (min-width: 1200px) {
-  .form-control-lg {
-    font-size: 1.333rem;
-  }
 }
 .form-control-lg::file-selector-button {
   padding: 0.5rem 1rem;
@@ -2495,19 +2476,14 @@ textarea.form-control-lg {
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
   padding-left: 0.5rem;
-  font-size: 0.7501875469rem;
+  font-size: 0.8726823239rem;
 }
 
 .form-select-lg {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   padding-left: 1rem;
-  font-size: calc(1.2583rem + 0.0996vw);
-}
-@media (min-width: 1200px) {
-  .form-select-lg {
-    font-size: 1.333rem;
-  }
+  font-size: 1.206rem;
 }
 
 .form-check {
@@ -2798,16 +2774,8 @@ textarea.form-control-lg {
 .input-group-lg > .input-group-text,
 .input-group-lg > .btn {
   padding: 0.5rem 1rem;
-  font-size: calc(1.2583rem + 0.0996vw);
+  font-size: 1.206rem;
   border-radius: 0.3rem;
-}
-@media (min-width: 1200px) {
-  .input-group-lg > .form-control,
-.input-group-lg > .form-select,
-.input-group-lg > .input-group-text,
-.input-group-lg > .btn {
-    font-size: 1.333rem;
-  }
 }
 
 .input-group-sm > .form-control,
@@ -2815,7 +2783,7 @@ textarea.form-control-lg {
 .input-group-sm > .input-group-text,
 .input-group-sm > .btn {
   padding: 0.25rem 0.5rem;
-  font-size: 0.7501875469rem;
+  font-size: 0.8726823239rem;
   border-radius: 0.2rem;
 }
 
@@ -2844,7 +2812,7 @@ textarea.form-control-lg {
   display: none;
   width: 100%;
   margin-top: 0.25rem;
-  font-size: 0.7501875469rem;
+  font-size: 0.8726823239rem;
   color: #198754;
 }
 
@@ -2856,7 +2824,7 @@ textarea.form-control-lg {
   max-width: 100%;
   padding: 0.25rem 0.5rem;
   margin-top: 0.1rem;
-  font-size: 0.7501875469rem;
+  font-size: 0.8726823239rem;
   color: #fff;
   background-color: rgba(25, 135, 84, 0.9);
   border-radius: 0.25rem;
@@ -2920,7 +2888,7 @@ textarea.form-control-lg {
   display: none;
   width: 100%;
   margin-top: 0.25rem;
-  font-size: 0.7501875469rem;
+  font-size: 0.8726823239rem;
   color: #dc3545;
 }
 
@@ -2932,7 +2900,7 @@ textarea.form-control-lg {
   max-width: 100%;
   padding: 0.25rem 0.5rem;
   margin-top: 0.1rem;
-  font-size: 0.7501875469rem;
+  font-size: 0.8726823239rem;
   color: #fff;
   background-color: rgba(220, 53, 69, 0.9);
   border-radius: 0.25rem;
@@ -3481,18 +3449,13 @@ textarea.form-control-lg {
 
 .btn-lg, .btn-group-lg > .btn {
   padding: 0.5rem 1rem;
-  font-size: calc(1.2583rem + 0.0996vw);
+  font-size: 1.206rem;
   border-radius: 0.3rem;
-}
-@media (min-width: 1200px) {
-  .btn-lg, .btn-group-lg > .btn {
-    font-size: 1.333rem;
-  }
 }
 
 .btn-sm, .btn-group-sm > .btn {
   padding: 0.25rem 0.5rem;
-  font-size: 0.7501875469rem;
+  font-size: 0.8726823239rem;
   border-radius: 0.2rem;
 }
 
@@ -3795,7 +3758,7 @@ textarea.form-control-lg {
   display: block;
   padding: 0.5rem 1rem;
   margin-bottom: 0;
-  font-size: 0.7501875469rem;
+  font-size: 0.8726823239rem;
   color: #6c757d;
   white-space: nowrap;
 }
@@ -4040,17 +4003,12 @@ textarea.form-control-lg {
   justify-content: space-between;
 }
 .navbar-brand {
-  padding-top: 0.208625rem;
-  padding-bottom: 0.208625rem;
+  padding-top: 0.31975rem;
+  padding-bottom: 0.31975rem;
   margin-right: 1rem;
-  font-size: calc(1.2583rem + 0.0996vw);
+  font-size: 1.206rem;
   text-decoration: none;
   white-space: nowrap;
-}
-@media (min-width: 1200px) {
-  .navbar-brand {
-    font-size: 1.333rem;
-  }
 }
 .navbar-nav {
   display: flex;
@@ -4080,17 +4038,12 @@ textarea.form-control-lg {
 
 .navbar-toggler {
   padding: 0.25rem 0.75rem;
-  font-size: calc(1.2583rem + 0.0996vw);
+  font-size: 1.206rem;
   line-height: 1;
   background-color: transparent;
   border: 1px solid transparent;
   border-radius: 0.25rem;
   transition: box-shadow 0.15s ease-in-out;
-}
-@media (min-width: 1200px) {
-  .navbar-toggler {
-    font-size: 1.333rem;
-  }
 }
 @media (prefers-reduced-motion: reduce) {
   .navbar-toggler {
@@ -4697,12 +4650,7 @@ textarea.form-control-lg {
 
 .pagination-lg .page-link {
   padding: 0.75rem 1.5rem;
-  font-size: calc(1.2583rem + 0.0996vw);
-}
-@media (min-width: 1200px) {
-  .pagination-lg .page-link {
-    font-size: 1.333rem;
-  }
+  font-size: 1.206rem;
 }
 .pagination-lg .page-item:first-child .page-link {
   border-top-left-radius: 0.3rem;
@@ -4715,7 +4663,7 @@ textarea.form-control-lg {
 
 .pagination-sm .page-link {
   padding: 0.25rem 0.5rem;
-  font-size: 0.7501875469rem;
+  font-size: 0.8726823239rem;
 }
 .pagination-sm .page-item:first-child .page-link {
   border-top-left-radius: 0.2rem;
@@ -4729,7 +4677,7 @@ textarea.form-control-lg {
 .badge {
   display: inline-block;
   padding: 0.35em 0.65em;
-  font-size: 0.5627813555em;
+  font-size: 0.7453646477em;
   font-weight: 700;
   line-height: 1;
   color: #fff;
@@ -4855,7 +4803,7 @@ textarea.form-control-lg {
   display: flex;
   height: 1rem;
   overflow: hidden;
-  font-size: 0.7501875469rem;
+  font-size: 0.8726823239rem;
   background-color: #e9ecef;
   border-radius: 0.25rem;
 }
@@ -5250,7 +5198,7 @@ textarea.form-control-lg {
 .toast {
   width: 350px;
   max-width: 100%;
-  font-size: 0.7501875469rem;
+  font-size: 0.8726823239rem;
   pointer-events: auto;
   background-color: rgba(255, 255, 255, 0.85);
   background-clip: padding-box;
@@ -5612,7 +5560,7 @@ textarea.form-control-lg {
   word-spacing: normal;
   white-space: normal;
   line-break: auto;
-  font-size: 0.7501875469rem;
+  font-size: 0.8726823239rem;
   word-wrap: break-word;
   opacity: 0;
 }
@@ -5714,7 +5662,7 @@ textarea.form-control-lg {
   word-spacing: normal;
   white-space: normal;
   line-break: auto;
-  font-size: 0.7501875469rem;
+  font-size: 0.8726823239rem;
   word-wrap: break-word;
   background-color: #fff;
   background-clip: padding-box;
@@ -7267,23 +7215,23 @@ textarea.form-control-lg {
 }
 
 .fs-1 {
-  font-size: calc(1.6860232975rem + 5.2322795699vw) !important;
+  font-size: calc(1.4407216344rem + 2.2886596128vw) !important;
 }
 
 .fs-2 {
-  font-size: calc(1.4407334518rem + 2.288801422vw) !important;
+  font-size: calc(1.3534616rem + 1.2415392vw) !important;
 }
 
 .fs-3 {
-  font-size: calc(1.3618593037rem + 1.3423116444vw) !important;
+  font-size: calc(1.3201308rem + 0.8415696vw) !important;
 }
 
 .fs-4 {
-  font-size: calc(1.3026889rem + 0.6322668vw) !important;
+  font-size: calc(1.2662rem + 0.1944vw) !important;
 }
 
 .fs-5 {
-  font-size: calc(1.2583rem + 0.0996vw) !important;
+  font-size: 1.206rem !important;
 }
 
 .fs-6 {
@@ -7403,7 +7351,7 @@ textarea.form-control-lg {
 }
 
 .lh-sm {
-  line-height: 1.333 !important;
+  line-height: 2.0053116147 !important;
 }
 
 .lh-base {
@@ -7411,7 +7359,7 @@ textarea.form-control-lg {
 }
 
 .lh-lg {
-  line-height: 1.3128282071 !important;
+  line-height: 1.4510779436 !important;
 }
 
 .bg-primary {
@@ -11149,23 +11097,19 @@ textarea.form-control-lg {
 }
 @media (min-width: 1200px) {
   .fs-1 {
-    font-size: 5.6102329749rem !important;
+    font-size: 3.157216344rem !important;
   }
 
   .fs-2 {
-    font-size: 3.1573345183rem !important;
+    font-size: 2.284616rem !important;
   }
 
   .fs-3 {
-    font-size: 2.368593037rem !important;
+    font-size: 1.951308rem !important;
   }
 
   .fs-4 {
-    font-size: 1.776889rem !important;
-  }
-
-  .fs-5 {
-    font-size: 1.333rem !important;
+    font-size: 1.412rem !important;
   }
 }
 @media print {
@@ -11217,7 +11161,10 @@ textarea.form-control-lg {
 body * + * {
   margin-top: 0.875rem;
 }
-body dl * + *, body ol * + *, body ul * + * {
+body dl * + *,
+body dl dl, body dl ol, body dl ul, body ol * + *,
+body ol dl, body ol ol, body ol ul, body ul * + *,
+body ul dl, body ul ol, body ul ul {
   margin-top: 0.875rem;
 }
 body dl * + dd {
@@ -11249,53 +11196,48 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 }
 
 h1, .h1 {
-  font-size: calc(1.6860232975rem + 5.2322795699vw);
-  line-height: 6.125rem;
+  font-size: calc(1.4407216344rem + 2.2886596128vw);
+  line-height: 3.5rem;
 }
 @media (min-width: 1200px) {
   h1, .h1 {
-    font-size: 5.6102329749rem;
+    font-size: 3.157216344rem;
   }
 }
 
 h2, .h2 {
-  font-size: calc(1.4407334518rem + 2.288801422vw);
-  line-height: 3.5rem;
+  font-size: calc(1.3534616rem + 1.2415392vw);
+  line-height: 2.625rem;
 }
 @media (min-width: 1200px) {
   h2, .h2 {
-    font-size: 3.1573345183rem;
+    font-size: 2.284616rem;
   }
 }
 
 h3, .h3 {
-  font-size: calc(1.3618593037rem + 1.3423116444vw);
+  font-size: calc(1.3201308rem + 0.8415696vw);
   line-height: 2.625rem;
 }
 @media (min-width: 1200px) {
   h3, .h3 {
-    font-size: 2.368593037rem;
+    font-size: 1.951308rem;
   }
 }
 
 h4, .h4 {
-  font-size: calc(1.3026889rem + 0.6322668vw);
-  line-height: 2.625rem;
+  font-size: calc(1.2662rem + 0.1944vw);
+  line-height: 1.75rem;
 }
 @media (min-width: 1200px) {
   h4, .h4 {
-    font-size: 1.776889rem;
+    font-size: 1.412rem;
   }
 }
 
 h5, .h5 {
-  font-size: calc(1.2583rem + 0.0996vw);
+  font-size: 1.206rem;
   line-height: 1.75rem;
-}
-@media (min-width: 1200px) {
-  h5, .h5 {
-    font-size: 1.333rem;
-  }
 }
 
 h6, .h6 {
@@ -11303,9 +11245,15 @@ h6, .h6 {
   line-height: 1.75rem;
 }
 
+ol,
+ul,
+dl {
+  margin-bottom: 0;
+}
+
 small, .small {
-  font-size: 0.7501875469rem;
-  line-height: 1rem;
+  font-size: 0.8726823239rem;
+  line-height: 1.75rem;
 }
 
 /* rtl:raw:
@@ -11317,91 +11265,116 @@ small, .small {
 }
 */
 .lead {
-  font-size: calc(1.3026889rem + 0.6322668vw);
+  font-size: calc(1.2662rem + 0.1944vw);
   font-weight: 300;
   line-height: 2.625rem;
 }
 @media (min-width: 1200px) {
   .lead {
-    font-size: 1.776889rem;
+    font-size: 1.412rem;
   }
 }
 
 .display-1 {
-  font-size: calc(2.8963382228rem + 19.7560586731vw);
-  font-weight: 300;
-  line-height: 18.375rem;
-}
-@media (min-width: 1200px) {
-  .display-1 {
-    font-size: 17.7133822276rem;
-  }
-}
-
-.display-2 {
-  font-size: calc(2.453835876rem + 14.4460305124vw);
-  font-weight: 300;
-  line-height: 14rem;
-}
-@media (min-width: 1200px) {
-  .display-2 {
-    font-size: 13.2883587604rem;
-  }
-}
-
-.display-3 {
-  font-size: calc(2.1218761261rem + 10.4625135127vw);
+  font-size: calc(2.0927178811rem + 10.1126145726vw);
   font-weight: 300;
   line-height: 10.5rem;
 }
 @media (min-width: 1200px) {
+  .display-1 {
+    font-size: 9.6771788105rem;
+  }
+}
+
+.display-2 {
+  font-size: calc(1.951535244rem + 8.4184229282vw);
+  font-weight: 300;
+  line-height: 8.75rem;
+}
+@media (min-width: 1200px) {
+  .display-2 {
+    font-size: 8.2653524401rem;
+  }
+}
+
+.display-3 {
+  font-size: calc(1.810352607rem + 6.7242312837vw);
+  font-weight: 300;
+  line-height: 7rem;
+}
+@media (min-width: 1200px) {
   .display-3 {
-    font-size: 9.9687612606rem;
+    font-size: 6.8535260698rem;
   }
 }
 
 .display-4 {
-  font-size: calc(1.8728440556rem + 7.4741286667vw);
-  font-weight: 300;
-  line-height: 7.875rem;
-}
-@media (min-width: 1200px) {
-  .display-4 {
-    font-size: 7.4784405556rem;
-  }
-}
-
-.display-5 {
-  font-size: calc(1.6860232975rem + 5.2322795699vw);
+  font-size: calc(1.7230951057rem + 5.6771412686vw);
   font-weight: 300;
   line-height: 6.125rem;
 }
 @media (min-width: 1200px) {
+  .display-4 {
+    font-size: 5.9809510572rem;
+  }
+}
+
+.display-5 {
+  font-size: calc(1.6358376045rem + 4.6300512535vw);
+  font-weight: 300;
+  line-height: 5.25rem;
+}
+@media (min-width: 1200px) {
   .display-5 {
-    font-size: 5.6102329749rem;
+    font-size: 5.1083760446rem;
   }
 }
 
 .display-6 {
-  font-size: calc(1.5458726913rem + 3.5504722955vw);
+  font-size: calc(1.5485801032rem + 3.5829612384vw);
   font-weight: 300;
   line-height: 4.375rem;
 }
 @media (min-width: 1200px) {
   .display-6 {
-    font-size: 4.2087269129rem;
+    font-size: 4.235801032rem;
   }
+}
+
+.list-inline {
+  padding-left: 0;
+  list-style: none;
+}
+.list-inline * + * {
+  margin-top: 0rem;
+}
+.list-inline dl * + *,
+.list-inline dl dl, .list-inline dl ol, .list-inline dl ul, .list-inline ol * + *,
+.list-inline ol dl, .list-inline ol ol, .list-inline ol ul, .list-inline ul * + *,
+.list-inline ul dl, .list-inline ul ol, .list-inline ul ul {
+  margin-top: 0rem;
+}
+.list-inline dl * + dd {
+  margin-top: 0;
+}
+.list-inline :not(h1):not(.h1):not(h2):not(.h2):not(h3):not(.h3):not(h4):not(.h4):not(h5):not(.h5):not(h6):not(.h6) + h1, .list-inline :not(h1):not(.h1):not(h2):not(.h2):not(h3):not(.h3):not(h4):not(.h4):not(h5):not(.h5):not(h6):not(.h6) + .h1,
+.list-inline :not(h1):not(.h1):not(h2):not(.h2):not(h3):not(.h3):not(h4):not(.h4):not(h5):not(.h5):not(h6):not(.h6) + h2,
+.list-inline :not(h1):not(.h1):not(h2):not(.h2):not(h3):not(.h3):not(h4):not(.h4):not(h5):not(.h5):not(h6):not(.h6) + .h2,
+.list-inline :not(h1):not(.h1):not(h2):not(.h2):not(h3):not(.h3):not(h4):not(.h4):not(h5):not(.h5):not(h6):not(.h6) + h3,
+.list-inline :not(h1):not(.h1):not(h2):not(.h2):not(h3):not(.h3):not(h4):not(.h4):not(h5):not(.h5):not(h6):not(.h6) + .h3,
+.list-inline :not(h1):not(.h1):not(h2):not(.h2):not(h3):not(.h3):not(h4):not(.h4):not(h5):not(.h5):not(h6):not(.h6) + h4,
+.list-inline :not(h1):not(.h1):not(h2):not(.h2):not(h3):not(.h3):not(h4):not(.h4):not(h5):not(.h5):not(h6):not(.h6) + .h4,
+.list-inline :not(h1):not(.h1):not(h2):not(.h2):not(h3):not(.h3):not(h4):not(.h4):not(h5):not(.h5):not(h6):not(.h6) + h5,
+.list-inline :not(h1):not(.h1):not(h2):not(.h2):not(h3):not(.h3):not(h4):not(.h4):not(h5):not(.h5):not(h6):not(.h6) + .h5,
+.list-inline :not(h1):not(.h1):not(h2):not(.h2):not(h3):not(.h3):not(h4):not(.h4):not(h5):not(.h5):not(h6):not(.h6) + h6,
+.list-inline :not(h1):not(.h1):not(h2):not(.h2):not(h3):not(.h3):not(h4):not(.h4):not(h5):not(.h5):not(h6):not(.h6) + .h6 {
+  margin-top: 0rem;
 }
 
 .blockquote {
   margin-bottom: 0;
-  font-size: calc(1.2583rem + 0.0996vw);
+  font-size: 1.206rem;
   line-height: 1.75rem;
-}
-@media (min-width: 1200px) {
-  .blockquote {
-    font-size: 1.333rem;
-  }
 }
 .blockquote > :last-child {
   margin-bottom: 0;
@@ -11410,8 +11383,8 @@ small, .small {
 .blockquote-footer {
   margin-top: 0;
   margin-bottom: 0;
-  font-size: 0.7501875469rem;
-  line-height: 1rem;
+  font-size: 0.8726823239rem;
+  line-height: 1.75rem;
   color: #6c757d;
 }
 .blockquote-footer::before {
@@ -11424,8 +11397,8 @@ small, .small {
 }
 
 .figure-caption {
-  font-size: 0.7501875469rem;
-  line-height: 1rem;
+  font-size: 0.8726823239rem;
+  line-height: 1.75rem;
   color: #6c757d;
 }
 
@@ -11439,7 +11412,10 @@ small, .small {
 .breadcrumb * + * {
   margin-top: 0rem;
 }
-.breadcrumb dl * + *, .breadcrumb ol * + *, .breadcrumb ul * + * {
+.breadcrumb dl * + *,
+.breadcrumb dl dl, .breadcrumb dl ol, .breadcrumb dl ul, .breadcrumb ol * + *,
+.breadcrumb ol dl, .breadcrumb ol ol, .breadcrumb ol ul, .breadcrumb ul * + *,
+.breadcrumb ul dl, .breadcrumb ul ol, .breadcrumb ul ul {
   margin-top: 0rem;
 }
 .breadcrumb dl * + dd {
@@ -11462,7 +11438,10 @@ small, .small {
 .nav * + * {
   margin-top: 0rem;
 }
-.nav dl * + *, .nav ol * + *, .nav ul * + * {
+.nav dl * + *,
+.nav dl dl, .nav dl ol, .nav dl ul, .nav ol * + *,
+.nav ol dl, .nav ol ol, .nav ol ul, .nav ul * + *,
+.nav ul dl, .nav ul ol, .nav ul ul {
   margin-top: 0rem;
 }
 .nav dl * + dd {
@@ -11489,7 +11468,10 @@ small, .small {
 .navbar * + * {
   margin-top: 0rem;
 }
-.navbar dl * + *, .navbar ol * + *, .navbar ul * + * {
+.navbar dl * + *,
+.navbar dl dl, .navbar dl ol, .navbar dl ul, .navbar ol * + *,
+.navbar ol dl, .navbar ol ol, .navbar ol ul, .navbar ul * + *,
+.navbar ul dl, .navbar ul ol, .navbar ul ul {
   margin-top: 0rem;
 }
 .navbar dl * + dd {

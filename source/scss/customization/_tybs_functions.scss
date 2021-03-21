@@ -63,23 +63,30 @@ $leading-short:1.2  !default;
 ////////// fontsize function //////////
 // 
 // used to calculate a font size from the modular scale
-// based on the base font size and scalar value
+// based on the base font size, scale ratio, and number of substeps
 // this function makes it easier to work with the modular scale
+// based on https://www.layoutgridcalculator.com/typographic-scale/
 
-@function fontsize($exponent:0) {
-  $i:0;
-  $scale:$font-size-base;
-  @if $exponent < 0 {
-    @while $i > $exponent {
-      $scale:$scale/$scale-ratio;
-      $i:$i - 1;
+@function fontsize($step:0,$substep:0) {
+  $i: 0;
+  $size: $font-size-base;
+  @if $step < 0 {
+    @while $i > $step {
+      $size: $size/$scale-ratio;
+      $i: $i - 1;
     }
   }
-  @else if $exponent > 0 {
-    @while $i < $exponent {
-      $scale:$scale*$scale-ratio;
-      $i:$i + 1;
+  @else if $step > 0 {
+    @while $i < $step {
+      $size: $size*$scale-ratio;
+      $i: $i + 1;
     }
   }
-  @return $scale;
+  @if $substep > 0 {
+    $size: $size + (((($size * $scale-ratio) - $size)/$scale-substeps) * $substep);
+  }
+  @else if $substep < 0 {
+    $size: $size + ((($size - ($size / $scale-ratio))/$scale-substeps) * $substep);
+  }
+  @return $size;
 }

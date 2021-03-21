@@ -4,24 +4,24 @@
 		<%include head.html%>
 		<title>Tests: Content - Tyfy Bootstrap</title>
 	</head>
-	<body class="sibling-margins-skip position-relative bg-light" data-spy="scroll" data-target="#sectionnav">
+	<body class="sibling-margins-skip position-relative bg-light" data-bs-spy="scroll" data-bs-target="#sectionnav" data-bs-offset="0" tabindex="0">
 		<%include header.html%>
 		<header class="px-3 px-lg-4 px-xl-5 pt-3 pb-3 pb-lg-4 pb-xl-5">
 			<div class="container-fluid sibling-margins-off">
 				<nav aria-label="breadcrumb">
-					<ol class="breadcrumb bg-transparent px-0 pt-0 border-bottom">
+					<ol class="breadcrumb">
 						<li class="breadcrumb-item"><a href="index.html">TyBs</a></li>
 						<li class="breadcrumb-item"><a href="tests.html">Tests</a></li>
 						<li class="breadcrumb-item active" aria-current="page">Content</li>
 					</ol>
 				</nav>
-				<h1 class="display-2">Content</h1>
+				<h1>Content</h1>
 			</div>
 		</header>
-		<section id="main" class="px-md-3 px-lg-4 px-xl-5 pb-3 pb-lg-4 pb-xl-5">
+		<section id="main" class="px-3 px-lg-4 px-xl-5 pb-3 pb-lg-4 pb-xl-5">
 			<div class="container-fluid">
 				<div class="row">
-					<div class="d-none d-md-block col-md-3 order-12">
+					<div class="d-none d-md-block col-md-3 order-last">
 
 						<nav id="sectionnav" class="navbar navbar-light bg-transparent sticky-top">
 							<ul class="nav nav-pills flex-column">
@@ -38,49 +38,56 @@
 						</nav>
 					</div>
 					<div class="col-md-9">
-						<h2 class="badge badge-primary" id="headings">Headings</h2>
-						<h1>h1. Bootstrap heading</h1>
-						<h2>h2. Bootstrap heading</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-						<h3>h3. Bootstrap heading</h3>
-						<h4>h4. Bootstrap heading</h4>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-						<h5>h5. Bootstrap heading</h5>
-						<h6>h6. Bootstrap heading</h6>
-						<hr>
-						<h2 class="badge badge-primary" id="headingclasses">Heading Classes</h2>
-						<p class="h1">h1. Bootstrap heading</p>
-						<p class="h2">h2. Bootstrap heading</p>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-						<p class="h3">h3. Bootstrap heading</p>
-						<p class="h4">h4. Bootstrap heading</p>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-						<p class="h5">h5. Bootstrap heading</p>
-						<p class="h6">h6. Bootstrap heading</p>
-						<hr>
-						<h2 class="badge badge-primary" id="customheadings">Customized Headings</h2>
-						<h3>
-							Fancy display heading
-							<small class="text-muted">With faded secondary text</small>
-						</h3>
-						<hr>
-						<h2 class="badge badge-primary" id="displayheadings">Display Headings</h2>
-						<h1 class="display-1">Display 1</h1>
-						<h1 class="display-2">Display 2</h1>
-						<h1 class="display-3">Display 3</h1>
-						<h1 class="display-4">Display 4</h1>
-						<hr>
-						<h2 class="badge badge-primary" id="lead">Lead Paragraph</h2>
+						
+						<h2 class="h4"><span class="badge bg-primary" id="headings">Headings</span></h2>
+						<div>
+							<h1>h1. Bootstrap heading</h1>
+							<h2>h2. Bootstrap heading</h2>
+							<h3>h3. Bootstrap heading</h3>
+							<h4>h4. Bootstrap heading</h4>
+							<h5>h5. Bootstrap heading</h5>
+							<h6>h6. Bootstrap heading</h6>
+						</div>
+
+						<h2 class="h4"><span class="badge bg-primary" id="headingclasses">Heading Classes</span></h2>
+						<div>
+							<p class="h1">h1. Bootstrap heading</p>
+							<p class="h2">h2. Bootstrap heading</p>
+							<p class="h3">h3. Bootstrap heading</p>
+							<p class="h4">h4. Bootstrap heading</p>
+							<p class="h5">h5. Bootstrap heading</p>
+							<p class="h6">h6. Bootstrap heading</p>
+						</div>
+
+						<h2 class="h4"><span class="badge bg-primary" id="customheadings">Customized Headings</span></h2>
+						<div>
+							<h3>
+								Fancy display heading
+								<small class="text-muted">With faded secondary text</small>
+							</h3>
+						</div>
+
+						<h2 class="h4"><span class="badge bg-primary" id="displayheadings">Display Headings</span></h2>
+						<div>
+							<h1 class="display-1">Display 1</h1>
+							<h1 class="display-2">Display 2</h1>
+							<h1 class="display-3">Display 3</h1>
+							<h1 class="display-4">Display 4</h1>
+							<h1 class="display-5">Display 5</h1>
+							<h1 class="display-6">Display 6</h1>
+						</div>
+						
+						<h2 class="h4"><span class="badge bg-primary" id="lead">Lead Paragraph</span></h2>
 						<p class="lead">Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.</p>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-						<hr>
-						<h2 class="badge badge-primary" id="blockquote">Blockquote</h2>
+
+						<h2 class="h4"><span class="badge bg-primary" id="blockquote">Blockquote</span></h2>
 						<blockquote class="blockquote">
-							<p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
 							<footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
 						</blockquote>
-						<hr>
-						<h2 class="badge badge-primary" id="unstyledlist">Unstyled List</h2>
+
+						<h2 class="h4"><span class="badge bg-primary" id="unstyledlist">Unstyled List</span></h2>
 						<ul class="list-unstyled">
 							<li>Lorem ipsum dolor sit amet</li>
 							<li>Consectetur adipiscing elit</li>
@@ -98,35 +105,37 @@
 							<li>Aenean sit amet erat nunc</li>
 							<li>Eget porttitor lorem</li>
 						</ul>
-						<hr>
-						<h2 class="badge badge-primary" id="inlinelist">Inline List</h2>
+
+						<h2 class="h4"><span class="badge bg-primary" id="inlinelist">Inline List</span></h2>
 						<ul class="list-inline">
 							<li class="list-inline-item">Lorem ipsum</li>
 							<li class="list-inline-item">Phasellus iaculis</li>
 							<li class="list-inline-item">Nulla volutpat</li>
 						</ul>
-						<hr>
-						<h2 class="badge badge-primary" id="desclist">Description List Grid</h2>
-						<dl class="row">
-							<dt class="col-sm-3">Description lists</dt>
-							<dd class="col-sm-9">A description list is perfect for defining terms.</dd>
-							<dt class="col-sm-3">Euismod</dt>
-							<dd class="col-sm-9">
-								<p>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</p>
-								<p>Donec id elit non mi porta gravida at eget metus.</p>
-							</dd>
-							<dt class="col-sm-3">Malesuada porta</dt>
-							<dd class="col-sm-9">Etiam porta sem malesuada magna mollis euismod.</dd>
-							<dt class="col-sm-3 text-truncate">Truncated term is truncated</dt>
-							<dd class="col-sm-9">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</dd>
-							<dt class="col-sm-3">Nesting</dt>
-							<dd class="col-sm-9">
-								<dl class="row">
-									<dt class="col-sm-4">Nested definition list</dt>
-									<dd class="col-sm-8">Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc.</dd>
-								</dl>
-							</dd>
-						</dl>
+
+						<h2 class="h4"><span class="badge bg-primary" id="desclist">Description List Grid</span></h2>
+						<div>
+							<dl class="row">
+								<dt class="col-sm-3">Description lists</dt>
+								<dd class="col-sm-9">A description list is perfect for defining terms.</dd>
+								<dt class="col-sm-3">Euismod</dt>
+								<dd class="col-sm-9">
+									<p>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</p>
+									<p>Donec id elit non mi porta gravida at eget metus.</p>
+								</dd>
+								<dt class="col-sm-3">Malesuada porta</dt>
+								<dd class="col-sm-9">Etiam porta sem malesuada magna mollis euismod.</dd>
+								<dt class="col-sm-3 text-truncate">Truncated term is truncated</dt>
+								<dd class="col-sm-9">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</dd>
+								<dt class="col-sm-3">Nesting</dt>
+								<dd class="col-sm-9">
+									<dl class="row">
+										<dt class="col-sm-4">Nested definition list</dt>
+										<dd class="col-sm-8">Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc.</dd>
+									</dl>
+								</dd>
+							</dl>
+						</div>
 					</div>
 				</div>
 			</div>
